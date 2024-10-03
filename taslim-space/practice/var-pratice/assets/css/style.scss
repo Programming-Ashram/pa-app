@@ -1,0 +1,34 @@
+$danger: red;
+$success: green;
+$primary: blue;
+$light:white;
+
+$size-sm: 10px; 
+$size-md: 15px; 
+$size-xl: 20px; 
+$size-xxl: 30px; 
+
+.card{
+    background-color:$primary;
+    color: light;
+    width: 300px;
+    padding: $size-xl;
+    border: 300;
+}
+.light{
+    color: $light;
+}
+.on{
+    background-color: $success;
+    color: $light;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+}
+.off{
+    background-color: $danger;
+    color: $light;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+}
