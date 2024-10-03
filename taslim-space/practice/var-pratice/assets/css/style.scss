@@ -13,8 +13,10 @@ $size-xxl: 30px;
     color: light;
     width: 300px;
     padding: $size-xl;
+    box-shadow: 4px 5px 6px 4px;
     
 }
+
 .light{
     color: $light;
 }
@@ -24,6 +26,7 @@ $size-xxl: 30px;
     padding: $size-sm $size-xxl;
     border: none;
     border-radius: $size-sm - 5;
+
 }
 .off{
     background-color: $danger;

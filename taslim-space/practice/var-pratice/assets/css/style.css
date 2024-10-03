@@ -3,6 +3,7 @@
   color: light;
   width: 300px;
   padding: 20px;
+  box-shadow: 4px 5px 6px 4px;
 }
 
 .light {
