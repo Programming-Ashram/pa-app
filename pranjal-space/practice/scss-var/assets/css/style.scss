@@ -1,0 +1,48 @@
+//color
+
+$danger:red;
+$warning:orange;
+$dark:black;
+$success: green;
+$white:white;
+
+
+// size
+
+$size-sm:10px;
+$size-md:15px;
+$size-xl:20px;
+$size-xxl:30px;
+
+//card
+
+.card{
+    background-color:$success;
+    color:$white  ;
+    border:4px $warning solid;
+    width: 400px;
+    height: 400px;
+    margin: $size-xxl auto;
+    padding: $size-xl;
+}
+
+.card-title{
+    font-size:$size-xxl;
+    color:$warning ;
+
+}
+.card-subtitle{
+    font-size: $size-xl;
+   color: $success;
+   background-color: $white;
+}
+.btn{
+    border: $success;
+    color: $white;
+    background-color: $danger;
+    border-color: $dark;
+    box-sizing: content-box;
+    padding:  $size-sm;
+    border-radius: $size-sm - 4;
+
+}

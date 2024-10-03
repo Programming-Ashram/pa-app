@@ -1,0 +1,24 @@
+.font{
+    font-family: "Edu AU VIC WA NT Dots", cursive;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+.row::after{
+    display: table;
+    content: '';
+    clear: both;
+}
+.col-md-12{
+    width: 100%;
+}
+.m-top{
+    margin-top: 10px 0;
+}
+.justify{
+    justify-content: space-between;
+}
+.text-center{
+    text-align: center;
+}
