@@ -13,7 +13,7 @@ $size-xxl: 30px;
     color: light;
     width: 300px;
     padding: $size-xl;
-    border: 300;
+    
 }
 .light{
     color: $light;
@@ -21,14 +21,14 @@ $size-xxl: 30px;
 .on{
     background-color: $success;
     color: $light;
-    padding: 10px 30px;
+    padding: $size-sm $size-xxl;
     border: none;
-    border-radius: 5px;
+    border-radius: $size-sm - 5;
 }
 .off{
     background-color: $danger;
     color: $light;
-    padding: 10px 30px;
+    padding: $size-sm $size-xxl;
     border: none;
-    border-radius: 5px;
+    border-radius: $size-sm - 5;
 }
