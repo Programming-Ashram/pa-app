@@ -1,0 +1,21 @@
+h1 {
+  color: rgb(255, 77, 0);
+  font-size: 20px;
+}
+
+h3 {
+  color: white;
+  font-size: 15px;
+}
+
+.card {
+  background-color: rgb(40, 206, 218);
+  border: 300px;
+  width: 300px;
+  padding: 10px 15px;
+  box-shadow: 5px 4px 6px 8px;
+}
+
+.text {
+  text-align: center;
+}/*# sourceMappingURL=style.css.map */
