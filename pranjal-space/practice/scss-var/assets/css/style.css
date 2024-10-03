@@ -1,1 +1,30 @@
-/*# sourceMappingURL=style.css.map */
+.card {
+  background-color: green;
+  color: white;
+  border: 4px orange solid;
+  width: 400px;
+  height: 400px;
+  margin: 30px auto;
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 30px;
+  color: orange;
+}
+
+.card-subtitle {
+  font-size: 20px;
+  color: green;
+  background-color: white;
+}
+
+.btn {
+  border: green;
+  color: white;
+  background-color: red;
+  border-color: black;
+  box-sizing: content-box;
+  padding: 10px;
+  border-radius: 6px;
+}/*# sourceMappingURL=style.css.map */
