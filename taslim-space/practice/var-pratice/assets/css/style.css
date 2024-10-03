@@ -1,0 +1,27 @@
+.card {
+  background-color: blue;
+  color: light;
+  width: 300px;
+  padding: 20px;
+  box-shadow: 4px 5px 6px 4px;
+}
+
+.light {
+  color: white;
+}
+
+.on {
+  background-color: green;
+  color: white;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 5px;
+}
+
+.off {
+  background-color: red;
+  color: white;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 5px;
+}/*# sourceMappingURL=style.css.map */
