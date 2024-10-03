@@ -1,0 +1,20 @@
+.bg {
+  background-color: orange;
+  width: 300px;
+  padding: 20px;
+}
+
+.on {
+  background-color: green;
+  color: white;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 5px;
+}
+
+.off {
+  background-color: red;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 5px;
+}/*# sourceMappingURL=style.css.map */
