@@ -1,0 +1,30 @@
+*{
+    text-decoration: none;
+    list-style-type: none;
+}
+.text{
+    text-align: center;
+}
+.btn{
+    background-color: green;
+    color: white;
+    padding: 4px 16px;
+    border-radius: 2px;
+    cursor: grab;
+}
+.clb{
+    color:greenyellow;
+}
+.btn-2{
+    background-color: red;
+    color: white;
+    padding: 4px 16px;
+    border-radius: 2px;
+    cursor: grab;
+}
+.font{
+    font-family: "Sixtyfour Convergence", sans-serif;
+}
+.font-1{
+    font-family: "Jacquarda Bastarda 9", serif;
+}
