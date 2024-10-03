@@ -1,0 +1,20 @@
+$danger: darkred;
+$success: green;
+$primary: blue;
+
+
+$size-sm: 15px; 
+$size-md: 15px; 
+$size-xl: 20px; 
+$size-xxl: 35px; 
+
+
+$fs-sm: $size-sm + 25;
+
+.color-red{
+    color: red;
+    background-color: $danger;
+    padding: $size-sm;
+    font-size: $fs-sm;
+    margin-top: $size-xxl;
+}
