@@ -14,202 +14,85 @@ $size-md:15px;
      gap:20px;
      justify-content:center
 }
+.btn{
+     border:none;
+     cursor: pointer;
+     padding: $size-sm $size-md;
+     border-radius: $size-sm - 4;
+}
 .p-15{
      padding-top: $size-md;
 }
 .btn-primary{
      background-color: $primary;
      color: $light;
-     border:none;
-     cursor: pointer;
-     padding: $size-sm $size-md;
-     border-radius: $size-sm - 4;
+    
 }
 .btn-primary:hover{
      background-color: $primary;
      color: $light;
-     border:none;
-     cursor: pointer;
      box-shadow: 0px 2px 80px 5px $secondary;
-     padding: $size-sm $size-md;
-     border-radius: $size-sm - 4;
-     -webkit-border-radius: $size-sm - 4;
-     -moz-border-radius: $size-sm - 4;
-     -ms-border-radius: $size-sm - 4;
-     -o-border-radius: $size-sm - 4;
 }
 .btn-secondary{
      background-color:$secondary;
      color: $light;
-     border:none;
-     cursor: pointer;
-     padding: $size-sm $size-md;
-     border-radius: $size-sm - 4;
-     -webkit-border-radius: $size-sm - 4;
-     -moz-border-radius: $size-sm - 4;
-     -ms-border-radius: $size-sm - 4;
-     -o-border-radius: $size-sm - 4;
 }
 .btn-secondary:hover{
      background-color:$secondary;
-     color: $light;
-     border:none;
-     cursor: pointer;
+     color: $light;   
      box-shadow: 0px 2px 80px 5px $secondary;
-     padding: $size-sm $size-md;
-     border-radius: $size-sm - 4;
-     -webkit-border-radius: $size-sm - 4;
-     -moz-border-radius: $size-sm - 4;
-     -ms-border-radius: $size-sm - 4;
-     -o-border-radius: $size-sm - 4;
 }
 .btn-success{
      background-color: $success;
      color: $light;
-     border:none;
-     cursor: pointer;
-     padding: $size-sm $size-md;
-     border-radius: $size-sm - 4;
-     -webkit-border-radius: $size-sm - 4;
-     -moz-border-radius: $size-sm - 4;
-     -ms-border-radius: $size-sm - 4;
-     -o-border-radius: $size-sm - 4;
 }
 .btn-success:hover{
      background-color: $success;
      color: $light;
-     border:none;
-     cursor: pointer;
      box-shadow: 0px 2px 80px 5px $secondary;
-     padding: $size-sm $size-md;
-     border-radius: $size-sm - 4;
-     -webkit-border-radius: $size-sm - 4;
-     -moz-border-radius: $size-sm - 4;
-     -ms-border-radius: $size-sm - 4;
-     -o-border-radius: $size-sm - 4;
 }
 .btn-danger{
      background-color: $danger;
      color: $light;
-     border:none;
-     cursor: pointer;
-     padding: $size-sm $size-md;
-     border-radius: $size-sm - 4;
-     -webkit-border-radius: $size-sm - 4;
-     -moz-border-radius: $size-sm - 4;
-     -ms-border-radius: $size-sm - 4;
-     -o-border-radius: $size-sm - 4;
 }
 .btn-danger:hover{
      background-color: $danger;
      color: $light;
-     border:none;
-     cursor: pointer;
      box-shadow: 0px 2px 80px 5px $secondary;
-     padding: $size-sm $size-md;
-     border-radius: $size-sm - 4;
-     -webkit-border-radius: $size-sm - 4;
-     -moz-border-radius: $size-sm - 4;
-     -ms-border-radius: $size-sm - 4;
-     -o-border-radius: $size-sm - 4;
 }
 .btn-warning{
      background-color: $warning;
      color: $light;
-     border:none;
-     cursor: pointer;
-     padding: $size-sm $size-md;
-     border-radius: $size-sm - 4;
-     -webkit-border-radius: $size-sm - 4;
-     -moz-border-radius: $size-sm - 4;
-     -ms-border-radius: $size-sm - 4;
-     -o-border-radius: $size-sm - 4;
 }
 .btn-warning:hover{
      background-color: $warning;
      color: $light;
-     border:none;
-     cursor: pointer;
      box-shadow: 0px 2px 80px 5px $secondary;
-     padding: $size-sm $size-md;
-     border-radius: $size-sm - 4;
-     -webkit-border-radius: $size-sm - 4;
-     -moz-border-radius: $size-sm - 4;
-     -ms-border-radius: $size-sm - 4;
-     -o-border-radius: $size-sm - 4;
 }
 .btn-info{
      background-color: $info;
      color: $light;
-     border:none;
-     cursor: pointer;
-     padding: $size-sm $size-md;
-     border-radius: $size-sm - 4;
-     -webkit-border-radius: $size-sm - 4;
-     -moz-border-radius: $size-sm - 4;
-     -ms-border-radius: $size-sm - 4;
-     -o-border-radius: $size-sm - 4;
 }
 .btn-info:hover{
      background-color:$info;
      color: $light;
-     border:none;
-     cursor: pointer;
      box-shadow: 0px 2px 80px 5px $secondary;
-     padding: $size-sm $size-md;
-     border-radius: $size-sm - 4;
-     -webkit-border-radius: $size-sm - 4;
-     -moz-border-radius: $size-sm - 4;
-     -ms-border-radius: $size-sm - 4;
-     -o-border-radius: $size-sm - 4;
 }
 .btn-light{
      background-color: $light;
      color: $dark;
-     border:none;
-     cursor: pointer;
-     padding: $size-sm $size-md;
-     border-radius: $size-sm - 4;
-     -webkit-border-radius: $size-sm - 4;
-     -moz-border-radius: $size-sm - 4;
-     -ms-border-radius: $size-sm - 4;
-     -o-border-radius: $size-sm - 4;
 }
 .btn-light:hover{
      background-color: $light;
      color: $dark;
-     border:none;
-     cursor: pointer;
      box-shadow: 0px 2px 80px 5px $secondary;
-     padding: $size-sm $size-md;
-     border-radius: $size-sm - 4;
-     -webkit-border-radius: $size-sm - 4;
-     -moz-border-radius: $size-sm - 4;
-     -ms-border-radius: $size-sm - 4;
-     -o-border-radius: $size-sm - 4;
 }
 .btn-dark{
      background-color: $dark;
      color: $light;
-     border:none;
-     cursor: pointer;
-     padding: $size-sm $size-md;
-     border-radius: $size-sm - 4;
-     -webkit-border-radius: $size-sm - 4;
-     -moz-border-radius: $size-sm - 4;
-     -ms-border-radius: $size-sm - 4;
-     -o-border-radius: $size-sm - 4;
 }
 .btn-dark:hover{
      background-color: $dark;
      color: $light;
-     border:none;
      box-shadow: 0px 2px 80px 5px $secondary;
-     padding: $size-sm $size-md;
-     cursor: pointer;
-     border-radius: $size-sm - 4;
-     -webkit-border-radius: $size-sm - 4;
-     -moz-border-radius: $size-sm - 4;
-     -ms-border-radius: $size-sm - 4;
-     -o-border-radius: $size-sm - 4;
 }
