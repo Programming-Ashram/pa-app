@@ -3,31 +3,134 @@ $success:green;
 $primary:blue;
 $warning:orange;
 $light:white;
+$secondary:grey;
+$info:skyblue;
+$Dark:black;
 
 $size-sm: 10px;
 $size-md: 15px;
 $size-xl: 20px;
 $size-xxl: 30px;
-.bg{
-    background-color: orange;
-    width: 300px;
-    padding: $size-xl;
-}
-.on{
-    background-color: $success;
-    color:$light;
-    padding: $size-sm $size-xxl;
-    border: none;
-    border-radius: $size-sm - 5;
 
+.d-flex{
+    display: flex;
+    margin: 0 auto;
+    margin-top: $size-xxl;
+    margin-bottom: $size-xxl;
 }
-.off{
-    background-color: $danger;
-    $color:$light;
-    padding: $size-sm $size-xxl;
+.gap{
+    gap: 15px;
+}
+.blue{
+    background-color:$primary;
+    color: white;
     border: none;
     border-radius: $size-sm - 5;
+    padding-left: $size-md;
+    padding-right: $size-md;
+    padding-top: $size-sm;
+    padding-bottom: $size-sm;
+    
+    
 }
+.blue:hover{
+    box-shadow: 1px 1px 54px 7px #0000001f;
+    transition: 0.4s;
+}
+.grey{
+    background-color: $secondary;
+    color: white;
+     border: none;
+     border-radius: $size-sm - 5;
+     padding-left: $size-md;
+     padding-right: $size-md;
+     padding-top: $size-sm;
+     padding-bottom: $size-sm;
+     
+     
+}
+.grey:hover{
+    box-shadow: 1px 1px 54px 7px #0000001f;
+    transition: 0.4s;
+}
+.green{
+    background-color: $success;
+    color: white;
+     border: none;
+     border-radius: $size-sm - 5;
+     padding-left: $size-md;
+     padding-right: $size-md;
+     padding-top: $size-sm;
+     padding-bottom: $size-sm;
+     
+}
+.green:hover{
+   box-shadow: 1px 1px 54px 7px #0000001f;
+    transition: 0.4s;;
+}
+.darkred{
+    background-color: $danger;
+    color: white;
+     border: none;
+     border-radius: $size-sm - 5;
+     padding-left: $size-md;
+     padding-right: $size-md;
+     padding-top: $size-sm;
+     padding-bottom: $size-sm;
+     
+}
+.darkred:hover{
+    box-shadow: 1px 1px 54px 7px #0000001f;
+    transition: 0.4s;
+}
+.orange{
+    background-color: $warning;
+    color: white;
+     border: none;
+     border-radius: $size-sm - 5;
+     padding-left: $size-md;
+     padding-right: $size-md;
+     padding-top: $size-sm;
+     padding-bottom: $size-sm;
+     
+}
+.orange:hover{
+    box-shadow: 1px 1px 54px 7px #0000001f;
+    transition: 0.4s;
+}
+.skyblue{
+    background-color: $info;
+    color: white;
+     border: none;
+     border-radius: $size-sm - 5;
+     padding-left: $size-md;
+     padding-right: $size-md;
+     padding-top: $size-sm;
+     padding-bottom: $size-sm;
+     
+}
+.skyblue:hover{
+    box-shadow: 1px 1px 54px 7px #0000001f;
+    transition: 0.4s;
+}
+.black{
+    background-color: $Dark;
+    color: white;
+     border: none;
+     border-radius: $size-sm - 5;
+     padding-left: $size-md;
+     padding-right: $size-md;
+     padding-top: $size-sm;
+     padding-bottom: $size-sm;
+     
+}
+.black:hover{
+    box-shadow: 1px 1px 54px 7px #0000001f;
+    transition: 0.4s;
+}
+
+
+
 
 
     

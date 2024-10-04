@@ -1,20 +1,122 @@
-.bg {
-  background-color: orange;
-  width: 300px;
-  padding: 20px;
+.d-flex {
+  display: flex;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
-.on {
+.gap {
+  gap: 15px;
+}
+
+.blue {
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.blue:hover {
+  box-shadow: 1px 1px 54px 7px rgba(0, 0, 0, 0.1215686275);
+  transition: 0.4s;
+}
+
+.grey {
+  background-color: grey;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.grey:hover {
+  box-shadow: 1px 1px 54px 7px rgba(0, 0, 0, 0.1215686275);
+  transition: 0.4s;
+}
+
+.green {
   background-color: green;
   color: white;
-  padding: 10px 30px;
   border: none;
   border-radius: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
-.off {
+.green:hover {
+  box-shadow: 1px 1px 54px 7px rgba(0, 0, 0, 0.1215686275);
+  transition: 0.4s;
+}
+
+.darkred {
   background-color: red;
-  padding: 10px 30px;
+  color: white;
   border: none;
   border-radius: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.darkred:hover {
+  box-shadow: 1px 1px 54px 7px rgba(0, 0, 0, 0.1215686275);
+  transition: 0.4s;
+}
+
+.orange {
+  background-color: orange;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.orange:hover {
+  box-shadow: 1px 1px 54px 7px rgba(0, 0, 0, 0.1215686275);
+  transition: 0.4s;
+}
+
+.skyblue {
+  background-color: skyblue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.skyblue:hover {
+  box-shadow: 1px 1px 54px 7px rgba(0, 0, 0, 0.1215686275);
+  transition: 0.4s;
+}
+
+.black {
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.black:hover {
+  box-shadow: 1px 1px 54px 7px rgba(0, 0, 0, 0.1215686275);
+  transition: 0.4s;
 }/*# sourceMappingURL=style.css.map */
