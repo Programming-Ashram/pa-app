@@ -1,0 +1,120 @@
+*{
+    
+    list-style-type: none;
+}
+
+$danger:red;
+$success:green;
+$primary:blue;
+$warning:orange;
+$light:white;
+$secondary:gray;
+$dark: black;
+$info:skyblue;
+
+
+$size-sm: 10px;
+$size-md: 15px;
+$size-xl: 20px;
+$size-xxl: 30px;
+
+.text{
+    text-align: center;
+}
+.camponent{
+    font-size: $size-sm + 4;
+    color: $light;
+    background-color: $primary;
+    padding: $size-sm $size-md;
+    border-radius: $size-sm - 5;
+}
+.camponent:hover{
+ box-shadow: 4px 4px 4px 4px blue;
+ padding: 0 auto;
+ border: 1px solid white;
+}
+
+.camponent-1{
+    font-size: $size-sm + 4;
+    color: $light;
+    background-color: $secondary;
+    padding: $size-sm $size-md;
+    border-radius: $size-sm - 5;
+}
+.camponent-1:hover{
+    box-shadow: 4px 4px 4px 4px gray;
+    padding: 0 auto;
+    border: 1px solid white;
+}
+.camponent-2{
+    font-size: $size-sm + 4;
+    color: $light;
+    background-color: $success;
+    padding: $size-sm $size-md;
+    border-radius: $size-sm - 5;
+}
+.camponent-2:hover{
+    box-shadow: 4px 4px 4px 4px green;
+    padding: 0 auto;
+    border: 1px solid white;
+}
+.camponent-3{
+    font-size: $size-sm + 4;
+    color: $light;
+    background-color: $danger;
+    padding: $size-sm $size-md;
+    border-radius: $size-sm - 5;
+}
+.camponent-3:hover{
+    box-shadow: 4px 4px 4px 4px red;
+    padding: 0 auto;
+    border: 1px solid white;
+}
+.camponent-4{
+    font-size: $size-sm + 4;
+    color: $light;
+    background-color: $warning;
+    padding: $size-sm $size-md;
+    border-radius: $size-sm - 5;
+}
+.camponent-4:hover{
+    box-shadow: 4px 4px 4px 4px orange;
+    padding: 0 auto;
+    border: 1px solid white;
+}
+.camponent-5{
+    font-size: $size-sm + 4;
+    color: $light;
+    background-color: $info;
+    padding: $size-sm $size-md;
+    border-radius: $size-sm - 5;
+}
+.camponent-5:hover{
+    box-shadow: 4px 4px 4px 4px skyblue;
+    padding: 0 auto;
+    border: 1px solid white;
+}
+.camponent-6{
+    font-size: $size-sm + 4;
+    color: $dark;
+    background-color: $light;
+    padding: $size-sm $size-md;
+    border-radius: $size-sm - 5;
+}
+.camponent-6:hover{
+    box-shadow: 4px 4px 4px 4px white;
+    padding: 0 auto;
+    border: 1px solid black;
+}
+.camponent-7{
+    font-size: $size-sm + 4;
+    color: $light;
+    background-color: $dark;
+    padding: $size-sm $size-md;
+    border-radius: $size-sm - 5;
+}
+.camponent-7:hover{
+    box-shadow: 4px 4px 4px 4px black;
+    padding: 0 auto;
+    border: 1px solid white;
+}
