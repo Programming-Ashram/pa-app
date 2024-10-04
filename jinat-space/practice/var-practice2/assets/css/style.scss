@@ -24,10 +24,6 @@ $size-md:15px;
      cursor: pointer;
      padding: $size-sm $size-md;
      border-radius: $size-sm - 4;
-     -webkit-border-radius: $size-sm - 4;
-     -moz-border-radius: $size-sm - 4;
-     -ms-border-radius: $size-sm - 4;
-     -o-border-radius: $size-sm - 4;
 }
 .btn-primary:hover{
      background-color: $primary;
