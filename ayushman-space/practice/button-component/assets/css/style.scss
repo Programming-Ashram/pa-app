@@ -1,0 +1,47 @@
+$primary: #1D19D4;
+$secondary: rgb(0, 0, 0, 50%);
+$success: #3C824C;
+$danger: #D41919;
+$info: #19BED4;
+$primary: #1D19D4;
+$warning: #D7C41B;
+$dark: #0B0B10;
+$light: #FFFFFF;
+
+
+.btn{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    color: $light;
+    
+    &:hover{
+        transition: 0.3s;
+        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    }
+    &.btn-primary{
+        background-color: $primary;
+    }
+    &.btn-secondary{
+        background-color: rgb(0, 0, 0, 50%);
+    }
+    &.btn-success{
+        background-color: $success;
+    }
+    &.btn-danger{
+        background-color: $danger;
+    }
+    &.btn-warning{
+        background-color: $warning;
+    }
+    &.btn-info{
+        background-color: $info;
+    }
+    &.btn-dark{
+        background-color: $dark;
+    }
+    &.btn-light{
+        background-color: $light;
+        color: $dark;
+    }
+}

@@ -1,0 +1,53 @@
+*{
+    border: none;
+}
+$primary: #1D19D4DB;
+$secondary:#00000080;
+$success: #3C824C;
+$danger: #D41919DB;
+$warning: #D7C41B;
+$info: #19BED4;
+$light: #00000003;
+$dark: #0B0B10;
+$white:white;
+
+$size-sm:10px;
+$size-md:15px;
+$size-xl:20px;
+$size-xxl:30px;
+.btn{
+    padding: $size-sm $size-xl;
+    border: none;
+    border-radius: $size-sm - 6;
+    color: $white;
+}
+.btn:hover{
+    box-shadow: 0 4px 4px 0 rgba(0,0,0,0.25);
+}
+.primary{
+    background-color: $primary;
+}
+
+.Secondary{
+    background-color: $secondary;
+}
+.Success{
+    background-color: $success;
+}
+
+.Danger{
+    background-color: $danger;
+}
+.Warning{
+    background-color: $warning;
+}
+.info{
+    background-color: $info;
+}
+.light{
+    background-color: $light;
+    color: black;
+}
+.dark{
+    background-color: $dark;
+}
