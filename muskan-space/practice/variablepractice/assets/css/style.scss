@@ -1,6 +1,6 @@
 $primary: blue;
 $secondary: grey;
-$sucess: green;
+$success: green;
 $danger: red;
 $warning: yellow;
 $info:   skyblue;
@@ -12,9 +12,6 @@ $size-md: 15px;
 $size-xl: 20px;
 $size-xxl: 30px;
 
-
-
-
 .d-flex{
     display: flex;
     margin: 0 auto;
@@ -23,138 +20,67 @@ $size-xxl: 30px;
 }
 
 .gap{
-    gap: 15px
+    gap: 15px;
+}
+.btn{
+    border:none;
+    cursor: pointer;
+    padding: $size-sm $size-md;
+    border-radius: $size-sm - 4;
+    color: $light;
+
+    &.btn-primary{
+        background-color: $primary;
+        &:hover{
+             box-shadow: 0px 2px 80px 5px $secondary;
+        }
+   }
+   &.btn-secondary{
+        background-color:$secondary;
+        &:hover{
+            box-shadow: 0px 2px 80px 5px $secondary;
+       }
+   }
+   &.btn-success{
+        background-color: $success;
+        &:hover{
+            box-shadow: 0px 2px 80px 5px $secondary;
+       }
+   }
+   &.btn-danger{
+        background-color: $danger;
+        &:hover{
+            box-shadow: 0px 2px 80px 5px $secondary;
+       }
+   }
+   &.btn-warning{
+        background-color: $warning;
+        &:hover{
+            box-shadow: 0px 2px 80px 5px $secondary;
+       }
+   }
+   &.btn-info{
+        background-color: $info;
+        &:hover{
+            box-shadow: 0px 2px 80px 5px $secondary;
+       }
+   }
+   &.btn-light{
+        background-color: $light;
+        color: $dark;
+        &:hover{
+            box-shadow: 0px 2px 80px 5px $secondary;
+       }
+   }
+   &.btn-dark{
+        background-color: $dark;
+        &:hover{
+            box-shadow: 0px 2px 80px 5px $secondary;
+       }
+   }
+  
 }
 
-.blue{
-    background-color: $primary;
-    color:  white;
-    border: none;
-    border-radius: $size-sm -5;
-    padding-left: $size-md;
-    padding-right: $size-md;
-    padding-top: $size-sm;
-    padding-bottom: $size-sm;
-}
-
-.blue:hover{
-    box-shadow: 1px 1px 54px 7px #0000001f;
-    transition: 0.4s;
-}
-
-    
-
-
-.grey{
-    background-color: $secondary;
-    color:  white;
-    border: none;
-    border-radius: $size-sm -5;
-    padding-left: $size-md;
-    padding-right: $size-md;
-    padding-top: $size-sm;
-    padding-bottom: $size-sm;
-}
-.grey:hover{
-    box-shadow: 1px 1px 54px 7px #0000001f;
-    transition: 0.4s;
-}
-
-.green{
-    background-color: $sucess;
-    color:  white;
-    border: none;
-    border-radius: $size-sm -5;
-    padding-left: $size-md;
-    padding-right: $size-md;
-    padding-top: $size-sm;
-    padding-bottom: $size-sm;
-}
-
-.green:hover{
-    box-shadow: 1px 1px 54px 7px #0000001f;
-    transition: 0.4s;
-}
-
-.red{
-    background-color: $danger;
-    color:  white;
-    border: none;
-    border-radius: $size-sm -5;
-    padding-left: $size-md;
-    padding-right: $size-md;
-    padding-top: $size-sm;
-    padding-bottom: $size-sm;
-}
-
-.red:hover{
-    box-shadow: 1px 1px 54px 7px #0000001f;
-    transition: 0.4s;
-}
-
-.yellow{
-    background-color: $warning;
-    color:  white;
-    border: none;
-    border-radius: $size-sm -5;
-    padding-left: $size-md;
-    padding-right: $size-md;
-    padding-top: $size-sm;
-    padding-bottom: $size-sm;
-}
-
-.yellow:hover{
-    box-shadow: 1px 1px 54px 7px #0000001f;
-    transition: 0.4s;
-}
-
-.skyblue{
-    background-color: $info;
-    color:  white;
-    border: none;
-    border-radius: $size-sm -5;
-    padding-left: $size-md;
-    padding-right: $size-md;
-    padding-top: $size-sm;
-    padding-bottom: $size-sm;
-}
-
-.skyblue:hover{
-    box-shadow: 1px 1px 54px 7px #0000001f;
-    transition: 0.4s;
-}
-
-.white{
-    background-color: $light;
-    color:  black;
-    border: none;
-    border-radius: $size-sm -5;
-    padding-left: $size-md;
-    padding-right: $size-md;
-    padding-top: $size-sm;
-    padding-bottom: $size-sm;
-}
-
-.white:hover{
-    box-shadow: 1px 1px 54px 7px #0000001f;
-    transition: 0.4s;
-}
-
-.black{
-    background-color: $dark;
-    color:  white;
-    border: none;
-    border-radius: $size-sm -5;
-    padding-left: $size-md;
-    padding-right: $size-md;
-    padding-top: $size-sm;
-    padding-bottom: $size-sm;
-}
-
-.black:hover{
-    box-shadow: 1px 1px 54px 7px #0000001f;
-    transition: 0.4s;
-}
 
 
 
