@@ -37,4 +37,76 @@
 }
 .btn.btn-dark {
   background-color: black;
+}
+.btn.btn-outline-primary {
+  background-color: transparent;
+  border: 1px solid blue;
+  color: blue;
+}
+.btn.btn-outline-primary:hover {
+  background-color: blue;
+  color: white;
+}
+.btn.btn-outline-secondary {
+  background-color: transparent;
+  border: 1px solid grey;
+  color: grey;
+}
+.btn.btn-outline-secondary:hover {
+  background-color: grey;
+  color: white;
+}
+.btn.btn-outline-success {
+  background-color: transparent;
+  border: 1px solid green;
+  color: green;
+}
+.btn.btn-outline-success:hover {
+  background-color: green;
+  color: white;
+}
+.btn.btn-outline-danger {
+  background-color: transparent;
+  border: 1px solid red;
+  color: red;
+}
+.btn.btn-outline-danger:hover {
+  background-color: red;
+  color: white;
+}
+.btn.btn-outline-warning {
+  background-color: transparent;
+  border: 1px solid orange;
+  color: orange;
+}
+.btn.btn-outline-warning:hover {
+  background-color: orange;
+  color: white;
+}
+.btn.btn-outline-info {
+  background-color: transparent;
+  border: 1px solid skyblue;
+  color: skyblue;
+}
+.btn.btn-outline-info:hover {
+  background-color: skyblue;
+  color: white;
+}
+.btn.btn-outline-light {
+  background-color: transparent;
+  border: 1px solid black;
+  color: black;
+}
+.btn.btn-outline-light:hover {
+  background-color: white;
+  color: black;
+}
+.btn.btn-outline-dark {
+  background-color: transparent;
+  border: 1px solid black;
+  color: black;
+}
+.btn.btn-outline-dark:hover {
+  background-color: black;
+  color: white;
 }/*# sourceMappingURL=style.css.map */
