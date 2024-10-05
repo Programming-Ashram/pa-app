@@ -1,0 +1,58 @@
+$primary:blue;
+$secondary:rgba(0, 0, 0, 0.5);
+$success:green;
+$danger:red;
+$warning:rgb(255, 187, 0);
+$info:skyblue;
+$light:white;
+$dark:black;
+
+$size-sm:10px;
+$size-md:15px;
+.d-flex{
+     display:flex ;
+     gap:20px;
+     justify-content:center
+}
+.btn{
+     border:none;
+     cursor: pointer;
+     padding: $size-sm $size-md;
+     border-radius: $size-sm - 4;
+     color: $light;
+
+
+     &.btn-primary{
+          background-color: $primary;
+          &:hover{
+               box-shadow: 0px 2px 80px 5px $secondary;
+          }
+     }
+     &.btn-secondary{
+          background-color:$secondary;
+     }
+     &.btn-success{
+          background-color: $success;
+     }
+     &.btn-danger{
+          background-color: $danger;
+     }
+     &.btn-warning{
+          background-color: $warning;
+     }
+     &.btn-info{
+          background-color: $info;
+     }
+     &.btn-light{
+          background-color: $light;
+          color: $dark;
+     }
+     &.btn-dark{
+          background-color: $dark;
+     }
+     &.btn-primary, &.btn-secondary, &.btn-success, &.btn-dark, &.btn-danger, &.btn-info, &.btn-warning, &.btn-light{
+          &:hover{
+               box-shadow: 0px 2px 80px 5px $secondary;
+          }
+     }
+}
