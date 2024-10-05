@@ -1,48 +1,51 @@
-//color
+.d-flex{
+    display: flex;
+    gap: 20px;
+}
 
-$danger:red;
-$warning:orange;
-$dark:black;
+$primary: blue;
+$secondary: grey;
 $success: green;
-$white:white;
+$danger: red;
+$warning: orange;
+$info: skyblue;
+$light: white;
+$dark: black;
 
 
-// size
+$size-sm: 10px; 
+$size-md: 15px; 
+$size-xl: 20px; 
+$size-xxl: 30px; 
 
-$size-sm:10px;
-$size-md:15px;
-$size-xl:20px;
-$size-xxl:30px;
 
-//card
-
-.card{
-    background-color:$success;
-    color:$white  ;
-    border:4px $warning solid;
-    width: 400px;
-    height: 400px;
-    margin: $size-xxl auto;
-    padding: $size-xl;
-}
-
-.card-title{
-    font-size:$size-xxl;
-    color:$warning ;
-
-}
-.card-subtitle{
-    font-size: $size-xl;
-   color: $success;
-   background-color: $white;
-}
 .btn{
-    border: $success;
-    color: $white;
+    color:$light ;
+    padding: 10px 20px;
+    border-radius: 4px;
+    border: none;
+}
+.btn-primary{
+    background-color: $primary;
+}
+.btn-secondary{
+    background-color: $secondary;
+}
+.btn-success{
+    background-color: $success; 
+}
+.btn-danger{
     background-color: $danger;
-    border-color: $dark;
-    box-sizing: content-box;
-    padding:  $size-sm;
-    border-radius: $size-sm - 4;
-
+}
+.btn-warning{
+    background-color: $warning;
+}
+.btn-info{
+    background-color: $info; 
+}
+.btn-light{
+    background-color: $dark;
+}
+.btn-dark{
+    background-color: $primary;
 }
