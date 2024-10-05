@@ -8,26 +8,98 @@
   transition: 0.3s;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
+.btn.btn-outline-primary {
+  border: 1px solid #1D19D4;
+  background-color: transparent;
+  color: #1D19D4;
+}
+.btn.btn-outline-primary:hover {
+  background-color: #1D19D4;
+  color: #FFFFFF;
+}
 .btn.btn-primary {
   background-color: #1D19D4;
+}
+.btn.btn-outline-secondary {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  background-color: transparent;
+  color: rgba(0, 0, 0, 0.5);
+}
+.btn.btn-outline-secondary:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #FFFFFF;
 }
 .btn.btn-secondary {
   background-color: rgba(0, 0, 0, 0.5);
 }
+.btn.btn-outline-success {
+  border: 1px solid #3C824C;
+  background-color: transparent;
+  color: #3C824C;
+}
+.btn.btn-outline-success:hover {
+  background-color: #3C824C;
+  color: #FFFFFF;
+}
 .btn.btn-success {
   background-color: #3C824C;
+}
+.btn.btn-outline-danger {
+  border: 1px solid #D41919;
+  background-color: transparent;
+  color: #D41919;
+}
+.btn.btn-outline-danger:hover {
+  background-color: #D41919;
+  color: #FFFFFF;
 }
 .btn.btn-danger {
   background-color: #D41919;
 }
+.btn.btn-outline-warning {
+  border: 1px solid #D7C41B;
+  background-color: transparent;
+  color: #D7C41B;
+}
+.btn.btn-outline-warning:hover {
+  background-color: #D7C41B;
+  color: #FFFFFF;
+}
 .btn.btn-warning {
   background-color: #D7C41B;
+}
+.btn.btn-outline-info {
+  border: 1px solid #19BED4;
+  background-color: transparent;
+  color: #19BED4;
+}
+.btn.btn-outline-info:hover {
+  background-color: #19BED4;
+  color: #FFFFFF;
 }
 .btn.btn-info {
   background-color: #19BED4;
 }
+.btn.btn-outline-dark {
+  border: 1px solid #0B0B10;
+  background-color: transparent;
+  color: #0B0B10;
+}
+.btn.btn-outline-dark:hover {
+  background-color: #0B0B10;
+  color: #FFFFFF;
+}
 .btn.btn-dark {
   background-color: #0B0B10;
+}
+.btn.btn-outline-light {
+  border: 1px solid #FFFFFF;
+  background-color: transparent;
+  color: #0B0B10;
+}
+.btn.btn-outline-light:hover {
+  background-color: #FFFFFF;
+  color: #0B0B10;
 }
 .btn.btn-light {
   background-color: #FFFFFF;
