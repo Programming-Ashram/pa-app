@@ -4,218 +4,41 @@
   justify-content: center;
 }
 
-.p-15 {
-  padding-top: 15px;
+.btn {
+  border: none;
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 6px;
+  color: white;
 }
-
-.btn-primary {
+.btn.btn-primary {
   background-color: blue;
-  color: white;
-  border: none;
-  cursor: pointer;
-  padding: 10px 15px;
-  border-radius: 6px;
 }
-
-.btn-primary:hover {
-  background-color: blue;
-  color: white;
-  border: none;
-  cursor: pointer;
+.btn.btn-primary:hover {
   box-shadow: 0px 2px 80px 5px rgba(0, 0, 0, 0.5);
-  padding: 10px 15px;
-  border-radius: 6px;
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  -ms-border-radius: 6px;
-  -o-border-radius: 6px;
 }
-
-.btn-secondary {
+.btn.btn-secondary {
   background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  border: none;
-  cursor: pointer;
-  padding: 10px 15px;
-  border-radius: 6px;
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  -ms-border-radius: 6px;
-  -o-border-radius: 6px;
 }
-
-.btn-secondary:hover {
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  border: none;
-  cursor: pointer;
-  box-shadow: 0px 2px 80px 5px rgba(0, 0, 0, 0.5);
-  padding: 10px 15px;
-  border-radius: 6px;
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  -ms-border-radius: 6px;
-  -o-border-radius: 6px;
-}
-
-.btn-success {
+.btn.btn-success {
   background-color: green;
-  color: white;
-  border: none;
-  cursor: pointer;
-  padding: 10px 15px;
-  border-radius: 6px;
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  -ms-border-radius: 6px;
-  -o-border-radius: 6px;
 }
-
-.btn-success:hover {
-  background-color: green;
-  color: white;
-  border: none;
-  cursor: pointer;
-  box-shadow: 0px 2px 80px 5px rgba(0, 0, 0, 0.5);
-  padding: 10px 15px;
-  border-radius: 6px;
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  -ms-border-radius: 6px;
-  -o-border-radius: 6px;
-}
-
-.btn-danger {
+.btn.btn-danger {
   background-color: red;
-  color: white;
-  border: none;
-  cursor: pointer;
-  padding: 10px 15px;
-  border-radius: 6px;
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  -ms-border-radius: 6px;
-  -o-border-radius: 6px;
 }
-
-.btn-danger:hover {
-  background-color: red;
-  color: white;
-  border: none;
-  cursor: pointer;
-  box-shadow: 0px 2px 80px 5px rgba(0, 0, 0, 0.5);
-  padding: 10px 15px;
-  border-radius: 6px;
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  -ms-border-radius: 6px;
-  -o-border-radius: 6px;
-}
-
-.btn-warning {
+.btn.btn-warning {
   background-color: rgb(255, 187, 0);
-  color: white;
-  border: none;
-  cursor: pointer;
-  padding: 10px 15px;
-  border-radius: 6px;
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  -ms-border-radius: 6px;
-  -o-border-radius: 6px;
 }
-
-.btn-warning:hover {
-  background-color: rgb(255, 187, 0);
-  color: white;
-  border: none;
-  cursor: pointer;
-  box-shadow: 0px 2px 80px 5px rgba(0, 0, 0, 0.5);
-  padding: 10px 15px;
-  border-radius: 6px;
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  -ms-border-radius: 6px;
-  -o-border-radius: 6px;
-}
-
-.btn-info {
+.btn.btn-info {
   background-color: skyblue;
-  color: white;
-  border: none;
-  cursor: pointer;
-  padding: 10px 15px;
-  border-radius: 6px;
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  -ms-border-radius: 6px;
-  -o-border-radius: 6px;
 }
-
-.btn-info:hover {
-  background-color: skyblue;
-  color: white;
-  border: none;
-  cursor: pointer;
-  box-shadow: 0px 2px 80px 5px rgba(0, 0, 0, 0.5);
-  padding: 10px 15px;
-  border-radius: 6px;
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  -ms-border-radius: 6px;
-  -o-border-radius: 6px;
-}
-
-.btn-light {
+.btn.btn-light {
   background-color: white;
   color: black;
-  border: none;
-  cursor: pointer;
-  padding: 10px 15px;
-  border-radius: 6px;
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  -ms-border-radius: 6px;
-  -o-border-radius: 6px;
 }
-
-.btn-light:hover {
-  background-color: white;
-  color: black;
-  border: none;
-  cursor: pointer;
-  box-shadow: 0px 2px 80px 5px rgba(0, 0, 0, 0.5);
-  padding: 10px 15px;
-  border-radius: 6px;
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  -ms-border-radius: 6px;
-  -o-border-radius: 6px;
-}
-
-.btn-dark {
+.btn.btn-dark {
   background-color: black;
-  color: white;
-  border: none;
-  cursor: pointer;
-  padding: 10px 15px;
-  border-radius: 6px;
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  -ms-border-radius: 6px;
-  -o-border-radius: 6px;
 }
-
-.btn-dark:hover {
-  background-color: black;
-  color: white;
-  border: none;
+.btn.btn-primary:hover, .btn.btn-secondary:hover, .btn.btn-success:hover, .btn.btn-dark:hover, .btn.btn-danger:hover, .btn.btn-info:hover, .btn.btn-warning:hover, .btn.btn-light:hover {
   box-shadow: 0px 2px 80px 5px rgba(0, 0, 0, 0.5);
-  padding: 10px 15px;
-  cursor: pointer;
-  border-radius: 6px;
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  -ms-border-radius: 6px;
-  -o-border-radius: 6px;
 }/*# sourceMappingURL=style.css.map */
