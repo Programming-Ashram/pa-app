@@ -1,122 +1,41 @@
 .d-flex {
   display: flex;
-  margin: 0 auto;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  gap: 20px;
+  justify-content: center;
 }
 
-.gap {
-  gap: 15px;
-}
-
-.blue {
-  background-color: blue;
-  color: white;
+.btn {
+  border-radius: 10px -5;
+  color: #ffffff;
+  padding: 10px 15px;
   border: none;
-  border-radius: 5px;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 10px;
-  padding-bottom: 10px;
 }
-
-.blue:hover {
-  box-shadow: 1px 1px 54px 7px rgba(0, 0, 0, 0.1215686275);
-  transition: 0.4s;
+.btn.btn-primary {
+  background-color: #1d19d4;
 }
-
-.grey {
-  background-color: grey;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+.btn.btn-secondary {
+  background-color: rgba(0, 0, 0, 0.5);
 }
-
-.grey:hover {
-  box-shadow: 1px 1px 54px 7px rgba(0, 0, 0, 0.1215686275);
-  transition: 0.4s;
+.btn.btn-success {
+  background-color: #3c824c;
 }
-
-.green {
-  background-color: green;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+.btn.btn-danger {
+  background-color: #d41919;
 }
-
-.green:hover {
-  box-shadow: 1px 1px 54px 7px rgba(0, 0, 0, 0.1215686275);
-  transition: 0.4s;
+.btn.btn-warning {
+  background-color: #d7c41b;
 }
-
-.darkred {
-  background-color: red;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+.btn.btn-info {
+  background-color: #19bed4;
 }
-
-.darkred:hover {
-  box-shadow: 1px 1px 54px 7px rgba(0, 0, 0, 0.1215686275);
-  transition: 0.4s;
+.btn.btn-light {
+  background-color: #ffffff;
+  color: black;
 }
-
-.orange {
-  background-color: orange;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+.btn.btn-dark {
+  background-color: #000000;
 }
-
-.orange:hover {
-  box-shadow: 1px 1px 54px 7px rgba(0, 0, 0, 0.1215686275);
-  transition: 0.4s;
-}
-
-.skyblue {
-  background-color: skyblue;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-.skyblue:hover {
-  box-shadow: 1px 1px 54px 7px rgba(0, 0, 0, 0.1215686275);
-  transition: 0.4s;
-}
-
-.black {
-  background-color: black;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-.black:hover {
-  box-shadow: 1px 1px 54px 7px rgba(0, 0, 0, 0.1215686275);
-  transition: 0.4s;
+.btn:hover {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  transition: 0.3s;
 }/*# sourceMappingURL=style.css.map */

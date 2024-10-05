@@ -1,11 +1,11 @@
-$danger:red;
-$success:green;
-$primary:blue;
-$warning:orange;
-$light:white;
-$secondary:grey;
-$info:skyblue;
-$Dark:black;
+$danger:#d41919;
+$success:#3c824c;
+$primary:#1d19d4;
+$warning:#d7c41b;
+$light:#ffffff;
+$secondary:rgb(0,0,0, 50%);
+$info:#19bed4;
+$dark:#000000;
 
 $size-sm: 10px;
 $size-md: 15px;
@@ -14,123 +14,43 @@ $size-xxl: 30px;
 
 .d-flex{
     display: flex;
-    margin: 0 auto;
-    margin-top: $size-xxl;
-    margin-bottom: $size-xxl;
+    gap: 20px;
+    justify-content: center;
 }
-.gap{
-    gap: 15px;
-}
-.blue{
-    background-color:$primary;
-    color: white;
+
+.btn{
+    border-radius: $size-sm -5;
+    color: $light;
+    padding: $size-sm $size-md;
     border: none;
-    border-radius: $size-sm - 5;
-    padding-left: $size-md;
-    padding-right: $size-md;
-    padding-top: $size-sm;
-    padding-bottom: $size-sm;
-    
-    
-}
-.blue:hover{
-    box-shadow: 1px 1px 54px 7px #0000001f;
-    transition: 0.4s;
-}
-.grey{
-    background-color: $secondary;
-    color: white;
-     border: none;
-     border-radius: $size-sm - 5;
-     padding-left: $size-md;
-     padding-right: $size-md;
-     padding-top: $size-sm;
-     padding-bottom: $size-sm;
-     
-     
-}
-.grey:hover{
-    box-shadow: 1px 1px 54px 7px #0000001f;
-    transition: 0.4s;
-}
-.green{
-    background-color: $success;
-    color: white;
-     border: none;
-     border-radius: $size-sm - 5;
-     padding-left: $size-md;
-     padding-right: $size-md;
-     padding-top: $size-sm;
-     padding-bottom: $size-sm;
-     
-}
-.green:hover{
-   box-shadow: 1px 1px 54px 7px #0000001f;
-    transition: 0.4s;;
-}
-.darkred{
-    background-color: $danger;
-    color: white;
-     border: none;
-     border-radius: $size-sm - 5;
-     padding-left: $size-md;
-     padding-right: $size-md;
-     padding-top: $size-sm;
-     padding-bottom: $size-sm;
-     
-}
-.darkred:hover{
-    box-shadow: 1px 1px 54px 7px #0000001f;
-    transition: 0.4s;
-}
-.orange{
-    background-color: $warning;
-    color: white;
-     border: none;
-     border-radius: $size-sm - 5;
-     padding-left: $size-md;
-     padding-right: $size-md;
-     padding-top: $size-sm;
-     padding-bottom: $size-sm;
-     
-}
-.orange:hover{
-    box-shadow: 1px 1px 54px 7px #0000001f;
-    transition: 0.4s;
-}
-.skyblue{
-    background-color: $info;
-    color: white;
-     border: none;
-     border-radius: $size-sm - 5;
-     padding-left: $size-md;
-     padding-right: $size-md;
-     padding-top: $size-sm;
-     padding-bottom: $size-sm;
-     
-}
-.skyblue:hover{
-    box-shadow: 1px 1px 54px 7px #0000001f;
-    transition: 0.4s;
-}
-.black{
-    background-color: $Dark;
-    color: white;
-     border: none;
-     border-radius: $size-sm - 5;
-     padding-left: $size-md;
-     padding-right: $size-md;
-     padding-top: $size-sm;
-     padding-bottom: $size-sm;
-     
-}
-.black:hover{
-    box-shadow: 1px 1px 54px 7px #0000001f;
-    transition: 0.4s;
-}
 
-
-
-
-
-    
+    &.btn-primary{
+        background-color: $primary;
+    }
+    &.btn-secondary{
+        background-color: $secondary;
+    }
+    &.btn-success{
+        background-color: $success;
+    }
+    &.btn-danger{
+        background-color: $danger;
+    }
+    &.btn-warning{
+        background-color: $warning;
+    }
+    &.btn-info{
+        background-color: $info;
+    }
+    &.btn-light{
+        background-color: $light;
+        color: black;
+    }
+    &.btn-dark{
+        background-color: $dark;
+    }
+    &:hover{
+        box-shadow: 0 4px 4px 0 rgba(0,0,0,0.25);
+        transition: 0.3s;
+    }
+}
