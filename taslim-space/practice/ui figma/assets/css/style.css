@@ -13,32 +13,33 @@
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
-.blue {
+.primary {
   background-color: rgba(29, 25, 212, 0.8588235294);
 }
 
-.gray {
+.Secondary {
   background-color: rgba(0, 0, 0, 0.5019607843);
 }
 
-.green {
+.Success {
   background-color: #3C824C;
 }
 
-.red {
+.Danger {
   background-color: rgba(212, 25, 25, 0.8588235294);
 }
 
-.yellow {
+.Warning {
   background-color: #D7C41B;
 }
 
-.sky {
+.info {
   background-color: #19BED4;
 }
 
 .light {
   background-color: rgba(0, 0, 0, 0.0117647059);
+  color: black;
 }
 
 .dark {
