@@ -1,35 +1,28 @@
-$primary:blue;
-$secondary:rgba(0, 0, 0, 0.5);
-$success:green;
-$danger:red;
-$warning:rgb(255, 187, 0);
-$info:skyblue;
+$primary: rgba(29, 25, 212, 0.86);
+$secondary: rgba(0, 0, 0, 0.5);
+$success:rgba(60, 130, 76, 1);
+$danger:rgba(212, 25, 25, 0.86);
+$warning:rgba(215, 196, 27, 1);
+$info:rgba(25, 190, 212, 1);
 $light:white;
-$dark:black;
+$dark:rgba(11, 11, 16, 1);
 
-$size-sm:10px;
-$size-md:15px;
-.d-flex{
-     display:flex ;
-     gap:20px;
-     justify-content:center
-}
+$size-sm:15px;
+$size-md:20px;
+
 .btn{
-     border:none;
-     cursor: pointer;
-     padding: $size-sm $size-md;
-     border-radius: $size-sm - 4;
-     color: $light;
-
-
+     padding:$size-sm $size-md ;
+     border: none;
+     border-radius: 4px;
+     color:$light;
+     &:hover{
+          box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+     }
      &.btn-primary{
           background-color: $primary;
-          &:hover{
-               box-shadow: 0px 2px 80px 5px $secondary;
-          }
      }
      &.btn-secondary{
-          background-color:$secondary;
+          background-color: $secondary;
      }
      &.btn-success{
           background-color: $success;
@@ -44,15 +37,11 @@ $size-md:15px;
           background-color: $info;
      }
      &.btn-light{
-          background-color: $light;
+          background-color: light;
           color: $dark;
      }
      &.btn-dark{
           background-color: $dark;
      }
-     &.btn-primary, &.btn-secondary, &.btn-success, &.btn-dark, &.btn-danger, &.btn-info, &.btn-warning, &.btn-light{
-          &:hover{
-               box-shadow: 0px 2px 80px 5px $secondary;
-          }
-     }
 }
+
