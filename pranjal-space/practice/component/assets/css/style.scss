@@ -1,0 +1,59 @@
+.d-flex{
+    display: flex;
+    gap: 20px;
+}
+
+$primary: blue;
+$secondary: grey;
+$success: green;
+$danger: red;
+$warning: orange;
+$info: skyblue;
+$light: white;
+$dark: black;
+
+
+$size-sm: 10px; 
+$size-md: 15px; 
+$size-xl: 20px; 
+$size-xxl: 30px; 
+
+
+.btn{
+    color:$light ;
+    padding: 10px 20px;
+    border-radius: 4px;
+    border: none;
+
+    &:hover{
+        transition:0.3s;
+        box-shadow: 0 4px 4px 0 rgba(0,0,0,0.25);
+    }
+    &.btn-primary{
+        background-color: $primary;
+    }
+    &.btn-secondary{
+        background-color: $secondary;
+    }
+    &.btn-success{
+        background-color: $success; 
+    }
+    &.btn-danger{
+        background-color: $danger;
+    }
+    &.btn-warning{
+        background-color: $warning;
+    }
+    &.btn-info{
+        background-color: $info; 
+    }
+    &.btn-light{
+        background-color: $light;
+        color: $dark;
+    }
+    &.btn-dark{
+        background-color: $dark;
+    }
+    
+}
+

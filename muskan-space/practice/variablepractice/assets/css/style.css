@@ -9,130 +9,59 @@
   gap: 15px;
 }
 
-.blue {
+.btn {
+  border: none;
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 6px;
+  color: white;
+}
+.btn.btn-primary {
   background-color: blue;
-  color: white;
-  border: none;
-  border-radius: 10px -5;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 10px;
-  padding-bottom: 10px;
 }
-
-.blue:hover {
-  box-shadow: 1px 1px 54px 7px rgba(0, 0, 0, 0.1215686275);
-  transition: 0.4s;
+.btn.btn-primary:hover {
+  box-shadow: 0px 2px 80px 5px grey;
 }
-
-.grey {
+.btn.btn-secondary {
   background-color: grey;
-  color: white;
-  border: none;
-  border-radius: 10px -5;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 10px;
-  padding-bottom: 10px;
 }
-
-.grey:hover {
-  box-shadow: 1px 1px 54px 7px rgba(0, 0, 0, 0.1215686275);
-  transition: 0.4s;
+.btn.btn-secondary:hover {
+  box-shadow: 0px 2px 80px 5px grey;
 }
-
-.green {
+.btn.btn-success {
   background-color: green;
-  color: white;
-  border: none;
-  border-radius: 10px -5;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 10px;
-  padding-bottom: 10px;
 }
-
-.green:hover {
-  box-shadow: 1px 1px 54px 7px rgba(0, 0, 0, 0.1215686275);
-  transition: 0.4s;
+.btn.btn-success:hover {
+  box-shadow: 0px 2px 80px 5px grey;
 }
-
-.red {
+.btn.btn-danger {
   background-color: red;
-  color: white;
-  border: none;
-  border-radius: 10px -5;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 10px;
-  padding-bottom: 10px;
 }
-
-.red:hover {
-  box-shadow: 1px 1px 54px 7px rgba(0, 0, 0, 0.1215686275);
-  transition: 0.4s;
+.btn.btn-danger:hover {
+  box-shadow: 0px 2px 80px 5px grey;
 }
-
-.yellow {
+.btn.btn-warning {
   background-color: yellow;
-  color: white;
-  border: none;
-  border-radius: 10px -5;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 10px;
-  padding-bottom: 10px;
 }
-
-.yellow:hover {
-  box-shadow: 1px 1px 54px 7px rgba(0, 0, 0, 0.1215686275);
-  transition: 0.4s;
+.btn.btn-warning:hover {
+  box-shadow: 0px 2px 80px 5px grey;
 }
-
-.skyblue {
+.btn.btn-info {
   background-color: skyblue;
-  color: white;
-  border: none;
-  border-radius: 10px -5;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 10px;
-  padding-bottom: 10px;
 }
-
-.skyblue:hover {
-  box-shadow: 1px 1px 54px 7px rgba(0, 0, 0, 0.1215686275);
-  transition: 0.4s;
+.btn.btn-info:hover {
+  box-shadow: 0px 2px 80px 5px grey;
 }
-
-.white {
+.btn.btn-light {
   background-color: white;
   color: black;
-  border: none;
-  border-radius: 10px -5;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 10px;
-  padding-bottom: 10px;
 }
-
-.white:hover {
-  box-shadow: 1px 1px 54px 7px rgba(0, 0, 0, 0.1215686275);
-  transition: 0.4s;
+.btn.btn-light:hover {
+  box-shadow: 0px 2px 80px 5px grey;
 }
-
-.black {
+.btn.btn-dark {
   background-color: black;
-  color: white;
-  border: none;
-  border-radius: 10px -5;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 10px;
-  padding-bottom: 10px;
 }
-
-.black:hover {
-  box-shadow: 1px 1px 54px 7px rgba(0, 0, 0, 0.1215686275);
-  transition: 0.4s;
+.btn.btn-dark:hover {
+  box-shadow: 0px 2px 80px 5px grey;
 }/*# sourceMappingURL=style.css.map */
