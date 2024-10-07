@@ -12,15 +12,11 @@ $size-md: 15px;
 $size-xl: 20px;
 $size-xxl: 30px;
 
-.d-flex{
-    display: flex;
-    margin: 0 auto;
-    margin-top: $size-xxl;
-    margin-bottom: $size-xxl;
-}
+.text{
+    text-align: center;
+    margin-top: 20px;
 
-.gap{
-    gap: 15px;
+
 }
 .btn{
     border:none;
@@ -28,6 +24,14 @@ $size-xxl: 30px;
     padding: $size-sm $size-md;
     border-radius: $size-sm - 4;
     color: $light;
+
+    &:hover{
+     transition: 0.3s;
+     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+     }    
+
+
+
 
     &.btn-outline-primary{
         background-color: transparent; 
