@@ -1,41 +1,107 @@
-.d-flex {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-}
-
 .btn {
-  border-radius: 10px -5;
-  color: #ffffff;
-  padding: 10px 15px;
+  padding: 15px 20px;
   border: none;
+  border-radius: 4px;
+  color: #ffffff;
+}
+.btn:hover {
+  transition: 0.3s;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+.btn.btn-outline-primary {
+  border: 2px solid #1d19d4;
+  background-color: transparent;
+  color: #1d19d4;
+}
+.btn.btn-outline-primary:hover {
+  background-color: #1d19d4;
+  color: #ffffff;
 }
 .btn.btn-primary {
   background-color: #1d19d4;
 }
+.btn.btn-outline-secondary {
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  background-color: transparent;
+  color: rgba(0, 0, 0, 0.5);
+}
+.btn.btn-outline-secondary:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+}
 .btn.btn-secondary {
   background-color: rgba(0, 0, 0, 0.5);
+}
+.btn.btn-outline-success {
+  border: 2px solid #3c824c;
+  background-color: transparent;
+  color: #3c824c;
+}
+.btn.btn-outline-success:hover {
+  background-color: #3c824c;
+  color: #ffffff;
 }
 .btn.btn-success {
   background-color: #3c824c;
 }
+.btn.btn-outline-danger {
+  border: 2px solid #d41919;
+  background-color: transparent;
+  color: #d41919;
+}
+.btn.btn-outline-danger:hover {
+  background-color: #d41919;
+  color: #ffffff;
+}
 .btn.btn-danger {
   background-color: #d41919;
+}
+.btn.btn-outline-warning {
+  border: 2px solid #d7c41b;
+  background-color: transparent;
+  color: #d7c41b;
+}
+.btn.btn-outline-warning:hover {
+  background-color: #d7c41b;
+  color: #ffffff;
 }
 .btn.btn-warning {
   background-color: #d7c41b;
 }
+.btn.btn-outline-info {
+  border: 2px solid #19bed4;
+  background-color: transparent;
+  color: #19bed4;
+}
+.btn.btn-outline-info:hover {
+  background-color: #19bed4;
+  color: #ffffff;
+}
 .btn.btn-info {
   background-color: #19bed4;
 }
-.btn.btn-light {
-  background-color: #ffffff;
-  color: black;
+.btn.btn-outline-dark {
+  border: 2px solid #000000;
+  background-color: transparent;
+  color: #000000;
+}
+.btn.btn-outline-dark:hover {
+  background-color: #000000;
+  color: #ffffff;
 }
 .btn.btn-dark {
   background-color: #000000;
 }
-.btn:hover {
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-  transition: 0.3s;
+.btn.btn-outline-light {
+  border: 2px solid #ffffff;
+  background-color: transparent;
+  color: #000000;
+}
+.btn.btn-outline-light:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+.btn.btn-light {
+  background-color: #ffffff;
+  color: #000000;
 }/*# sourceMappingURL=style.css.map */
