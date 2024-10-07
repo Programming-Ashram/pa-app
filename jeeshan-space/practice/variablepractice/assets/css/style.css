@@ -1,107 +1,108 @@
-.btn {
-  padding: 15px 20px;
+.badge {
+  padding: 5px 20px;
   border: none;
-  border-radius: 4px;
+  border-radius: 60px;
   color: #ffffff;
+  cursor: pointer;
 }
-.btn:hover {
+.badge:hover {
   transition: 0.3s;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
-.btn.btn-outline-primary {
+.badge.text-bg-primary {
   border: 2px solid #1d19d4;
   background-color: transparent;
-  color: #1d19d4;
+  color: #ffffff;
 }
-.btn.btn-outline-primary:hover {
+.badge.text-bg-primary:hover {
   background-color: #1d19d4;
   color: #ffffff;
 }
-.btn.btn-primary {
+.badge.text-bg-primary {
   background-color: #1d19d4;
 }
-.btn.btn-outline-secondary {
+.badge.text-bg-secondary {
   border: 2px solid rgba(0, 0, 0, 0.5);
   background-color: transparent;
-  color: rgba(0, 0, 0, 0.5);
+  color: #ffffff;
 }
-.btn.btn-outline-secondary:hover {
+.badge.text-bg-secondary:hover {
   background-color: rgba(0, 0, 0, 0.5);
   color: #ffffff;
 }
-.btn.btn-secondary {
+.badge.text-bg-secondary {
   background-color: rgba(0, 0, 0, 0.5);
 }
-.btn.btn-outline-success {
+.badge.text-bg-success {
   border: 2px solid #3c824c;
   background-color: transparent;
-  color: #3c824c;
+  color: #ffffff;
 }
-.btn.btn-outline-success:hover {
+.badge.text-bg-success:hover {
   background-color: #3c824c;
   color: #ffffff;
 }
-.btn.btn-success {
+.badge.text-bg-success {
   background-color: #3c824c;
 }
-.btn.btn-outline-danger {
+.badge.text-bg-danger {
   border: 2px solid #d41919;
   background-color: transparent;
-  color: #d41919;
+  color: #ffffff;
 }
-.btn.btn-outline-danger:hover {
+.badge.text-bg-danger:hover {
   background-color: #d41919;
   color: #ffffff;
 }
-.btn.btn-danger {
+.badge.text-bg-danger {
   background-color: #d41919;
 }
-.btn.btn-outline-warning {
+.badge.text-bg-warning {
   border: 2px solid #d7c41b;
   background-color: transparent;
-  color: #d7c41b;
+  color: #ffffff;
 }
-.btn.btn-outline-warning:hover {
+.badge.text-bg-warning:hover {
   background-color: #d7c41b;
   color: #ffffff;
 }
-.btn.btn-warning {
+.badge.text-bg-warning {
   background-color: #d7c41b;
 }
-.btn.btn-outline-info {
+.badge.text-bg-info {
   border: 2px solid #19bed4;
   background-color: transparent;
-  color: #19bed4;
+  color: #ffffff;
 }
-.btn.btn-outline-info:hover {
+.badge.text-bg-info:hover {
   background-color: #19bed4;
   color: #ffffff;
 }
-.btn.btn-info {
+.badge.text-bg-info {
   background-color: #19bed4;
 }
-.btn.btn-outline-dark {
+.badge.text-bg-dark {
   border: 2px solid #000000;
   background-color: transparent;
-  color: #000000;
+  color: #ffffff;
 }
-.btn.btn-outline-dark:hover {
+.badge.text-bg-dark:hover {
   background-color: #000000;
   color: #ffffff;
 }
-.btn.btn-dark {
+.badge.text-bg-dark {
   background-color: #000000;
 }
-.btn.btn-outline-light {
+.badge.text-bg-light {
   border: 2px solid #ffffff;
   background-color: transparent;
-  color: #000000;
+  color: #ffffff;
 }
-.btn.btn-outline-light:hover {
+.badge.text-bg-light:hover {
   background-color: #ffffff;
   color: #000000;
 }
-.btn.btn-light {
+.badge.text-bg-light {
   background-color: #ffffff;
   color: #000000;
 }/*# sourceMappingURL=style.css.map */
