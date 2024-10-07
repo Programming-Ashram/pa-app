@@ -110,7 +110,7 @@
 }
 
 .badge {
-  padding: 10px 20px;
+  padding: 5px 20px;
   border: none;
   border-radius: 60px;
   color: white;
@@ -120,24 +120,60 @@
   background-color: rgba(29, 25, 212, 0.8588235294);
 }
 
+.text-outline-primary {
+  background-color: transparent;
+  color: rgba(29, 25, 212, 0.8588235294);
+  border: 1px solid rgba(29, 25, 212, 0.8588235294);
+}
+
 .text-bg-secondary {
   background-color: rgba(0, 0, 0, 0.5019607843);
+}
+
+.text-outline-secondary {
+  background-color: transparent;
+  color: rgba(0, 0, 0, 0.5019607843);
+  border: 1px solid rgba(0, 0, 0, 0.5019607843);
 }
 
 .text-bg-success {
   background-color: #3C824C;
 }
 
+.text-outline-success {
+  background-color: transparent;
+  color: #3C824C;
+  border: 1px solid #3C824C;
+}
+
 .text-bg-danger {
   background-color: rgba(212, 25, 25, 0.8588235294);
+}
+
+.text-outline-danger {
+  background-color: transparent;
+  color: rgba(212, 25, 25, 0.8588235294);
+  border: 1px solid rgba(212, 25, 25, 0.8588235294);
 }
 
 .text-bg-warning {
   background-color: #D7C41B;
 }
 
+.text-outline-warning {
+  background-color: transparent;
+  color: #D7C41B;
+  border: 1px solid #D7C41B;
+}
+
 .text-bg-info {
   background-color: #19BED4;
+}
+
+.text-outline-info {
+  background-color: transparent;
+  color: #19BED4;
+  border: 1px solid #19BED4;
 }
 
 .text-bg-light {
@@ -145,6 +181,18 @@
   color: #0B0B10;
 }
 
+.text-outline-light {
+  background-color: transparent;
+  color: #0B0B10;
+  border: 1px solid #0B0B10;
+}
+
 .text-bg-dark {
   background-color: #0B0B10;
+}
+
+.text-outline-dark {
+  background-color: transparent;
+  color: #0B0B10;
+  border: 1px solid #0B0B10;
 }/*# sourceMappingURL=style.css.map */

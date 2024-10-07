@@ -122,7 +122,7 @@ $size-xxl:30px;
 }
 }
 .badge{
-    padding: $size-sm $size-xl;
+    padding: $size-sm - 5 $size-xl;
     border: none;
     border-radius: $size-xxl + 30;
     color: $white;
@@ -130,26 +130,66 @@ $size-xxl:30px;
 .text-bg-primary{
     background-color: $primary;
 }
+.text-outline-primary{
+    background-color: transparent;
+    color: $primary;
+    border: 1px solid $primary;
+}
 .text-bg-secondary{
     background-color: $secondary;
+}
+.text-outline-secondary{
+    background-color: transparent;
+    color: $secondary;
+    border: 1px solid $secondary;
 }
 .text-bg-success{
     background-color: $success;
 }
+.text-outline-success{
+    background-color: transparent;
+    color: $success;
+    border: 1px solid $success;
+}
 .text-bg-danger{
     background-color: $danger;
+}
+.text-outline-danger{
+    background-color: transparent;
+    color: $danger;
+    border: 1px solid $danger;
 }
 .text-bg-warning{
     background-color: $warning;
 }
+.text-outline-warning{
+        background-color: transparent;
+        color: $warning;
+        border: 1px solid $warning;
+}
 .text-bg-info{
     background-color: $info;
+}
+.text-outline-info{
+    background-color: transparent;
+    color: $info;
+    border: 1px solid $info;
 }
 .text-bg-light{
     background-color: $white;
     color: $dark;
 }
+.text-outline-light{
+    background-color: transparent;
+    color: $dark;
+    border: 1px solid $dark;
+}
 .text-bg-dark{
     background-color: $dark;
+}
+.text-outline-dark{
+    background-color: transparent;
+    color: $dark;
+    border: 1px solid $dark;
 }
 
