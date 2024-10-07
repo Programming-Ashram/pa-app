@@ -14,120 +14,49 @@ $size-xxl: 30px;
 
 .badge{
     padding: 5px 20px;
-    border: none;
     border-radius: 60px;
     color: $light;
-    cursor: pointer;
-
-    &:hover{
-        transition: 0.3s;
-        box-shadow: 0 4px 4px 0 rgba(0,0,0,0.25);
-    }
-    &.text-bg-primary{
+    border: none;
+    
+    &.text-outline-primary{
         border: 2px solid $primary;
         background-color: transparent;
-        color: $light;
-        &:hover{
-            background-color: $primary;
-            color: $light;
-        }
+        color: $primary;
     }
-    &.text-bg-primary{
-        background-color: $primary;
-    }
-    &.text-bg-secondary{
+    &.text-outline-secondary{
         border: 2px solid $secondary;
         background-color: transparent;
-        color: $light;
-        &:hover{
-            background-color: $secondary;
-            color: $light;
-        }
+        color: $secondary;
     }
+   &.text-outline-success{
+    border: 2px solid $success;
+    background-color: transparent;
+    color: $success;
+   }
+   &.text-outline-danger{
+    border: 2px solid $danger;
+    background-color: transparent;
+    color: $danger;
+   }
+   &.text-outline-warning{
+    border: 2px solid $warning;
+    background-color: transparent;
+    color: $warning;
+   }
+   &.text-outline-info{
+    border: 2px solid $info;
+    background-color: transparent;
+    color: $info;
+   }
+   &.text-outline-light{
+    border: 2px solid $dark;
+    background-color: transparent;
+    color: $dark;
+   }
+   &.text-outline-dark{
+    border: 2px solid $dark;
+    background-color: transparent;
+    color: $dark;
+   }
 
-    &.text-bg-secondary{
-        background-color: $secondary;
-       
-    }
-
-    &.text-bg-success{
-        border: 2px solid $success;
-        background-color: transparent;
-        color: $light;
-        &:hover{
-            background-color: $success;
-            color: $light;
-        }
-    }
-
-    &.text-bg-success{
-        background-color: $success;
-    }
-
-    &.text-bg-danger{
-        border: 2px solid $danger;
-        background-color: transparent;
-        color: $light;
-        &:hover{
-            background-color: $danger;
-            color: $light;
-        }
-    }
-
-    &.text-bg-danger{
-        background-color: $danger;
-    }
-
-    &.text-bg-warning{
-        border: 2px solid $warning;
-        background-color: transparent;
-        color: $light;
-        &:hover{
-            background-color: $warning;
-            color: $light;
-        }
-    }
-
-    &.text-bg-warning{
-        background-color: $warning;
-    }
-
-    &.text-bg-info{
-        border: 2px solid $info;
-        background-color: transparent;
-        color: $light;
-        &:hover{
-            background-color: $info;
-            color: $light;
-        }
-    }
-    &.text-bg-info{
-        background-color: $info;
-    }
-    &.text-bg-dark{
-        border: 2px solid $dark;
-        background-color: transparent;
-        color: $light;
-        &:hover{
-            background-color: $dark;
-            color: $light;
-        }
-    }
-    &.text-bg-dark{
-        background-color: $dark;
-    }
-
-    &.text-bg-light{
-        border: 2px solid $light;
-        background-color: transparent;
-        color: $light;
-        &:hover{
-            background-color: $light;
-            color: $dark;
-        }
-    }
-    &.text-bg-light{
-        background-color: $light;
-        color: $dark;
-    }
 }
