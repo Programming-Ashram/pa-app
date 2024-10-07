@@ -1,11 +1,11 @@
-$primary: #9ec5fe;
+$primary: #cfe2ff;
 $secondary:#e2e3e5;
-$success: #a3cfbb;
-$danger: #f1aeb5;
-$info: #ffe69c;
-$warning: #9eeaf9;
-$dark: #e9ecef;
-$light:#adb5bd;
+$success: #d1e7dd;
+$danger: #f8d7da;
+$info: #cff4fc;
+$warning: #fff3cd;
+$dark: #ced4da;
+$light:#fcfcfd;
 
 $size-sm:10px;
 $size-md:15px;
@@ -18,43 +18,43 @@ $size-xxl:30px;
 
     &.alert-primary{
         background-color: $primary;
-        border: 1px solid $primary;
+        border: 1px solid #9ec5fe;
         color: #052c65;
     }
     &.alert-secondary{
         background-color: $secondary;
-        border: 1px solid $secondary;
+        border: 1px solid #c4c8cb;
         color: #2b2f32;
     }
     &.alert-success{
         background-color: $success;
-        border: 1px solid $success;
+        border: 1px solid #a3cfbb;
         color: #0a3622;
     }
     &.alert-danger{
         background-color: $danger;
-        border: 1px solid $danger;
+        border: 1px solid #f1aeb5;
         color: #58151c;
     }
     &.alert-warning{
         background-color: $warning;
-        border: 1px solid $warning;
+        border: 1px solid #ffe69c;
         color: #664d03;
         
     }
     &.alert-info{
         background-color: $info;
-        border: 1px solid $info;
+        border: 1px solid #9eeaf9;
         color: #055160;
     }
     &.alert-light{
         background-color: $light;
-        border: 1px solid $light;
-        color: #fcfcfd;
+        border: 1px solid #e9ecef;
+        color:  #495057;
     }
     &.alert-dark{
         background-color: $dark;
-        border: 1px solid $dark;
-        color: #495057;
+        border: 1px solid #adb5bd;
+        color:#495057 ;
     }
 }

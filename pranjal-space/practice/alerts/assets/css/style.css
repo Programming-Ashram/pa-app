@@ -12,7 +12,7 @@
 .alert.alert-primary {
   background-color: #cfe2ff;
   color: #084298;
-  border-color: #b6d4fe;
+  border: 1px solid #b6d4fe;
 }
 .alert.alert-secondary {
   background-color: #e2e3e5;
