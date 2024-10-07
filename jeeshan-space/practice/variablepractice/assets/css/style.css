@@ -1,108 +1,46 @@
 .badge {
   padding: 5px 20px;
-  border: none;
   border-radius: 60px;
   color: #ffffff;
-  cursor: pointer;
+  border: none;
 }
-.badge:hover {
-  transition: 0.3s;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-}
-.badge.text-bg-primary {
+.badge.text-outline-primary {
   border: 2px solid #1d19d4;
   background-color: transparent;
-  color: #ffffff;
+  color: #1d19d4;
 }
-.badge.text-bg-primary:hover {
-  background-color: #1d19d4;
-  color: #ffffff;
-}
-.badge.text-bg-primary {
-  background-color: #1d19d4;
-}
-.badge.text-bg-secondary {
+.badge.text-outline-secondary {
   border: 2px solid rgba(0, 0, 0, 0.5);
   background-color: transparent;
-  color: #ffffff;
+  color: rgba(0, 0, 0, 0.5);
 }
-.badge.text-bg-secondary:hover {
-  background-color: rgba(0, 0, 0, 0.5);
-  color: #ffffff;
-}
-.badge.text-bg-secondary {
-  background-color: rgba(0, 0, 0, 0.5);
-}
-.badge.text-bg-success {
+.badge.text-outline-success {
   border: 2px solid #3c824c;
   background-color: transparent;
-  color: #ffffff;
+  color: #3c824c;
 }
-.badge.text-bg-success:hover {
-  background-color: #3c824c;
-  color: #ffffff;
-}
-.badge.text-bg-success {
-  background-color: #3c824c;
-}
-.badge.text-bg-danger {
+.badge.text-outline-danger {
   border: 2px solid #d41919;
   background-color: transparent;
-  color: #ffffff;
+  color: #d41919;
 }
-.badge.text-bg-danger:hover {
-  background-color: #d41919;
-  color: #ffffff;
-}
-.badge.text-bg-danger {
-  background-color: #d41919;
-}
-.badge.text-bg-warning {
+.badge.text-outline-warning {
   border: 2px solid #d7c41b;
   background-color: transparent;
-  color: #ffffff;
+  color: #d7c41b;
 }
-.badge.text-bg-warning:hover {
-  background-color: #d7c41b;
-  color: #ffffff;
-}
-.badge.text-bg-warning {
-  background-color: #d7c41b;
-}
-.badge.text-bg-info {
+.badge.text-outline-info {
   border: 2px solid #19bed4;
   background-color: transparent;
-  color: #ffffff;
+  color: #19bed4;
 }
-.badge.text-bg-info:hover {
-  background-color: #19bed4;
-  color: #ffffff;
-}
-.badge.text-bg-info {
-  background-color: #19bed4;
-}
-.badge.text-bg-dark {
+.badge.text-outline-light {
   border: 2px solid #000000;
   background-color: transparent;
-  color: #ffffff;
-}
-.badge.text-bg-dark:hover {
-  background-color: #000000;
-  color: #ffffff;
-}
-.badge.text-bg-dark {
-  background-color: #000000;
-}
-.badge.text-bg-light {
-  border: 2px solid #ffffff;
-  background-color: transparent;
-  color: #ffffff;
-}
-.badge.text-bg-light:hover {
-  background-color: #ffffff;
   color: #000000;
 }
-.badge.text-bg-light {
-  background-color: #ffffff;
+.badge.text-outline-dark {
+  border: 2px solid #000000;
+  background-color: transparent;
   color: #000000;
 }/*# sourceMappingURL=style.css.map */
