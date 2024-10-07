@@ -1,53 +1,44 @@
 .alert {
   padding: 20px 30px;
-  border: none;
   border-radius: 4px;
   margin-top: 10px;
 }
-
-.alert-primary {
+.alert.alert-primary {
   background-color: #9ec5fe;
   border: 1px solid #9ec5fe;
   color: #052c65;
 }
-
-.alert-secondary {
+.alert.alert-secondary {
   background-color: #e2e3e5;
   border: 1px solid #e2e3e5;
   color: #2b2f32;
 }
-
-.alert-success {
+.alert.alert-success {
   background-color: #a3cfbb;
   border: 1px solid #a3cfbb;
   color: #0a3622;
 }
-
-.alert-danger {
+.alert.alert-danger {
   background-color: #f1aeb5;
   border: 1px solid #f1aeb5;
   color: #58151c;
 }
-
-.alert-warning {
+.alert.alert-warning {
   background-color: #9eeaf9;
   border: 1px solid #9eeaf9;
   color: #664d03;
 }
-
-.alert-info {
+.alert.alert-info {
   background-color: #ffe69c;
   border: 1px solid #ffe69c;
   color: #055160;
 }
-
-.alert-light {
+.alert.alert-light {
   background-color: #adb5bd;
   border: 1px solid #adb5bd;
   color: #fcfcfd;
 }
-
-.alert-dark {
+.alert.alert-dark {
   background-color: #e9ecef;
   border: 1px solid #e9ecef;
   color: #495057;
