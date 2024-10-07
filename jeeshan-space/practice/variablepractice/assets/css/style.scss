@@ -12,120 +12,121 @@ $size-md: 15px;
 $size-xl: 20px;
 $size-xxl: 30px;
 
-.btn{
-    padding: 15px 20px;
+.badge{
+    padding: 5px 20px;
     border: none;
-    border-radius: 4px;
+    border-radius: 60px;
     color: $light;
+    cursor: pointer;
 
     &:hover{
         transition: 0.3s;
         box-shadow: 0 4px 4px 0 rgba(0,0,0,0.25);
     }
-    &.btn-outline-primary{
+    &.text-bg-primary{
         border: 2px solid $primary;
         background-color: transparent;
-        color: $primary;
+        color: $light;
         &:hover{
             background-color: $primary;
             color: $light;
         }
     }
-    &.btn-primary{
+    &.text-bg-primary{
         background-color: $primary;
     }
-    &.btn-outline-secondary{
+    &.text-bg-secondary{
         border: 2px solid $secondary;
         background-color: transparent;
-        color: $secondary;
+        color: $light;
         &:hover{
             background-color: $secondary;
             color: $light;
         }
     }
 
-    &.btn-secondary{
+    &.text-bg-secondary{
         background-color: $secondary;
        
     }
 
-    &.btn-outline-success{
+    &.text-bg-success{
         border: 2px solid $success;
         background-color: transparent;
-        color: $success;
+        color: $light;
         &:hover{
             background-color: $success;
             color: $light;
         }
     }
 
-    &.btn-success{
+    &.text-bg-success{
         background-color: $success;
     }
 
-    &.btn-outline-danger{
+    &.text-bg-danger{
         border: 2px solid $danger;
         background-color: transparent;
-        color: $danger;
+        color: $light;
         &:hover{
             background-color: $danger;
             color: $light;
         }
     }
 
-    &.btn-danger{
+    &.text-bg-danger{
         background-color: $danger;
     }
 
-    &.btn-outline-warning{
+    &.text-bg-warning{
         border: 2px solid $warning;
         background-color: transparent;
-        color: $warning;
+        color: $light;
         &:hover{
             background-color: $warning;
             color: $light;
         }
     }
 
-    &.btn-warning{
+    &.text-bg-warning{
         background-color: $warning;
     }
 
-    &.btn-outline-info{
+    &.text-bg-info{
         border: 2px solid $info;
         background-color: transparent;
-        color: $info;
+        color: $light;
         &:hover{
             background-color: $info;
             color: $light;
         }
     }
-    &.btn-info{
+    &.text-bg-info{
         background-color: $info;
     }
-    &.btn-outline-dark{
+    &.text-bg-dark{
         border: 2px solid $dark;
         background-color: transparent;
-        color: $dark;
+        color: $light;
         &:hover{
             background-color: $dark;
             color: $light;
         }
     }
-    &.btn-dark{
+    &.text-bg-dark{
         background-color: $dark;
     }
 
-    &.btn-outline-light{
+    &.text-bg-light{
         border: 2px solid $light;
         background-color: transparent;
-        color: $dark;
+        color: $light;
         &:hover{
             background-color: $light;
             color: $dark;
         }
     }
-    &.btn-light{
+    &.text-bg-light{
         background-color: $light;
         color: $dark;
     }
