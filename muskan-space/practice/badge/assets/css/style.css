@@ -1,0 +1,27 @@
+.badge {
+  padding: 5px 20px;
+  border-radius: 60px;
+  border: none;
+  color: #FFFFFF;
+}
+.badge.text-bg-primary {
+  background-color: #1D19D4;
+}
+.badge.text-bg-secondary {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.badge.text-bg-success {
+  background-color: #3C824C;
+}
+.badge.text-bg-danger {
+  background-color: #D41919;
+}
+.badge.text-bg-warning {
+  background-color: #19BED4;
+}
+.badge.text-bg-info {
+  background-color: #D7C41B;
+}
+.badge.text-bg-light {
+  background-color: #0B0B10;
+}/*# sourceMappingURL=style.css.map */
