@@ -8,40 +8,191 @@
   border-radius: 4px;
   color: white;
 }
-
 .btn:hover {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
-
-.primary {
+.btn.btn-primary {
   background-color: rgba(29, 25, 212, 0.8588235294);
 }
-
-.Secondary {
+.btn.btn-outline-primary {
+  background-color: transparent;
+  color: rgba(29, 25, 212, 0.8588235294);
+  border: 1px solid rgba(29, 25, 212, 0.8588235294);
+}
+.btn.btn-outline-primary:hover {
+  background-color: rgba(29, 25, 212, 0.8588235294);
+  color: white;
+}
+.btn.btn-secondary {
   background-color: rgba(0, 0, 0, 0.5019607843);
 }
-
-.Success {
+.btn.btn-outline-secondary {
+  background-color: transparent;
+  color: rgba(0, 0, 0, 0.5019607843);
+  border: 1px solid rgba(0, 0, 0, 0.5019607843);
+}
+.btn.btn-outline-secondary:hover {
+  background-color: rgba(0, 0, 0, 0.5019607843);
+  color: white;
+}
+.btn.btn-Success {
   background-color: #3C824C;
 }
-
-.Danger {
+.btn.btn-outline-success {
+  background-color: transparent;
+  color: #3C824C;
+  border: 1px solid #3C824C;
+}
+.btn.btn-outline-success:hover {
+  background-color: #3C824C;
+  color: white;
+}
+.btn.btn-Danger {
   background-color: rgba(212, 25, 25, 0.8588235294);
 }
-
-.Warning {
+.btn.btn-outline-danger {
+  background-color: transparent;
+  color: rgba(212, 25, 25, 0.8588235294);
+  border: 1px solid rgba(212, 25, 25, 0.8588235294);
+}
+.btn.btn-outline-danger:hover {
+  background-color: rgba(212, 25, 25, 0.8588235294);
+  color: white;
+}
+.btn.btn-Warning {
   background-color: #D7C41B;
 }
-
-.info {
+.btn.btn-outline-warning {
+  background-color: transparent;
+  color: #D7C41B;
+  border: 1px solid #D7C41B;
+}
+.btn.btn-outline-warning:hover {
+  background-color: #D7C41B;
+  color: white;
+}
+.btn.btn-info {
   background-color: #19BED4;
 }
-
-.light {
+.btn.btn-outline-info {
+  background-color: transparent;
+  color: #19BED4;
+  border: 1px solid #19BED4;
+}
+.btn.btn-outline-info:hover {
+  background-color: #19BED4;
+  color: white;
+}
+.btn.btn-light {
   background-color: rgba(0, 0, 0, 0.0117647059);
   color: black;
 }
-
-.dark {
+.btn.btn-outline-light {
+  background-color: transparent;
+  color: rgba(0, 0, 0, 0.0117647059);
+  border: 1px solid rgba(0, 0, 0, 0.0117647059);
+}
+.btn.btn-outline-light:hover {
+  background-color: white;
+  color: #0B0B10;
+}
+.btn.btn-dark {
   background-color: #0B0B10;
+}
+.btn.btn-outline-dark {
+  background-color: transparent;
+  color: #0B0B10;
+  border: 1px solid #0B0B10;
+}
+.btn.btn-outline-dark:hover {
+  background-color: #0B0B10;
+  color: white;
+}
+
+.badge {
+  padding: 5px 20px;
+  border: none;
+  border-radius: 60px;
+  color: white;
+}
+
+.text-bg-primary {
+  background-color: rgba(29, 25, 212, 0.8588235294);
+}
+
+.text-outline-primary {
+  background-color: transparent;
+  color: rgba(29, 25, 212, 0.8588235294);
+  border: 1px solid rgba(29, 25, 212, 0.8588235294);
+}
+
+.text-bg-secondary {
+  background-color: rgba(0, 0, 0, 0.5019607843);
+}
+
+.text-outline-secondary {
+  background-color: transparent;
+  color: rgba(0, 0, 0, 0.5019607843);
+  border: 1px solid rgba(0, 0, 0, 0.5019607843);
+}
+
+.text-bg-success {
+  background-color: #3C824C;
+}
+
+.text-outline-success {
+  background-color: transparent;
+  color: #3C824C;
+  border: 1px solid #3C824C;
+}
+
+.text-bg-danger {
+  background-color: rgba(212, 25, 25, 0.8588235294);
+}
+
+.text-outline-danger {
+  background-color: transparent;
+  color: rgba(212, 25, 25, 0.8588235294);
+  border: 1px solid rgba(212, 25, 25, 0.8588235294);
+}
+
+.text-bg-warning {
+  background-color: #D7C41B;
+}
+
+.text-outline-warning {
+  background-color: transparent;
+  color: #D7C41B;
+  border: 1px solid #D7C41B;
+}
+
+.text-bg-info {
+  background-color: #19BED4;
+}
+
+.text-outline-info {
+  background-color: transparent;
+  color: #19BED4;
+  border: 1px solid #19BED4;
+}
+
+.text-bg-light {
+  background-color: white;
+  color: #0B0B10;
+}
+
+.text-outline-light {
+  background-color: transparent;
+  color: #0B0B10;
+  border: 1px solid #0B0B10;
+}
+
+.text-bg-dark {
+  background-color: #0B0B10;
+}
+
+.text-outline-dark {
+  background-color: transparent;
+  color: #0B0B10;
+  border: 1px solid #0B0B10;
 }/*# sourceMappingURL=style.css.map */
