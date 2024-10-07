@@ -1,0 +1,97 @@
+$primary: #1D19D4;
+$secondary: rgb(0, 0, 0, 50%);
+$success: #3C824C;
+$danger: #D41919;
+$info: #19BED4;
+$primary: #1D19D4;
+$warning: #D7C41B;
+$dark: #0B0B10;
+$light: #FFFFFF;
+
+.text{
+    text-align: center;
+}
+.badge{
+    padding: 5px 20px;
+    border-radius:60px;
+    border: none;
+    color: $light;
+
+
+    &.outline-bg-primary{
+        background-color: transparent;
+        color:$primary;
+        border: 1px solid $primary;
+    }
+
+
+    &.text-bg-primary{
+    background-color: $primary;
+    }
+
+    &.outline-bg-secondary{
+        background-color: transparent;
+        color:$secondary;
+        border: 1px solid $secondary;
+    }
+
+    &.text-bg-secondary{
+        background-color: $secondary;
+    }
+
+    &.outline-bg-success{
+
+     background-color: transparent;
+        color:$success;
+        border: 1px solid $success;
+    }
+    &.text-bg-success{
+        background-color: $success;
+    }
+
+    &.outline-bg-danger{
+        background-color: transparent;
+        color: $danger;
+        border: 1px solid $danger;
+    }
+    &.text-bg-danger{
+        background-color: $danger; 
+    }
+
+    &.outline-bg-warning{
+        background-color: transparent;
+        color: $warning;
+        border: 1px solid $warning;
+    }
+    &.text-bg-warning{
+        background-color: $warning;
+    }
+
+    &.outline-bg-info{
+        background-color: transparent;
+        color: $info;
+        border: 1px solid $info;
+    }
+    &.text-bg-info{
+        background-color: $info;  
+    }
+
+    &.outline-bg-light{
+        background-color: transparent;
+        color: $dark;
+        border: 1px solid $dark
+    }
+    &.text-bg-light{
+        background-color: $light;
+        color: $dark;
+    }
+
+    &.outline-bg-dark{
+        background-color: transparent;
+        color: $dark;
+        border: 1px solid $dark;
+    }
+    &.text-bg-dark{
+        background-color: $dark;
+    }
+}
