@@ -37,6 +37,8 @@
 }
 .btn.btn-dark {
   background-color: black;
+<<<<<<< HEAD
+=======
 }
 .btn.btn-outline-primary {
   background-color: transparent;
@@ -109,4 +111,5 @@
 .btn.btn-outline-dark:hover {
   background-color: black;
   color: white;
+>>>>>>> bbcd6099526147986f8ce3fea298016339dc5d48
 }/*# sourceMappingURL=style.css.map */
