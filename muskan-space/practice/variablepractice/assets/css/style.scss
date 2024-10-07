@@ -12,11 +12,15 @@ $size-md: 15px;
 $size-xl: 20px;
 $size-xxl: 30px;
 
-.text{
-    text-align: center;
-    margin-top: 20px;
+.d-flex{
+    display: flex;
+    margin: 0 auto;
+    margin-top: $size-xxl;
+    margin-bottom: $size-xxl;
+}
 
-
+.gap{
+    gap: 15px;
 }
 .btn{
     border:none;
@@ -26,12 +30,9 @@ $size-xxl: 30px;
     color: $light;
 
     &:hover{
-     transition: 0.3s;
-     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-     }    
-
-
-
+        transition: 0.3s;
+        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    } 
 
     &.btn-outline-primary{
         background-color: transparent; 
@@ -40,11 +41,13 @@ $size-xxl: 30px;
         &:hover{
              background-color: $primary;
              color: $light;
+        }
    }
    &.btn-primary{ 
         background-color:$primary;
         &:hover{
           box-shadow: 0px 2px 80px 5px $primary;
+        }
 
    }
    &.btn-outline-secondary{
@@ -54,7 +57,8 @@ $size-xxl: 30px;
     &:hover{
          background-color: $secondary;
          color: $light;
-    }
+     }
+}
 
 
    &.btn-secondary{
@@ -70,6 +74,7 @@ $size-xxl: 30px;
     &:hover{
          background-color: $success;
          color: $light;
+     }
 }
    &.btn-success{
         background-color: $success;
@@ -84,6 +89,7 @@ $size-xxl: 30px;
     &:hover{
          background-color: $danger;
          color: $light;
+    }
 }
    &.btn-danger{
         background-color: $danger;
@@ -98,6 +104,7 @@ $size-xxl: 30px;
     &:hover{
          background-color: $warning;
          color: $light;
+    }
 }
    &.btn-warning{
         background-color: $warning;
@@ -112,6 +119,7 @@ $size-xxl: 30px;
     &:hover{
          background-color: $imfo;
          color: $light;
+    }
 }
    &.btn-info{
         background-color: $info;
@@ -121,12 +129,13 @@ $size-xxl: 30px;
    }
    &.btn-outline-light{
     background-color: transparent; 
-    border: 1px solid $light
+    border: 1px solid $light;
     color: $light;
     &:hover{
          background-color: $light;
          color: $black;
 }
+   }
    &.btn-light{
         background-color: $light;
         color: $dark;
@@ -142,6 +151,7 @@ $size-xxl: 30px;
          background-color: $dark;
          color: $light;
 }
+   }
    &.btn-dark{
         background-color: $dark;
         &:hover{
@@ -151,6 +161,7 @@ $size-xxl: 30px;
   
 }
 
-
-
+.mt-20{
+     margin-top: 30px;
+}
 
