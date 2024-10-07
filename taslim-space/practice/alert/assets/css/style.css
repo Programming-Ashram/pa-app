@@ -4,42 +4,42 @@
   margin-top: 10px;
 }
 .alert.alert-primary {
-  background-color: #9ec5fe;
+  background-color: #cfe2ff;
   border: 1px solid #9ec5fe;
   color: #052c65;
 }
 .alert.alert-secondary {
   background-color: #e2e3e5;
-  border: 1px solid #e2e3e5;
+  border: 1px solid #c4c8cb;
   color: #2b2f32;
 }
 .alert.alert-success {
-  background-color: #a3cfbb;
+  background-color: #d1e7dd;
   border: 1px solid #a3cfbb;
   color: #0a3622;
 }
 .alert.alert-danger {
-  background-color: #f1aeb5;
+  background-color: #f8d7da;
   border: 1px solid #f1aeb5;
   color: #58151c;
 }
 .alert.alert-warning {
-  background-color: #9eeaf9;
-  border: 1px solid #9eeaf9;
+  background-color: #fff3cd;
+  border: 1px solid #ffe69c;
   color: #664d03;
 }
 .alert.alert-info {
-  background-color: #ffe69c;
-  border: 1px solid #ffe69c;
+  background-color: #cff4fc;
+  border: 1px solid #9eeaf9;
   color: #055160;
 }
 .alert.alert-light {
-  background-color: #adb5bd;
-  border: 1px solid #adb5bd;
-  color: #fcfcfd;
+  background-color: #fcfcfd;
+  border: 1px solid #e9ecef;
+  color: #495057;
 }
 .alert.alert-dark {
-  background-color: #e9ecef;
-  border: 1px solid #e9ecef;
+  background-color: #ced4da;
+  border: 1px solid #adb5bd;
   color: #495057;
 }/*# sourceMappingURL=style.css.map */
