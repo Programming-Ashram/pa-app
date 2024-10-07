@@ -6,114 +6,69 @@
   text-align: center;
 }
 
-.camponent {
-  font-size: 14px;
-  color: white;
-  background-color: blue;
-  padding: 10px 15px;
-  border-radius: 5px;
+.font {
+  font-family: "Foldit", sans-serif;
 }
 
-.camponent:hover {
-  box-shadow: 4px 4px 4px 4px blue;
-  padding: 0 auto;
-  border: 1px solid white;
+.btn {
+  padding: 10px 20px;
+  border-radius: 4px;
+  border: none;
+  color: #FFFFFF;
 }
-
-.camponent-1 {
-  font-size: 14px;
-  color: white;
-  background-color: gray;
-  padding: 10px 15px;
-  border-radius: 5px;
+.btn:hover {
+  box-shadow: 0px 4px 40px 0 rgba(0, 0, 0, 0.25);
+  transition: 0.4s;
 }
-
-.camponent-1:hover {
-  box-shadow: 4px 4px 4px 4px gray;
-  padding: 0 auto;
-  border: 1px solid white;
+.btn.btn-outline-primary {
+  background-color: transparent;
+  color: #1D19D4;
+  border: 1px solid #1D19D4;
 }
-
-.camponent-2 {
-  font-size: 14px;
-  color: white;
-  background-color: green;
-  padding: 10px 15px;
-  border-radius: 5px;
+.btn:hover {
+  background-color: #1D19D4;
+  color: #FFFFFF;
 }
-
-.camponent-2:hover {
-  box-shadow: 4px 4px 4px 4px green;
-  padding: 0 auto;
-  border: 1px solid white;
+.btn.btn-primary {
+  background-color: #1D19D4;
 }
-
-.camponent-3 {
-  font-size: 14px;
-  color: white;
-  background-color: red;
-  padding: 10px 15px;
-  border-radius: 5px;
+.btn.btn-outline-secondary {
+  background-color: transparent;
+  color: rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(0, 0, 0, 0.5);
 }
-
-.camponent-3:hover {
-  box-shadow: 4px 4px 4px 4px red;
-  padding: 0 auto;
-  border: 1px solid white;
+.btn:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #FFFFFF;
 }
-
-.camponent-4 {
-  font-size: 14px;
-  color: white;
-  background-color: orange;
-  padding: 10px 15px;
-  border-radius: 5px;
+.btn.btn-outline-success {
+  background-color: transparent;
+  color: #3C824C;
+  border: 1px solid #3C824C;
 }
-
-.camponent-4:hover {
-  box-shadow: 4px 4px 4px 4px orange;
-  padding: 0 auto;
-  border: 1px solid white;
+.btn:hover {
+  background-color: #3C824C;
+  color: #FFFFFF;
 }
-
-.camponent-5 {
-  font-size: 14px;
-  color: white;
-  background-color: skyblue;
-  padding: 10px 15px;
-  border-radius: 5px;
+.btn.btn-secondary {
+  background-color: rgba(0, 0, 0, 0.5);
 }
-
-.camponent-5:hover {
-  box-shadow: 4px 4px 4px 4px skyblue;
-  padding: 0 auto;
-  border: 1px solid white;
+.btn.btn-success {
+  background-color: #3C824C;
 }
-
-.camponent-6 {
-  font-size: 14px;
-  color: black;
-  background-color: white;
-  padding: 10px 15px;
-  border-radius: 5px;
+.btn.btn-danger {
+  background-color: #D41919;
 }
-
-.camponent-6:hover {
-  box-shadow: 4px 4px 4px 4px white;
-  padding: 0 auto;
-  border: 1px solid black;
+.btn.btn-warning {
+  background-color: #D7C41B;
 }
-
-.camponent-7 {
-  font-size: 14px;
-  color: white;
-  background-color: black;
-  padding: 10px 15px;
-  border-radius: 5px;
+.btn.btn-info {
+  background-color: #19BED4;
 }
-
-.camponent-7:hover {
-  box-shadow: 4px 4px 4px 4px black;
-  padding: 0 auto;
-  border: 1px solid white;
+.btn.btn-light {
+  background-color: #FFFFFF;
+  color: #0B0B10;
+}
+.btn.btn-dark {
+  background-color: #0B0B10;
 }/*# sourceMappingURL=style.css.map */
