@@ -12,45 +12,121 @@ $size-md: 15px;
 $size-xl: 20px;
 $size-xxl: 30px;
 
-.d-flex{
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-}
-
 .btn{
-    border-radius: $size-sm -5;
-    color: $light;
-    padding: $size-sm $size-md;
+    padding: 15px 20px;
     border: none;
+    border-radius: 4px;
+    color: $light;
 
+    &:hover{
+        transition: 0.3s;
+        box-shadow: 0 4px 4px 0 rgba(0,0,0,0.25);
+    }
+    &.btn-outline-primary{
+        border: 2px solid $primary;
+        background-color: transparent;
+        color: $primary;
+        &:hover{
+            background-color: $primary;
+            color: $light;
+        }
+    }
     &.btn-primary{
         background-color: $primary;
     }
+    &.btn-outline-secondary{
+        border: 2px solid $secondary;
+        background-color: transparent;
+        color: $secondary;
+        &:hover{
+            background-color: $secondary;
+            color: $light;
+        }
+    }
+
     &.btn-secondary{
         background-color: $secondary;
+       
     }
+
+    &.btn-outline-success{
+        border: 2px solid $success;
+        background-color: transparent;
+        color: $success;
+        &:hover{
+            background-color: $success;
+            color: $light;
+        }
+    }
+
     &.btn-success{
         background-color: $success;
     }
+
+    &.btn-outline-danger{
+        border: 2px solid $danger;
+        background-color: transparent;
+        color: $danger;
+        &:hover{
+            background-color: $danger;
+            color: $light;
+        }
+    }
+
     &.btn-danger{
         background-color: $danger;
     }
+
+    &.btn-outline-warning{
+        border: 2px solid $warning;
+        background-color: transparent;
+        color: $warning;
+        &:hover{
+            background-color: $warning;
+            color: $light;
+        }
+    }
+
     &.btn-warning{
         background-color: $warning;
+    }
+
+    &.btn-outline-info{
+        border: 2px solid $info;
+        background-color: transparent;
+        color: $info;
+        &:hover{
+            background-color: $info;
+            color: $light;
+        }
     }
     &.btn-info{
         background-color: $info;
     }
-    &.btn-light{
-        background-color: $light;
-        color: black;
+    &.btn-outline-dark{
+        border: 2px solid $dark;
+        background-color: transparent;
+        color: $dark;
+        &:hover{
+            background-color: $dark;
+            color: $light;
+        }
     }
     &.btn-dark{
         background-color: $dark;
     }
-    &:hover{
-        box-shadow: 0 4px 4px 0 rgba(0,0,0,0.25);
-        transition: 0.3s;
+
+    &.btn-outline-light{
+        border: 2px solid $light;
+        background-color: transparent;
+        color: $dark;
+        &:hover{
+            background-color: $light;
+            color: $dark;
+        }
+    }
+    &.btn-light{
+        background-color: $light;
+        color: $dark;
     }
 }
