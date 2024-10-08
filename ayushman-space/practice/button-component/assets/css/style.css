@@ -103,4 +103,19 @@
 }
 .btn.btn-light {
   background-color: #FFFFFF;
+}
+
+.btn-group {
+  display: flex;
+}
+.btn-group button {
+  border-radius: 0;
+}
+.btn-group button:first-child {
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+.btn-group button:last-child {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
 }/*# sourceMappingURL=style.css.map */
