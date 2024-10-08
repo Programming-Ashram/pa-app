@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+}
+
+
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    thead th{
+        background-color:white;
+        color:blue;
+        font-size: larger;
+        outline: 2px solid #68b768;
+    }
+    tr,td,th{
+        border: 3px dashed blue;
+        padding: 10px;
+    }
+
+    tr:nth-child(even){
+        background-color:skyblue;
+        color:white ;
+    }
+    tr:nth-child(odd){
+        background-color:hwb(197 69% 4%);
+        color:white;
+    }
+}
