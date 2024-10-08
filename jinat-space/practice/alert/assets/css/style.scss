@@ -1,0 +1,72 @@
+$bl-1:#cfe2ff;
+$bl-2:#b6d4fe;
+$bl-3:#084298;
+$br-1:#e2e3e5;
+$br-2:#d3d6d8;
+$br-3:#41464b;
+$gr-1:#d1e7dd;
+$gr-2:#badbcc;
+$gr-3:#0f5132;
+$danger-1:#f8d7da;
+$danger-2:#f5c2c7;
+$danger-3:#842029;
+$warning-1:#fff3cd;
+$warning-2:#ffecb5;
+$warning-3:#664d03;
+$info-1:#cff4fc;
+$info-2:#b6effb;
+$info-3:#055160;
+$light-1:#fefefe;
+$light-2:#fdfdfe;
+$light-3:#636464;
+$dark-1:#d3d3d4;
+$dark-2:#bcbebf;
+$dark-3:#141619;
+
+.alerts{
+     margin: 40px 20px;
+}
+.alert{
+     padding: 16px;
+     margin: 10px 0;
+     border-radius:12px;
+     &.alert-primary{ background-color: $bl-1;
+          color: $bl-3;
+          border: 1px solid $bl-2;
+     }        
+     &.alert-secondary{
+          background-color: $br-1;
+          color:$br-3;
+          border: 1px solid $br-2;
+     }
+     &.alert-success{
+          background-color: $gr-1;
+          color: $gr-3;
+          border: 1px solid $gr-2; ;
+     }
+     &.alert-danger{
+          background-color: $danger-1;
+          color: $danger-3;
+          border: 1px solid $danger-2;
+     }
+     &.alert-warning{
+          background-color: $warning-1;
+          color: $warning-3;
+          border: 1px solid $warning-2;
+     }
+     &.alert-info{
+          background-color: $info-1;
+          color: $info-3;
+          border: 1px solid $info-2;
+     }
+     &.alert-light{
+          background-color: $light-1;
+          color: $light-3;
+          border: 1px solid $light-2;
+     }
+     &.alert-dark{
+          background-color: $dark-1;
+          color: $dark-3;
+          border: 1px solid $dark-2;
+     }
+}
