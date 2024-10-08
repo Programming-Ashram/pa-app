@@ -8,10 +8,7 @@ table{
     width: 100%;
     border-collapse: collapse;
     text-align: left;
-    thead{
-        background-color: black;
-        color: white;
-    }
+    
     tr,td,th{
         border: 1px solid black;
         padding: 10px;
@@ -24,5 +21,11 @@ table{
     tr:nth-child(odd){
         background-color: blue;
         color: white;
+    }
+    thead{
+        th{
+            background-color: black;
+            color: white;
+        }
     }
 }
