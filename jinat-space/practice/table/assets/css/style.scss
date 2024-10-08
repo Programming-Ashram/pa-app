@@ -1,0 +1,23 @@
+table{
+     width: 100%;
+     border-collapse: collapse;
+     text-align: center;
+     th,td{
+          padding: 10px;
+          border: 1px solid black;
+     }
+     thead{
+         th{
+          background-color: black !important;
+          color: white;
+         }
+     }
+     tr:nth-child(even){
+          background-color: aqua;
+          color: black;
+     }
+     tr:nth-child(odd){
+          background-color:aquamarine;
+          color: black;
+     }
+}
