@@ -22,7 +22,9 @@ $size-xxl:30px;
     &:hover{
         box-shadow: 0 4px 4px 0 rgba(0,0,0,0.25);
     }
-
+  
+    
+    
 &.btn-primary{
     background-color: $primary;
 }
@@ -126,7 +128,8 @@ $size-xxl:30px;
     border: none;
     border-radius: $size-xxl + 30;
     color: $white;
-}
+    
+
 .text-bg-primary{
     background-color: $primary;
 }
@@ -191,5 +194,28 @@ $size-xxl:30px;
     background-color: transparent;
     color: $dark;
     border: 1px solid $dark;
+}
+
+}
+
+.btn-group{
+    display:flex;
+
+        button{
+            border-radius: 0;
+            padding: 10px 10px;
+            background-color: blue;
+            color: white;
+            border: none;
+
+             &:first-child{
+                border-top-left-radius: 8px;
+                border-bottom-left-radius: 8px;
+            }
+            &:last-child{
+                border-top-right-radius: 8px;
+                border-bottom-right-radius: 8px;
+            }
+        }
 }
 
