@@ -1,0 +1,14 @@
+.card {
+  padding: 20px;
+  border: 1px solid #3C824C;
+  width: 300px;
+}
+.card .tittle {
+  font-size: 26px;
+}
+.card .subtitle {
+  font-size: 20px;
+}
+.card .content {
+  font-size: 16px;
+}/*# sourceMappingURL=card.css.map */
