@@ -1,0 +1,20 @@
+@import '../../variables/variable.scss';
+
+.btn{
+     padding:$size-sm $size-md;
+     border: none;
+     border-radius: 8px;
+     cursor: pointer;  
+     
+     &.btn-primary{
+          background-color: $primary;
+          color: $light;
+          &:hover{
+               background-color:$info ;
+               
+          }     
+          &:focus{
+               background-color: $success;
+          }   
+     }
+}

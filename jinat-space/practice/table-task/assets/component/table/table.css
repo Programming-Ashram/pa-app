@@ -1,0 +1,16 @@
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+table thead th {
+  background-color: rgb(112, 68, 165);
+  color: white;
+  padding: 20px;
+}
+table td {
+  padding: 10px;
+}
+table tr:nth-child(even) {
+  background-color: rgba(243, 233, 252, 0.744);
+}/*# sourceMappingURL=table.css.map */
