@@ -1,0 +1,28 @@
+
+@import '../../variable/variable.scss';
+
+
+.font{
+    font-family: "Baloo Paaji 2", sans-serif;
+}
+.text{
+    text-align: center;
+}
+.table-borderd{
+    border-collapse: collapse;
+
+    tr,th,td{
+        border: 1px solid $dark;
+}
+}
+.clb{
+    background-color: $warning;
+    color: $light;
+}
+.sec{
+    background-color: $info;
+}
+.foot{
+    background-color: $danger;
+    color: $light;
+}
