@@ -18,45 +18,71 @@ $size-xxl: 30px;
     color: $light;
     border: none;
     
-    &.text-outline-primary{
+    &.text-bg-primary{
         border: 2px solid $primary;
         background-color: transparent;
-        color: $primary;
+        color: $light;
     }
-    &.text-outline-secondary{
+    &.text-bg-primary{
+        background-color: $primary;
+    }
+    &.text-bg-secondary{
         border: 2px solid $secondary;
         background-color: transparent;
-        color: $secondary;
+        color: $light;
     }
-   &.text-outline-success{
+    &.text-bg-secondary{
+        background-color: $secondary;
+    }
+   &.text-bg-success{
     border: 2px solid $success;
     background-color: transparent;
-    color: $success;
+    color: $light;
    }
-   &.text-outline-danger{
+   &.text-bg-success{
+    background-color: $success;
+   }
+
+   &.text-bg-danger{
     border: 2px solid $danger;
     background-color: transparent;
-    color: $danger;
+    color: $light;
    }
-   &.text-outline-warning{
+   &.text-bg-danger{
+    background-color: $danger;
+   }
+   &.text-bg-warning{
     border: 2px solid $warning;
     background-color: transparent;
-    color: $warning;
+    color: $light;
    }
-   &.text-outline-info{
+   &.text-bg-warning{
+    background-color: $warning;
+   }
+   &.text-bg-info{
     border: 2px solid $info;
     background-color: transparent;
-    color: $info;
+    color: $light;
    }
-   &.text-outline-light{
+   &.text-bg-info{
+    background-color: $info;
+   }
+   &.text-bg-light{
     border: 2px solid $dark;
     background-color: transparent;
+    color: $light;
+   }
+   &.text-bg-light{
+    background-color: $light;
     color: $dark;
    }
-   &.text-outline-dark{
+   &.text-bg-dark{
     border: 2px solid $dark;
     background-color: transparent;
-    color: $dark;
+    color: $light;
+   }
+   &.text-bg-dark{
+    background-color: $dark;
    }
 
 }
