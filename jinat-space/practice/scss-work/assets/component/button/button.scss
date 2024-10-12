@@ -1,0 +1,8 @@
+@import '../../variables/variable.scss';
+.btn{
+     padding: $size-sm $size-md;
+     border:none;
+     &.btn-success{
+          background-color: $success;
+     }
+}

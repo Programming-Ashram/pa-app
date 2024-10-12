@@ -21,7 +21,7 @@ a{
      border: none;
      color:white;
      cursor: pointer;
-     border-radius: 10px;
+     border-radius:4px;
      &.btn-primary{
           background-color: $primary;
           &:focus{
@@ -60,8 +60,9 @@ a{
      }
 }
 .dropdown-menu{
-     border:1px solid gray;
-     padding: 5px;
+     border-radius: 5px;
+     border:1px solid rgba(0, 0, 0, .15);
+     padding: 15px;
      line-height:2;
      text-align: left;
      width: 130px;
@@ -77,5 +78,13 @@ a{
      position: relative;
 }
 .dropdown-toggle:hover .dropdown-menu{
-     display: block;
+     display: block;    
+}
+.dropdown-item:hover{
+     padding: 2px;
+     background-color: rgb(0 0 0 / 27%);
+     &:focus{
+          background-color: blue;
+          color: $light;
+     }
 }

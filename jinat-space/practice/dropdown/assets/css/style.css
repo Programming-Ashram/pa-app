@@ -17,7 +17,7 @@ a {
   border: none;
   color: white;
   cursor: pointer;
-  border-radius: 10px;
+  border-radius: 4px;
 }
 .btn.btn-primary {
   background-color: rgba(29, 25, 212, 0.86);
@@ -57,8 +57,9 @@ a {
 }
 
 .dropdown-menu {
-  border: 1px solid gray;
-  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  padding: 15px;
   line-height: 2;
   text-align: left;
   width: 130px;
@@ -78,4 +79,13 @@ a {
 
 .dropdown-toggle:hover .dropdown-menu {
   display: block;
+}
+
+.dropdown-item:hover {
+  padding: 2px;
+  background-color: rgba(0, 0, 0, 0.27);
+}
+.dropdown-item:hover:focus {
+  background-color: blue;
+  color: white;
 }/*# sourceMappingURL=style.css.map */
