@@ -1,0 +1,8 @@
+@import '../variable/variable.scss';
+
+@mixin badge-default(){
+    padding: 5px 20px;
+    border-radius:60px;
+    border: none;
+    color: $light;
+}
