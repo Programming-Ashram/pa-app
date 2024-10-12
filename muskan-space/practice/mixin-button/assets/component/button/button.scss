@@ -1,0 +1,41 @@
+@import '../../variables/variables';
+@import '../../mixin/mixin.scss';
+
+
+
+
+.btn{
+    @include  btn-default();
+
+    &.btn-primary{
+        background-color: $primary;
+     }
+    &.btn-secondary{
+        background-color: $secondary;
+    }
+
+    &.btn-success{
+        background-color: $success;
+    }
+    &.btn-danger{
+        background-color: $danger;
+    }
+    &.btn-warning{
+        background-color: $warning;
+    }
+    &.btn-info{
+        background-color: $info;
+    }
+    &.btn-light{
+        background-color: $light;
+        color: $dark;
+    }
+
+    &.btn-dark{
+        background-color: $dark;
+    }
+
+    
+        
+    
+}
