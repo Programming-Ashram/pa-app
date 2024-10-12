@@ -1,0 +1,10 @@
+@import '../../_variable/variable.scss';
+@import '../../mixin/mixin.scss';
+
+ .btn{
+    @include btn-default;
+
+    &.btn-primary{
+        background-color:$primary;
+    }
+ }
