@@ -1,0 +1,14 @@
+.btn {
+  padding: 10px 20px;
+  border: none;
+  color: white;
+  border-radius: 4px;
+}
+.btn.btn-primary {
+  background-color: blue;
+}
+.btn.btn-outline-primary {
+  background-color: transparent;
+  color: blue;
+  border: 1px solid blue;
+}/*# sourceMappingURL=button.css.map */
