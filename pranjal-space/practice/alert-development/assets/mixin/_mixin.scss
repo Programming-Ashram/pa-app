@@ -1,0 +1,9 @@
+@import "../variables/variable.scss";
+
+@mixin alert(){
+    padding: 20px 40px;
+    border-radius:4px;
+    border: 2px solid;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
