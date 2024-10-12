@@ -1,0 +1,67 @@
+.badge {
+  padding: 10px 20px;
+  border-radius: 60px;
+  color: white;
+  margin: 20px;
+}
+.badge.badge-primary {
+  background-color: blue;
+}
+.badge.badge-secondary {
+  background-color: grey;
+}
+.badge.badge-danger {
+  background-color: red;
+}
+.badge.badge-success {
+  background-color: green;
+}
+.badge.badge-dark {
+  background-color: black;
+}
+.badge.badge-info {
+  background-color: skyblue;
+}
+.badge.badge-warning {
+  background-color: orange;
+}
+.badge.badge-light {
+  background-color: white;
+  color: black;
+}
+.badge.badge-outline-primary {
+  border: 2px solid blue;
+  color: blue;
+}
+.badge.badge-outline-success {
+  border: 2px solid green;
+  color: green;
+}
+.badge.badge-outline-danger {
+  border: 2px solid red;
+  color: red;
+}
+.badge.badge-outline-info {
+  border: 2px solid skyblue;
+  color: skyblue;
+}
+.badge.badge-outline-dark {
+  border: 2px solid black;
+  color: black;
+}
+.badge.badge-outline-light {
+  border: 2px solid white;
+  color: white;
+}
+.badge.badge-outline-light {
+  border: 2px solid white;
+  color: black;
+}
+.badge.badge-outline-secondary {
+  border: 2px solid grey;
+  color: grey;
+}
+.badge.badge-outline-warning {
+  border: 2px solid orange;
+  color: orange;
+}/*# sourceMappingURL=badge.css.map */
