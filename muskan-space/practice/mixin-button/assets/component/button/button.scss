@@ -1,9 +1,6 @@
 @import '../../variables/variables';
 @import '../../mixin/mixin.scss';
 
-
-
-
 .btn{
     @include  btn-default();
 
