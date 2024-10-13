@@ -7,3 +7,9 @@
      margin: $size-md;
 
 }
+@mixin animate(){
+     animation-name: but;
+     animation-duration: 3s;
+     animation-iteration-count: infinite;
+
+}
