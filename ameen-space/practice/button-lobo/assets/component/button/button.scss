@@ -1,19 +1,17 @@
 @import '../../mixin/mixin';
 @import '../../variable/variable';
 
-.bg-lobo{
+.border-padding{
     padding: 24px;
     border: radius 6px;
 }
-.mg{
+.top-0{
     margin-top: -19px;
 }
 .text{
     text-align: center;
 }
-.flex{
-    display: flex;
-}
+
 .rounded-pill{
     border-radius: 50px;
 }
