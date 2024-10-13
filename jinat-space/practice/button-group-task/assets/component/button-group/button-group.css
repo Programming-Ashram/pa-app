@@ -1,0 +1,64 @@
+.button-group {
+  display: flex;
+}
+
+.btn {
+  padding: 10px 20px;
+  color: white;
+  border-radius: 0;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.btn:focus::before {
+  padding: 43px;
+}
+.btn.btn-success {
+  background-color: green;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.btn.btn-danger {
+  background-color: red;
+}
+.btn.btn-primary {
+  background-color: blue;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+.btn.btn-primary::before {
+  content: "";
+  background-color: rgba(240, 248, 255, 0.2901960784);
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  transition: 0.5s;
+}
+.btn.btn-danger::before {
+  content: "";
+  background-color: rgba(43, 63, 239, 0.2901960784);
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  transition: 0.5s;
+}
+.btn.btn-success::before {
+  content: "";
+  background-color: rgba(43, 239, 134, 0.2901960784);
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  transition: 0.5s;
+}/*# sourceMappingURL=button-group.css.map */
