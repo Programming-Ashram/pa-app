@@ -37,6 +37,7 @@
           overflow: hidden;
           &:hover::before{
                padding: 43px;
+               opacity: 0.1;
             
      }  
      &.btn-primary::before{

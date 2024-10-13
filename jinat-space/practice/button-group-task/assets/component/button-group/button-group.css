@@ -11,7 +11,7 @@
   cursor: pointer;
 }
 .btn:focus::before {
-  padding: 43px;
+  padding: 2.1875rem;
 }
 .btn.btn-success {
   background-color: green;
