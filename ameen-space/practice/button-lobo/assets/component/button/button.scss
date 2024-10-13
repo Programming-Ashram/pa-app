@@ -1,0 +1,47 @@
+@import '../../mixin/mixin';
+@import '../../variable/variable';
+
+.bg-lobo{
+    padding: 24px;
+    border: radius 6px;
+}
+.mg{
+    margin-top: -19px;
+}
+.text{
+    text-align: center;
+}
+.flex{
+    display: flex;
+}
+.rounded-pill{
+    border-radius: 50px;
+}
+.bg-danger{
+    background-color: $danger;
+    
+}
+.position-absolute{
+    position: absolute;
+}
+.btn{
+    @include btn-default();
+
+    &.btn-primary{
+        background-color: $primary;
+        border: 1px solid $light;
+    }
+    &.btn-success{
+        background-color: $success;
+        border: 1px solid $light;
+    }
+    &.btn-info{
+        background-color: $info;
+        border: 1px solid $light;
+    }
+    &.btn-danger{
+        background-color: $danger;
+        border: 1px solid $light;
+    }
+    
+}
