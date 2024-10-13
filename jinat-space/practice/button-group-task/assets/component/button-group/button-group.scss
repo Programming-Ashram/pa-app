@@ -1,0 +1,72 @@
+@import '../../variable/variable.scss';
+
+.button-group{
+     display: flex;
+}
+.btn{
+     padding:$size-sm $size-md;
+     color:$light;
+     border-radius: 0;
+     position: relative;
+     overflow: hidden;
+     cursor: pointer;
+     &:focus::before{
+          padding: 43px;
+          
+     }
+     &.btn-success{
+          background-color: $success;
+          border-top-right-radius: 15px;
+          border-bottom-right-radius: 15px;
+     }
+     &.btn-danger{
+          background-color: $danger;
+     }
+     &.btn-primary{
+          background-color: $primary;
+         
+          border-top-left-radius:15px ;
+          border-bottom-left-radius: 15px;
+     }     
+     &.btn-primary::before{
+           content: '';
+           background-color:#f0f8ff4a;
+           height: 20px;
+           width: 20px;
+           position: absolute;
+           left: 50%;
+           top:50%;
+           transform: translate(-50%,-50%);
+           border-radius: 50%;
+           transition:0.5s ;
+           
+}    
+     &.btn-danger::before{
+          content: '';
+          background-color:#2b3fef4a;
+          height: 20px;
+          width: 20px;
+          position: absolute;
+          left: 50%;
+          top:50%;
+          transform: translate(-50%,-50%);
+          border-radius: 50%;
+          transition:0.5s ;
+     
+}    
+     &.btn-success::before{
+     content: '';
+     background-color:#2bef864a;
+     height: 20px;
+     width: 20px;
+     position: absolute;
+     left: 50%;
+     top:50%;
+     transform: translate(-50%,-50%);
+     border-radius: 50%;
+     transition:0.5s ;
+
+}    
+          
+
+}
