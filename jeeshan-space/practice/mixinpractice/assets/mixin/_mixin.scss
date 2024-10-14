@@ -1,0 +1,8 @@
+@import '../variable/variable';
+
+@mixin btn($topbotomsize, $radius){
+    padding: $topbotomsize;
+    border-radius: $radius;
+    border:none;
+    color: $light;
+}
