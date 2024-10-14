@@ -1,0 +1,28 @@
+@import '../../variable/variable';
+@import '../../mixin/mixin';
+.card{
+     @include card-default();
+     &.card-primary{
+          @include bgcard($primary,$light);
+          @include cardborder($warning);
+     }
+     &.card-success{
+          @include bgcard($success,$light);
+          @include cardborder($dark);
+     }
+     &.card-danger{
+          @include bgcard($warning,$light);
+          @include cardborder($primary);
+     }
+}
+.bg-mix{
+     background-color: mix($primary,$dark,50%);
+}
+.bg-primary{
+     background-color: $primary;
+}
+.bg-primary-25{background-color: lighten($primary,25%);}
+.bg-primary-50{background-color: lighten($primary,50%);}
+.bg-primary-75{background-color: lighten($primary,40%);}
+.bg-primary-dark{background-color: darken($primary,40%);}
+
