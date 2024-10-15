@@ -16,7 +16,11 @@
         @include card-background($info,$light)
     }
     &.card-secondery{
-        @include card-btn($danger,$light)
+        @include  card-background($danger,$light)
+    }
+    .btn-danger{
+        @include btn-default();
+        @include card-background($danger,$light)
     }
 
 }

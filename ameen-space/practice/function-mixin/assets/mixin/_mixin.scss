@@ -11,7 +11,8 @@
     background-color: $bgcolor;
     color: $color;
 }
-@mixin card-btn($bgcolor,$color){
-    background-color: $bgcolor;
-    color: $color;
-}
+ @mixin btn-default(){
+        padding:pxtorem(10) pxtorem(16);
+        border: pxtorem(1) solid $light;
+        border-radius: pxtorem(4);
+ }

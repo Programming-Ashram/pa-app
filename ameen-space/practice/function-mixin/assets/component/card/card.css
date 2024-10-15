@@ -20,4 +20,11 @@
 .card.card-secondery {
   background-color: #D41919;
   color: #FFFFFF;
+}
+.card .btn-danger {
+  padding: pxtorem(10) pxtorem(16);
+  border: pxtorem(1) solid #FFFFFF;
+  border-radius: pxtorem(4);
+  background-color: #D41919;
+  color: #FFFFFF;
 }/*# sourceMappingURL=card.css.map */
