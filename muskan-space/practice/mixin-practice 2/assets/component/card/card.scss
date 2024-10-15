@@ -1,0 +1,17 @@
+@import '../../mixin/mixin';
+@import '../../fuction/fuction';
+
+@import '../../variables/variable';
+
+.card{
+    @include card($dark, pxtorem(300));
+    &.card-info{
+        @include card-background($info, $light)
+    }
+    &.card-success{
+        @include card-background($success, $light)
+    }
+    &.card-primary{
+        @include card-background($primary, $light)
+    }
+}

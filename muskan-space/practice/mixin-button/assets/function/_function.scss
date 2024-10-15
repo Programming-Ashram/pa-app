@@ -1,0 +1,3 @@
+@function pxtoremconvertor($getSize, $baseize: 16){
+    @return $getSize / $baseize * 1rem;
+}

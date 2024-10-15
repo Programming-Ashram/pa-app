@@ -1,0 +1,18 @@
+.card {
+  padding: 0.625rem;
+  border-radius: 0.25rem;
+  border: 0.03125rem solid;
+  width: 18.75rem;
+}
+.card.card-info {
+  background-color: skyblue;
+  color: white;
+}
+.card.card-success {
+  background-color: green;
+  color: white;
+}
+.card.card-primary {
+  background-color: blue;
+  color: white;
+}/*# sourceMappingURL=card.css.map */
