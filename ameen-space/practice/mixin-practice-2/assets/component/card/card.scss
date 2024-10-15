@@ -1,0 +1,18 @@
+@import '../../mixin/mixin';
+@import '../../variable/variable';
+@import '../../function/function';
+@import '../../mixin/mixin';
+@import '../../variable/variable';
+
+.card{
+    @include card($dark, pxtorem(300));
+    &.card-primary{
+        @include card-background($primary, $light)
+    }
+    &.card-success{
+        @include card-background($success, $light)
+    }
+    &.card-warning{
+        @include card-background($warning, $light)
+    }
+}
