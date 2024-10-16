@@ -1,0 +1,130 @@
+.btn-flat {
+  color: white;
+  border-radius: 6.25rem;
+  border: none;
+  padding: 0.75rem 1.25rem;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  gap: 5px;
+}
+.btn-flat.btn-primary {
+  background-color: #1C52F4;
+}
+
+.btn-outline {
+  color: white;
+  border-radius: 6.25rem;
+  border: none;
+  padding: 0.75rem 1.25rem;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  gap: 5px;
+}
+.btn-outline.btn-primary {
+  background-color: #3E6EFF;
+  border: 2px solid black;
+}
+
+.btn-inset {
+  color: white;
+  border-radius: 6.25rem;
+  border: none;
+  padding: 0.75rem 1.25rem;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  gap: 5px;
+}
+.btn-inset.btn-primary {
+  background-color: #668AF8;
+  border: 2px inset black;
+}
+
+.btn-desabled {
+  color: white;
+  border-radius: 6.25rem;
+  border: none;
+  padding: 0.75rem 1.25rem;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  gap: 5px;
+}
+.btn-desabled.btn-secondary {
+  background-color: grey;
+  border: 2px desabled black;
+}
+
+.btn-flat-2 {
+  color: white;
+  border: none;
+  font-size: 0.5rem 1rem;
+  margin: 0.3125rem 0;
+  cursor: pointer;
+  padding: 10px 16px;
+  border-radius: 100px;
+}
+.btn-flat-2:is(.icon-btn) {
+  border-radius: 100%;
+  padding: 10px 12px;
+}
+.btn-flat-2.btn-primary {
+  background-color: #1C52F4;
+  border: 0.125rem solid black;
+}
+
+.btn-outline-2 {
+  color: white;
+  border: none;
+  font-size: 0.5rem 1rem;
+  margin: 0.3125rem 0;
+  cursor: pointer;
+  padding: 10px 16px;
+  border-radius: 100px;
+}
+.btn-outline-2:is(.icon-btn) {
+  border-radius: 100%;
+  padding: 10px 12px;
+}
+.btn-outline-2.btn-primary {
+  background-color: #3E6EFF;
+  border: 0.125rem solid black;
+}
+
+.btn-inset-2 {
+  color: white;
+  border: none;
+  font-size: 0.5rem 1rem;
+  margin: 0.3125rem 0;
+  cursor: pointer;
+  padding: 10px 16px;
+  border-radius: 100px;
+}
+.btn-inset-2:is(.icon-btn) {
+  border-radius: 100%;
+  padding: 10px 12px;
+}
+.btn-inset-2.btn-primary {
+  background-color: #668AF8;
+  border: 0.125rem solid black;
+}
+
+.btn-desabled-2 {
+  color: white;
+  border: none;
+  font-size: 0.5rem 1rem;
+  margin: 0.3125rem 0;
+  cursor: pointer;
+  padding: 10px 16px;
+  border-radius: 100px;
+}
+.btn-desabled-2:is(.icon-btn) {
+  border-radius: 100%;
+  padding: 10px 12px;
+}
+.btn-desabled-2.btn-primary {
+  background-color: grey;
+  border: 0.125rem solid black;
+}/*# sourceMappingURL=button.css.map */
