@@ -5,7 +5,6 @@
      &.btn-primary{
           background-color: $primary;
      }
-     
 }
 .btn-flat-md{
      @include btn-default-md();
@@ -15,7 +14,6 @@
 }
 .btn-flat-sm{
      @include btn-default-sm();
-    
      &.btn-primary{
           background-color: $primary;
      }
@@ -27,8 +25,7 @@
           border: pxtoremconverter(2) solid $light;
      }
      &.btn-default{
-          background-color: $secondary;
-          
+          background-color: $secondary;    
      }
 }
 .btn-outline-md{
@@ -38,8 +35,7 @@
           border: pxtoremconverter(2) solid $light;
      }
      &.btn-default{
-          background-color: $secondary;
-          
+          background-color: $secondary;    
      }
 }
 .btn-outline-sm{
@@ -49,8 +45,7 @@
           border: pxtoremconverter(2) solid $light;
      }
      &.btn-default{
-          background-color: $secondary;
-          
+          background-color: $secondary;    
      }
 }
 .btn-inset-outline{
@@ -69,7 +64,6 @@
 }
 .btn-inset-outline-sm{
      @include btn-default-sm();
-     
      &.btn-primary{
           background-color: $primary-50;
           border: pxtoremconverter(2) inset $light;
