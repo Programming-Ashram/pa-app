@@ -1,0 +1,77 @@
+@import '../utilities/mixin';
+
+.btn-flat{
+     @include btn-default();
+     &.btn-primary{
+          background-color: $primary;
+     }
+     
+}
+.btn-flat-md{
+     @include btn-default-md();
+     &.btn-primary{
+          background-color: $primary;
+     }
+}
+.btn-flat-sm{
+     @include btn-default-sm();
+    
+     &.btn-primary{
+          background-color: $primary;
+     }
+}
+.btn-outline{
+     @include btn-default();
+     &.btn-primary{
+          background-color: $primary-25;
+          border: pxtoremconverter(2) solid $light;
+     }
+     &.btn-default{
+          background-color: $secondary;
+          
+     }
+}
+.btn-outline-md{
+     @include btn-default-md();
+     &.btn-primary{
+          background-color: $primary-25;
+          border: pxtoremconverter(2) solid $light;
+     }
+     &.btn-default{
+          background-color: $secondary;
+          
+     }
+}
+.btn-outline-sm{
+     @include btn-default-sm();
+     &.btn-primary{
+          background-color: $primary-25;
+          border: pxtoremconverter(2) solid $light;
+     }
+     &.btn-default{
+          background-color: $secondary;
+          
+     }
+}
+.btn-inset-outline{
+     @include btn-default();
+     &.btn-primary{
+          background-color: $primary-50;
+          border: pxtoremconverter(2) inset $light;
+     }
+}
+.btn-inset-outline-md{
+     @include btn-default-md();
+     &.btn-primary{
+          background-color: $primary-50;
+          border: pxtoremconverter(2) inset $light;
+     }
+}
+.btn-inset-outline-sm{
+     @include btn-default-sm();
+     
+     &.btn-primary{
+          background-color: $primary-50;
+          border: pxtoremconverter(2) inset $light;
+     }
+}
