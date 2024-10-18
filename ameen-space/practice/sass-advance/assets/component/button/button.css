@@ -1,0 +1,124 @@
+.btn-primary {
+  background-color: rgb(28, 82, 244);
+}
+.btn-primary.outline {
+  background-color: transparent;
+  border: 2px solid rgb(28, 82, 244) !important;
+  color: rgb(28, 82, 244) !important;
+}
+.btn-primary.inset {
+  background-color: rgb(28, 82, 244);
+  border: 2px inset #7d9cf9 !important;
+  color: #ffffff !important;
+}
+
+.btn-primary-mid {
+  background-color: rgb(62, 110, 255);
+}
+.btn-primary-mid.outline {
+  background-color: transparent;
+  border: 2px solid rgb(62, 110, 255) !important;
+  color: rgb(62, 110, 255) !important;
+}
+.btn-primary-mid.inset {
+  background-color: rgb(62, 110, 255);
+  border: 2px inset #a4bbff !important;
+  color: #ffffff !important;
+}
+
+.btn-primary-light {
+  background-color: rgb(102, 138, 248);
+}
+.btn-primary-light.outline {
+  background-color: transparent;
+  border: 2px solid rgb(102, 138, 248) !important;
+  color: rgb(102, 138, 248) !important;
+}
+.btn-primary-light.inset {
+  background-color: rgb(102, 138, 248);
+  border: 2px inset #c8d5fc !important;
+  color: #ffffff !important;
+}
+
+.btn-primary-darker {
+  background-color: #929AAB;
+}
+.btn-primary-darker.outline {
+  background-color: transparent;
+  border: 2px solid #929AAB !important;
+  color: #929AAB !important;
+}
+.btn-primary-darker.inset {
+  background-color: #929AAB;
+  border: 2px inset #cccfd7 !important;
+  color: #ffffff !important;
+}
+
+.btn-primary {
+  background-color: rgb(28, 82, 244);
+}
+.btn-primary.outline {
+  background-color: transparent;
+  border: 2px solid rgb(28, 82, 244) !important;
+  color: rgb(28, 82, 244) !important;
+}
+.btn-primary.inset {
+  background-color: rgb(28, 82, 244);
+  border: 2px inset #7d9cf9 !important;
+  color: #ffffff !important;
+}
+
+.btn-primary-mid {
+  background-color: rgb(62, 110, 255);
+}
+.btn-primary-mid.outline {
+  background-color: transparent;
+  border: 2px solid rgb(62, 110, 255) !important;
+  color: rgb(62, 110, 255) !important;
+}
+.btn-primary-mid.inset {
+  background-color: rgb(62, 110, 255);
+  border: 2px inset #a4bbff !important;
+  color: #ffffff !important;
+}
+
+.btn-primary-light {
+  background-color: rgb(102, 138, 248);
+}
+.btn-primary-light.outline {
+  background-color: transparent;
+  border: 2px solid rgb(102, 138, 248) !important;
+  color: rgb(102, 138, 248) !important;
+}
+.btn-primary-light.inset {
+  background-color: rgb(102, 138, 248);
+  border: 2px inset #c8d5fc !important;
+  color: #ffffff !important;
+}
+
+.btn-primary-darker {
+  background-color: #929AAB;
+}
+.btn-primary-darker.outline {
+  background-color: transparent;
+  border: 2px solid #929AAB !important;
+  color: #929AAB !important;
+}
+.btn-primary-darker.inset {
+  background-color: #929AAB;
+  border: 2px inset #cccfd7 !important;
+  color: #ffffff !important;
+}
+
+.btn-flat {
+  padding: 0.625rem 1.25rem;
+  border: none;
+  border-radius: 6.25rem;
+  cursor: pointer;
+  color: #ffffff;
+  margin-top: 15px;
+}
+.btn-flat.is-rounded {
+  padding: pxtorem(6) pxtorem(10);
+  border-radius: pxtorem(60);
+}/*# sourceMappingURL=button.css.map */

@@ -1,0 +1,23 @@
+@import '../../base/typography';
+@import '../../utilies/function';
+@import '../../utilies/variable';
+@import '../../utilies/mixin';
+
+
+
+.btn-flat{
+    padding: pixtorem(10) pixtorem(20);
+    border: none;
+    border-radius: pixtorem(100);
+    cursor: pointer;
+    color: $light;
+    margin-top: 15px;
+
+    
+
+    &.is-rounded{
+        padding: pxtorem(6) pxtorem(10);
+        border-radius: pxtorem(60);
+        
+    }
+}
