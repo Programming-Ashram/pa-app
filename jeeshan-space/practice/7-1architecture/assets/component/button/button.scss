@@ -1,0 +1,28 @@
+@import '../../utilities/mixing';
+@import '../../utilities/function';
+@import '../../utilities/variable';
+
+
+.btn{
+    @include btn-default();
+    &.btn-warning{
+        background-color: $warning;
+        border: 2px solid $light;
+    }
+    &.btn-secondary{
+        background-color: $secondary;
+        border: 2px solid $light;
+    }
+    &.btn-success{
+        background-color: $success;
+        border: 2px solid $light;
+    }
+    &.btn-warning{
+        background-color: $warning;
+        border: 2px solid $light;
+    }
+    &.btn-danger{
+        background-color: $danger;
+        border: 2px solid $light;
+    }
+}
