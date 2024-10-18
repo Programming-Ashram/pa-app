@@ -1,0 +1,33 @@
+@import '../utilies/variable';
+ 
+
+@function pixtorem($gateSize , $baseSize :16){
+    @return $gateSize / $baseSize * 1rem;
+}
+
+
+$bgColor : (
+    'primary': $primary,
+    'primary-mid': $primary-10,
+    'primary-light': $primary-20,
+    'primary-darker':$primary-30,
+);
+
+
+@each $color-name, $color-value in $bgColor{
+    .btn-#{$color-name}{
+        background-color: $color-value;
+
+        &.outline{
+            background-color: transparent;
+            border: 2px solid $color-value !important;
+            color: $color-value !important;
+        }
+        &.inset{
+            background-color:$color-value;
+            border: 2px inset lighten($color-value, 20%) !important;
+            color: $light !important;
+        }
+        
+    }
+}
