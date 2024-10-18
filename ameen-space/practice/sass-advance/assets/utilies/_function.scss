@@ -11,17 +11,19 @@ $bgColor : (
     'primary-mid': $primary-10,
     'primary-light': $primary-20,
     'primary-darker':$primary-30,
+    'warning': $warning-10,
+    'success': $success-10,
 );
 
 
 @each $color-name, $color-value in $bgColor{
-    .btn-#{$color-name}{
+    .badge-#{$color-name}{
         background-color: $color-value;
 
         &.outline{
             background-color: transparent;
-            border: 2px solid $color-value !important;
-            color: $color-value !important;
+            border: 2px solid $warning !important;
+            color:  $warning !important;
         }
         &.inset{
             background-color:$color-value;
