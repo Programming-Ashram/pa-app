@@ -1,7 +1,8 @@
 @import '../variable/variable';
+@import '../function/function';
 
 @mixin btn-default(){
-    padding:10px 20px;
+    padding:pxtorem(10) pxtorem(20);
     border:none;
     color:$light;
     border-radius: 4px;
