@@ -1,4 +1,28 @@
-$theme : '';
+// $theme: 'light';
+
+
+// .dark-theme{
+//     background-color: #ffffff;
+// }
+
+// .btn{
+//     padding: 10px 20px;
+//     border-radius: 4px;
+//     border: none;
+
+//     @if($theme == 'dark'){
+//         background-color: white;
+//         color: black;
+//     }
+//     @else if($theme == 'lime'){
+//         background-color: white;
+//         color: black;
+//     }
+//     @else{
+//         background-color: black;
+//         color: white;
+//     }
+// }
 
 $primary: rgba(28, 82, 244, 1);
 $primary-25: rgba(62, 110, 255, 1);
@@ -8,121 +32,43 @@ $warning: rgba(173, 102, 7, 1);
 $warning-25: rgba(235, 153, 63, 1);
 $warning-50: rgba(255, 220, 190, 1);
 
-$error: #BA1A1A;
-$error-25: #FF5449;
-$error-50: #FFB4AB;
 
-$success: #008B0E;
-$success-25: #26CC37;
-$success-50: #71FF7F;
-
-$natural: #596173;
-$natural-25: #929AAB;
-$natural-50: #D7DAE0;
-
-$light: #ffffff;
-$disabled: #474A52;
-$disabled-darker: #34373D;
-
-// Looping classes
-$backgroundColors:(
-    'bg-primary':$primary,
-    'bg-primary-mid': $primary-25,
-    'bg-primary-light':$primary-50,
-
-    'bg-warning':$warning,
-    'bg-warning-mid': $warning-25,
-    'bg-warning-light':$warning-50,
-    
-    'bg-error':$error,
-    'bg-error-mid': $error-25,
-    'bg-error-light':$error-50,
-    
-    'bg-success':$success,
-    'bg-success-mid': $success-25,
-    'bg-success-light':$success-50,
-    
-    'bg-natural':$natural,
-    'bg-natural-mid': $natural-25,
-    'bg-natural-light':$natural-50,
+$bgColor:(
+    'bg-primary' : $primary,
+    'bg-warning' : $warning
 );
 
-// Looping classes
 $textColor:(
-    'text-primary':$primary,
-    'text-primary-mid': $primary-25,
-    'text-primary-light':$primary-50,
-
-    'text-warning':$warning,
-    'text-warning-mid': $warning-25,
-    'text-warning-light':$warning-50,
-    
-    'text-error':$error,
-    'text-error-mid': $error-25,
-    'text-error-light':$error-50,
-    
-    'text-success':$success,
-    'text-success-mid': $success-25,
-    'text-success-light':$success-50,
-    
-    'text-natural':$natural,
-    'text-natural-mid': $natural-25,
-    'text-natural-light':$natural-50,
+    'text-primary' : $primary,
+    'text-warning' : $warning
 );
 
 .bg-primary{
-    background-color: map-get($backgroundColors , 'bg-primary' );
+    background-color: map-get($bgColor, 'bg-primary');
 }
+
+.bg-warning{
+    background-color: map-get($bgColor, 'bg-warning' );
+}
+
 .text-primary{
-    color: map-get($textColor , 'text-primary' );
+    color: map-get($textColor, text-primary );
 }
 
+.box{
+    height: 300px;
+    width: 300px;
 
-.theme-dark{
-    background-color: #333333;
-}
-
-
-.card{
-    border-radius: 4px;
-    border: none;
-    padding: 10px 20px;
-
-    @if($theme == 'dark'){
-        background-color: #000000;
-        color: white;
+    @media(min-width: 320px) and (max-width: 767px){
+        background-color: green;
     }
-    @else{
-        background-color: white;
-        color: black;
+    @media(min-width: 640px) and (max-width: 940px){
+        background-color: yellow;
     }
-}
-
-.row::after{
-    content: '';
-    display: table;
-    clear: both;
-
-}
-
-.col-md-4{
-    width: 33.333%;
-    float: left;
-    
-    @media(max-width: 767px){
-        width: 100%;
-        float: left;
+    @media(min-width: 940px) and (max-width: 1200px){
+        background-color: pink;
     }
-    @media(min-width: 640px) and (max-width:940px){
-        width: 50%;
-        float: left;
-    }
-    @media(min-width: 940px) and (max-width:1210px){
-        width: 33.333%;
-        float: left;
-    }
-    @media(min-width: 1210) {
-        width: 25%;
-        float: left;
+    @media(min-width: 1000px) {
+        background-color: orange;
     }
 }
