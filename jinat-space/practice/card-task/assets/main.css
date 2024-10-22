@@ -1,0 +1,8 @@
+@import '../assets/component/card/card.css';
+@import './vander/jaguar/jaguar.css';
+@import './vander/fontawasome/fontawasome.css';
+.horizontal-divider {
+  height: 1px;
+  width: 210px;
+  background-color: grey;
+}/*# sourceMappingURL=main.css.map */
