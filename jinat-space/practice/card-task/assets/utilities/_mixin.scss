@@ -1,0 +1,8 @@
+@import '../utilities/function';
+@import '../utilities/variable';
+
+@mixin card-default(){
+     padding:0;
+     border-radius: pxtorem(6);
+     border:1px solid $secondary;
+}
