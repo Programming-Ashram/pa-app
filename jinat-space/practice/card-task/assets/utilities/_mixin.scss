@@ -3,6 +3,11 @@
 
 @mixin card-default(){
      padding:0;
-     border-radius: pxtorem(6);
+     box-sizing: border-box;
+     border-radius: pxtorem(8);
      border:1px solid $secondary;
+     -webkit-border-radius: pxtorem(8);
+     -moz-border-radius: pxtorem(8);
+     -ms-border-radius: pxtorem(8);
+     -o-border-radius: pxtorem(8);
 }

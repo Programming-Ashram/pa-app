@@ -2,6 +2,17 @@
 
 .card{
      @include card-default();
+     
+     &:is(.devider){
+          .vertical-divider{
+               height: 100px;
+               width: 2px;
+               background-color: gray;
+          }
+     }
+     .widget{
+          white-space:nowrap;
+     }
      .title{
           font-size: 32px;
      }
@@ -22,5 +33,4 @@
           font-size: pxtorem(16);
           line-height: 1.5;
      }
-
 }
