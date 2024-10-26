@@ -10,7 +10,6 @@ $theme : 'red-theme';
     .card{
         background-color: #000000;
     }
-   
 }@else if($theme == 'lime-theme'){}
 @else if($theme == 'red-theme'){}
 @else if($theme == 'pink-theme'){}
