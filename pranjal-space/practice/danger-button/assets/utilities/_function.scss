@@ -1,0 +1,22 @@
+$bgColor :(
+    'danger':$danger,
+    'danger-md':$danger-25,
+    'danger-light':$danger-50,
+);
+@each $color-name, $color-value in $bgColor{
+    .btn-#{$color-name}{
+        background-color: $color-value;
+
+        &:is(.is-outline){
+            background-color: transparent;
+            border: pxtorem(2) solid $color-value;
+            color: $color-value;
+
+            &:hover{
+                background-color: $color-value;
+                color: $light;
+            }
+        }
+    }
+    
+}
