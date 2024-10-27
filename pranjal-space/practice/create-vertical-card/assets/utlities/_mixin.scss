@@ -1,0 +1,18 @@
+@import '../variable/variable';
+@import '../function/function';
+
+@mixin card($borderColor, $width){
+    padding: pxtorem(5);
+    border-radius: pxtorem(4);
+    border: pxtorem(0.5) solid $secondary;
+    width: $width;
+}
+
+@mixin card-background($bgColor, $color){
+    background-color:$bgColor ;
+    color: $color;
+}
+div{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr)
+  }
