@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+section {
+  background-image: url(https://g-source.xyz/templates/gravity/assets/img-temp/gravity-intro/intro.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.btn-1 {
+  color: white;
+  background-color: black;
+  border-color: white;
+  padding: 10px 30px;
+}
+.btn-1.btn-1:hover {
+  background-color: white;
+  color: black;
+  transition: 1s;
+}
+
+.fs-72 {
+  font-size: 72px;
+}
+
+.fs-23 {
+  font-size: 23px;
+}
+
+.bg-clr {
+  background-color: rgba(0, 0, 0, 0.59);
+  padding: 30px;
+}
+
+.mg-15 {
+  margin-top: 35px;
+}
+
+.fs-65 {
+  font-size: 4.28571rem;
+}
+
+.col-md-3 {
+  width: 25%;
+  float: left;
+}
+
+.box {
+  width: 250px;
+  height: 100px;
+  box-shadow: 2px 2px 2px 3px #555;
+  text-align: center;
+}
+.box.box:hover {
+  box-shadow: 0px 4px 1px 1px #555;
+}
+
+.top {
+  margin-top: 25px;
+}/*# sourceMappingURL=style.css.map */

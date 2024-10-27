@@ -1,0 +1,23 @@
+.card {
+  padding: 0px;
+  border: 0.5px solid #929AAB;
+  border-radius: 6px;
+  background-color: #ffffff;
+  width: 300px;
+}
+.card .card-body {
+  padding: 16px;
+}
+.card .title {
+  font-size: 40px;
+  line-height: 10px;
+  margin-bottom: 8px;
+  color: #008B0E;
+}
+.card .subtitle {
+  font-size: 18px;
+  color: rgb(173, 102, 7);
+}
+.card .card-content {
+  color: rgb(173, 102, 7);
+}/*# sourceMappingURL=card.css.map */
