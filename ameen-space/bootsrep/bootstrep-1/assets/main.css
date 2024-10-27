@@ -1,0 +1,15 @@
+.box {
+  border-radius: 3px;
+  width: 220px;
+  height: 220px;
+  border: 3px solid gray;
+}
+
+.image-1 {
+  transform: scale(0.9);
+  overflow: hidden;
+}
+
+.font {
+  font-family: "Nunito", sans-serif;
+}/*# sourceMappingURL=main.css.map */
