@@ -1,1 +1,4 @@
-/*# sourceMappingURL=main.css.map */
+@import '../assets/component/card.css';
+body {
+  padding: 10px;
+}/*# sourceMappingURL=main.css.map */
