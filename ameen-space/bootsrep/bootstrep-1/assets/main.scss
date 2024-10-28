@@ -4,10 +4,16 @@
     height: 220px;
     border: 3px solid gray;
 }
-.image-1{
+.image-1:hover{
     transform: scale(0.9);
     overflow: hidden;
 }
 .font{
     font-family: "Nunito", sans-serif;
+}
+.price{
+    width: 80px;
+    height: 40px;
+    position: relative;
+    
 }
