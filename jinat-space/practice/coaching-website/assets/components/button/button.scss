@@ -1,0 +1,14 @@
+@import '../assets/utilities/variable';
+
+$bgcolor:(
+     'red':$red,
+     'purple':$purple,
+     'sky':$sky,
+     'light-green':$light-green,
+);
+
+@each $color-value, $color-name in $bgcolor{
+     .circle-#{$color-name}{
+          border: 1px dashed $color-value;
+     }
+}
