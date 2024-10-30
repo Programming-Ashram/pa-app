@@ -12,4 +12,8 @@
 .ban{
      padding: 30px 20px;
      border-radius: 8px;
+     &:hover{
+          background-color: $bg-green;
+          transition: 0.3s;
+}
 }
