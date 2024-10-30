@@ -21,6 +21,14 @@
   transition: 0.3s;
 }
 
+.profile {
+  padding: 20px;
+}
+
+.left {
+  left: 10px;
+}
+
 header, section {
   background-color: #FBF5F5;
 }
@@ -32,6 +40,11 @@ footer {
 .logo {
   width: 150px;
   height: 37px;
+}
+
+.image {
+  width: 70px;
+  height: 70px;
 }
 
 .move {
