@@ -16,7 +16,59 @@
   padding: 30px 20px;
   border-radius: 8px;
 }
+.ban:hover {
+  background-color: rgba(3, 185, 124, 0.1);
+  transition: 0.3s;
+}
+
+.profile {
+  padding: 20px;
+}
+
+.left {
+  left: 10px;
+}
 
 header, section {
   background-color: #FBF5F5;
+}
+
+footer {
+  background-color: #3c4852;
+}
+
+.logo {
+  width: 150px;
+  height: 37px;
+}
+
+.image {
+  width: 70px;
+  height: 70px;
+}
+
+.move {
+  position: absolute;
+  top: 100% !important;
+  left: 70px;
+}
+
+.circle-red {
+  border: 1px dashed #ff5722;
+  color: #ff5722;
+}
+
+.circle-purple {
+  border: 1px dashed #906AD4;
+  color: #906AD4;
+}
+
+.circle-sky {
+  border: 1px dashed #09B9B1;
+  color: #09B9B1;
+}
+
+.circle-light-green {
+  border: 1px dashed #7CBF2F;
+  color: #7CBF2F;
 }/*# sourceMappingURL=main.css.map */

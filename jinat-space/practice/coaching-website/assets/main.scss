@@ -6,3 +6,41 @@ header, section{
        background-color: $light-pink;
     
 }
+footer{
+       background-color: $nav;
+}
+.logo{
+       width:150px;
+       height: 37px;
+}
+.image{
+       width: 70px;
+       height: 70px;
+}
+// @media (min-width:320px),(max-width:480px){
+//        .responsive{
+//               .col-md-6{
+//                      width: 100%;
+                    
+//               }
+//        }
+// }
+
+.move{
+       position: absolute;
+       top: 100% !important;
+    left: 70px;
+}
+$bgcolor:(
+     'red':$red,
+     'purple':$purple,
+     'sky':$sky,
+     'light-green':$light-green,
+);
+
+@each $color-name, $color-value in $bgcolor{
+     .circle-#{$color-name}{
+          border: 1px dashed $color-value;
+          color: $color-value;
+     }
+}
