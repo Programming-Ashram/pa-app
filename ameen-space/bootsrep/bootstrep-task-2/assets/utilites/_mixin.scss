@@ -5,3 +5,167 @@
 .font-femliy{
     font-family: "Poppins", serif;
 }
+.nav-bg{
+    background-color: $soft;
+}
+.font-lg{
+    font-size:pixtorem(60);
+}
+.section-bg{
+    background-color: $pink;
+}
+.profile-1{
+    border: pixtorem(3) solid $secondary;
+    width:pixtorem(390);
+    height:pixtorem(320);
+    border-radius: pixtorem(10);
+}
+.animation-1{
+    position: relative;
+         
+   
+}
+.animation-4{
+    position: relative;
+         
+   
+}
+.left{
+    left: pixtorem(-20);
+}
+.left-11{
+    left: -5.25rem;
+}
+.right-1{
+    right: pixtorem(-20);
+}
+.right-11{
+    right: 36.75rem;
+}
+.animation-2{
+    position: relative;
+    &.right{
+        right: 0;
+        position: absolute;
+    }
+}
+.animation-3{
+    position: relative;
+    &.left-1{
+        left: 0;
+        position: absolute;
+    }
+}
+
+.motion-1{
+    animation-name: glass;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count:infinite;
+    animation-delay: 2s;
+    animation-direction: alternate;
+}
+.motion-4{
+    animation-name: class;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count:infinite;
+    animation-delay: 2s;
+    animation-direction: alternate;
+}
+@keyframes class{
+    from{
+        transform: translatey(-20px);
+    }
+    to{
+        transform: translatey(40px);
+    }
+}
+
+
+@keyframes glass{
+    from{
+        transform: translatex(-20px);
+    }
+    to{
+        transform: translatex(40px);
+    }
+}
+.motion-2{
+    animation-name: topup;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count:infinite;
+    animation-delay: 2s;
+    animation-direction: alternate;
+}
+.motion-3{
+    animation-name: ameen;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count:infinite;
+    animation-delay: 2s;
+    animation-direction: alternate;
+}
+@keyframes ameen{
+    from{
+        transform: translatex(20px);
+    }
+    to{
+        transform: translatex(40px);
+    }
+}
+
+@keyframes topup{
+    from{
+        transform: translatey(-20px);
+    }
+    to{
+        transform: translatey(40px);
+    }
+}
+.motion-5{
+    animation-name:ring;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count:infinite;
+    animation-delay: 2s;
+}
+@keyframes ring{
+    from{
+        transform:rotate(0);
+    }
+    to{
+        transform:rotate(360deg);
+    }
+}
+.service-1{
+    width: pixtorem(460);
+    height: pixtorm(490s);
+    background-color:$light;
+    border: pixtorem(3) solid $light;
+}
+.ms-80{
+    margin-left: pixtorem(604);
+}
+.mt-25{
+    margin-top: pixtorem(25);
+}
+.pic-1:hover{
+    transform: scale(0.9);
+}
+.group-11{
+    width:pixtorem(396);
+    height: pixtorem(240);
+    border-radius: pixtorem(8);
+}
+.footer-bg{
+    background-color: #080e1c;
+}
+.footer-lg{
+    background-color: #684DF4;
+    box-shadow: -10px -11px 2px 3px grey;
+    &:hover{
+        transform: scale(0.8);
+    }
+}
