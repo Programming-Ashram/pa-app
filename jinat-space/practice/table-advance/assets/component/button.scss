@@ -1,0 +1,40 @@
+@import '../utilities/mixin';
+$bgColor:(
+     'blue':$blue,
+     'light':$light,
+     'danger':$danger,
+     'success':$success,
+);
+.btn{
+     @include btn-default();
+     &:is(.btn-group){
+          border-radius: 0;
+          &:first-child{
+               border-top-left-radius: pxtorem(8);
+               border-bottom-left-radius: pxtorem(20);
+          }
+          &:last-child{
+               border-top-right-radius: pxtorem(8);
+               border-bottom-right-radius: pxtorem(20);
+          }
+     }
+     
+     &:hover{
+          background-color: $success;
+          color: $light;
+          transition: 0.3s;
+     
+     }
+}
+.btn-groups{
+     display: flex;
+     justify-content: center;
+     
+}
+@each $color-name, $color-value in $bgColor{
+     .btn-#{$color-name}{
+          background-color: $color-value;
+          border: 2px solid $blue;
+          color:$blue ;
+     }
+}
