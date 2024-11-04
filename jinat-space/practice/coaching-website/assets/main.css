@@ -37,6 +37,11 @@ header, section {
   border: none !important;
 }
 
+.icon {
+  height: 30px;
+  width: 138px;
+}
+
 .number {
   text-decoration: none;
   color: #61CE70;

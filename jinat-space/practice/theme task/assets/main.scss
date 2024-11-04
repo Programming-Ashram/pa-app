@@ -1,0 +1,29 @@
+.logo{
+     width: 132px;
+     height:60px;
+}
+.image:hover{
+     transform:skew(15deg);
+     -webkit-transform:skew(15deg);
+     -moz-transform:skew(15deg);
+     -ms-transform:skew(15deg);
+     -o-transform:skew(15deg);
+}
+.image-2:hover{
+     transform: rotateY(50deg);
+     transition: 0.2s;
+     -webkit-transition: 0.2s;
+     -moz-transition: 0.2s;
+     -ms-transition: 0.2s;
+     -o-transition: 0.2s;
+}
+.image-3:hover{
+     transform: rotateY(15deg);
+     -webkit-transform: rotateY(15deg);
+     -moz-transform: rotateY(15deg);
+     -ms-transform: rotateY(15deg);
+     -o-transform: rotateY(15deg);
+}
+.background{
+     background: rgba(255, 255, 255, 0.5)
+}
