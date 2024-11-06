@@ -1,0 +1,26 @@
+@import '../../variable/variable';
+@import '../../mixin/mixin';
+@import '../../function/function';
+
+
+.text-center{
+    text-align: center;
+}
+.flex{
+    display: flex;
+}
+.card{
+    @include card($dark, pxtorem(300));
+    background-color: $info;
+    &.card-primary{
+        @include card-background($info,$light)
+    }
+    &.card-secondery{
+        @include  card-background($danger,$light)
+    }
+    .btn-danger{
+        @include btn-default();
+        @include card-background($danger,$light)
+    }
+
+}

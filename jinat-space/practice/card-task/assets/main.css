@@ -1,0 +1,32 @@
+@import '../assets/component/card/card.css';
+@import './vander/jaguar/jaguar.css';
+@import './vander/fontawasome/fontawasome.css';
+* {
+  margin: 0;
+}
+
+.horizontal-divider {
+  height: 1px;
+  width: 210px;
+  background-color: grey;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.gap {
+  gap: 20px;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.avatar {
+  height: 80px;
+  width: 80px;
+  border-radius: 100%;
+  -o-object-fit: fill;
+     object-fit: fill;
+}/*# sourceMappingURL=main.css.map */
