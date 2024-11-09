@@ -1,0 +1,38 @@
+@import '../utilities/mixin';
+@import '../utilities/function';
+
+
+.card{
+    @include card-default();
+    
+    &:is(.devider){
+         .vertical-divider{
+              height: 100px;
+              width: 2px;
+              background-color: gray;
+         }
+    }
+    .widget{
+         white-space:nowrap;
+    }
+    .title{
+         font-size: 32px;
+    }
+    .sub-title{
+         font-size: 18px;
+         line-height: 2;
+    }
+    img{
+         width: 100%;
+    }
+    .card-footer{
+         margin-top: pxtorem(5);
+    }
+    .card-body{
+         padding: pxtorem(16);
+    }
+    .content,.card-title{
+         font-size: pxtorem(16);
+         line-height: 1.5;
+    }
+}

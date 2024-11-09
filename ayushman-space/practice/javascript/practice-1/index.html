@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Basics</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body> 
+    
+    <button class="btn btn-primary"onclick='openModal()'>Click me</button>
+
+    <div class="container">
+        <div class="row" id="usersId">
+            
+        </div>
+    </div>
+
+    <script>
+        // var x = 1;
+        // var y = "haha";        // var jinat = "UI Developer";
+        // var x = 354;
+        // var y = true;
+        // var h;
+        // var g = null;
+        // console.log(g);
+
+        // var x = "3";
+        // var y = "Ansh";
+        // var z = x + y;
+        // // Concat
+        // console.log(z);
+        
+
+        // premitive 
+        // "" (String)
+        // number (without String)
+        // boolean (true & False)
+        // undefind (undefind)
+        // null (prdefind Object)
+
+        // non premetive
+        // array
+        // object
+        // REGX (Regular Expressions)
+
+        // var muskan;
+
+        // console.log(muskan);
+
+        // if(muskan == true){
+        //     console.log("Muskan is true");
+        // }else{
+        //     console.log("Please check again");
+        // }
+
+                // ----[0]---------[1]--------[2]--------[3]
+        // let users = ["Pranjal", "Jinat", "Muskan", "Jeeshan", "Tassu", "Ammu", "Ansh"];
+
+        let users = [
+            {
+                name: "Jinat",
+                age: 23,
+                desgination: "UI developer"
+            },
+            {
+                name: "Ameen",
+                age: 23,
+                desgination: "UI developer"
+            },
+            {
+                name: "Pranjal",
+                age: 23,
+                desgination: "UI developer"
+            },
+            {
+                name: "Muskan",
+                age: 23,
+                desgination: "UI developer"
+            },
+            {
+                name: "Ayushman",
+                age: 23,
+                desgination: "UI developer"
+            }
+            ,
+            {
+                name: "Harsh",
+                age: 23,
+                desgination: "UI developer"
+            }
+        ]
+
+        for(var i = 0; i < users.length; i++){
+            console.log(users[i].age)
+        //    var heading = document.createElement('h1');
+           var usersIdShow = document.querySelector('#usersId');
+        //    heading.setAttribute('class', 'text-light p-2 bg-primary')
+        //    body.appendChild(heading);
+          
+        //    heading.innerText = `${users[i]}`;
+        usersIdShow.innerHTML += `
+            <div class='col-md-4'>
+                <div class='card bg-primary rounded-0 shadow-lg text-light mb-4'>
+                    <div class='card-header'>
+                        <h2 class='card-title'>${users[i].name}</h2>    
+                        <h6 class='card-subtitle'>${users[i].desgination}</h6>    
+                    </div>    
+                </div>    
+            </div>
+        `;
+    
+        }
+        
+
+
+        function openModal(){
+            alert("hello i am open modal function")
+        }
+
+
+        // Console.log
+        // console.log(jinat)
+        // alert(jinat);
+        // document.writeln(jinat)
+        // confirm("Are you want to delete ??...");
+        // prompt("Type your name here");
+        // console.error("Something went wrong!!!");
+    </script>
+</body>
+</html>
