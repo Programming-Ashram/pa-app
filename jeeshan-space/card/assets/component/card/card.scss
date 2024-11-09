@@ -1,0 +1,46 @@
+@import '../../utilities/variable';
+
+.card{
+    padding: 10px;
+    border: 1px solid $natural-25;
+    border-radius: 4px;
+    background-color: $light;
+    width: 268px;
+    text-align: center;
+    margin: 10px 12px;
+
+}
+.w-50{
+    width: 50px;
+}
+.btn-flat{
+    text-align: end;
+}
+img{
+    width: 100%;
+}
+.card-title{
+    font-size: 15px;
+    line-height: 5px;
+    margin: 13px 0px;
+
+}
+.end{
+    display: flex;
+    justify-content: end;
+}
+.justify-content{
+    justify-content: left;
+}
+
+.content{
+    font-size: 12px;
+    color: $natural-50;
+}
+.d-flex{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    
+}
+

@@ -1,0 +1,66 @@
+@import '../../mixin/mixin.scss';
+
+.badge{
+     @include badge-com();
+     &.badge-primary{
+          background-color: $primary;
+     }
+     &.badge-secondary{
+          background-color: $secondary;
+     }
+     &.badge-danger{
+          background-color: $danger;
+     }
+     &.badge-success{
+          background-color: $success;
+     }
+     &.badge-dark{
+          background-color: $dark;
+     }
+     &.badge-info{
+          background-color: $info;
+     }
+     &.badge-warning{
+          background-color: $warning;
+     }
+     &.badge-light{
+          background-color: $light;
+          color: $dark;
+     }
+     &.badge-outline-primary{
+          border: 2px solid $primary;
+          color: $primary;
+     }
+     &.badge-outline-success{
+          border: 2px solid $success;
+          color: $success;
+     }
+     &.badge-outline-danger{
+          border: 2px solid $danger;
+          color: $danger;
+     }
+     &.badge-outline-info{
+          border: 2px solid $info;
+          color: $info;
+     }
+     &.badge-outline-dark{
+          border: 2px solid $dark;
+          color: $dark;
+     }
+     &.badge-outline-light{
+          border: 2px solid $light;
+          color: $light;
+     }
+     &.badge-outline-light{
+          border: 2px solid $light;
+          color: $dark;
+     }
+     &.badge-outline-secondary{
+          border: 2px solid $secondary;
+          color: $secondary;
+     }
+     &.badge-outline-warning{
+          border: 2px solid $warning;
+          color: $warning;
+     }
+}

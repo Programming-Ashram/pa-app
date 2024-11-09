@@ -1,0 +1,10 @@
+@import '../utilities/variable';
+
+@mixin badge-com(){
+     padding:$size-sm $size-md;
+     border-radius: 60px;
+     color: $light;
+     margin: $size-md;
+
+}
+
