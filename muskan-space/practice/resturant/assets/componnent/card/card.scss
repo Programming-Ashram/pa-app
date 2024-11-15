@@ -1,0 +1,9 @@
+
+@import '../../function/function.scss';
+
+.card{
+    padding: pxtoremconvertor(15);
+    box-shadow: 0 20px 40px rgba(96,134,187,.35);
+    border-radius: pxtoremconvertor(8);
+    width: pxtoremconvertor(300);
+}
