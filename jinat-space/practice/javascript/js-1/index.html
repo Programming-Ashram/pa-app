@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+     <div class="container">
+          <div class="row" id="userId">
+
+          </div>
+     </div>
+     <button class="btn btn-primary"onclick='openModal()'>Click Me</button>
+     <script>
+          const f = "bhaijaan";
+           
+          console.log(f);
+          
+          
+          let users = [
+               {
+                    name:"jinat",
+                    age: 23,
+                    designation: "UI Developer"
+               },
+               {
+                    name:"jinat",
+                    age: 23,
+                    designation: "UI Developer"
+               },
+               {
+                    name:"jinat",
+                    age: 23,
+                    designation: "UI Developer"
+               },
+               {
+                    name:"jinat",
+                    age: 23,
+                    designation: "UI Developer"
+               },
+               {
+                    name:"jinat",
+                    age: 23,
+                    designation: "UI Developer"
+               }
+          ]
+
+          for(var i = 0; i < users.length; i++){
+               console.log(users[i].age)
+               var userIdShow = document.querySelector('#userId');
+               userIdShow.innerHTML +=`
+                    <div class='col-md-4'>
+                <div class='card bg-primary rounded-0 shadow-lg text-light mb-4'>
+                    <div class='card-header'>
+                        <h2 class='card-title'>${users[i].name}</h2>    
+                        <h6 class='card-subtitle'>${users[i].desgination}</h6>    
+                    </div>    
+                </div>    
+            </div>
+               `;
+
+          }
+
+          var x = 8;
+          var y = jinat;
+          var z = x/y;
+          console.log(z)
+          function openModal(){
+               alert("hello i m open")
+          }
+
+     </script>
+</body>
+</html>
