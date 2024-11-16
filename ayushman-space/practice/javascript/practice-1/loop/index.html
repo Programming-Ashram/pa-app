@@ -9,15 +9,15 @@
 </head>
 <body>
     
-    <section class="py-5 bg-primary-subtle">
+    <section>
         <div class="container">
-            <div class="row" id="cars"></div>
+          <div class="row" id="todos"></div>
         </div>
     </section>
 
     <script>
-        // var fruits = ['Apple', 'Banana', 'Grapes', 'Orange', 'PineApple'];
-    var  todos =   [
+        // var data = ["Apple", "Banana", "Grapes", "Cherry", "Tomato"];
+    var todos =   [
   {
     userId: 1,
     id: 1,
@@ -1218,35 +1218,32 @@
     title: "ipsam aperiam voluptates qui",
     completed: false
   }
-]
-
-        for(var i = 0; i < todos.length; i++){
-            var car = document.getElementById('cars');
-            car.innerHTML += `
-                   <div class='col-lg-3 col-md-4 col-12 my-2 '>
-                    <div class="card border-0 shadow-lg h-100 ${(todos[i].completed == false) ? 'bg-warning ' : 'bg-success text-light' }">
-                        <div class="card-body">
-                            <h5 class="card-title">${(todos[i].completed == true) ? '<i class="fa-solid fa-check"></i> Task Completed' : '<i class="fa-regular fa-clock"></i> in Progress' }</h5>
-                            <h6 class="card-subtitle mb-2 text-body-secondary">${todos[i].id}</h6>
-                            <p class="card-text">${todos[i].title}</p>
-                            <a href="#" class="card-link">Card link</a>
-                            <a href="#" class="card-link">Another link</a>
-                        </div>
-                    </div>
-                </div>
-            `;
+];
+        var index;
+        for(index = 0; index < todos.length; index++){
+          var data = document.getElementById('todos');
+          data.innerHTML += `
+              <div class='col-md-3'>
+                <div class="card" style="width: 18rem;">
+                  <div class="card-body">
+                    <h5 class="card-title">${todos[index].completed}</h5>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">${todos[index].userId}</h6>
+                    <p class="card-text">${todos[index].title}</p>
+                    <a href="#" class="card-link">Card link</a>
+                    <a href="#" class="card-link">Another link</a>
+                  </div>
+                </div>  
+              </div>
+          `;
+          
         }
-        
-        // for(var i = 0; i < fruits.length; i++){
-        //      var body = document.querySelector('body');
-        //      var h1 = document.createElement('h1');
-        //      body.appendChild(h1);
-        //      h1.innerText = fruits[i];
-        //      h1.style.color  = "white";
-        //      h1.style.backgroundColor  = "blue";
-        //      h1.setAttribute('class', 'display-1');
-        // }
-
     </script>
+
+    <!-- JSON to oBject Convertor -->
+    <!-- https://www.convertsimple.com/convert-json-to-javascript/ -->
+
+
+     <!-- Json Placeholder -->
+     <!-- https://jsonplaceholder.typicode.com/ -->
 </body>
 </html>
