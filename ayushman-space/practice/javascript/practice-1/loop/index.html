@@ -1223,14 +1223,16 @@
         for(index = 0; index < todos.length; index++){
           var data = document.getElementById('todos');
           data.innerHTML += `
-              <div class='col-md-3'>
-                <div class="card" style="width: 18rem;">
+              <div class='col-lg-3 col-md-6 col-12 my-3'>
+                <div class="card p-3 h-100  ${todos[index].completed == false ? 'bg-warning ' : 'bg-success text-light'}">
                   <div class="card-body">
-                    <h5 class="card-title">${todos[index].completed}</h5>
+                    <h5 class="card-title">${todos[index].completed == false ? 'In Progress ' : '<i class="fa-solid fa-check"></i> Completed'}</h5>
                     <h6 class="card-subtitle mb-2 text-body-secondary">${todos[index].userId}</h6>
                     <p class="card-text">${todos[index].title}</p>
-                    <a href="#" class="card-link">Card link</a>
-                    <a href="#" class="card-link">Another link</a>
+                    <div class='control ${todos[index].completed == false ? 'd-none' : ' '}'>
+                        <a href="#" class="card-link text-light">Card link</a>
+                        <a href="#" class="card-link text-light">Another link</a>
+                      </div>
                   </div>
                 </div>  
               </div>
