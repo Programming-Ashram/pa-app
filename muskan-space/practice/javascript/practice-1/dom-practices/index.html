@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<body id="body">
+    <script>
+        var body = document.getElementById('body');
+        var header = document.createElement('header');
+        var container1 = document.createElement('div');
+        var row1 = document.createElement('div');
+        var col1 = document.createElement('div');
+        var col2 = document.createElement('div');
+
+        body.appendChild(header);
+        header.appendChild(container1);
+        container1.appendChild(row1);
+        row1.setAttribute('class', 'row');
+        container1.setAttribute('class','container py-2');
+        row1.appendChild(col1);
+        col1.setAttribute('class','col-md-6');
+        row1.appendChild(col2);
+        col2.setAttribute('class','col-md-6');
+
+
+         col1.innerHTML = `
+                <div class="d-flex  gap-3 align-items-center"> 
+                    <img src="https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2019/06/organic-store-logo5.svg" alt="">
+                    <div>
+                        <a href="#" class="text-decoration-none px-2">Everything</a> 
+                        <a href="#" class="text-decoration-none px-2">Groceries</a>    
+                        <a href="#" class="text-decoration-none px-2">Juice</a> 
+                  </div>
+                </div>
+            `;
+
+          col2.innerHTML = `
+                 <div class="d-flex  justify-content-end gap-3 align-items-center"> 
+                    <ul class="d-flex gap-3 py-4">
+                        <li class="list-unstyled"><a href="#" class="text-decoration-none">About</a></li>
+                        <li class="list-unstyled"><a href="#" class="text-decoration-none">Contact</a></li>
+                    </ul>
+                    <ul class="d-flex gap-3 py-4">
+                        <li class="list-unstyled"><a href="#" class="text-decoration-none">$0.00</a></li>
+                        <li class="list-unstyled"><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                        <li class="list-unstyled"><a href="#"><i class="fa-solid fa-user"></i></a></li>
+                    </ul>
+                  </div>
+                `;
+          
+          
+      
+        var section = document.createElement('section');
+        var container2 = document.createElement('div');
+        var row2 = document.createElement('div');
+        var col01 = document.createElement('div');
+        var col02 = document.createElement('div');
+
+
+        body.appendChild(section);
+        section.appendChild(container2);
+        section.setAttribute('class', 'py-5')
+        container2.appendChild(row2);
+        row2.setAttribute('class','row align-items-center');
+        container2.setAttribute('class','container');
+        row2.appendChild(col01);
+        col01.setAttribute('class','col-md-6');
+        row2.appendChild(col02);
+        col02.setAttribute('class','col-md-6');
+
+
+
+        col01.innerHTML=`
+                <div>
+                    <img class="w-100" src="https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2021/03/organic-products-hero.png" alt="">
+                </div>
+            `;
+
+        col02.innerHTML = `
+                    <div>
+                        <img  src="https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2019/07/logo-leaf-new.png" alt="">
+                    </div>
+                    <h4 class="mt-3"> Best Quality Products</h4>
+                    <h1 class="display-4"><b>Join The Organic Movement!<b></h1>
+                    <p class="mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+
+                    <button class="btn btn-success mt-2"><i class"fa-solid fa-cart-shopping me-2 p-2"></i>shop now</button>
+
+                   `;
+
+        var body = document.getElementById('body')
+        var article1 = document.createElement('article');
+        var container3 = document.createElement('div');
+        var row3 = document.createElement('div');
+
+
+
+
+        body.appendChild(article1);
+        article1.appendChild(container3);
+        article1.setAttribute('class','bg-dark py-5');
+        container3.appendChild(row3);
+        container3.setAttribute('class','container');
+        row3.setAttribute('class','row');
+        row3.setAttribute('id','ansh');
+
+        
+
+        var user = [
+          {
+                logo: '<i class="fa-solid fa-truck"> </i>',
+                theme: "free shipping",
+                content: "Above $5 Only",
+        },
+        {
+                logo: '<i class="fa-solid fa-address-book"></i>',
+                theme: "Certified Organic",
+                content: "100% Guarantee",
+        },
+        {
+                logo: '<i class="fa-solid fa-money-bill"> </i>',
+                theme: "Huge Savings",
+                content: "At Lowest Price",
+        },
+
+
+        {
+                logo: '<i class="fa-solid fa-recycle"> </i>',
+                theme: "Easy returns",
+                content: "No Question Asked",
+        },
+            ];
+
+
+        for(var i = 0; i < user.length; i++){
+            var data = document.querySelector('#ansh');
+            data.innerHTML +=`
+                    <div class="col-md-3">
+                        <div class="card  bg-dark-subtle mx-3 p-3">
+                            <div class = "d-flex gap-2 align-items-center"> 
+                                <div class="">
+                                    <h3>${user[i].logo}</h3>
+                                </div>
+                                <div class="">
+                                    <div class="card-body">
+                                        <h5 class="card-title">${user[i].theme}</h5>
+                                        <p class="card-text">${user[i].content}</p>
+                                        
+                                      </div>
+                                 </div>
+                                
+                            </div>
+                        </div>
+                     </div>
+                    `;
+
+                     }
+
+
+
+
+        var body = document.getElementById('body'); 
+        var article = document.createElement('article');
+        var container4 = document.createElement('div');
+        var row4 = document.createElement('div');       
+        var col1= document.createElement('div');
+        var col2= document.createElement('div');
+        var col3= document.createElement('div');
+        var col4= document.createElement('div');
+
+
+
+        body.appendChild(article);
+        article.appendChild(container4);
+        container4.setAttribute('class','container');
+        container4.appendChild(row4);
+        row4.appendChild(col1);
+        col1.setAttribute('class','col-md-3');
+        article.setAttribute('class','mt-5');
+        row4.appendChild(col2);
+        col2.setAttribute('class','col-md-3');
+        row4.appendChild(col3);
+        col3.setAttribute('class','col-md-3');
+        row4.appendChild(col4);
+        row4.setAttribute('class','row')
+
+        col4.setAttribute('class','col-md-3');
+        container4.appendChild(row4);
+        col3.setAttribute('class', 'row align-items-center');
+
+
+
+
+
+
+        row4.innerHTML =`
+                    <div class = "text-center">
+                        <h1 class="text-center">Best Selling Products</h1>
+                        <img src="https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2019/07/logo-leaf-new.png">
+                    </div>
+
+                    `;
+
+
+
+        var user = [
+
+            {
+                photos: 'https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2018/06/coffee-asorted.jpg',
+                title: "Groceries",
+                name: "assorted coffee",
+                rating: '<i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i>',
+                price: "$35.00",
+             },
+             {
+                photos: 'https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2018/06/sanitizer-400x400.jpg',
+                title: "Groceries",
+                name: "Hand Sanitizer",
+                rating: '<i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i>',
+                price: "$10.00",
+             },
+             {
+                photos: 'https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2018/06/red-chillies-400x400.jpg',
+                title: "Groceries",
+                name: "Handpicked Red Chillies",
+                rating: '<i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i>',
+                price: "$19.00",
+             },
+             {
+                photos: 'https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2018/06/edible-oil-400x400.jpg',
+                title: "Groceries",
+                name: "Natural Extracted Edible Oil",
+                rating: '<i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i>',
+                price: "$24.00",
+             },
+
+        ];
+
+
+        for(var i = 0; i < user.length; i++){
+            row4.innerHTML += `
+                <div class="col-md-3">
+                    <div class="my-3 text-center"> 
+                        <div class="card-body">
+                            <img src="${user[i].photos}" width="100%">
+                            <h5>${user[i].title}</h5>
+                            <p>${user[i].rating}</p>
+                            <p><strong>${user[i].price}</strong></p>
+                            
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                `;
+        };
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+         
+
+         
+
+
+
+
+          
+
+
+
+    </script>
+
+    
+</body>
+</html>
