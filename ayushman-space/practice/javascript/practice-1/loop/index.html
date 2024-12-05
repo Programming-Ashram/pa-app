@@ -11,42 +11,35 @@
 
         <script>
             
-            let array = ["Apple", "Banana", "Grapes"];
+            // simple
+        //    alert("Taslim");
+        //    alert("Pranjal");
+        //    alert("Jinat");
 
-            // Returns indexing but as a number
-            for(let i = 0; i < array.length; i++){
-                console.log(i);
-            }
+        function taslim(){alert("Taslim");}
+        function pranjal(){alert("Pranjal");}
+        function jinat(){alert("Jinat");}
 
-            // Returns indexing but as a string
-            for (let i in array){
-                console.log(i);
-            }
+        // Nested Function
+        function programmingAshram(){
+            function taslim(){ alert("Taslim");}taslim();
+            function pranjal(){alert("Pranjal");}pranjal();
+            function jinat(){alert("Jinat");} jinat();
+        }
+        // programmingAshram();
+        let fn = ()=>{alert("Jinat");}
+        // fn();
 
-            // Returns values of an array
-            for(let i of array){
-                console.log(i);
-            }
+        (function (){alert("Jinat");})();
 
-            // We render or fetch the data based on needed
-            let y = 0;
-            while (y <= 10) {
-                console.log(y);
-                y++;
-            }
+        function fullName(fname, lname){
+            alert(fname +" "+ lname);
+        }
+        fullName("Ayushman", "Chaurasiya");
 
 
-            // We render or fetch the data based on needed
-            let i = 0;
-            do {
-                console.log(i);
-                i++;
-            } while (i <= 10);
 
-            // Returns values of an array
-            array.forEach(i =>{
-                console.log(i);
-            })
+           
 
         </script>
     </body>
