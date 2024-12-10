@@ -61,16 +61,207 @@
                     <li class="list-unstyled"><a href="#"><span><i class="fa-solid fa-user></i></span>
                     
                 </ul>
+             </div>  
         
         
-        
-        
-        `
-     
+        `;
+        var section = document.createElement('section');
+        var container2 = document.createElement('div');
+        var row2 = document.createElement('div');
+        var col1 = document.createElement('div');
+        var col2 = document.createElement('div');
 
+        body.appendChild(section);
+        section.appendChild(container2);
+        container2.appendChild(row2);
+        row2.appendChild(col1);
+        row2.appendChild(col2);
+        row2.setAttribute('class','row align-items-center');
+        container2.setAttribute('class','container py-5');
+        col1.setAttribute('class', 'col-md-6');
+        col2.setAttribute('class','col-md-6');
+
+        col1.innerHTML =`
+                    <div>
+                         <img class="w-100" src=" https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2021/03/organic-products-hero.png" alt="" >
+                        
+                    </div>    
+        
+        `;
+
+        col2.innerHTML =`
+
+                    <div>
+                        <img src="https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2019/07/logo-leaf-new.png" alt="">
+                        <h4 class="mt-3">Best Quality Products</h4>
+                        <h1 class="display-4"><b>Join The Organic Movement!</b></h1>
+                        <p >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo</p>
+                        <button class="btn btn-success mt-2"><i class="fa-solid fa-cart-shopping p-2"></i>Shop Now</button>
+                        
+                    </div>
+        
+        
+        `;
+
+        var body = document.getElementById('body');
+        var article1 = document.createElement('article');
+        var container3 = document.createElement('div');
+        var row3 = document.createElement('div');
+
+        body.appendChild(article1);
+        article1.appendChild(container3);
+        article1.setAttribute('class','bg-dark py-5');
+        container3.appendChild(row3);
+        container3.setAttribute('class','container');
+        row3.setAttribute('class','row');
+        row3.setAttribute('id','jeeshan');
+
+
+        var user =[
+            {
+                logo:'<i class="fa-solid fa-truck"></i>',
+                title:"Free shipping",
+                content:"Above $5 Only",
+            },
+
+            {
+                logo:'<i class="fa-solid fa-address-book"></i>',
+                title:"ceritified organic",
+                content:"100% Guarantee",
+            },
+
+            {
+                logo:'<i class="fa-solid fa-money-bill"></i>',
+                title:"Huge savings",
+                content:"At Lowest Price",
+            },
+
+            {
+                logo:'<i class="fa-solid fa-recycle"></i>',
+                title:"Easy Returns",
+                content:"No Questions Asked",
+            },
+        ]
+
+        for (var i = 0; i < user.length; i++){
+            var data = document.querySelector('#jeeshan');
+            data.innerHTML +=`
+                <div class="col-md-3">
+                    <div class ="card bg-dark-subtle mx-3 p-3">
+                        <div class ="d-flex gap-2 align-items-center">
+                            <div class ="col-md-4">
+                                <h3>${user[i].logo}</h3>
+                                
+                            </div>
+                            <div class="">
+                                <div class="card-body ">
+                                    <h5 class="card-title">${user[i].title}</h5>
+                                    <p class="card-text">${user[i].content}</p>
+                                
+                            </div>           
+                    </div>
+                    
+                </div>
+              
+            `
+        }
+
+        var article2 = document.createElement('article');
+        var container4 = document.createElement('div');
+        var col01 = document.createElement('div');
+        var row4 = document.createElement('div');
+
+
+        body.appendChild(article2);
+        article2.appendChild(container4);
+        col01.setAttribute('class','col-md-12');
        
+        container4.appendChild(col01);
+        container4.setAttribute('class', 'container')
+        container4.appendChild(row4);
+        row4.setAttribute('class','row');
+
+
+        col01.innerHTML =`
+
+            <div class="text-center">
+                <h1>Best Selling Products</h1>   
+                 <img src="https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2019/07/logo-leaf-new.png" alt="">
+                
+            </div>
+        
+        `;
+        var users = [
+            {
+             
+                photos:'https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2018/06/coffee-asorted.jpg',
+                title:'groceries',
+                name:'Assorted Coffee',
+                rating:'',
+                price:'£35.00',
+                 
+            },
+            {
+                photos:'https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2018/06/sanitizer-300x300.jpg',
+                title:'groceries',
+                name:'Hand Sanitizer',
+                rating:'',
+                price:'£15.00',
+
+            },
+            
+            {
+                photos:'https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2018/06/red-chillies-300x300.jpg',
+                title:'groceries',
+                name:'Handpicked Red Chillies',
+                rating:'',
+                price:'£19.00',
+            },
+            {
+                photos:'https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2018/06/edible-oil-300x300.jpg',
+                title:'groceries',
+                name:'Natural Extracted Edible Oil',
+                rating:'',
+                price:'£25.00',
+            },
+
+        ];
+
+        for(var i=0; i < users.length; i++){
+            row4.innerHTML +=`
+                <div class="col-md-3">
+                    <div class="my-3 text-center">
+                        <div class="card-body">
+                            <img src="${users[i].photos}" class="w-100">
+                            <h5>${users[i].title}</h5>
+                            <p>${users[i].rating}</p>
+                            <p><strong>${users[i].price}</strong></p>
+                        </div>    
+                    </div>
+                </div>
+            `;
+        };
+
+        var article3 = document.createElement('article');
+        var container5 = document.createElement('div');
+        var col02 = document.createElement('div');
+        var row5 = document.createElement('div');
+
+
+        body.appendChild(article3);
+        article3.appendChild(container5);
+        col02.setAttribute('class','col-md-12');
+       
+        container5.appendChild(col02);
+        container5.setAttribute('class', 'container')
+        container5.appendChild(row4);
+        row5.setAttribute('class','row');u
+
+
 
         
+
+     
 
     </script>
 </body>
