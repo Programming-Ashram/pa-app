@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+}
+
+ h1{
+    font-size: 60px;
+    color:transparent !important;
+    /* background: linear-gradient(blue, red); */
+    background: url(https://t3.ftcdn.net/jpg/08/56/46/60/360_F_856466090_eBBRnhfV6rpPxXpwU3RvqL6Pie40IjTg.jpg);
+    -webkit-background-clip: text;
+} 
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+/* .box{
+    width: 200px;
+    height: 200px;
+    background-color: transparent;
+    background: url(https://t3.ftcdn.net/jpg/08/56/46/60/360_F_856466090_eBBRnhfV6rpPxXpwU3RvqL6Pie40IjTg.jpg);
+    -webkit-background-clip: content-box;
+} */
+
+/* .row-2, .row-4{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.row-4{
+    grid-template-columns: repeat(4, 1fr);
+} */
+
+/* @media (max-width: 767px){
+    .row-2, .row-4{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .row-4{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (min-width: 640px ) and (max-width: 940px){
+    .row-2, .row-4{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .row-4{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+ */
+
+ .box{
+    background-color: blue;
+    padding: 20px;
+    text-align: center;
+    color: white;
+ }
+
+ .min-width{
+    min-width: 200px;
+ }
+
+ .max-width{
+    min-width: 400px;
+ }

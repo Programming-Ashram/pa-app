@@ -8,44 +8,62 @@
     </head>
     <body>
         <script>
-            
-            let array = ["Apple", "Banana", "Grapes"];
+        // function taslim(){alert("Taslim");}
+        // function pranjal(){alert("Pranjal");}
+        // function jinat(){alert("Jinat");}
 
-            // Returns indexing but as a number
-            for(let i = 0; i < array.length; i++){
+        // // Nested Function
+        // function programmingAshram(){
+        //     function taslim(){ alert("Taslim");}taslim();
+        //     function pranjal(){alert("Pranjal");}pranjal();
+        //     function jinat(){alert("Jinat");} jinat();
+        // }
+        // // programmingAshram();
+        // let fn = ()=>{alert("Jinat");}
+        // // fn();
+
+        // (function (){alert("Jinat");})();
+
+        // function fullName(fname, lname){
+        //     alert(fname +" "+ lname);
+        // }
+        // fullName("Ayushman", "Chaurasiya");
+
+            let fuirts = ["Apple", "Banana", "Grapes", "Orange"];
+
+            // Simple loop
+            for(let i = 0; i < fuirts.length; i++){
+                console.log(i)
+            }
+            // For In loop
+            for(let i in fuirts){
+                console.log(i)
+            }
+            // for of loop
+            for(let i of fuirts){
                 console.log(i);
             }
 
-            // Returns indexing but as a string
-            for (let i in array){
-                console.log(i);
-            }
-
-            // Returns values of an array
-            for(let i of array){
-                console.log(i);
-            }
-
-            // We render or fetch the data based on needed
-            let y = 0;
-            while (y <= 10) {
-                console.log(y);
-                y++;
-            }
-
-
-            // We render or fetch the data based on needed
+            // While 
             let i = 0;
-            do {
-                console.log(i);
-                i++;
-            } while (i <= 10);
+            while(i <= 5){
+               console.log(i);
+               i++; 
+            }
 
-            // Returns values of an array
-            array.forEach(i =>{
-                console.log(i);
-            })
+            // Do while
+            let y = 0;
+            do{
+                console.log(y);
+                y++; 
+            }while(y <= 5);
 
+
+             // For Each 
+            fuirts.forEach(i => {
+                console.log(i)
+            });
+      
         </script>
     </body>
 </html>
