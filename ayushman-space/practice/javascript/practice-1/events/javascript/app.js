@@ -74,10 +74,23 @@
 // }
 
 // Blur
-let  box = document.querySelector('#input');
-function testInput(){
-    console.log(box.value);
-}
-function inputChangeEvent(){
-    console.log(box.value);
+
+let fruits = {
+    Apple: 'https://thumbs.dreamstime.com/b/red-apple-leaf-slice-white-background-29914331.jpg',
+    Banana: 'Hello I am Banana',
+};
+
+let inputData = document.getElementById('userInput');
+let showApple = document.getElementById('showApple');
+
+function matchedFruits(){
+   if(inputData.value === "Apple"){
+    showApple.innerHTML = `<img src='${fruits.Apple}' width='200'>`;
+   }
+   else if(inputData.value === "Banana"){
+    showApple.innerHTML = fruits.Banana;
+   }
+   else{
+    showApple.innerHTML = 'No Fruits Founds';
+   }
 }
