@@ -1,6 +1,6 @@
 // let jeeshan = document.querySelector("#jeeshan");
 // let pranjal = document.querySelector("#pranjal");
-let body = document.querySelector('body');
+// let body = document.querySelector('body');
 // jeeshan.style.display = 'none';
 // pranjal.style.display = 'none';
 
@@ -15,16 +15,69 @@ let body = document.querySelector('body');
 // }
 
 
-// test
+// testQSD
 // function test(){
 //     body.style.background = "blue";
 // }     
  
-let  box = document.querySelector('#box');
-// Mouse
-function colorChanging(){
-    box.style.width = "gray";
+// let  box = document.querySelector('#box');
+// // Mouse
+// function colorChanging(){
+//     box.style.width = "gray";
+// }
+// function colorLeave(){
+//     box.style.background = "";
+// }
+
+// let box = document.querySelector('#input');
+
+// function keyDownState(){
+//     box.style.background = "red";
+// }
+
+// function keyUpState(){
+//     box.style.background = "orange";
+// }
+
+// function keyUPress(){
+//     box.style.background = "green";
+// }
+
+// Move
+// function changeColor(){
+//     box.style.background = "red";
+// }
+
+// // Leave
+// function changeColorLeave(){
+//     box.style.background = "orange";
+// }
+
+// // Eneter
+// function changeColorState(){
+//     box.style.background = "yellow";
+// }
+
+// // Down
+// function changeColorDown(){
+//     box.style.background = "green";
+// }
+
+// // Up
+// function changeColorUp(){
+//     box.style.background = "purple";
+// }
+
+// // Over
+// function changeColorOver(){
+//     box.style.background = "pink";
+// }
+
+// Blur
+let  box = document.querySelector('#input');
+function testInput(){
+    console.log(box.value);
 }
-function colorLeave(){
-    box.style.background = "";
+function inputChangeEvent(){
+    console.log(box.value);
 }
