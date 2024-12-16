@@ -12,8 +12,7 @@
 // function pranjalShow(){
 //     pranjal.style.display = 'block';
 //     jeeshan.style.display = 'none';
-// }
-
+// }                                                                         
 
 // testQSD
 // function test(){
@@ -74,10 +73,13 @@
 // }
 
 // Blur
-let  box = document.querySelector('#input');
-function testInput(){
-    console.log(box.value);
+let square = document.querySelector('#square');
+function changeColor(){
+        square.style.background = "red";
 }
-function inputChangeEvent(){
-    console.log(box.value);
+function changeColorDown(){
+    square.style.background ="green"
+}
+function changeColorState(){
+    square.style.background = "pink"
 }

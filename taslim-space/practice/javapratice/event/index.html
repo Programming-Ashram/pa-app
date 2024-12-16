@@ -4,22 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        img{
-            object-fit: cover;
+    <!-- <style>
+        .box{
+            width: 300px;
+            height: 300px;
+            background: blue;
+            margin: 0 auto;
         }
-        .blb{
-            position: relative;
-            left: 0;
-            z-index: -1;
-        }
-    </style>
+    </style> -->
 </head>
 <body>
     <!-- <button onclick="test()">blue Color</button>
     <button onclick="test1()">red Color</button>
     <script src="./javscript/js app.js"></script> -->
-    <img src="https://jooinn.com/images/bulb-10.jpg" alt="" width="200px" onblb="Highlight()" id="hide">
-    <img src="https://jooinn.com/images/isolated-light-bulb-1.jpg" alt="" width="200px" id="glow" class="blb">
+    <!-- <div id="square" class="box"
+    onmouseleave="changeColorLeave()"           
+    onmousemove="changeColor()" 
+    onmouseenter="changeColorState()"
+    onmousedown="changeColorDown()" 
+    onmouseup="changeColorUp()" 
+    onmouseover="changeColorOver()" -->
+    <input type="text" value="red" id="input" placeholder="Type First Name" onfocus="inputChangeEvent()"> 
+    <input type="text" id="input" 
+    onkeyup="keyUpState()" 
+    onkeydown="keyDownState()" 
+    onkeypress="keyUPress()"
+    
+    
+    ></div>
+    <script src="./javscript/js app.js"></script>
 </body>
 </html>
