@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+     <header>
+          <div class="container">
+               <div class="row">
+                    <div class="col-md-2">
+                         <h2>JINAT</h2>
+                    </div>
+                    <div class="col-md-2">
+                         <div class="head-menu">
+                              <ul>
+                                   <li><a href="#">Home</a></li>
+                                   <li><a href="#">About</a></li>
+                                   <li><a href="#">Contact</a></li>
+                                   <li><a href="#">Blog</a></li>
+                              </ul>
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </header>
+     <section>
+          <div class="container">
+               <div class="row1">
+                    <div class="col-md-2">
+                         <div class="sec-content">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto explicabo voluptatibus porro provident iste sapiente aspernatur eius obcaecati. Commodi, tempore!</p>
+                         </div>
+                    </div>
+                    <div class="col-md-2">
+                         <div class="sec-image">
+                        -      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWejx1A1AUS1FgggjfcC-4iUXMg7C-GaJdrQ&s" alt="">
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </section>
+     <article>
+          <div class="container">
+               <div class="row2">
+                    <div class="col-md-4">
+                         <div class="poki-card">
+                              <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full//004.png" alt="" width="200px" height="200px">
+                              <div class="card-body">
+                                   <div class="card-head">
+                                        <h3>Charmander</h3>
+                                   </div>
+                                   <div class="card-content">
+                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis, voluptatibus?</p>
+                                   </div>
+                                   <div class="card-footer">
+                                        <button type="button">BUYNOW</button>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="col-md-4">
+                         <div class="poki-card">
+                              <img src="https://down-vn.img.susercontent.com/file/f18cdf140693dab2bc5f04d91fbabaac" alt="" width="200px" height="200px">
+                              <div class="card-body">
+                                   <div class="card-head">
+                                        <h3>Charmeleon</h3>
+                                   </div>
+                                   <div class="card-content">
+                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis, voluptatibus?</p>
+                                   </div>
+                                   <div class="card-footer">
+                                        <button type="button">BUYNOW</button>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="col-md-4">
+                         <div class="poki-card">
+                              <img src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/133.png" alt="" width="200px" height="200px">
+                              <div class="card-body">
+                                   <div class="card-head">
+                                        <h3>Eevee</h3>
+                                   </div>
+                                   <div class="card-content">
+                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis, voluptatibus?</p>
+                                   </div>
+                                   <div class="card-footer">
+                                        <button type="button">BUYNOW</button>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="col-md-4">
+                         <div class="poki-card">
+                              <img src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/007.png" alt="" width="200px" height="200px">
+                              <div class="card-body">
+                                   <div class="card-head">
+                                        <h3>Squirtle</h3>
+                                   </div>
+                                   <div class="card-content">
+                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis, voluptatibus?</p>
+                                   </div>
+                                   <div class="card-footer">
+                                        <button type="button">BUYNOW</button>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </article>
+     <article>
+          <div class="container">
+               <div class="row2" id="pikachu"></div>
+          </div>
+     </article>
+
+
+     <script>
+          let pokemon =[
+               {
+                    image:'https://jakespokemonjourney.weebly.com/uploads/4/6/2/3/46233825/5052141_orig.png',
+                    name:'Moltres',
+
+               },
+               {
+                    image:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDHppj2ye4VKWg3iplm4wjjG-3mdvy34ZoPQ&s',
+                    name:'Arceus ',
+               },
+               {
+                    image:'https://assets.pokemon.com/assets/cms2/img/pokedex/full//196.png',
+                    name:'Espeon',
+               },
+               {
+                    image:'https://www.pokemongoplusplus.com/img/img-1.jpg',
+                    name:'Snorlax',
+               }
+          ]
+          pikachu = document.getElementById('pikachu');
+          for(let i = 0; i < pokemon.length; i++){
+               pikachu.innerHTML +=`
+                    <div class="col-md-4">
+                         <div class="poki-card">
+                              <img src="${pokemon[i].image}" alt="" width="200px" height="200px">
+                              <div class="card-body">
+                                   <div class="card-head">
+                                        <h3>${pokemon[i].name}</h3>
+                                   </div>
+                                   <div class="card-content">
+                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis, voluptatibus?</p>
+                                   </div>
+                                   <div class="card-footer">
+                                        <button type="button">BUYNOW</button>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               `;
+          }
+     </script>
+</body>
+</html>

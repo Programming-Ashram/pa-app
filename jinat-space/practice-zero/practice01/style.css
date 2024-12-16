@@ -1,0 +1,70 @@
+*{
+     margin: 0;
+     padding: 0;
+}
+.container{
+     width: 90%;
+     margin: 0 auto;
+}
+.row,.row1,.row2{
+     display: grid;
+     grid-template-columns: repeat(2,1fr);
+}
+.row1{
+     align-items: center;
+}
+.row2{
+     grid-template-columns: repeat(4,1fr);
+     gap: 10px;
+}
+header{
+     padding: 10px 0;
+}
+.head-menu ul{
+     list-style: none;
+     display: flex;
+     justify-content: space-between;
+     gap: 20px;
+}
+.head-menu a{
+     text-decoration: none;
+     color: black;
+}
+article{
+     padding: 20px 0;
+}
+.poki-card{
+     border: 1px solid grey;
+     padding: 10px;
+     box-shadow: 2px 2px 4px burlywood;
+}
+.card-content,.card-head,.card-footer{
+     margin-top: 5px;
+}
+button{
+     padding: 10px 12px;
+     border: none;
+     color: white;
+     border-radius: 8px;
+     background-color: green;
+     
+}
+@media(min-width:320px) and (max-width:767px){
+     .row2,.row1{
+          grid-template-columns: repeat(1,1fr);
+          
+     }
+     .row1{
+          text-align: center;
+     }
+}
+@media(min-width:640px) and (max-width:940px){
+     .row2{
+          grid-template-columns: repeat(2,1fr);
+     }
+}
+@media(min-width:940px) and (max-width:1210px){
+     .row2{
+          grid-template-columns: repeat(3,1fr);
+     }
+}
