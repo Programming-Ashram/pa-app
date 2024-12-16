@@ -1,0 +1,18 @@
+.about-img{
+    object-fit: cover;
+}
+.about-img :hover{
+    filter: grayscale(100%);
+    transition: all linear .5s;
+    overflow: hidden;
+}
+
+.text-clr, .bg-clr{
+    color: #ff7657;
+}
+.progress-bar-clr{
+    background: #ff7657;
+}
+.hr{
+    border: 2px #ffffff dashed;
+}
