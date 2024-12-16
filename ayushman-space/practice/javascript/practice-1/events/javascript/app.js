@@ -12,8 +12,7 @@
 // function pranjalShow(){
 //     pranjal.style.display = 'block';
 //     jeeshan.style.display = 'none';
-// }
-
+// }                                                                         
 
 // testQSD
 // function test(){
@@ -74,6 +73,15 @@
 // }
 
 // Blur
+let square = document.querySelector('#square');
+function changeColor(){
+        square.style.background = "red";
+}
+function changeColorDown(){
+    square.style.background ="green"
+}
+function changeColorState(){
+    square.style.background = "pink"
 
 let fruits = {
     Apple: 'https://thumbs.dreamstime.com/b/red-apple-leaf-slice-white-background-29914331.jpg',
