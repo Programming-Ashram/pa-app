@@ -4,6 +4,9 @@
   border: none;
   color: #FFFFFF;
 }
+.badge:hover {
+  box-shadow: 2px 2px 4px 2px red;
+}
 .badge.text-bg-primary {
   background-color: #1D19D4;
 }

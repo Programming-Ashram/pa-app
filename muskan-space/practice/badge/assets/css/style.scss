@@ -9,10 +9,16 @@ $light: #FFFFFF;
 
 .badge{
     padding: 5px 20px;
+    margin: 20px;
     border-radius: 60px;
     border: none;
     color: $light;
+    &:hover{
+        box-shadow:2px 2px 4px 2px red;
+    }
 
+    
+ 
 
     &.text-bg-primary{
         background-color: #1D19D4;
@@ -38,5 +44,6 @@ $light: #FFFFFF;
     &.text-bg-light{
         background-color: #0B0B10;
     }
+
     
 }
