@@ -1,0 +1,12 @@
+@import '../abstracts/varibles';
+@import '../base/base';
+
+.btn{
+    padding: $size-sm $size-lg;
+    @extend .radius-full;
+
+    &.btn-primary{
+        background-color: $color-green;
+        color: $color-white;
+    }
+}
