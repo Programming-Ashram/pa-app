@@ -1,0 +1,15 @@
+.radius-full, .btn {
+  border-radius: 100px;
+}
+
+body {
+  background-color: #333333;
+}
+
+.btn {
+  padding: 10px 20px;
+}
+.btn.btn-primary {
+  background-color: hsl(178, 70%, 44%);
+  color: #ffffff;
+}/*# sourceMappingURL=main.css.map */
