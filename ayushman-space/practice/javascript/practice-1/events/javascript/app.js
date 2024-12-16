@@ -74,6 +74,9 @@
 
 // Blur
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 5f465ad1fc9a9b739ef8aa67886dc69b82b0fb96
 let square = document.querySelector('#square');
 function changeColor(){
         square.style.background = "red";
@@ -83,7 +86,10 @@ function changeColorDown(){
 }
 function changeColorState(){
     square.style.background = "pink"
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 5f465ad1fc9a9b739ef8aa67886dc69b82b0fb96
 
 let fruits = {
     Apple: 'https://thumbs.dreamstime.com/b/red-apple-leaf-slice-white-background-29914331.jpg',
@@ -103,5 +109,8 @@ function matchedFruits(){
    else{
     showApple.innerHTML = 'No Fruits Founds';
    }
+<<<<<<< HEAD
 >>>>>>> cfa60dc4c8f31ff8a7be8710357ef95163343b76
+=======
+>>>>>>> 5f465ad1fc9a9b739ef8aa67886dc69b82b0fb96
 }
