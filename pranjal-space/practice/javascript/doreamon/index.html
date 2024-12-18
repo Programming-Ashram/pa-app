@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="./scss/style.scss">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <article>
+            <div class="container">
+                <div class="row" id="cards">
+
+                </div>
+            </div>
+        </article>
+
+        <script>
+            
+            
+            let i, body, header, nav, section, article, article2, article3, container1, container2,container3, container4, footer, row1, row2, row3, row4,row5;
+            body = document.querySelector('body');
+
+            function headerBlock(){
+                header = document.createElement('header');
+                body.appendChild(header);
+                container1 = document.createElement('div');
+                header.appendChild(container1);
+                row1 = document.createElement('div');
+                container1.appendChild(row1);
+
+                // Set Attribute
+                header.setAttribute('class', 'p-3 bg-info text-light')
+                container1.setAttribute('class', 'container');
+                row1.setAttribute('class', 'row');
+
+                row1.innerHTML = `
+                    <div class="col-md-2">
+                        <h3 class="bg-light text-info p-3">PMANKAR</h3>
+                    </div>
+                    <div class="col-md-10">
+                        <ul class='navbar nav'>
+                            <li class="list-item">
+                                <a href="#" class="nav-link text-light">Home</a>
+                            </li>
+                            <li class="list-item">
+                                <a href="#" class="nav-link text-light">Service</a>
+                            </li>
+                            <li class="list-item">
+                                <a href="#" class="nav-link text-light">Gallery</a>
+                            </li>
+                            <li class="list-item">
+                                <a href="#" class="nav-link text-light">Contact us</a>
+                            </li>
+                        </ul>
+                    </div>
+                `;
+            }
+            headerBlock()
+
+            function sectionBlock(){
+                section = document.createElement('section');
+                body.appendChild(section);
+                container2 = document.createElement('section');
+                section.appendChild(container2);
+                row2 = document.createElement('div');
+                container2.appendChild(row2);
+
+                section.setAttribute('class','bg-transparent');
+                container2.setAttribute('class','container');
+                row2.setAttribute( 'class', 'row');
+
+                row2.innerHTML =`
+                
+                    <div class="col-md-6">
+                        <img src="https://www.shutterstock.com/image-vector/doraemon-cute-hand-drawn-illustration-600nw-2352837563.jpg">
+                    </div>
+                    <div class="col-md-6">
+                        <h1 class="text-info">DOREAMON</h1>   
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCKKV3RrRGo22FqgRNuPzYsBMaIfm4l3ZWwA&s" alt="" class="w-100">
+                        <p>Doraemon is a fictional title character in the Japanese manga and anime eponymous series of the same name created by Fujiko F. Fujio. Doraemon is a male robotic earless cat that travels back in time from the 22nd century to aid a preteen boy named Nobita.</p>
+                        <button class="btn btn-info text-light">More Info...</button>
+                    </div>
+                
+                `;
+            }
+            sectionBlock()
+
+           
+            var characters = [
+            {
+                color: 'text-info',
+                url: "https://upload.wikimedia.org/wikipedia/en/3/3f/NobitaNobi.png",
+                characterName:"NOBITA",
+                description:"Nobita's characterization depicts him  and flawed person, reluctance to engage in critical thinking."
+            },
+            {
+                color: 'text-danger',
+                url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQC2mFwkCTmGiOfPDPCs3TLrAulyQoasmzsSg&s",
+                characterName:"SIZUKA",
+                description:"Shizuka Minamoto, usually called  Shizuka-chan, is a main character of the Doraemon series"  
+            },
+            {
+                color: 'text-primary',
+                url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXCuSFhI-ZBQkTz2Ckr8UnADlhvLi3YmmPlQ&s",
+                characterName:"SUNIO",
+                description:"Suneo's personality is described as a cunning, prideful, cocky, arrogant, and narcissistic ."
+            },
+            {
+                color: 'text-warning',
+                url:"https://upload.wikimedia.org/wikipedia/en/4/41/Gian.png",
+                characterName:"Gian",
+                description:"Gian is one of Nobita's classmates and a strong but often bully-like character in doramon series."
+            }
+        ]
+
+            function articleBlock(){
+                article = document.createElement('article');
+                body.appendChild(article);
+                container3 = document.createElement('article');
+                article.appendChild(container3);
+                row3 = document.createElement('div');
+                container3.appendChild(row3);
+
+                article.setAttribute('class',' d-flex gap-4 my-20 ');
+                container3.setAttribute('class','container');
+                row3.setAttribute( 'class', 'row');
+
+                for(var index = 0; index < characters.length; index++){
+                    row3.innerHTML += `
+                    <div class='col-md-3 my-3 p-2 gap-3'>
+                            <div class='card' style='width:18rem;'>
+                                    <div class='card-body'>
+                                    
+                                        <img src="${characters[index].url}" style="width:200px; height:200px; object-fit:contain;">
+                                        <h5 class='card-title'>${characters[index].characterName}</h5>
+                                        <p class="card-text  ${characters[index].color}">${characters[index].description}</p>
+                                    </div>
+                                </div>
+                        </div>    
+                    `;
+                }                  
+            }
+            articleBlock()
+
+            
+            function article2Block(){
+                article2 = document.createElement('article');
+                body.appendChild(article2);
+                container3 = document.createElement('div');
+                article2.appendChild(container3);
+                row3 = document.createElement('div');
+                container3.appendChild(row3);
+
+                // Set Attribute
+                article2.setAttribute('class', 'p-3 bg-info text-light style="width:200px; height:200px; object-fit:contain;')
+                container3.setAttribute('class', 'container');
+                row3.setAttribute('class', 'row');
+
+                row3.innerHTML = `
+                <h1 class="text-center p-2"><span>Family</span></h1>
+                    <div class="col-md-8">
+                        <img src="https://c4.wallpaperflare.com/wallpaper/62/432/52/anime-doraemon-wallpaper-preview.jpg" alt=""  >
+                    </div>
+                    <div class="col-md-4">
+                        <h2>Doreamon's Family </h2>
+                        <p>Doraemon: A robot sent back in time by Nobita's great-great grandson, Sewashi, to improve Nobita's life. Doraemon has a lot of intelligence and common sense, and can be programmed to do tasks by pushing a button on his nose. His favorite food is dorayaki, a Japanese treat filled with red bean paste. 
+                        Nobita Nobi: The main character of the Doraemon franchise, who is often overly dependent on Doraemon. In the original timeline, Nobita's life was full of misfortune, including poor grades and bullying. 
+                        Sewashi Nobi: Nobita's great-great grandson who sends Doraemon back in time to improve Nobita's life. 
+                        Tamako Nobi: A supporting character in the Doraemon franchise. 
+                        Nobisuke Nobi: A supporting character in the Doraemon franchise. 
+                        Other characters in the Doraemon franchise include:
+                        Shizuka Minamoto, Takeshi "Gian" Goda, Suneo Honekawa, Mrs. Honekawa, Sunekichi Honekawa, Hidetoshi Dekisugi, Dorami, Michiko Minamoto, Mrs. Goda, and Jaiko Goda. </p>
+                    </div>
+                    
+                `;
+            }
+            article2Block()
+
+            function footerblock(){
+                article3 = document.createElement(footer);
+                body.appendChild(article3);
+                container4= document.createElement('div');
+                article3.appendChild(container4);
+                row4=document.createElement('div');
+                row5=document.createElement('div');
+                container4.appendChild(row4);
+                container4.appendChild(row5);
+                article3.setAttribute('calss','p-3 bg-info text-light');
+                container4.setAttribute('class','container');
+                row4.setAttribute('class','row');
+                row5.setAttribute('class', 'row');
+               
+                row4.innerHTML =`
+                    <div class="col-md-12">
+                        <div class="p-3  text-info text-center my-2">
+                            <h2>Description</h2>
+                        </div>
+                    </div>
+
+                `;
+                row5.innerHTML =`
+                    <div class="col-md-4">
+                        <img src="https://pm1.aminoapps.com/7598/1ceb3ce524e3cfb5fce54b8daaec4015728a9ee7r1-1157-1375v2_uhq.jpg" alt=""  style="width:150px; height:150px; object-fit:contain;">
+                    </div>
+                    <div class="col-md-4">
+                        <h3 class="text-info"><b>About</b></h3>
+                        <p class="text-info">Doraemon is a robotic cat from the 22nd century who travels back in time to help a young boy named Nobita Nobi</p>
+                    </div>
+                    <div class="col-md-4">
+                        <ul class="navbar-nav gap-3>
+                            <li class="list-item my-2"><a href="#" class="text-info"><i class="fa-solid fa-id-card"></i> +91 0980 9879 78</a></li>
+                            <li class="list-item my-4"><a href="#" class="text-info"><i class="fa-solid fa-envelopes-bulk"></i> Dmon@gmail.com</a></li>
+                        </ul>  
+                    </div>
+                `;
+            }
+            footerblock()
+        </script>
+                       
+    </body>
+</html>
+
