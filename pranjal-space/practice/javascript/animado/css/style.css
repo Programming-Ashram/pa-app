@@ -7,8 +7,11 @@
     overflow: hidden;
 }
 
-.text-clr, .bg-clr{
+.text-clr{
     color: #ff7657;
+}
+.bg-clr{
+    background-color: #ff7657;
 }
 .progress-bar-clr{
     background: #ff7657;

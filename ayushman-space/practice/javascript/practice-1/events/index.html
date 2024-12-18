@@ -5,14 +5,35 @@
      charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./javascript/style.css">
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: blueviolet;
+        }
+    </style>
 </head>
 <body>
 
+    <!-- <input type="text" onkeypress="showkeypress()" id="fname">     -->
+    <!-- <input type="text" onkeydown="showkeypress()" id="fname"> -->
+     <!-- <input type="text" onchange="showkeypress()" id="fname"> -->
+     <!-- <input type="text" onblur="showkeypress()" id="fname"> -->
+     <!-- <input type="text" value='Ayushman' onfocus="showkeypress()" id="fname"> -->
+     <input type="text" value='Ayushman' oninput="showkeypress()" id="fname">
+
+    <button type="button" ondblclick="showName()">Button</button>
+
+    <h1 id="name">Ameen Khan</h1>
+
+    <div class="box" onmousemove="colorChange()" onmouseenter="colorEnterChange()" onmouseleave="colorLeaveChange()" onmousedown="colorDownChange()" onmouseup="colorUpChange()" id="box"></div>
+
+
+    <!-- 
     <button class="btn btn-primary">Button</button>
 
     <input type="text" id="userInput" onchange="matchedFruits()">
-    <h1 id="showApple"></h1>
+    <h1 id="showApple"></h1> -->
 
     <!-- <input type="text" id="input" placeholder="Type First Name" onblur="inputChangeEvent()"> -->
     <!-- <input type="text" value="red" id="input" placeholder="Type First Name" onfocus="inputChangeEvent()"> -->
