@@ -1,3 +1,50 @@
+
+
+
+
+let box = document.getElementById('box');
+let name = document.getElementById('name');
+let fname = document.getElementById('fname');
+name.style.display = 'none';
+
+function colorChange(){
+    box.style.backgroundColor = "red";
+}
+
+function colorLeaveChange(){
+    box.style.backgroundColor = "orange";
+}
+
+function colorEnterChange(){
+    box.style.backgroundColor = "pink";
+}
+
+function colorDownChange(){
+    box.style.backgroundColor = "green";
+}
+
+function colorUpChange(){
+    box.style.backgroundColor = "yellow";
+}
+
+
+function showName(){
+    name.style.display = "block";
+}
+
+function showkeypress(){
+    console.log(fname.value);
+}
+
+
+
+
+
+
+
+
+
+
 // let jeeshan = document.querySelector("#jeeshan");
 // let pranjal = document.querySelector("#pranjal");
 // let body = document.querySelector('body');
@@ -73,44 +120,34 @@
 // }
 
 // Blur
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 5f465ad1fc9a9b739ef8aa67886dc69b82b0fb96
-let square = document.querySelector('#square');
-function changeColor(){
-        square.style.background = "red";
-}
-function changeColorDown(){
-    square.style.background ="green"
-}
-function changeColorState(){
-    square.style.background = "pink"
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 5f465ad1fc9a9b739ef8aa67886dc69b82b0fb96
 
-let fruits = {
-    Apple: 'https://thumbs.dreamstime.com/b/red-apple-leaf-slice-white-background-29914331.jpg',
-    Banana: 'Hello I am Banana',
-};
+// let square = document.querySelector('#square');
+// function changeColor(){
+//         square.style.background = "red";
+// }
+// function changeColorDown(){
+//     square.style.background ="green"
+// }
+// function changeColorState(){
+//     square.style.background = "pink"
+// }
 
-let inputData = document.getElementById('userInput');
-let showApple = document.getElementById('showApple');
+// let fruits = {
+//     Apple: 'https://thumbs.dreamstime.com/b/red-apple-leaf-slice-white-background-29914331.jpg',
+//     Banana: 'Hello I am Banana',
+// };
 
-function matchedFruits(){
-   if(inputData.value === "Apple"){
-    showApple.innerHTML = `<img src='${fruits.Apple}' width='200'>`;
-   }
-   else if(inputData.value === "Banana"){
-    showApple.innerHTML = fruits.Banana;
-   }
-   else{
-    showApple.innerHTML = 'No Fruits Founds';
-   }
-<<<<<<< HEAD
->>>>>>> cfa60dc4c8f31ff8a7be8710357ef95163343b76
-=======
->>>>>>> 5f465ad1fc9a9b739ef8aa67886dc69b82b0fb96
-}
+// let inputData = document.getElementById('userInput');
+// let showApple = document.getElementById('showApple');
+
+// function matchedFruits(){
+//    if(inputData.value === "Apple"){
+//     showApple.innerHTML = `<img src='${fruits.Apple}' width='200'>`;
+//    }
+//    else if(inputData.value === "Banana"){
+//     showApple.innerHTML = fruits.Banana;
+//    }
+//    else{
+//     showApple.innerHTML = 'No Fruits Founds';
+//    }
+// }
