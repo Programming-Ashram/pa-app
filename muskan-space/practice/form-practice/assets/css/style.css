@@ -13,6 +13,8 @@ body{
     justify-content: center;
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
 }
 
 .container{
@@ -32,16 +34,21 @@ body{
 .login-title{
     margin-bottom: 16px;
 }
-
-.input-box{
-    display: flex;
-    width: 100%;
-    position: relative;
-    margin-top: 20px;
+.icon{
+    color: black;
 }
-
+input{
+    background-color: transparent;
+    outline: none;
+    border: none;
+}
 .input-box {
+    background-color: transparent;
+    outline: none;
+        display: flex;
         width: 100%;
+        position: relative;
+        margin-top: 20px;
         padding: 10px 16px 10px 38px;
         border-radius: 99px;
         border: solid 3px transparent;
@@ -54,12 +61,12 @@ body{
 }
 
 .input-box  input:focus{
-    border: solid 3px pink;
+    outline: solid 3px black;
 }
 
 
 .input-box  input::placeholder{
-    color: solid 3px pink;
+    color: solid 3px black;
 }
 
 .input-box input::-ms-reveal{
