@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <button type="button" class="btnlogin" onclick="openloginModal()">Login</button>
+            <button type="button" class="btnsignup" onclick="opensignupModal()">Signup</button>
+
+        <div class="modal" id="loginmodal">
+           <div class="d-flex">
+            <h1>Login Form</h1>
+            <i class="fa-solid fa-close" id="closeLoginModal" onclick="closeloginmodal()"></i>
+           </div>
+            <form action="">
+                <input type="text">
+            </form>
+        </div>
+        <div class="modal" id="signupmodal">
+           <div class="d-flex">
+            <h1>Signup Form</h1>
+            <i class="fa-solid fa-close" onclick="closesignupmodal()"></i>
+           </div>
+            <form action="">
+                <input type="text">
+            </form>
+        </div>
+
+        <script src="./assets/javascript/app.js"></script>
+    </body>
+</html>
