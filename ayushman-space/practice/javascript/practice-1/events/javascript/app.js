@@ -38,13 +38,6 @@ function showkeypress(){
 
 
 
-
-
-
-
-
-
-
 // let jeeshan = document.querySelector("#jeeshan");
 // let pranjal = document.querySelector("#pranjal");
 // let body = document.querySelector('body');
