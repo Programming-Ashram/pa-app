@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+}
+header{
+    background-color: blueviolet;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+body{
+    height: 100;
+}
+
+section{
+    padding: 40px 0px;
+    text-align: center;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.row{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+}
+button#login, button#signup{
+    padding: 6px 10px;
+    cursor: pointer;
+}
+
+button#loginbtn, button#submitloginbtn,button#cancel,button#submitsignup,button#signupbtn{
+    background-color:transparent;
+    border: 1px solid blueviolet;
+    color: blueviolet;
+    border-radius: 6px;
+}
+button#signupbtn, button#cancel{
+    background-color: blueviolet;
+    color: white;
+    border-radius: 6px;
+    border: none;
+}
+footer{
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 8px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+/* modal Css start */
+
+.modal{
+    width: 30%;
+    margin: 0 auto;
+    border-radius: 4px;
+    background-color: white;
+    border: 1px solid gray;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 20%;
+    box-shadow: 10px ,12px, 78px, 29px,#8a2be22b;
+    display: none;
+}
+
+.modal-header{
+    background-color: white;
+    border-bottom: 1px solid gray;
+    padding: 10px 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.modal-body{
+    padding: 10px 12px;
+    border-bottom: 1px solid gray;
+}
+.form-group{
+    margin: 8px 0;
+}
+.form-group label{
+    display: block;
+    margin-bottom: 5px;
+}
+.form-group .form-control{
+    border: 1px solid blueviolet;
+    outline: none;
+    padding: 6px 10px;
+    border-radius: 6px;
+}
+.form-group .form-control:focus{
+    outline: none;
+}
+.modal-footer{
+ background-color: white;
+ padding: 10px 12px;
+ text-align: end;
+}
