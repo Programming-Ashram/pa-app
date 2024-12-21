@@ -1,0 +1,23 @@
+@import '../assets/vander/bootstrap/bootstrap';
+@import '../assets/component/form/form.css';
+@import '../assets/vander/fontawasom/fontawasome';
+/* Hides scrollbar */
+body{scrollbar-width: none;} 
+.relative{
+     position: relative;
+}
+.absolute{
+     position: absolute;
+     right: 8px;
+     top: 25px;
+}
+.absolute-2{
+     position: absolute;
+    top: 25px;
+    right: 8px;
+}
+.absolute-3{
+     position: absolute;
+    top: 17px;
+    right: 20px;
+}

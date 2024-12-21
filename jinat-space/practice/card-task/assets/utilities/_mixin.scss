@@ -1,0 +1,13 @@
+@import '../utilities/function';
+@import '../utilities/variable';
+
+@mixin card-default(){
+     padding:0;
+     box-sizing: border-box;
+     border-radius: pxtorem(8);
+     border:1px solid $secondary;
+     -webkit-border-radius: pxtorem(8);
+     -moz-border-radius: pxtorem(8);
+     -ms-border-radius: pxtorem(8);
+     -o-border-radius: pxtorem(8);
+}

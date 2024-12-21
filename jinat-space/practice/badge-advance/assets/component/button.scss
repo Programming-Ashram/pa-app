@@ -1,0 +1,19 @@
+@import '../utility/mixin';
+@import '../utility/function';
+@import '../utility/variable';
+.btn-flat{
+     @include btn-default();
+     padding: pxtorem(12)  pxtorem(20);
+     &:is(.btn-rounded){
+         padding: pxtorem(14) ;
+         border-radius: pxtorem(60);
+}    
+     &:is(.btn-md){
+          padding: pxtorem(8) pxtorem(16);
+     }   
+     
+     &:hover{
+          box-shadow: 2px 2px 4px rgba(0,0,0,.6);
+     }
+
+}

@@ -1,0 +1,38 @@
+@import '../utlities/variable';
+@import '../utlities/function';
+
+.card{
+
+    .title{
+        font-size: pxtorem(16);
+        line-height: pxtorem(10);
+        margin-bottom:pxtorem(8);
+    }
+    .card-header{
+        margin: pxtorem(10) pxtorem(0);
+    }
+    .card-body{
+        margin-top: pxtorem(10);
+        padding: auto;
+    }
+    padding: pxtorem(10);
+    border: pxtorem(0.5) solid $dark;
+    border-radius: pxtorem(4);
+    background-color: $light;
+    .subtitle{
+        font-size:pxtorem(13);
+        color: $dark;
+    }
+    img{
+        width:100%;
+        border-radius: pxtorem(6);
+    }
+}
+.hr-card{
+    width: 500px;
+    height: 430px;
+}
+.card-profile{
+    width: 500px;
+    height: 430px;
+}

@@ -1,0 +1,15 @@
+@import '../utilities/mixin';
+
+.badge{
+     @include btn-default();
+}
+$bgColor:(
+     'danger':$danger,
+     'light':$light,
+);
+@each $color-name,$color-value in $bgColor{
+     .badge-#{$color-name}{
+          background-color: $color-value;
+          color: $light;
+     }
+} 

@@ -1,0 +1,24 @@
+@import '../utilities/mixxin';
+@import '../utilities/variable';
+@import '../utilities/function';
+
+.card{
+    @include card-default();
+    &.title{
+        font-size: 32px;
+    }
+    &.sub-title{
+        font-size: 18px;
+        line-height: 2;
+    }
+    &.card-footer{
+        margin-top: pxtorem(5);
+    }
+    &.card-body{
+        padding: pxtorem(16);
+    }
+    &.content,.card-title{
+        font-size: pxtorem(16);
+        line-height: 1.5;
+    }
+}

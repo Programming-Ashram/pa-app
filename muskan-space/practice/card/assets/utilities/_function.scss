@@ -1,0 +1,4 @@
+@import '../utilities/variable';
+@function pxtoremconvertor($getSize, $baseSize:16){
+     @return $getSize / $baseSize *1rem;
+}

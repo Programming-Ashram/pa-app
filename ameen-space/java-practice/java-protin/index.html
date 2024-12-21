@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=o">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_8BoS7U4nRH1stveGLDQ75D623XUVgcnR9hWYbOD9qO0SUXLiiEYEMDE_ZeNhm4z1cNU&usqp=CAU" type="image/icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+    <title>Oragnic Store</title>
+</head>
+<body id="body">
+        
+    <script>
+          var body = document.getElementById('body');
+       var header = document.createElement('header')
+         var container1 = document.createElement('div')
+       var row1 = document.createElement ('div')
+       var col1 = document.createElement ('div')
+       var col2 = document.createElement ('div')
+
+        
+        body.appendChild(header);
+        header.appendChild(container1);
+        container1.setAttribute('class','container');
+        container1.appendChild(row1);
+        row1.appendChild(col1);
+        col1.setAttribute('class','col-md-6');
+        row1.appendChild(col2);
+        col2.setAttribute('class','col-md-6')
+        container1.appendChild(row1);
+        row1.setAttribute('class', 'row align-items-center');
+
+        col1.innerHTML =`
+          <div class=" gap-5 d-flex align-items-center fs-5 ">
+        <img src ="https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2019/06/organic-store-logo5.svg" width ="175px">
+        
+            <a href="" class="text-decoration-none text-dark">Everthing</a>
+            <a href="" class="text-decoration-none text-dark">Groceries</a>
+            <a href="" class="text-decoration-none text-dark">Juice</a>
+            </div>`;
+            col2.innerHTML =`
+            <div class="justify-content-end d-flex gap-5  fs-5">
+                 <a href="" class="text-decoration-none text-dark">About</a>
+                  <a href="" class="text-decoration-none text-dark">Contact</a>
+                   <a href="" class="text-decoration-none text-success">£0.00</a>
+                    <a href="" class=" text-success"><i class="fa-solid fa-basket-shopping"></i></a>
+                    <a href="" class="text-dark"><i class="fa-solid fa-user"></i></a>
+                </div>
+                
+          
+            `;
+
+            var body = document.getElementById('body');
+       var section = document.createElement('section')
+         var container2 = document.createElement('div')
+       var row2 = document.createElement ('div')
+       var col1 = document.createElement ('div')
+       var col2 = document.createElement ('div')
+
+        
+        body.appendChild(section);
+        section.appendChild(container2);
+        container2.setAttribute('class','container');
+        container2.appendChild(row2);
+        row2.appendChild(col1);
+        col1.setAttribute('class','col-md-6');
+        row2.appendChild(col2);
+        col2.setAttribute('class','col-md-6',)
+        container2.appendChild(row2);
+        row2.setAttribute('class', 'row align-items-center');
+
+        col1.innerHTML=`
+                 <img src="https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2021/03/organic-products-hero.png" alt="">`;
+
+      
+        col2.innerHTML=`
+         <div>
+                   <img src="https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2019/07/logo-leaf-new.png" alt="">
+                  <h5 class="mt-4">Best Quality Products</h5>
+                  <h1 class="fs-1 mt-4">Join The Organic <br>Movement!</h1>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+                <button type="button" class="btn btn-success btn-lg mt-4"><i class="fa-solid fa-cart-shopping"></i>Shop Now</button>
+         </div>
+        `;
+        var body = document.getElementById('body');
+       var nav = document.createElement('nav')
+         var container3 = document.createElement('div')
+       var row3 = document.createElement ('div')
+       var col1 = document.createElement ('div')
+       var col2 = document.createElement ('div')
+       var col3 = document.createElement ('div')
+       var col4 = document.createElement ('div')
+
+        
+        body.appendChild(nav);
+        nav.appendChild(container3);
+        nav.setAttribute('class','bg-dark')
+        container3.setAttribute('class','container');
+        container3.appendChild(row3);
+        row3.appendChild(col1);
+        col1.setAttribute('class','col-md-3',);
+        row3.appendChild(col2);
+        col2.setAttribute('class','col-md-3');
+        row3.appendChild(col3);
+        col3.setAttribute('class','col-md-3');
+        row3.appendChild(col4);
+        col4.setAttribute('class','col-md-3')
+        container3.appendChild(row3);
+        row3.setAttribute('class', 'row align-items-center');
+
+        var card = [
+          {
+            logo:':<i class="fa-solid fa-truck"></i>',
+           title :"Free Shipping",
+           content:"Above $5 Only",
+           
+          },
+          {
+            logo:'<i class="fa-solid fa-address-book"></i>',
+            title:"Certified Organic",
+            content:"100% Guarantee "
+          },
+          {
+            logo:'<i class="fa-regular fa-money-bill-1"></i>',
+            title:"Huge Savings",
+            content:"At Lowest Price"
+          },
+          {
+            logo:'<i class="fa-solid fa-recycle"></i>',
+            title:"Easy Returns",
+            content:"No Questions Asked"
+          }
+        ];
+        for(var i = 0; i < card.length; i++){
+                        row3.innerHTML += `
+                        <div class="col-md-3">
+                            <div class="card my-3  clr-1">
+                                <div class="card-body">
+                                    <h5 class="text-success">${card[i].logo}</h5>
+                                    <p>${card[i].title}</p>
+                                    <p class="text-primary"><strong>${card[i].content}</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                        `;
+                    };
+      
+      var body = document.getElementById('body');
+      var article = document.createElement('article');
+      var container4 = document.createElement('div');
+       var row4 = document.createElement ('div');
+       var col1 = document.createElement ('div');
+       var col2 = document.createElement ('div');
+       var col3 = document.createElement ('div');
+       var col4 = document.createElement ('div');
+
+        
+        body.appendChild(article);
+        article.appendChild(container4);
+       container4.setAttribute('class','container');
+        container4.appendChild(row4);
+       
+        row4.appendChild(col1);
+        col1.setAttribute('class','col-md-3',);
+        article.setAttribute('class','mt-5');
+        row4.appendChild(col2);
+        col2.setAttribute('class','col-md-3');
+        row4.appendChild(col3);
+        col3.setAttribute('class','col-md-3');
+        row4.appendChild(col4);
+        col4.setAttribute('class','col-md-3');
+        container4.appendChild(row4);
+        row4.setAttribute('class', 'row align-items-center');
+              
+      row4.innerHTML =`
+      <div  class="text-center  ">
+         <h1 class="text-center ">Best Selling Products<h1>
+          <img src="https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2019/07/logo-leaf-new.png">
+
+       </div>
+         `;
+      
+        var user = [
+          {
+            photo:'https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2018/06/coffee-asorted-400x400.jpg',
+           title :"Groceries",
+           name:"Assorted Coffee",
+           rating:'<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star-half-stroke"></i><i class="fa-regular fa-star-half-stroke"></i>',
+           price:"£35.00"
+           },
+           {
+            photo:'https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2018/06/sanitizer-400x400.jpg',
+            title:"Groceries",
+            rating:'<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star-half-stroke"></i><i class="fa-regular fa-star-half-stroke"></i>',
+            name:"Hand Sanitizer",
+            price:"£15.00",
+           },
+           {
+            photo:'https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2018/06/red-chillies-400x400.jpg',
+            title:"Groceries",
+            rating:'<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star-half-stroke"></i><i class="fa-regular fa-star-half-stroke"></i>',
+            name:"Handpicked Red Chillies",
+            price:"£19.00"
+           },
+           {
+            photo:'https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2018/06/edible-oil-400x400.jpg',
+            title:"Groceries",
+            rating:'<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star-half-stroke"></i><i class="fa-regular fa-star-half-stroke"></i>',
+            name:'Natural Extracted Edible Oil',
+            price:"£25.00",
+           },
+
+         
+        ];
+        for(var i = 0; i < user.length; i++){
+                        row4.innerHTML += `
+                        <div class="col-md-3">
+                            <div class=" my-3 text-center ">
+                                <div class="card-body">
+                                      <img src="${user[i].photo}" width="100%">
+                                    <h5>${user[i].title}</h5>
+                                    <p>${user[i].rating}</p>
+                                    <p ><strong>${user[i].price}</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                        `;
+                    };
+  
+
+                    var article4 = document.createElement('article');
+          var container6 = document.createElement('div');
+          var col22 = document.createElement('div');
+          var row5 = document.createElement('div');
+
+          body.appendChild(article4);
+          article4.appendChild(container6);
+         container6.setAttribute('class','container');
+          container6.appendChild(row5);
+          row5.appendChild(col22);
+          col22.setAttribute('class','col-md-12');
+
+          col22.innerHTML =`
+               <div class="text-center">
+                    <img src="https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2021/03/basil-leaf.png" alt="">     
+               </div>
+          `;
+
+          var article5 = document.createElement('article');
+          var container7 = document.createElement('div');
+          var row6 = document.createElement('div');
+          
+          body.appendChild(article5);
+          article5.appendChild(container7);
+          container7.setAttribute('class','container');
+          container7.appendChild(row6);
+          row6.setAttribute('class','row');
+          row6.setAttribute('id','janab');
+          
+          var detail =[
+               {
+                    bgimage:'https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2019/06/product11-free-img.jpg',
+                    type :'Farm Fresh Fruits',
+                    content:'Ut sollicitudin quam vel purus tempus, vel eleifend felis varius. ',
+               },
+               {    bgimage:'https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2019/06/product13-free-img.jpg',
+                    type :'Fresh Vegetables',
+                    content:'Aliquam porta justo nibh, id laoreet sapien sodales vitae justo. ',
+               },
+               {    bgimage:'https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2019/06/product17-free-img.jpg',
+                    type :'Farm Fresh Fruits',
+                    content:'Ut sollicitudin quam vel purus tempus, vel eleifend felis varius. ',
+               }
+          ]
+
+          for(var i = 0; i < detail.length; i++){
+               var dance = document.querySelector('#janab');
+
+               dance.innerHTML +=`
+                    <div class="col-md-4 py-3">
+                         <div class="row">
+                    <div >
+                    <div class="card p-3" style="background-image:url(${detail[i].bgimage});     background-position: bottom;
+    background-size: contain;
+    background-repeat: no-repeat;">
+                         <div class="card-body">
+                         <h5 class="card-title">${detail[i].type}</h5>
+                         <p class="card-text">${detail[i].content}</p>
+                         <a href="#" class="btn btn-success p-2">Shop Now</a>
+                         </div>
+                    </div>
+                    </div>     
+                    </div>
+
+               `;
+          }
+
+          article6 = document.createElement('article');
+          container8 = document.createElement('div');
+          row7 = document.createElement('div');
+          col12 = document.createElement('div');
+          col21 = document.createElement('div');
+
+          body.appendChild(article6);
+          article6.appendChild(container8);
+          article6.setAttribute('class','bg-dark')
+          container8.setAttribute('class','container');
+          container8.appendChild(row7);
+          row7.setAttribute('class','row py-5');
+          row7.appendChild(col12);
+          col12.setAttribute('class','col-md-6');
+          row7.appendChild(col21);
+          col21.setAttribute('class','col-md-6');
+
+          col12.innerHTML =`
+               <div>
+                    <h2 class="text-light"><b>Get 25% Off On Your First Purchase!</b></h2>     
+               </div>
+          `;
+          col21.innerHTML =`
+               <div class="text-end">
+                    <button class="btn btn-success py-2 px-4">Shop Now</button>     
+               </div>
+          `;
+
+          var article7 = document.createElement('article');
+          var container9 = document.createElement('div');
+          var row8 = document.createElement('div');
+          var col111 = document.createElement('div');
+
+          body.appendChild(article7);
+          article7.appendChild(container9);
+          container9.setAttribute('class','container');
+          container9.appendChild(row8);
+          row8.setAttribute('class','row');
+          row8.appendChild(col111);
+          col111.setAttribute('class','col-md-12');
+
+          col111.innerHTML =`
+               <div class="text-center py-5">
+                    <h3>Try It For Free. No <br> Registration Needed.</h3>     
+               </div>
+          `;
+
+          var article8 = document.createElement('article');
+          var container10 = document.createElement('div');
+          var row9 = document.createElement('div');
+          var col1111 = document.createElement('div');
+
+          body.appendChild(article8);
+          article8.appendChild(container10);
+          container10.setAttribute('class','container');
+          container10.appendChild(row9);
+          row9.setAttribute('class','row');
+          row9.appendChild(col1111);
+          col1111.setAttribute('class','col-md-12');
+
+          col1111.innerHTML =`
+               <div class="text-center py-5">
+                    <h2 class="mb-3">Trending Products</h2> 
+                    <img src="https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2019/07/logo-leaf-new.png" alt="">    
+               </div>
+          `;
+
+          var article9 = document.createElement('article');
+          var container11 = document.createElement('div');
+          var row10 =document.createElement('div');
+         
+          body.appendChild(article9);
+          article9.appendChild(container11);
+          container11.appendChild(row10);
+          container11.setAttribute('class','container');
+          row10.setAttribute('class','row');
+          row10.setAttribute('id','tassu');
+          
+          var carts =[
+               {
+                    image:'https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2018/06/coffee-asorted-400x400.jpg',
+                    title:'groceries',
+                    subtitle:'Assorted Coffe',
+                    content:"$35",
+               },
+               {
+                    image:'https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2018/06/coffee-asorted-400x400.jpg',
+                    title:'groceries',
+                    subtitle:'Assorted Coffe',
+                    content:"$35",
+               },
+               {
+                    image:'https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2018/06/coffee-asorted-400x400.jpg',
+                    title:'groceries',
+                    subtitle:'Assorted Coffe',
+                    content:"$35",
+               },
+               {
+                    image:'https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2018/06/coffee-asorted-400x400.jpg',
+                    title:'groceries',
+                    subtitle:'Assorted Coffe',
+                    content:"$35",
+               }
+          ];
+          
+          for(var i = 0; i < carts.length; i++){
+               var meet = document.querySelector('#tassu');
+               meet.innerHTML +=`
+                    <div class="col-md-3 py-3">
+                         <div class=" text-center" >
+                         <div>
+                              <img class="w-100" src='${carts[i].image}; '>    
+                         </div>
+                         <div class="card-body">
+                           <h5 class="card-title">${carts[i].title}</h5>
+                           <p class="card-text">${carts[i].subtitle}</p>
+                           <p>${carts[i].content}</p>
+                         </div>
+                    </div>     
+                    </div>
+                    
+               `;
+
+          }
+
+          var article10 = document.createElement('article');
+          var container12 = document.createElement('div');
+          var row11 =document.createElement('div');
+          
+          body.appendChild(article10);
+          article10.appendChild(container12);
+          container12.setAttribute('class','container');
+          container12.appendChild(row11);
+          row11.setAttribute('class','row');
+          row11.setAttribute('id','taslim');
+
+          var dam = [
+               {
+                    logo:'https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2021/03/logo-5.svg'
+               },
+               {
+                    logo:'https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2021/03/logo-4.svg',
+               },
+               {
+                    logo:'https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2021/03/logo-5.svg',
+               },
+               {
+                    logo:'https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2021/03/logo-2.svg',
+               },
+               {
+                    logo:'https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2021/03/logo-3.svg',
+               },
+               {
+                    logo:'https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2021/03/logo-1.svg',
+               },
+          ]
+          
+          for(var i = 0; i < dam.length; i++){
+               var eat = document.querySelector('#taslim');
+               eat.innerHTML +=`
+                    <div class="col-md-2 py-3">
+                         <img src="${dam[i].logo}">
+                    </div>
+               `;
+          }
+
+          var footer = document.createElement('footer');
+          var container13 = document.createElement('div');
+          var row12 = document.createElement('div');
+          var collt1 = document.createElement('div');
+          var collt2 = document.createElement('div');
+          var collt3 = document.createElement('div');
+
+          body.appendChild(footer);
+          footer.setAttribute('class','bg-dark py-4')
+          footer.appendChild(container13);
+          container13.setAttribute('class','container');
+          container13.appendChild(row12);
+          row12.setAttribute('class','row');
+          row12.appendChild(collt1);
+          collt1.setAttribute('class','col-md-6');
+          row12.appendChild(collt2);
+          collt2.setAttribute('class','col-md-3');
+          row12.appendChild(collt3);
+          collt3.setAttribute('class','col-md-3');
+
+          collt1.innerHTML =`
+               <div>
+                    <div>
+                         <img src="https://websitedemos.net/organic-shop-02/wp-content/uploads/sites/465/2019/07/organic-store-white-logo.png">     
+                    </div> 
+                    <div class="pt-5">
+                         <p class="text-light"><em>Maecenas mi justo, interdum at consectetur vel, tristique et arcu. Ut quis eros blandit, ultrices diam in, elementum ex. Suspendisse quis faucibus urna. Suspendisse pellentesque.</em></p>
+                    </div>     
+               </div>
+          `;
+
+          collt2.innerHTML =`
+               <div>
+                    <h2 class="text-light py-5">Quick Link</h2> 
+                    <ul class="list-unstyled lh-lg">
+                         <li><a href="#" class="text-decoration-none text-light">Home</a></li>
+                         <li><a href="#" class="text-decoration-none text-light">About</a></li>
+                         <li><a href="#" class="text-decoration-none text-light">Cart</a></li>
+                         <li><a href="#" class="text-decoration-none text-light">Contact</a></li>
+                         <li><a href="#" class="text-decoration-none text-light">Service</a></li>     
+                    </ul>    
+               </div>
+          `;
+
+          collt3.innerHTML =`
+               <div class="py-5">
+                    <h2 class="text-light">Download Our Mobile App</h2> 
+                    <p class="text-light mt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquam gravida sollicitudin. Praesent porta enim mi, non tincidunt libero interdum sit amet.</p>    
+               </div>
+          `;
+         
+      
+       </script>
+</body>
+</html>

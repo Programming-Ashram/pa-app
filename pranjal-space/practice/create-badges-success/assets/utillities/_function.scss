@@ -1,0 +1,41 @@
+@import '../utillities/variables';
+
+@function pxtorem($getSize, $baseSize: 16){
+    @return $getSize / $baseSize * 1rem;
+}
+
+
+
+
+$bgColor : (
+    'success': $success,
+    'success-25': $success-25,
+    'success-50': $success-50,
+    'warning': $warning,
+    'warning-25': $warning-25,
+    'warning-50': $warning-50,
+    'danger': $danger,
+    'danger-25': $danger-25,
+    'danger-50': $danger-50,
+    'primary': $primary,
+    'primary-25': $primary-25,
+    'primary-50': $primary-50,
+    'secondary': $secondary,
+    'secondary-25': $secondary-25,
+    'secondary-50': $secondary-50,
+);
+
+@each $color-name, $color-value in $bgColor{
+    .badge-#{$color-name}{
+        background-color: $color-value;
+        margin: pxtorem(20) pxtorem(10);
+        
+        &:is(.is-outline){
+            background-color: transparent;
+            border:pxtorem(1) solid $color-value;
+            color: $color-value;
+
+        }
+    }
+}
+

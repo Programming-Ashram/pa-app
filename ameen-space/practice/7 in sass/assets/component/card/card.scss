@@ -1,0 +1,11 @@
+@import '../../utilies/function';
+@import '../../utilies/mixin';
+@import '../../utilies/variable';
+
+.card{
+    @include card($dark, pxtorem(300));
+    background-color: $info;
+    &.card-primary{
+        @include card-background($info,$light)
+    }
+}

@@ -1,0 +1,32 @@
+// Variables
+$color-primary: blue;
+$color-danger: red;
+$color-success: green;
+
+$color : (
+    primary: $color-primary,
+    success: $color-success,
+    danger: $color-danger,
+    info: lightblue,
+    secondary: darkgray
+);
+
+@each $colorName, $colorValue in $color{
+    .bg-#{$colorName}{
+        background-color: $colorValue;
+        color: white;
+    }
+    .text-#{$colorName}{
+        color: $colorValue;
+    }
+}
+
+// .bg-success{
+//     background-color: $color-success;
+// }
+// .bg-primary{
+//     background-color: $color-primary;
+// }
+// .bg-danger{
+//     background-color: $color-danger;
+// }

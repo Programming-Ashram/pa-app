@@ -1,0 +1,8 @@
+@import '../utilies/variable';
+@import '../utilies/function';
+
+@mixin btn-default(){
+    border-radius: 6px;
+    padding:10px 16px;
+    color: $light;
+}

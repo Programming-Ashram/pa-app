@@ -1,0 +1,26 @@
+@import '../assets/component/card/card.css';
+@import './vander/jaguar/jaguar.css';
+@import './vander/fontawasome/fontawasome.css';
+@import './base/base';
+
+.horizontal-divider{
+     height: 1px;
+     width: 210px;
+     background-color:grey;
+}
+
+.d-flex{
+     display: flex;
+}
+.gap{
+     gap:20px
+}
+.align-center{
+     align-items: center;
+}
+.avatar{
+    height: 80px;
+    width: 80px;
+    border-radius: 100%;
+    object-fit:fill;
+}
