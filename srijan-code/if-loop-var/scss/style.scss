@@ -1,32 +1,122 @@
-// Variables
-$color-primary: blue;
-$color-danger: red;
-$color-success: green;
+*{
+    margin: 0;
+}
 
-$color : (
-    primary: $color-primary,
-    success: $color-success,
-    danger: $color-danger,
-    info: lightblue,
-    secondary: darkgray
-);
+$color-black: black;
+$color-white: white;
 
-@each $colorName, $colorValue in $color{
-    .bg-#{$colorName}{
-        background-color: $colorValue;
-        color: white;
+// Function
+@function pxtorem($userValue, $defaultValue: 16){
+    @return $userValue / $defaultValue * 1rem;
+}
+
+
+// Components
+// Button (Flat Button)
+
+@mixin flatBtn(){
+    padding: pxtorem(10) pxtorem(20);
+    font-size: pxtorem(16);
+    border-radius: pxtorem(4);
+    border: none
+}
+
+@mixin outlineBtn(){
+   @include flatBtn();
+   border: pxtorem(1) solid $color-black;
+   background-color: transparent !important;
+}
+
+.btn{
+    @include flatBtn();
+
+    &.btn-dark{
+        background-color: $color-black;
+        color: $color-white;
     }
-    .text-#{$colorName}{
-        color: $colorValue;
+
+    &.btn-dark-outline{
+        @include outlineBtn();
     }
 }
 
-// .bg-success{
-//     background-color: $color-success;
-// }
-// .bg-primary{
-//     background-color: $color-primary;
-// }
-// .bg-danger{
-//     background-color: $color-danger;
-// }
+
+.container{
+    margin: 0 auto;
+    width: 90%;
+}
+
+.row-2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+
+.row-1{
+    @extend .row-2;
+    grid-template-columns: repeat(1, 1fr);
+}
+.row-3{
+    @extend .row-2;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: pxtorem(30);
+}
+
+header{
+    background-color: $color-black;
+    color: $color-white;
+    padding: pxtorem(10);
+    .header-wdiget {
+        h1{
+            font-size: pxtorem(18);
+        }
+    }
+    ul{
+        display: flex;
+        gap: pxtorem(20);
+        align-items: center;
+        list-style-type: none;
+
+        a{
+            text-decoration: none;
+            color: $color-white;
+        }
+    }
+}
+
+
+section.hero-sec{
+    text-align: center;
+    padding: pxtorem(50) 0;
+    .sect-content h1{
+        font-size: pxtorem(60);
+    }
+    .ctrl{
+        margin-top: pxtorem(20);
+    }
+}
+
+
+article.service-article{
+    .card-action{
+        margin-top: pxtorem(10);
+    }
+}
+
+footer{
+    text-align: center;
+    padding: pxtorem(30) 0;
+    background-color: $color-black;
+    color: $color-white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    .ctrl{
+        margin-top: pxtorem(20);
+        a{
+            text-decoration: none;
+            font-size: 30px;
+            color: $color-white;
+        }
+    }
+}
