@@ -1,122 +1,81 @@
-*{
-    margin: 0;
+$color-success: green;
+$color-success-10 : lighten($color-success, 10%);
+$color-success-20 : lighten($color-success, 20%);
+$color-primary: blue;
+$color-danger: red;
+
+$theme: dark;
+
+body{
+    @if $theme == dark{
+        background-color: #333333;
+        color: white;
+    }@else if $theme == lime{
+        background-color: greenyellow;
+        color: white;
+    }@else{
+        background-color: white;
+        color: black;
+    }
 }
 
-$color-black: black;
-$color-white: white;
-
-// Function
-@function pxtorem($userValue, $defaultValue: 16){
+@function pxtorem($userValue, $defaultValue : 16){
     @return $userValue / $defaultValue * 1rem;
 }
 
+$allColors : (
+    // propert -- value
+    primary: $color-primary,
+    success-10: $color-success-10,
+    success-20: $color-success-20,
+    success: $color-success,
+    danger: $color-danger
+);
 
-// Components
-// Button (Flat Button)
+$allSize : (
+    // propert -- value
+    0: 0,
+    1: pxtorem(10),
+    2: pxtorem(15),
+    3: pxtorem(20),
+    4: pxtorem(25),
+    5: pxtorem(30)
+);
 
-@mixin flatBtn(){
-    padding: pxtorem(10) pxtorem(20);
-    font-size: pxtorem(16);
-    border-radius: pxtorem(4);
-    border: none
-}
-
-@mixin outlineBtn(){
-   @include flatBtn();
-   border: pxtorem(1) solid $color-black;
-   background-color: transparent !important;
-}
-
-.btn{
-    @include flatBtn();
-
-    &.btn-dark{
-        background-color: $color-black;
-        color: $color-white;
+@each $property , $value in $allSize{
+    .p-#{$property}{
+       padding: $value;
     }
-
-    &.btn-dark-outline{
-        @include outlineBtn();
+    .pt-#{$property}{
+        padding-top: $value;
     }
-}
-
-
-.container{
-    margin: 0 auto;
-    width: 90%;
-}
-
-.row-2{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-}
-
-.row-1{
-    @extend .row-2;
-    grid-template-columns: repeat(1, 1fr);
-}
-.row-3{
-    @extend .row-2;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: pxtorem(30);
-}
-
-header{
-    background-color: $color-black;
-    color: $color-white;
-    padding: pxtorem(10);
-    .header-wdiget {
-        h1{
-            font-size: pxtorem(18);
-        }
+    .ps-#{$property}{
+        padding-left: $value;
     }
-    ul{
-        display: flex;
-        gap: pxtorem(20);
-        align-items: center;
-        list-style-type: none;
+    .pe-#{$property}{
+        padding-right: $value;
+    }
+    .py-#{$property}{
+        padding: $value 0;
+    }
+    .px-#{$property}{
+        padding: 0 $value;
+    }
+    .m-#{$property}{
+        padding: $value;
+     }
+    .mt-#{$property}{
+         padding-top: $value;
+     }
+}
 
-        a{
-            text-decoration: none;
-            color: $color-white;
-        }
+@each $property , $value in $allColors{
+    .bg-#{$property}{
+        background-color: $value;
+        color: white;
+    }
+    .text-#{$property}{
+        color: $value;
     }
 }
 
-
-section.hero-sec{
-    text-align: center;
-    padding: pxtorem(50) 0;
-    .sect-content h1{
-        font-size: pxtorem(60);
-    }
-    .ctrl{
-        margin-top: pxtorem(20);
-    }
-}
-
-
-article.service-article{
-    .card-action{
-        margin-top: pxtorem(10);
-    }
-}
-
-footer{
-    text-align: center;
-    padding: pxtorem(30) 0;
-    background-color: $color-black;
-    color: $color-white;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    .ctrl{
-        margin-top: pxtorem(20);
-        a{
-            text-decoration: none;
-            font-size: 30px;
-            color: $color-white;
-        }
-    }
-}
