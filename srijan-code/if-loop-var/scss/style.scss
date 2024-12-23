@@ -10,52 +10,26 @@ $color-white: white;
     @return $userValue / $defaultValue * 1rem;
 }
 
-
-// Components
-// Button (Flat Button)
-
-@mixin flatBtn(){
-    padding: pxtorem(10) pxtorem(20);
-    font-size: pxtorem(16);
-    border-radius: pxtorem(4);
-    border: none
-}
-
-@mixin outlineBtn(){
-   @include flatBtn();
-   border: pxtorem(1) solid $color-black;
-   background-color: transparent !important;
-}
-
-.btn{
-    @include flatBtn();
-
-    &.btn-dark{
-        background-color: $color-black;
-        color: $color-white;
-    }
-
-    &.btn-dark-outline{
-        @include outlineBtn();
-    }
-}
-
-
 .container{
     margin: 0 auto;
     width: 90%;
 }
 
-.row-2{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-}
 
 .row-1{
-    @extend .row-2;
+   
     grid-template-columns: repeat(1, 1fr);
+    display: grid;
+    align-items: center;
+    
 }
+
+.row-2{
+    @extend .row-1;
+    grid-template-columns: repeat(2, 1fr);
+    
+}
+
 .row-3{
     @extend .row-2;
     grid-template-columns: repeat(3, 1fr);
@@ -118,5 +92,34 @@ footer{
             font-size: 30px;
             color: $color-white;
         }
+    }
+}
+
+// Components
+// Button (Flat Button)
+
+@mixin flatBtn(){
+    padding: pxtorem(10) pxtorem(20);
+    font-size: pxtorem(16);
+    border-radius: pxtorem(4);
+    border: none
+}
+
+@mixin outlineBtn(){
+   @include flatBtn();
+   border: pxtorem(1) solid $color-black;
+   background-color: transparent !important;
+}
+
+.btn{
+    @include flatBtn();
+
+    &.btn-dark{
+        background-color: $color-black;
+        color: $color-white;
+    }
+
+    &.btn-dark-outline{
+        @include outlineBtn();
     }
 }
