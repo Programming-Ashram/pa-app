@@ -2,11 +2,64 @@ body {
   background-color: #333333;
   color: white;
 }
+<<<<<<< HEAD
 
 .p-0 {
   padding: 0;
 }
 
+=======
+
+.bg-primary {
+  background-color: blue;
+  color: white;
+}
+
+.text-primary {
+  color: blue;
+}
+
+.bg-success-10 {
+  background-color: #00b300;
+  color: white;
+}
+
+.text-success-10 {
+  color: #00b300;
+}
+
+.bg-success-20 {
+  background-color: #00e600;
+  color: white;
+}
+
+.text-success-20 {
+  color: #00e600;
+}
+
+.bg-success {
+  background-color: green;
+  color: white;
+}
+
+.text-success {
+  color: green;
+}
+
+.bg-danger {
+  background-color: red;
+  color: white;
+}
+
+.text-danger {
+  color: red;
+}
+
+.p-0 {
+  padding: 0;
+}
+
+>>>>>>> 6e990d2a28e0bf9d0173aa3eb45898d8a3655ed2
 .pt-0 {
   padding-top: 0;
 }
@@ -193,6 +246,7 @@ body {
 
 .mt-5 {
   padding-top: 1.875rem;
+<<<<<<< HEAD
 }
 
 .bg-primary {
@@ -238,4 +292,6 @@ body {
 
 .text-danger {
   color: red;
+=======
+>>>>>>> 6e990d2a28e0bf9d0173aa3eb45898d8a3655ed2
 }/*# sourceMappingURL=style.css.map */

@@ -32,6 +32,19 @@ $allColors : (
     danger: $color-danger
 );
 
+
+@each $property , $value in $allColors{
+    .bg-#{$property}{
+        background-color: $value;
+        color: white;
+    }
+    .text-#{$property}{
+        color: $value;
+    }
+}
+
+
+
 $allSize : (
     // propert -- value
     0: 0,
@@ -51,7 +64,7 @@ $allSize : (
     }
     .ps-#{$property}{
         padding-left: $value;
-    }
+    }=
     .pe-#{$property}{
         padding-right: $value;
     }
@@ -68,14 +81,3 @@ $allSize : (
          padding-top: $value;
      }
 }
-
-@each $property , $value in $allColors{
-    .bg-#{$property}{
-        background-color: $value;
-        color: white;
-    }
-    .text-#{$property}{
-        color: $value;
-    }
-}
-
