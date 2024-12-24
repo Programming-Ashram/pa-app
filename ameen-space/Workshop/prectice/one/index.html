@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="https://i.pinimg.com/564x/10/81/8d/10818df03848644c6e33adbccde8d303.jpg" type="icon/image">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>workshop-one</title>
+</head>
+<body>
+            <header>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="logo">
+                                <h1>login Singup From using javascript</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <section>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="modal-items">
+                            <button type="button" onclick="openLoginModal()" id="loginbtn">Login</button>
+                            </div>
+                            <button type="button" onclick="openSignupModal()" id="signupbtn">Ragistration</button>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <footer>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="footer-items">
+                                <p>&copy; login Singup From using javascript</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+            <!-- //model login// -->
+            <div class="modal" id="loginModal">
+                <div class="modal-header">
+                    <h3>Login Model</h3>
+                    <i class="fa-solid fa-close"></i>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        Lorem ipsum dolor sit amet provident ea? Natus aut quidem fugiat nesciunt.
+                    </p>
+                    <form action=""> 
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="Password">Password</label>
+                            <input type="password" id="password" class="form-control">
+                       </div>
+                        <button type="button" id="submitlogin">Login Now</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" id="cancel">Cancel</button>
+                </div>
+            </div>
+
+            <!-- model signup -->
+            <div class="modal" id="signupModal">
+                <div class="modal-header">
+                    <h3>Signup Modal</h3>
+                    <i class="fa-solid fa-close"></i>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        Lorem ipsum dolor sit amet provident ea? Natus aut quidem fugiat nesciunt.
+                    </p>
+                    <form action=""> 
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="Password">Password</label>
+                            <input type="password" id="password" class="form-control">
+                       </div>
+                        <button type="button" id="submitsignup">Sign up now</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" id="cancel">Cancel</button>
+                </div>
+            </div>
+
+                <script src="./assets/javascript/app.js"></script>
+</body>
+</html>
