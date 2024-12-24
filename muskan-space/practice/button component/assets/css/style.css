@@ -22,7 +22,7 @@
 }
 .btn.btn-outline-primary {
   background-color: transparent;
-  border: 1px solid blue;
+  border: 1px solid black;
   color: blue;
 }
 .btn.btn-outline-primary:hover {
@@ -37,7 +37,7 @@
 }
 .btn.btn-outline-secondary {
   background-color: transparent;
-  border: 1px solid grey;
+  border: 1px solid black;
   color: grey;
 }
 .btn.btn-outline-secondary:hover {
@@ -52,7 +52,7 @@
 }
 .btn.btn-outline-success {
   background-color: transparent;
-  border: 1px solid green;
+  border: 1px solid black;
   color: green;
 }
 .btn.btn-outline-success:hover {
@@ -65,12 +65,12 @@
 .btn.btn-success:hover {
   box-shadow: 0px 2px 80px 5px grey;
 }
-.btn.btn-outline-dangery {
+.btn.btn-outline-danger {
   background-color: transparent;
-  border: 1px solid red;
+  border: 1px solid black;
   color: red;
 }
-.btn.btn-outline-dangery:hover {
+.btn.btn-outline-danger:hover {
   background-color: red;
   color: white;
 }
@@ -82,7 +82,7 @@
 }
 .btn.btn-outline-warning {
   background-color: transparent;
-  border: 1px solid yellow;
+  border: 1px solid black;
   color: yellow;
 }
 .btn.btn-outline-warning:hover {
@@ -97,7 +97,7 @@
 }
 .btn.btn-outline-info {
   background-color: transparent;
-  border: 1px solid info;
+  border: 1px solid dark;
   color: skyblue;
 }
 .btn.btn-outline-info:hover {
@@ -112,7 +112,7 @@
 }
 .btn.btn-outline-light {
   background-color: transparent;
-  border: 1px solid white;
+  border: 1px solid black;
   color: white;
 }
 .btn.btn-outline-light:hover {
@@ -144,19 +144,4 @@
 
 .mt-20 {
   margin-top: 30px;
-}
-
-.btn-group {
-  display: flex;
-}
-.btn-group button {
-  border-radius: 0;
-}
-.btn-group button:first-child {
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-}
-.btn-group button:last-child {
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
 }/*# sourceMappingURL=style.css.map */
