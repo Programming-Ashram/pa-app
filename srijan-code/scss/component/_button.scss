@@ -1,12 +1,42 @@
-@import '../abstracts/varibles';
-@import '../base/base';
+@import '../abstracts/variables';
+@import '../abstracts/function';
 
 .btn{
-    padding: $size-sm $size-lg;
-    @extend .radius-full;
+    padding: pxtoremconvert(10) pxtoremconvert(20);
+    border-radius: pxtoremconvert(4);
 
-    &.btn-primary{
-        background-color: $color-green;
+    &:not(.btn-outline){
+        border:none;
+    }
+
+    &:is(.btn-outline){
+        border-width: pxtoremconvert(1);
+        border-style: solid;
+        background-color: transparent;
+    }
+}
+
+$colors : (
+    'btn-primary' : $color-blue,
+    'btn-danger' : $color-red,
+    'btn-dark' : $color-black,
+    'btn-warning' : $color-orange,
+    'btn-info' : $color-info,
+);
+
+@each $colorsName, $colorsValue in $colors {
+    .#{$colorsName}{
+        background-color: $colorsValue;
         color: $color-white;
+    }
+    .#{$colorsName}-outline{
+        border-color: $colorsValue;
+        color:  $colorsValue;
+
+        &:hover{
+            background-color: $colorsValue;
+            color: $color-white;
+            transition: 0.4s ease-in;
+        }
     }
 }
