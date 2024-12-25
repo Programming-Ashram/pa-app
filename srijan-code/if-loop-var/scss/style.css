@@ -1,44 +1,4 @@
-.bg-primary {
-  background-color: blue;
-  color: white;
-}
-
-.text-primary {
-  color: blue;
-}
-
-.bg-success {
-  background-color: green;
-  color: white;
-}
-
-.text-success {
-  color: green;
-}
-
-.bg-danger {
-  background-color: red;
-  color: white;
-}
-
-.text-danger {
-  color: red;
-}
-
-.bg-info {
-  background-color: lightblue;
-  color: white;
-}
-
-.text-info {
-  color: lightblue;
-}
-
-.bg-secondary {
-  background-color: darkgray;
-  color: white;
-}
-
-.text-secondary {
-  color: darkgray;
+.bg-blue {
+  background-color: darkblue;
+  padding: 0.625rem;
 }/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,88 @@
+// HTML,CSS 3, 
+// liner gredient, text-gredient, opacity, object, backgrunds, 
+// import
+
+
+$color-success: green;
+$color-success-10 : lighten($color-success, 10%);
+$color-success-20 : lighten($color-success, 20%);
+$color-primary: blue;
+$color-danger: red;
+
+$theme: dark;
+
+body{
+    @if $theme == dark{
+        background-color: #333333;
+        color: white;
+    }@else if $theme == lime{
+        background-color: greenyellow;
+        color: white;
+    }@else{
+        background-color: white;
+        color: black;
+    }
+}
+
+@function pxtorem($userValue, $defaultValue : 16){
+    @return $userValue / $defaultValue * 1rem;
+}
+
+$allColors : (
+    // propert -- value
+    primary: $color-primary,
+    success-10: $color-success-10,
+    success-20: $color-success-20,
+    success: $color-success,
+    danger: $color-danger
+);
+
+
+@each $property , $value in $allColors{
+    .bg-#{$property}{
+        background-color: $value;
+        color: white;
+    }
+    .text-#{$property}{
+        color: $value;
+    }
+}
+
+
+
+$allSize : (
+    // propert -- value
+    0: 0,
+    1: pxtorem(10),
+    2: pxtorem(15),
+    3: pxtorem(20),
+    4: pxtorem(25),
+    5: pxtorem(30)
+);
+
+@each $property , $value in $allSize{
+    .p-#{$property}{
+       padding: $value;
+    }
+    .pt-#{$property}{
+        padding-top: $value;
+    }
+    .ps-#{$property}{
+        padding-left: $value;
+    }
+    .pe-#{$property}{
+        padding-right: $value;
+    }
+    .py-#{$property}{
+        padding: $value 0;
+    }
+    .px-#{$property}{
+        padding: 0 $value;
+    }
+    .m-#{$property}{
+        padding: $value;
+     }
+    .mt-#{$property}{
+         padding-top: $value;
+     }
+}
