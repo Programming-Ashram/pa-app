@@ -345,10 +345,68 @@
 
           col1111.innerHTML =`
                <div class="text-center py-5">
-                    <h2 class="mb-3">MENU CARD</h2> 
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqRyFrF2lIG_TpYfVgdymLBl5rZLBnO8GoLA&s" alt="">    
-               </div>
+                    <h2 class="mb-3">Intresting chracter of motu patlu</h2> 
+                    <img src="https://m.media-amazon.com/images/I/81pHSLFq9ML._AC_UF894,1000_QL80_.jpg">
+                </div>
           `;
+
+          var article9 = document.createElement('article');
+          var container11 = document.createElement('div');
+          var row10 =document.createElement('div');
+         
+          body.appendChild(article9);
+          article9.appendChild(container11);
+          container11.appendChild(row10);
+          container11.setAttribute('class','container');
+          row10.setAttribute('class','row');
+          row10.setAttribute('id','tassu');
+          
+          var carts =[
+               {
+                    image:'',
+                    title:'groceries',
+                    subtitle:'Assorted Coffe',
+                    content:"$35",
+               },
+               {
+                    image:'',
+                    title:'groceries',
+                    subtitle:'Assorted Coffe',
+                    content:"$35",
+               },
+               {
+                    image:'',
+                    title:'groceries',
+                    subtitle:'Assorted Coffe',
+                    content:"$35",
+               },
+               {
+                    image:'',
+                    title:'groceries',
+                    subtitle:'Assorted Coffe',
+                    content:"$35",
+               }
+          ];
+          
+          for(var i = 0; i < carts.length; i++){
+               var meet = document.querySelector('#tassu');
+               meet.innerHTML +=`
+                    <div class="col-md-3 py-3">
+                         <div class=" text-center" >
+                         <div>
+                              <img class="w-100" src='${carts[i].image}; '>    
+                         </div>
+                         <div class="card-body">
+                           <h5 class="card-title">${carts[i].title}</h5>
+                           <p class="card-text">${carts[i].subtitle}</p>
+                           <p>${carts[i].content}</p>
+                         </div>
+                    </div>     
+                    </div>
+                    
+               `;
+
+          }
 
         
 
