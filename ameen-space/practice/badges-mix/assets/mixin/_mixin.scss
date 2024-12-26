@@ -1,9 +1,0 @@
-@import '../variable/variable.scss';
-@import '../function/function';
-
-@mixin badge-default(){
-    padding: pxtoremconverter(5) pxtoremconverter(20);
-    border-radius:pxtoremconverter(60);
-    border: none;
-    color: $light;
-}
