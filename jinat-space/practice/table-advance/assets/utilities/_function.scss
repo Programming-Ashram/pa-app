@@ -1,3 +1,0 @@
-@function pxtorem($getSize, $baseSize:16){
-     @return $getSize / $baseSize * 1rem
-}
