@@ -1,1 +1,102 @@
-/*# sourceMappingURL=style.css.map */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.dashboard-wrapper {
+  display: flex;
+  width: 100%;
+  background-color: #f3f2f7;
+  height: 100vh;
+}
+.dashboard-wrapper .sidebar {
+  width: 17.5rem;
+  padding: 0.9375rem;
+  background-color: #ffffff;
+}
+.dashboard-wrapper .sidebar .sidebar-header {
+  padding: 1.5625rem 0;
+}
+.dashboard-wrapper .sidebar .sidebar-header h2 {
+  font-size: 2.125rem;
+  margin-bottom: 0.3125rem;
+  color: aquamarine;
+}
+.dashboard-wrapper .sidebar .sidebar-header p {
+  font-size: 1rem;
+  color: brown;
+}
+.dashboard-wrapper .sidebar .sidebar-menu ul {
+  list-style: none;
+}
+.dashboard-wrapper .sidebar .sidebar-menu ul li {
+  margin: 1rem 0;
+}
+.dashboard-wrapper .sidebar .sidebar-menu ul li a {
+  text-decoration: none;
+  color: burlywood;
+  font-size: 0.875rem;
+}
+.dashboard-wrapper .sidebar-content {
+  width: 100%;
+}
+.dashboard-wrapper .sidebar-wrapper {
+  width: 90%;
+  margin: 0 auto;
+  padding: 0.9375rem;
+}
+.dashboard-wrapper .sidebar-wrapper .header-layout {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  -moz-column-gap: 1.25rem;
+       column-gap: 1.25rem;
+  align-items: center;
+}
+.dashboard-wrapper .sidebar-wrapper .header-layout .searchbar-input {
+  padding: 0.625rem;
+  border-radius: 0.25rem;
+  border-color: gray;
+  background-color: #ffffff;
+  width: 100%;
+}
+.dashboard-wrapper .sidebar-wrapper .header-layout .widgets {
+  display: flex;
+  gap: 1rem;
+  justify-content: end;
+  align-items: center;
+  padding-right: 30px;
+}
+.dashboard-wrapper .sidebar-wrapper .header-layout .widgets a {
+  text-decoration: none;
+  color: black;
+}
+.dashboard-wrapper .sidebar-wrapper .header-layout .profile {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  padding-left: 30px;
+  border-left: 2px solid gray;
+}
+.dashboard-wrapper .sidebar-wrapper .header-layout .profile .profile-img {
+  width: 3.125rem;
+  height: 3.125rem;
+  aspect-ratio: 3/4;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 100%;
+}
+.dashboard-wrapper .section-layout h3, .dashboard-wrapper .section-layout p {
+  margin: 1.25rem 0;
+}
+.dashboard-wrapper .grid-4 {
+  margin: 0.875rem 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  -moz-column-gap: 1.25rem;
+       column-gap: 1.25rem;
+}
+.dashboard-wrapper .card {
+  padding: 0.75rem;
+  border-radius: 0.875rem;
+  background-color: #ffffff;
+}/*# sourceMappingURL=style.css.map */
