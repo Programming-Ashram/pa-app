@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="./style.css">
+    <title>DOM</title>
+</head>
+<body id="dom">
+    
+    <script>
+
+                var body = document.getElementById('dom');
+                var header = document.createElement('header');
+                var container = document.createElement('div');
+                var row = document.createElement('div');
+                var col1 = document.createElement('div');
+                var col2 = document.createElement('div')
+
+                body.appendChild(header);
+                header.appendChild(container);
+                container.setAttribute('class', 'container');
+                container.appendChild(row);
+                row.appendChild(col1);
+                col1.setAttribute('class', 'col-md-6');
+                row.appendChild(col2);
+                col2.setAttribute('class', 'col-md-6');
+                row.setAttribute('class', 'row','align-items-center');
+
+
+
+                col1.innerHTML = `
+
+                
+
+                <div class="card">
+                    <h1>PLAN</h1>
+
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta accusantium ut voluptas consequuntur non provident! Molestias, modi. Ipsam dicta voluptatem obcaecati dolore? Ullam maiores quisquam perferendis corrupti nemo unde atque!</p> 
+                    
+                    <button class="btn-p mt">Play</button>
+                     <button class="btn-o mt">Over</button>
+                </div>
+                    
+                
+                    `;
+
+
+            
+    </script>
+    
+</body>
+</html>
