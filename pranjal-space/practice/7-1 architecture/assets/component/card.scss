@@ -1,9 +1,0 @@
-@import "../../assets/utillities/mixin";
-
-.card{
-    @include card-default();
-    width:pxtoremconverter(400);
-    &.card-primary{
-        background-color:$primary;
-    }
-}

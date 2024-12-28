@@ -1,7 +1,0 @@
-@import '../utility/mixin';
-
-.badge{
-     @include badge-default();
-     display: inline-block;
-     margin-top: pxtorem(15);
-}

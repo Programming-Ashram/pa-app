@@ -1,3 +1,0 @@
-@function covert ($getsize, $basesize:16){
-    @return $getsize /$basesize * 1rem
-}

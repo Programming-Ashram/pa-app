@@ -1,9 +1,0 @@
-@import '../utillities/variables';
-@import '../utillities/mixin';
-@import '../utillities/function';
-
-.badge{
-    @include badge-default();
-    @include badge-md();
-    @include badge-sm();
-}

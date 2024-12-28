@@ -1,9 +1,0 @@
-@import '../utilities/variable';
-@import '../utilities/function';
-
-@mixin btn-default(){
-     padding:pxtorem(10) pxtorem(15);
-     border-radius: pxtorem(6);
-     border: none;
-     cursor: pointer;
-}

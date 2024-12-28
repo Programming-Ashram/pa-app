@@ -1,3 +1,0 @@
-@function pxtoremconvertor($getSise, $baseSize:16){
-     @return $getSise / $baseSize *1rem;
-}

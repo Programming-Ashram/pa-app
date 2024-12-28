@@ -1,4 +1,38 @@
-.bg-blue {
-  background-color: darkblue;
-  padding: 0.625rem;
+.bg-primary {
+  background-color: blue;
+}
+
+.text-primary {
+  color: blue;
+}
+
+.btn-primary {
+  background-color: blue;
+  color: white;
+}
+
+.bg-danger {
+  background-color: red;
+}
+
+.text-danger {
+  color: red;
+}
+
+.btn-danger {
+  background-color: red;
+  color: white;
+}
+
+.bg-warning {
+  background-color: orange;
+}
+
+.text-warning {
+  color: orange;
+}
+
+.btn-warning {
+  background-color: orange;
+  color: white;
 }/*# sourceMappingURL=style.css.map */

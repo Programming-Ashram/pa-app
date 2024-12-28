@@ -1,5 +1,0 @@
-@import '../utilites/variable';
-
-@function pixtorem($gateSize , $baseSize :16){
-    @return $gateSize / $baseSize * 1rem;
-}

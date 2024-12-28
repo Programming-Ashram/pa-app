@@ -1,9 +1,0 @@
-@import '../../variable/variable';
-@import '../../mixin/mixin';
-
-.btn{
-     @include btn-default();
-     &.btn-primary{
-          background-color: $primary;
-     }
-}

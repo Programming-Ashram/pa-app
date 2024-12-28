@@ -1,9 +1,0 @@
-@import '../utilits/variable';
-
-//convert px to rem
-@function pixtorem($pixcelSize,$baseSize: 16 ){
-    @return $pixcelSize / $baseSize * 1rem;
-}
-
-
- 
