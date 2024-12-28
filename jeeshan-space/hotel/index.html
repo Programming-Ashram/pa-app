@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        .navbar {
+            background-color: #343a40 !important;
+        }
+
+        #sidebar {
+            background-color: #212529;
+        }
+
+        .nav-link {
+            color: #ffffff !important;
+            transition: color 0.3s ease;
+        }
+
+        .nav-link:hover {
+            color: #007bff !important;
+        }
+
+        .dropdown-menu {
+            background-color: #343a40;
+        }
+
+        .dropdown-item {
+            color: #ffffff !important;
+            transition: background-color 0.3s ease;
+        }
+
+        .dropdown-item:hover {
+            background-color: #495057;
+        }
+
+        footer {
+            background-color: #212529;
+        }
+
+        #home {
+            background: linear-gradient(135deg, #6c757d, #495057);
+            color: white;
+        }
+
+        #home .btn {
+            background-color: #007bff;
+            border: none;
+            transition: background-color 0.3s ease;
+        }
+
+        #home .btn:hover {
+            background-color: #0056b3;
+        }
+
+        .project-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .quick-link:hover {
+            background-color: #343a40;
+            color: #007bff !important;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">My Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sidebar -->
+    <div class="d-flex">
+        <div class="text-white p-3" id="sidebar" style="width: 250px;">
+            <h5>Quick Links</h5>
+            <ul class="nav flex-column">
+                <li class="nav-item"><a class="nav-link quick-link text-white" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link quick-link text-white" href="#about">About Me</a></li>
+                <li class="nav-item"><a class="nav-link quick-link text-white" href="#skills">Skills</a></li>
+                <li class="nav-item"><a class="nav-link quick-link text-white" href="#projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link quick-link text-white" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="flex-grow-1">
+            <!-- Hero Section -->
+            <section id="home" class="text-center py-5">
+                <div class="container">
+                    <h1 class="display-4">Welcome to My Portfolio</h1>
+                    <p class="lead">Showcasing My Skills and Projects</p>
+                    <a href="#projects" class="btn btn-dark btn-lg">Explore Projects</a>
+                </div>
+            </section>
+
+            <!-- About Me Section -->
+            <section id="about" class="py-5">
+                <div class="container">
+                    <h2>About Me</h2>
+                    <p>I am a passionate web developer with expertise in creating responsive and user-friendly websites. With a strong foundation in HTML, CSS, JavaScript, and Bootstrap, I enjoy crafting digital experiences that delight users.</p>
+                </div>
+            </section>
+
+            <!-- Skills Section -->
+            <section id="skills" class="bg-light py-5">
+                <div class="container">
+                    <h2>Skills</h2>
+                    <ul>
+                        <li>HTML, CSS, JavaScript</li>
+                        <li>Bootstrap, React.js</li>
+                        <li>Python, Django</li>
+                        <li>Git, GitHub</li>
+                        <li>UI/UX Design</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Projects Section -->
+            <section id="projects" class="py-5">
+                <div class="container">
+                    <h2>Projects</h2>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="project-card p-3 bg-light">
+                                <h3>Project 1</h3>
+                                <p>A web application for managing tasks efficiently.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="project-card p-3 bg-light">
+                                <h3>Project 2</h3>
+                                <p>An e-commerce site built with React and Bootstrap.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="project-card p-3 bg-light">
+                                <h3>Project 3</h3>
+                                <p>A personal blog developed with Django.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact" class="py-5">
+                <div class="container">
+                    <h2>Contact Me</h2>
+                    <p>Email: yourname@example.com | Phone: +123456789</p>
+                    <p>LinkedIn: <a href="#">linkedin.com/in/yourprofile</a></p>
+                    <p>GitHub: <a href="#">github.com/yourprofile</a></p>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-white text-center py-3">
+        <p>&copy; 2024 Your Name. All Rights Reserved.</p>
+        <p>Follow me on:
+            <a href="#" class="text-white mx-1">Facebook</a>
+            <a href="#" class="text-white mx-1">Twitter</a>
+            <a href="#" class="text-white mx-1">Instagram</a>
+        </p>
+    </footer>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
