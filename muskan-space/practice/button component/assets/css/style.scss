@@ -114,7 +114,7 @@ $size-xxl: 30px;
    }
    &.btn-outline-info{
     background-color: transparent; 
-    border: 1px solid dark;
+    border: 1px solid $danger;
     color: $info;
     &:hover{
          background-color: $info;

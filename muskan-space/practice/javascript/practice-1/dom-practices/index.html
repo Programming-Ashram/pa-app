@@ -204,27 +204,27 @@
 
             {
                 photos: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXoJ-vNDWcsrLK0p1mlfc3541K5wMTxDi-MA&s',
-                title: "cartoon",
+                title: "patlu",
                 name: "patlu",
                 rating: '<i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i>',
              },
              {
                 photos: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHNNLauKM3BOlV-7Ns0tixgu0WH6rmbg0zMQ&s',
-                title: "cartoon",
+                title: "motu",
                 name: "motu",
                 rating: '<i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i>',
              },
              {
                 photos: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDTIPwZhQRzRynLEK7iRIlEi25fhMw7xoWhA&s',
-                title: "cartoon",
-                name: "chingum",
+                title: "chingam",
+                name: "chingam",
                 rating: '<i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i>',
 
                 
              },
              {
                 photos: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQif1htU6w5sGb1wKgg9yFOillIjVssJeN0WA&s',
-                title: "cartoon",
+                title: "john the don",
                 name: "john the don",
                 rating: '<i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i>',
                 background: "$primary",
@@ -350,63 +350,50 @@
                 </div>
           `;
 
-          var article9 = document.createElement('article');
-          var container11 = document.createElement('div');
-          var row10 =document.createElement('div');
-         
-          body.appendChild(article9);
-          article9.appendChild(container11);
-          container11.appendChild(row10);
-          container11.setAttribute('class','container');
-          row10.setAttribute('class','row');
-          row10.setAttribute('id','tassu');
-          
-          var carts =[
-               {
-                    image:'',
-                    title:'groceries',
-                    subtitle:'Assorted Coffe',
-                    content:"$35",
-               },
-               {
-                    image:'',
-                    title:'groceries',
-                    subtitle:'Assorted Coffe',
-                    content:"$35",
-               },
-               {
-                    image:'',
-                    title:'groceries',
-                    subtitle:'Assorted Coffe',
-                    content:"$35",
-               },
-               {
-                    image:'',
-                    title:'groceries',
-                    subtitle:'Assorted Coffe',
-                    content:"$35",
-               }
-          ];
-          
-          for(var i = 0; i < carts.length; i++){
-               var meet = document.querySelector('#tassu');
-               meet.innerHTML +=`
-                    <div class="col-md-3 py-3">
-                         <div class=" text-center" >
-                         <div>
-                              <img class="w-100" src='${carts[i].image}; '>    
-                         </div>
-                         <div class="card-body">
-                           <h5 class="card-title">${carts[i].title}</h5>
-                           <p class="card-text">${carts[i].subtitle}</p>
-                           <p>${carts[i].content}</p>
-                         </div>
-                    </div>     
-                    </div>
-                    
-               `;
 
-          }
+        var body = document.getElementById('body'); 
+        var article = document.createElement('article');
+        var container4 = document.createElement('div');
+        var row4 = document.createElement('div');       
+        var col1= document.createElement('div');
+        var col2= document.createElement('div');
+        var col3= document.createElement('div');
+        var col4= document.createElement('div');
+
+
+
+        body.appendChild(article);
+        article.appendChild(container4);
+        container4.setAttribute('class','container');
+        container4.appendChild(row4);
+        row4.appendChild(col1);
+        col1.setAttribute('class','col-md-3');
+        article.setAttribute('class','mt-5');
+        row4.appendChild(col2);
+        col2.setAttribute('class','col-md-3');
+        row4.appendChild(col3);
+        col3.setAttribute('class','col-md-3');
+        row4.appendChild(col4);
+        row4.setAttribute('class','row');
+        col4.setAttribute('class','col-md-3');
+        container4.appendChild(row4);
+        col3.setAttribute('class', 'row align-items-center');
+
+
+
+
+
+
+        row4.innerHTML =`
+                    <div class = "text-center">
+                        <h1 class="text-center">TEAM OF MOTU PATLU</h1>
+                    </div>
+
+                    `;
+
+
+
+     
 
         
 

@@ -97,7 +97,7 @@
 }
 .btn.btn-outline-info {
   background-color: transparent;
-  border: 1px solid dark;
+  border: 1px solid red;
   color: skyblue;
 }
 .btn.btn-outline-info:hover {

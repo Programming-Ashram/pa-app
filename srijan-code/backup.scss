@@ -23,11 +23,10 @@ body{
         color: black;
     }
 }
-
 @function pxtorem($userValue, $defaultValue : 16){
-    @return $userValue / $defaultValue * 1rem;
-}
+       @return $userValue / $defaultValu
 
+}
 $allColors : (
     // propert -- value
     primary: $color-primary,
@@ -36,8 +35,6 @@ $allColors : (
     success: $color-success,
     danger: $color-danger
 );
-
-
 @each $property , $value in $allColors{
     .bg-#{$property}{
         background-color: $value;
@@ -47,9 +44,6 @@ $allColors : (
         color: $value;
     }
 }
-
-
-
 $allSize : (
     // propert -- value
     0: 0,
@@ -59,7 +53,6 @@ $allSize : (
     4: pxtorem(25),
     5: pxtorem(30)
 );
-
 @each $property , $value in $allSize{
     .p-#{$property}{
        padding: $value;
