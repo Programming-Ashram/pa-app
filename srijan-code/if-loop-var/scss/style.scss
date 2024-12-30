@@ -1,81 +1,40 @@
-$color-success: green;
-$color-success-10 : lighten($color-success, 10%);
-$color-success-20 : lighten($color-success, 20%);
-$color-primary: blue;
-$color-danger: red;
+@import './variable/variable';
+@import './function/function';
 
-$theme: dark;
-
-body{
-    @if $theme == dark{
-        background-color: #333333;
-        color: white;
-    }@else if $theme == lime{
-        background-color: greenyellow;
-        color: white;
-    }@else{
-        background-color: white;
-        color: black;
-    }
+.bg-blue{
+    background-color: $color-primary;
+    padding: pxtorem(10);
 }
 
-@function pxtorem($userValue, $defaultValue : 16){
-    @return $userValue / $defaultValue * 1rem;
-}
+// .box{
+//     width: 300px;
+//     height: 300px;
+//     background-image: linear-gradient(340deg, darkblue, black);
+//     // background-image: radial-gradient(darkblue, black);
+//     color:white;
+//     opacity: 0.3;
+// }
 
-$allColors : (
-    // propert -- value
-    primary: $color-primary,
-    success-10: $color-success-10,
-    success-20: $color-success-20,
-    success: $color-success,
-    danger: $color-danger
-);
+// h1{
+//     font-size: 100px;
+//     text-align: center;
+//     color: transparent;
+//     background-image: radial-gradient(darkblue, lightblue);
+//     -webkit-background-clip: text;
+// }
 
-$allSize : (
-    // propert -- value
-    0: 0,
-    1: pxtorem(10),
-    2: pxtorem(15),
-    3: pxtorem(20),
-    4: pxtorem(25),
-    5: pxtorem(30)
-);
 
-@each $property , $value in $allSize{
-    .p-#{$property}{
-       padding: $value;
-    }
-    .pt-#{$property}{
-        padding-top: $value;
-    }
-    .ps-#{$property}{
-        padding-left: $value;
-    }
-    .pe-#{$property}{
-        padding-right: $value;
-    }
-    .py-#{$property}{
-        padding: $value 0;
-    }
-    .px-#{$property}{
-        padding: 0 $value;
-    }
-    .m-#{$property}{
-        padding: $value;
-     }
-    .mt-#{$property}{
-         padding-top: $value;
-     }
-}
+// img{ //object
+//     width: 100%;
+//     height: 90px;
+//     object-fit: cover;
+// }
 
-@each $property , $value in $allColors{
-    .bg-#{$property}{
-        background-color: $value;
-        color: white;
-    }
-    .text-#{$property}{
-        color: $value;
-    }
-}
-
+// section{
+//     background-image: url(https://t3.ftcdn.net/jpg/03/79/17/00/360_F_379170051_7No0Yg8z2uxbyby4Y0WFDNCBZo18tNGr.jpg);
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     background-position: center;
+//     background-attachment: fixed;
+//     color: white;
+// }
