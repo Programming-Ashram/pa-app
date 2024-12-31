@@ -1,0 +1,8 @@
+@import '../abstracts/variables';
+
+header{
+    padding: $size-sm;
+    background-color: $color-blue;
+    color: $color-white;
+    text-align: center;
+}
