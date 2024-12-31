@@ -1,4 +1,0 @@
-@function convert($usernumber,$basesize:16){
-    @return $usernumber / $basesize * 1rem;
-
-}
