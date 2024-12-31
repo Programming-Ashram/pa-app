@@ -48,7 +48,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   -moz-column-gap: 1.25rem;
-       column-gap: 1.25rem;
+  column-gap: 1.25rem;
   align-items: center;
 }
 .dashboard-wrapper .sidebar-wrapper .header-layout .searchbar-input {
@@ -81,7 +81,7 @@
   height: 3.125rem;
   aspect-ratio: 3/4;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 100%;
 }
 .dashboard-wrapper .section-layout h3, .dashboard-wrapper .section-layout p {
