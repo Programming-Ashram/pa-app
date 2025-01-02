@@ -1,0 +1,78 @@
+.simple-badges {
+  margin: 20px 30px;
+}
+
+.badge {
+  padding: 5px 30px;
+  color: white;
+  border-radius: 20px;
+  border: none;
+}
+.badge.text-bg-primary {
+  background-color: blue;
+}
+.badge.text-bg-secondary {
+  background-color: grey;
+}
+.badge.text-bg-success {
+  background-color: green;
+}
+.badge.text-bg-danger {
+  background-color: red;
+}
+.badge.text-bg-warning {
+  background-color: orange;
+}
+.badge.text-bg-info {
+  background-color: skyblue;
+}
+.badge.text-bg-light {
+  background-color: white;
+  color: black;
+}
+.badge.text-bg-dark {
+  background-color: black;
+}
+.badge .outline-badges {
+  margin: 20px auto;
+}
+.badge.text-outline-primary {
+  background-color: transparent;
+  border: 1px solid blue;
+  color: blue;
+}
+.badge.text-outline-secondary {
+  background-color: transparent;
+  border: 1px solid grey;
+  color: grey;
+}
+.badge.text-outline-success {
+  background-color: transparent;
+  border: 1px solid green;
+  color: green;
+}
+.badge.text-outline-danger {
+  background-color: transparent;
+  border: 1px solid red;
+  color: red;
+}
+.badge.text-outline-warning {
+  background-color: transparent;
+  border: 1px solid orange;
+  color: orange;
+}
+.badge.text-outline-info {
+  background-color: transparent;
+  border: 1px solid skyblue;
+  color: skyblue;
+}
+.badge.text-outline-light {
+  background-color: transparent;
+  border: 1px solid black;
+  color: black;
+}
+.badge.text-outline-dark {
+  background-color: transparent;
+  border: 1px solid black;
+  color: black;
+}/*# sourceMappingURL=style.css.map */

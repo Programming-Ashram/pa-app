@@ -1,0 +1,16 @@
+@import "../../assets/utillities/variable";
+@import "../../assets/utillities/function";
+
+@mixin btn-default(){
+    padding: pxtoremconverter(10) pxtoremconverter(20);
+    border:none;
+    border-radius: pxtoremconverter(4);
+    color: $light;
+}
+@mixin card-dfault(){
+    padding: pxtoremconverter(10) pxtoremconverter(20);
+    border:$dark;
+    border-radius: pxtoremconverter(4);
+    color: $light;
+}
+

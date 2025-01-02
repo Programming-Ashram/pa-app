@@ -1,0 +1,20 @@
+@import '../component/card/card.scss';
+
+$theme : 'red-theme';
+
+.dark-theme{
+    background-color: #333333;
+}
+
+@if($theme == 'dark-theme'){
+    .card{
+        background-color: #000000;
+    }
+}@else if($theme == 'lime-theme'){}
+@else if($theme == 'red-theme'){}
+@else if($theme == 'pink-theme'){}
+@else{
+    .card{
+        background-color: #FFFFFF;
+    }
+}

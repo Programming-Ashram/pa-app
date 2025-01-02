@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+
+    <section>
+        <div class="container">
+            <div class="row" id="albums">
+               
+            </div>
+        </div>
+    <script>
+        var albumdata = [
+  {
+    albumId: 8,
+    id: 383,
+    title: "doloribus est assumenda eligendi cum asperiores earum vel",
+    url: "https://via.placeholder.com/600/6f3eae",
+    thumbnailUrl: "https://via.placeholder.com/150/6f3eae"
+  },
+  {
+    albumId: 8,
+    id: 384,
+    title: "aut quia ad earum consequatur",
+    url: "https://via.placeholder.com/600/d94fb7",
+    thumbnailUrl: "https://via.placeholder.com/150/d94fb7"
+  },
+  {
+    albumId: 8,
+    id: 385,
+    title: "blanditiis labore fugiat eum esse dolores inventore",
+    url: "https://via.placeholder.com/600/696ef",
+    thumbnailUrl: "https://via.placeholder.com/150/696ef"
+  },
+  {
+    albumId: 8,
+    id: 386,
+    title: "sequi autem fugiat ab incidunt mollitia",
+    url: "https://via.placeholder.com/600/6b51f3",
+    thumbnailUrl: "https://via.placeholder.com/150/6b51f3"
+  },
+  {
+    albumId: 8,
+    id: 387,
+    title: "et quam explicabo molestiae fugiat ipsa eum nesciunt quae",
+    url: "https://via.placeholder.com/600/747986",
+    thumbnailUrl: "https://via.placeholder.com/150/747986"
+  },
+  {
+    albumId: 8,
+    id: 388,
+    title: "quos tempore nihil rerum rerum aut libero",
+    url: "https://via.placeholder.com/600/8661f8",
+    thumbnailUrl: "https://via.placeholder.com/150/8661f8"
+  }
+];
+    var index;
+    var data = document.getElementById('albums');
+    for (index = 0; index < albumdata.length; index++){
+        data.innerHTML += `
+            <div class='col-md-3 my-3 p-2 gap-3'>
+                <div class='card' style='width:18rem;'>
+                        <div class='card-body'>
+                            <img src="${albumdata[index].url}" class='w-100'>
+                            <h5 class='card-title'>${albumdata[index].title}</h5>
+                            <p class="card-text">${albumdata[index].id}</p>
+                        </div>
+                    </div>
+            </div>
+        `;
+    }
+    </script>
+</body>
+</html>

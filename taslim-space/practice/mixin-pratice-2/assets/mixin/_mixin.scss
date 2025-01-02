@@ -1,0 +1,13 @@
+@import '../variable/variable';
+@import '../function/function';
+
+
+@mixin card($bordercolor,$width){
+    padding:convert (10) ;
+    border-radius:convert (4);
+    width: $width;
+}
+@mixin card-background($bgcolor, $color){
+    background-color: $bgcolor;
+    color: $color;
+}
