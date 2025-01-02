@@ -1,0 +1,119 @@
+* {
+    font-family: "Rubik", sans-serif;
+  }
+  
+  body {
+    background-image: url("../images/65cfa8a367d6985ab0858db7_BG (3)-p-2000.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  
+  nav {
+    background-color: white;
+    z-index: 9999999999;
+  }
+  
+  .start {
+    z-index: 10000000000000000000000000000000;
+  }
+  
+  .p-set {
+    position: relative;
+    top: -40px;
+    z-index: 9999;
+  }
+  
+  .service .card {
+    margin-bottom: 1rem;
+  }
+  .service .card:hover {
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+    border: none;
+    transition: 0.3s;
+  }
+  
+  .custom-cursor {
+    position: fixed;
+    width: px;
+    height: 100px;
+    background-image: url(https://d2kq0urxkarztv.cloudfront.net/56176d7d4ff02cd032e50c21/2675879/upload-cd738184-e1d9-4f21-9395-f43a4e364809.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    pointer-events: none;
+    z-index: 9999;
+  }
+  
+  p {
+    color: #556070 !important;
+  }
+  
+  section {
+    background-image: url("../images/65cfa8a367d6985ab0858db7_BG (3)-p-2000.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  section .layer {
+    background: linear-gradient(90deg, rgb(255, 255, 255) 4%, rgba(251, 111, 243, 0.2274159664) 100%);
+  }
+  
+  @media (max-width: 767px) {
+    .d-flex {
+      flex-wrap: wrap !important;
+    }
+    .blk.w-50, .card-act.w-50, .port.w-50 {
+      width: 100% !important;
+    }
+    .dell .p-set {
+      position: relative;
+      top: 0px;
+      z-index: 9999;
+    }
+    .d-hide {
+      display: none;
+    }
+    footer .justify-content-between {
+      justify-content: center !important;
+    }
+  }
+  .testimonial {
+    padding: 20px;
+  }
+  
+  .nav-pills .nav-link:is(.active) {
+    background-color: #A53DFF !important;
+    border: none;
+  }
+  .nav-pills .nav-link:not(.active) {
+    color: black;
+  }
+  
+  .icon img {
+    width: 170px;
+    border-radius: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 170px;
+  }
+  
+  .btn {
+    border-radius: 4px;
+    border: none;
+  }
+  .btn.btn-primary {
+    background-color: #A53DFF !important;
+    border: none;
+  }
+  .btn.btn-outline-primary {
+    background-color: transparent;
+    border: 1px solid #A53DFF;
+    color: #A53DFF;
+  }
+  .btn.btn-outline-primary:hover {
+    background-color: #A53DFF !important;
+    color: white;
+    border: 1px solid #A53DFF;
+  }/*# sourceMappingURL=style.css.map */
