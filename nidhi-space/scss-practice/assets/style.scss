@@ -1,0 +1,41 @@
+$color-red: red;
+$color-green: green;
+$color-blue: blue;
+$color-yellow: yellow;
+$color-orange: orange;
+$color-black: black;
+$color-white: white;
+
+
+$size-sm: 10px;
+$size-md: 15px;
+$size-lg: 20px;
+
+
+@mixin btn(){
+    border-radius: 4px;
+    cursor: pointer;
+    &:is(.outline){
+        border: 1px solid $color-black;
+    }
+    &:not(.outline){
+        border: none;
+    }
+}
+
+.btn{
+    @include btn();
+
+    &.btn-primary{ 
+
+        &:is(.outline){
+            border:1px solid $color-blue;
+            color: $color-blue;
+        }
+        &:not(.outline){
+            background-color: $color-blue;
+            color: $color-white;
+        }
+       
+    }
+}
