@@ -33,16 +33,53 @@
 let userinput, list;
 userinput = document.getElementById("userinput");
 list = document.getElementById("list");
+
 let array = [];
 function addTodos() {
+    // Create (C)
     let array = [];
     let newArray = array.push(userinput.value);
 
    for(let i = 0; i < array.length; i++){
+    
+        // Read (R)
         list.innerHTML +=`
-            <li>${array[i]}</li>
+            <li><span class='textData'>${array[i]}</span>  <button type="button" class="btn">Delete</button> </li>
         `;
 
-        console.log(array.flat())
+        // Update (U)
+        let textData = document.querySelectorAll('.textData');
+        textData.forEach(i => {
+            i.addEventListener('dblclick', ()=>{
+                i.contentEditable = true;
+            })
+        });
+
+        // Delete (D)
+        let btn = document.querySelectorAll('.btn');
+        btn.forEach(i => {
+            i.addEventListener('click', ()=>{
+                i.parentElement.style.display = "none";
+            })
+        });
+
    }
 }
+
+// CRUD - Operation
+
+
+// let name = "Ayushman";
+
+// setTimeout(()=>{
+//     console.log(name);
+// }, 3000)
+
+// let array = [1,2,3, 4, 5, 6];
+// let index = 0;
+// setInterval(()=>{
+//    console.log(array[index]);
+//    index++
+// }, 2000)
+
+
