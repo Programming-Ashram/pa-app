@@ -38,39 +38,99 @@
 // var salery = null; // Null
 
 // NoN Premetive
-
+// var employees = [
+//     {
+//         empName: "Ansh",
+//         empSalery : "1Lac",
+//         empDesintaion: "Software Developer"
+//     },
+//     {
+//         empName: "Ayushman",
+//         empSalery : "1Lac",
+//         empDesintaion: "Software Developer"
+//     },{
+//         empName: "Shivam",
+//         empSalery : "",
+//         empDesintaion: "Software Developer"
+//     },{
+//         empName: "",
+//         empSalery : "1Lac",
+//         empDesintaion: "Software Developer"
+//     }
+//     ,{
+//         empName: "Srijan",
+//         empSalery : "1Lac",
+//         empDesintaion: "Software Developer"
+//     }
+// ];
 // Array -====[0]======-=[1]=======[2]
-var group = ["Apple", "Banana", "Grapes"];
-var employees = [
-    {
-        empName: "Ansh",
-        empSalery : "1Lac",
-        empDesintaion: "Software Developer"
-    },
-    {
-        empName: "Ayushman",
-        empSalery : "1Lac",
-        empDesintaion: "Software Developer"
-    },{
-        empName: "Shivam",
-        empSalery : "",
-        empDesintaion: "Software Developer"
-    },{
-        empName: "",
-        empSalery : "1Lac",
-        empDesintaion: "Software Developer"
-    }
-    ,{
-        empName: "Srijan",
-        empSalery : "1Lac",
-        empDesintaion: "Software Developer"
-    }
-];
 
-for(var i = 0; i < employees.length; i++){
-    var list = document.querySelector('ul');
-    console.log();
-    list.innerHTML += `
-        <li class="text-primary">Hello i am  ${employees[i].empName} and my designation is  ${employees[i].empDesintaion} and my salery is  ${employees[i].empSalery}</li>
-    `;
-}
+// for loop (index as a number)
+// for(let i = 0; i < group.length; i++){
+//     console.log(i + " " + typeof(i));
+// }
+
+// for in loop
+// for(let i in group){
+//     console.log(i + " " + typeof(i));
+// }
+
+// for of loop
+// for(let i of group){
+//     console.log(i + " " + typeof(i));
+// }
+
+// while loop (in array index as a number)
+// var group = ["Apple", "Banana", "Grapes"];
+// var i = 0;
+// while (group[i]) {
+//     console.log(i);
+//     i++;
+// }
+
+// let x = 0;
+// while (x <= 10) {
+//     console.log(x);
+//     x++;
+// }
+// do while loop (in array index as a number)
+
+// let x = 0; 
+// do {
+//     console.log(x);
+//     x++;
+// } while (x <= 20);
+
+// for each loop
+
+// let btn = document.querySelectorAll('button');
+// var group = ["Apple", "Banana", "Grapes"];
+
+// Array (Values) Html Elements  we can access each group elements
+// group.forEach(i => {
+//    console.log(i);
+// });
+
+// for(let i in btn){
+//     btn[i].addEventListener('click', function(){
+//         alert(btn[i].innerText);
+//     })
+// }
+
+// DOM Method
+
+// Access html to js
+let head = document.getElementById('heading');
+let x = head.parentElement;
+x.setAttribute('class', 'text-success');
+console.log(head);
+// document.getElememtsByClass()
+// document.getElememtsByTagNames()
+// document.querySelector()
+// document.querySelectorAll()
+// document.querySelectorAll()
+
+// // Create 
+// document.createElement()
+// element.appendChild()
+// document.setAttribute()

@@ -41,6 +41,7 @@ function addTodos() {
     let newArray = array.push(userinput.value);
 
    for(let i = 0; i < array.length; i++){
+    
         // Read (R)
         list.innerHTML +=`
             <li><span class='textData'>${array[i]}</span>  <button type="button" class="btn">Delete</button> </li>
