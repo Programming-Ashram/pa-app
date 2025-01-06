@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>70 
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>muskan</title>
+</head>
+<body>
+     <input type="date" id="calander">
+     <button onclick="click()">touch me</button>
+     <div id="context"></div>
+     <script>
+
+          
+          function press(){
+               let context = document.getElementById('context');
+               let calander = document.getElementById('calander');
+               switch (calander.value) {
+               case '2025-01-01':
+                    context.innerHTML = `
+                         <h2>Happy New Year</h2>
+                    `;
+
+                    break;
+               case '2025-01-14':
+               context.innerHTML = `
+                         <h2>Hazarat Ali Birthday,Makar Sankranti</h2>
+                    `;
+               
+                    break;
+               case '2025-01-06':
+               context.innerHTML = `
+                    <h2>Guru Govind Singh Jayanti</h2>
+               ` ;
+
+               break;
+               case '2025-01-26':
+               context.innerHTML = `
+                    <h2>Republic Day</h2>
+               `;
+
+                break;
+               default:
+               context.innerHTML = `
+                    <h2>No Events</h2>
+               `;
+               break;
+
+               
+              
+             
+          }
+          }
+           
+        
+     </script>
+</body>
+</html>
