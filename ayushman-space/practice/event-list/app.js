@@ -1,6 +1,6 @@
-function clickme(x, y){
-    console.log(x +" "+ y);
-}
+// function clickme(x, y){
+//     console.log(x +" "+ y);
+// }
 
 // let btn = document.getElementById('btn').addEventListener('click', function(){
 //     alert("Hello  I am Updated One..");
@@ -19,3 +19,7 @@ function clickme(x, y){
 // btn2.onclick = ()=>{
 //     alert("Hello  I am Updated Two..");
 // }
+
+btn1. onclick = function(){
+    alert("taslim khan");
+}

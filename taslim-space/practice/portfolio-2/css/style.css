@@ -1,0 +1,35 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+/* Navbar */
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Hero Section */
+header {
+    background: linear-gradient(135deg, #4CAF50, #2E7D32);
+}
+
+/* About Section */
+#about img {
+    border: 5px solid #4CAF50;
+}
+
+/* Projects Section */
+.card {
+    border: none;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    margin-top: 20px;
+}
