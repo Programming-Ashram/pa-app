@@ -1,3 +1,44 @@
+
+function addData(){
+    // Blank Array 
+    let array = [];
+    // Access Lit
+    let ul = document.getElementById('list');
+    // Access Input
+    let input = document.getElementById('userinput');
+
+    // Add data in array using push method (CREATE- C)
+    array.push(userinput.value);
+    // Read Array Data in List (READ - R)
+    for(let i = 0; i < array.length; i++){
+        ul.innerHTML +=`
+            <li><span class='content'>${array[i]}</span> <button class='delete'>Delete</button></li>
+        `; 
+
+         // EDIT / UPDATE (UPDATE - U)
+         let edit = document.querySelectorAll('.content');
+         edit.forEach(edit => {
+             edit.addEventListener('dblclick', () =>{
+                 edit.contentEditable = true;
+             }) 
+
+              
+         });
+
+        // Delete (D)
+        let btnDelete = document.querySelectorAll('.delete');
+
+        btnDelete.forEach(del => {
+            del.addEventListener('click', () =>{
+                del.parentElement.style.display = "none";
+            })
+        });
+    }
+}
+
+// CRUD Operation
+
+
 // let array = ["Jinat","Taslim", "Ameen", "Muskan"];
 // let ages = [12,23, 11, 89];
 
@@ -30,41 +71,41 @@
 // console.log(array.sort());
 
 
-let userinput, list;
-userinput = document.getElementById("userinput");
-list = document.getElementById("list");
+// let userinput, list;
+// userinput = document.getElementById("userinput");
+// list = document.getElementById("list");
 
-let array = [];
-function addTodos() {
-    // Create (C)
-    let array = [];
-    let newArray = array.push(userinput.value);
+// let array = [];
+// function addTodos() {
+//     // Create (C)
+//     let array = [];
+//     let newArray = array.push(userinput.value);
 
-   for(let i = 0; i < array.length; i++){
+//    for(let i = 0; i < array.length; i++){
     
-        // Read (R)
-        list.innerHTML +=`
-            <li><span class='textData'>${array[i]}</span>  <button type="button" class="btn">Delete</button> </li>
-        `;
+//         // Read (R)
+//         list.innerHTML +=`
+//             <li><span class='textData'>${array[i]}</span>  <button type="button" class="btn">Delete</button> </li>
+//         `;
 
-        // Update (U)
-        let textData = document.querySelectorAll('.textData');
-        textData.forEach(i => {
-            i.addEventListener('dblclick', ()=>{
-                i.contentEditable = true;
-            })
-        });
+//         // Update (U)
+//         let textData = document.querySelectorAll('.textData');
+//         textData.forEach(i => {
+//             i.addEventListener('dblclick', ()=>{
+//                 i.contentEditable = true;
+//             })
+//         });
 
-        // Delete (D)
-        let btn = document.querySelectorAll('.btn');
-        btn.forEach(i => {
-            i.addEventListener('click', ()=>{
-                i.parentElement.style.display = "none";
-            })
-        });
+//         // Delete (D)
+//         let btn = document.querySelectorAll('.btn');
+//         btn.forEach(i => {
+//             i.addEventListener('click', ()=>{
+//                 i.parentElement.style.display = "none";
+//             })
+//         });
 
-   }
-}
+//    }
+// }
 
 // CRUD - Operation
 

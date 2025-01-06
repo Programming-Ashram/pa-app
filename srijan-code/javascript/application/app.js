@@ -120,10 +120,10 @@
 // DOM Method
 
 // Access html to js
-let head = document.getElementById('heading');
-let x = head.parentElement;
-x.setAttribute('class', 'text-success');
-console.log(head);
+// let head = document.getElementById('heading');
+// let x = head.parentElement;
+// x.setAttribute('class', 'text-success');
+// console.log(head);
 // document.getElememtsByClass()
 // document.getElememtsByTagNames()
 // document.querySelector()
@@ -134,3 +134,67 @@ console.log(head);
 // document.createElement()
 // element.appendChild()
 // document.setAttribute()
+
+
+// function srijanfn(){
+//     alert(srijan);
+// }
+
+
+// function shivamfn(){
+//     alert(shivam);
+// }
+// shivamfn()
+
+// let srijan = "Srijan";
+// let shivam = "Shivam";
+// simple function
+// function fetchData(){
+//     console.log(srijan)
+// }
+// fetchData();
+// nested function
+// Parent FUnction
+// function header(){
+//     // Local Scope
+//     let head = 'Header';
+//     console.log(head);
+
+//     // Child Nested Function
+//     function nav(){
+//         // Local Scope
+//         let navigation = "Menu";
+//         console.log(navigation)
+//     }nav();
+// }header();
+// arrow function
+// let deleteData = () =>{
+//     console.log("Delete Function is called")
+// }
+// deleteData();
+// function with parameter
+// function add(x, y){
+//     console.log(x + y);
+// }
+// add(10, 40);
+// Instant invoke funtion / Anonymuous Function
+// (function(){
+//     alert("Hello I am invok fn")
+// })();
+// (()=>{
+//     alert("Hello I am invok fn")
+// })();
+// clouser function
+// function parentFn(){
+//     let x = 10; //number
+//     function childFn(){
+//         let y = 20; // number
+//         function total(){
+//             console.log(x + y);
+//         }total();
+//     }childFn();
+// }
+// parentFn();
+
+// let heading = document.getElementById('heading');
+// console.log(heading.nextElementSibling);
