@@ -1,4 +1,4 @@
-let array = [["Muskan","Ayushman", "Pranjal", "Jinat"], [1, 2, 3, 4, 5, 6, 7], ["UI Dev", "UI Dev", "UI Dev"]];
+// let array = [["Muskan","Ayushman", "Pranjal", "Jinat"], [1, 2, 3, 4, 5, 6, 7], ["UI Dev", "UI Dev", "UI Dev"]];
 
 // let array1 = [1, 2, 3, 4, 5, 6, 7];
 // let array2 = ["Apple", "Banana", "Grapes", "Mango"];
@@ -19,9 +19,29 @@ let array = [["Muskan","Ayushman", "Pranjal", "Jinat"], [1, 2, 3, 4, 5, 6, 7], [
 // array.unshift("Muskan");
 // array.unshift("Taslim");
 
-
 // array.shift();
 
+"use strict";
 
+// step 1
+let alertPop = document.getElementById('alert');
 
+function openModal(){
+    // alertPop.classList.add('anim');
+    alertPop.classList.add('active');
+    // alertPop.style.display= "block";
+}
 
+// setTimeout(function(){});
+setTimeout(()=>{
+    if(alertPop){
+        alertPop.classList.remove('active');
+    }else{
+        console.log("Alert is of")
+    }
+}, 4000);
+
+y = 10;
+y = 60;
+let x = 70;
+console.log(y + x);
