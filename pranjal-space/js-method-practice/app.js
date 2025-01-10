@@ -21,20 +21,24 @@
 
 // array.shift();
 
-"use strict";
+// "use strict";
 
-// step 1
-let alertPop = document.getElementById('alert');
+// // step 1
+// let alertPop = document.getElementById('alert');
 
 function openModal(){
-    alertPop.classList.add('anim');
-     
-     
+    // alertPop.classList.add('anim');
+    alertPop.classList.add('active');
+    // alertPop.style.display= "block";
 }
 
 // setTimeout(function(){});
 setTimeout(()=>{
-    alertPop.classList.remove('anim');
+    if(alertPop){
+        alertPop.classList.remove('active');
+    }else{
+        console.log("Alert is of")
+    }
 }, 4000);
 
 // y = 10;
@@ -49,4 +53,3 @@ setTimeout(()=>{
 a = 10;
 console.log(a);
 var a;
->>>>>>> cdb31cc683180220628f85f608351009565d60a1
