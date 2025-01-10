@@ -1,0 +1,77 @@
+.class1, .class3, .class2 {
+  padding: 0.625rem;
+  border: 0.0625rem solid black;
+  border-radius: 0.125rem;
+  outline: 0.3125rem solid yellow;
+  background-color: pink;
+}
+
+.class2 {
+  background-color: blueviolet;
+}
+
+.class3 {
+  background-color: yellowgreen;
+}
+
+.btn {
+  padding: 0.625rem 1.25rem;
+  border: none;
+  border-radius: 0.25rem;
+}
+
+.bg-danger {
+  background-color: red;
+  color: white;
+}
+
+.text-danger {
+  color: red;
+}
+
+.btn-danger {
+  background-color: red;
+  color: white;
+}
+
+.bg-primary {
+  background-color: blue;
+  color: white;
+}
+
+.text-primary {
+  color: blue;
+}
+
+.btn-primary {
+  background-color: blue;
+  color: white;
+}
+
+.bg-warning {
+  background-color: yellow;
+  color: white;
+}
+
+.text-warning {
+  color: yellow;
+}
+
+.btn-warning {
+  background-color: yellow;
+  color: white;
+}
+
+.bg-success {
+  background-color: green;
+  color: white;
+}
+
+.text-success {
+  color: green;
+}
+
+.btn-success {
+  background-color: green;
+  color: white;
+}/*# sourceMappingURL=style.css.map */
