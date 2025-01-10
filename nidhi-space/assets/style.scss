@@ -1,0 +1,48 @@
+@function pxtorem($userInput, $defaultValue : 16){
+    @return $userInput / $defaultValue * 1rem
+}
+
+.class1{
+    padding: pxtorem(10);
+    border: pxtorem(1) solid black;
+    border-radius: pxtorem(2);
+    outline: pxtorem(5) solid yellow;
+    background-color: pink;
+}
+
+.class2{
+    @extend .class1;
+    background-color: blueviolet;
+}
+
+.class3{
+    @extend .class1;
+    background-color: yellowgreen;
+}
+
+$colorGroup : (
+    'danger': red,
+    'primary': blue,
+    'warning': yellow,
+    'success': green,
+);
+
+.btn{
+    padding: pxtorem(10) pxtorem(20);
+    border: none;
+    border-radius: pxtorem(4);
+}
+
+@each $name, $value in $colorGroup{
+    .bg-#{$name}{
+        background-color: $value;
+        color: white;
+    }
+    .text-#{$name}{
+        color: $value;
+    }
+    .btn-#{$name}{
+        background-color: $value;
+        color: white;
+    }
+}
