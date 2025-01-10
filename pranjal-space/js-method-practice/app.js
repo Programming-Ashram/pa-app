@@ -27,21 +27,17 @@
 let alertPop = document.getElementById('alert');
 
 function openModal(){
-    // alertPop.classList.add('anim');
-    alertPop.classList.add('active');
-    // alertPop.style.display= "block";
+    alertPop.classList.add('anim');
+     
+     
 }
 
 // setTimeout(function(){});
 setTimeout(()=>{
-    if(alertPop){
-        alertPop.classList.remove('active');
-    }else{
-        console.log("Alert is of")
-    }
+    alertPop.classList.remove('anim');
 }, 4000);
 
-y = 10;
-y = 60;
-let x = 70;
-console.log(y + x);
+// y = 10;
+// y = 60;
+// let x = 70;
+// console.log(y + x);
