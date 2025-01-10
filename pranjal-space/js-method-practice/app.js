@@ -1,4 +1,4 @@
-// let array = [["Muskan","Ayushman", "Pranjal", "Jinat"], [1, 2, 3, 4, 5, 6, 7], ["UI Dev", "UI Dev", "UI Dev"]];
+..// let array = [["Muskan","Ayushman", "Pranjal", "Jinat"], [1, 2, 3, 4, 5, 6, 7], ["UI Dev", "UI Dev", "UI Dev"]];
 
 // let array1 = [1, 2, 3, 4, 5, 6, 7];
 // let array2 = ["Apple", "Banana", "Grapes", "Mango"];
