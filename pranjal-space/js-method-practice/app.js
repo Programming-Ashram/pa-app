@@ -40,4 +40,13 @@ setTimeout(()=>{
 // y = 10;
 // y = 60;
 // let x = 70;
+<<<<<<< HEAD
 // console.log(y + x);
+=======
+// console.log(y + x);
+
+// Hoisting
+a = 10;
+console.log(a);
+var a;
+>>>>>>> cdb31cc683180220628f85f608351009565d60a1
