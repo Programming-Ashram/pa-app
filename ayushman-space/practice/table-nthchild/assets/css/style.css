@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+table tr, table td, table th {
+  border: 1px solid black;
+  padding: 10px;
+}
+table tr:nth-child(even) {
+  background-color: green;
+  color: white;
+}
+table tr:nth-child(odd) {
+  background-color: blue;
+  color: white;
+}
+table thead th {
+  background-color: black;
+  color: white;
+}/*# sourceMappingURL=style.css.map */
