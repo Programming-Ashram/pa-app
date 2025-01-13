@@ -44,9 +44,7 @@ setTimeout(()=>{
 // y = 10;
 // y = 60;
 // let x = 70;
-<<<<<<< HEAD
 // console.log(y + x);
-=======
 // console.log(y + x);
 
 // Hoisting
