@@ -1,0 +1,9 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css);
+* {
+  margin: 0 auto;
+}
+
+.bg-blue {
+  background-color: #324c79;
+  color: white;
+}/*# sourceMappingURL=main.css.map */
