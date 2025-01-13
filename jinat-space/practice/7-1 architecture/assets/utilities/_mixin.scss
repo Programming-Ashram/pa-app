@@ -1,0 +1,13 @@
+@import '../../assets/utilities/variable';
+@import '../../assets/utilities/function';
+
+@mixin btn-default($color){
+     padding: pxtoremconvertor(10) pxtoremconvertor(20);
+     border: none;
+     color:$color;
+     border-radius: pxtoremconvertor(8);
+}
+@mixin card-default(){
+     padding: pxtoremconvertor(20);
+     margin: pxtoremconvertor(40) auto;
+}
