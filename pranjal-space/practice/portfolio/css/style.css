@@ -1,0 +1,46 @@
+.header {
+    background: linear-gradient(135deg, #aad5ee 0%, #6b95de 100%);
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+    position: relative;
+  }
+  .header .navbar {
+    background-color: transparent;
+    padding: 20px 0;
+  }
+  .header h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+  }
+  .header .lead {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-top: 20px;
+  }
+  .cta-btn {
+    margin-top: 30px;
+    padding: 15px 40px;
+    background-color: #b886d6;
+    color: white;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease;
+  }
+  .cta-btn:hover {
+    background-color: #f2f6f2;
+  }
+  .social-icons {
+    margin-top: 20px;
+  }
+  .social-icons a {
+    margin: 0 10px;
+    color: white;
+    font-size: 1.5rem;
+    transition: transform 0.3s ease;
+  }
+  .social-icons a:hover {
+    transform: scale(1.2);
+  }
