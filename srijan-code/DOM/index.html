@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DOM Practice</title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+
+        <!-- <h1>Heading</h1>
+        <h1 id="heading">Heading <span>2</span></h1>
+        <h1 class="heading">Heading <span>3</span></h1>
+        <h1 class="heading">Heading <span>4</span></h1>
+        <h1 class="heading">Heading <span>5</span></h1> -->
+
+        <!-- <h1>Heading</h1>
+        <h1>Heading <span>2</span></h1>
+        <h1>Heading <span>3</span></h1>
+        <h1>Heading <span>4</span></h1>
+        <h1>Heading <span>5</span></h1> -->
+
+        <div class="tabs">
+            <button onclick='myTab("tab1")' class="tab active" type="button" >Tab 1</button>
+            <button onclick='myTab("tab2")' class="tab"  type="button">Tab 2</button>
+            <button onclick='myTab("tab3")' class="tab"  type="button">Tab 3</button>
+        </div>
+
+        <div id="tab1" class="tab-content active">
+            <div class="row" id="tabrow"></div>
+        </div>
+        <div id="tab2" class="tab-content">
+            <h1>Content 2</h1>
+        </div>
+        <div id="tab3" class="tab-content">
+            <h1>Content 3</h1>
+        </div>
+        
+
+        <script src="app.js"></script>
+    </body>
+</html>
