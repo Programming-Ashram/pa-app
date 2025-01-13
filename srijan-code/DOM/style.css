@@ -1,0 +1,16 @@
+.heading--decoration{
+    padding: 10px;
+    background-color: blue;
+    color: white;
+}
+.tab-content{
+    display: none;
+}
+
+.tab-content.active{
+    display: block;
+}
+.row{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}

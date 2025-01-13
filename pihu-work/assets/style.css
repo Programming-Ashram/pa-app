@@ -1,0 +1,83 @@
+.box1, .box2 {
+  width: 12.5rem;
+  height: 12.5rem;
+  border: 0.125rem solid yellow;
+  border-radius: 0.25rem;
+  margin: 2.5rem auto;
+  outline: 0.25rem solid red;
+  background-color: aqua;
+}
+
+.box2 {
+  background-color: antiquewhite;
+}
+
+.bg-primary {
+  background-color: blue;
+  color: white;
+}
+
+.btn-primary {
+  background-color: blue;
+  color: white;
+}
+
+.text-primary {
+  color: blue;
+}
+
+.bg-warning {
+  background-color: orange;
+  color: white;
+}
+
+.btn-warning {
+  background-color: orange;
+  color: white;
+}
+
+.text-warning {
+  color: orange;
+}
+
+.bg-info {
+  background-color: lightblue;
+  color: white;
+}
+
+.btn-info {
+  background-color: lightblue;
+  color: white;
+}
+
+.text-info {
+  color: lightblue;
+}
+
+.bg-danger {
+  background-color: red;
+  color: white;
+}
+
+.btn-danger {
+  background-color: red;
+  color: white;
+}
+
+.text-danger {
+  color: red;
+}
+
+.bg-dark {
+  background-color: black;
+  color: white;
+}
+
+.btn-dark {
+  background-color: black;
+  color: white;
+}
+
+.text-dark {
+  color: black;
+}/*# sourceMappingURL=style.css.map */
