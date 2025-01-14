@@ -50,4 +50,13 @@ btn.addEventListener('click', ()=>{
     else{
         alert("All Feilds are mendetory");
     }
-})
+});
+
+
+// let array = [];
+
+// array.push({
+//     name: "Ayushman",
+//     age: 12
+// });
+// console.log(array);
