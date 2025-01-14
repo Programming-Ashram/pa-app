@@ -1,4 +1,4 @@
-// let array = [["Muskan","Ayushman", "Pranjal", "Jinat"], [1, 2, 3, 4, 5, 6, 7], ["UI Dev", "UI Dev", "UI Dev"]];
+..// let array = [["Muskan","Ayushman", "Pranjal", "Jinat"], [1, 2, 3, 4, 5, 6, 7], ["UI Dev", "UI Dev", "UI Dev"]];
 
 // let array1 = [1, 2, 3, 4, 5, 6, 7];
 // let array2 = ["Apple", "Banana", "Grapes", "Mango"];
@@ -21,10 +21,10 @@
 
 // array.shift();
 
-"use strict";
+// "use strict";
 
-// step 1
-let alertPop = document.getElementById('alert');
+// // step 1
+// let alertPop = document.getElementById('alert');
 
 function openModal(){
     // alertPop.classList.add('anim');
@@ -44,6 +44,7 @@ setTimeout(()=>{
 // y = 10;
 // y = 60;
 // let x = 70;
+// console.log(y + x);
 // console.log(y + x);
 
 // Hoisting

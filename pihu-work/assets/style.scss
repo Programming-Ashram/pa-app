@@ -1,0 +1,40 @@
+@function pxtorem($userValue, $defaultValue : 16){
+    @return $userValue / $defaultValue * 1rem;
+}
+
+.box1{
+    width: pxtorem(200);
+    height: pxtorem(200);
+    border: pxtorem(2) solid yellow;
+    border-radius: pxtorem(4);
+    margin: pxtorem(40) auto;
+    outline: pxtorem(4) solid red;
+    background-color: aqua;
+}
+
+.box2{
+    @extend .box1;
+    background-color: antiquewhite;
+};
+
+$colorGroup : (
+    'primary': blue,
+    'warning': orange,
+    'info': lightblue,
+    'danger': red,
+    'dark': black,
+);
+
+@each $name, $value in $colorGroup{
+    .bg-#{$name}{
+        background-color: $value;
+        color:white;
+    }
+    .btn-#{$name}{
+        background-color: $value;
+        color:white;
+    }
+    .text-#{$name}{
+        color: $value;
+    }
+}
