@@ -1,0 +1,8 @@
+@import '../abstracts/variables';
+
+footer{
+    padding: $size-sm;
+    background-color: $color-black;
+    color: $color-white;
+    text-align: center;
+}

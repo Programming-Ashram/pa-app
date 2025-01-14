@@ -1,0 +1,16 @@
+@import '../variables/variable.scss';
+
+@mixin animate(){
+     animation-name: but;
+     animation-duration: 3s;
+     animation-iteration-count: infinite;
+
+}
+
+@mixin badge-com(){
+     padding:$size-sm $size-md;
+     border-radius: 60px;
+     color: $light;
+     margin: $size-md;
+
+}
