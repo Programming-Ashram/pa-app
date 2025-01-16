@@ -1,0 +1,46 @@
+@import '../abstract/variable';
+
+.btn{
+    padding: 10px 22px;
+    font-size: 13px;
+}
+
+$colorGroup: (
+    primary: $blue,
+    success: $success,
+    danger: $danger,
+    warning: $warning,
+    dark: $dark
+);
+
+@each $props, $values in $colorGroup{
+    .bg-#{$props}{
+        background-color: $values;
+        color: white;
+    }
+    .btn-#{$props}{
+        background-color: $values;
+        color: white;
+        border: none;
+    }
+    .btn-text-#{$props}{
+        background-color:transparent;
+        color: $values;
+        border: none;
+
+        &:hover{
+            background-color: lighten($values, 45);
+            transition: 0.3s;
+        }
+    }
+    .btn-outline-#{$props}{
+        background-color:transparent;
+        color: $values;
+        border: 1px solid $values;
+
+        &:hover{
+            background-color: lighten($values, 45);
+            transition: 0.3s;
+        }
+    }
+}

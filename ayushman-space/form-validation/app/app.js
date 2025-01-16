@@ -51,7 +51,7 @@ btn.addEventListener('click', ()=>{
     else{
         alert("All Feilds are mendetory");
     }
-});
+});                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
 
 
 // let array = [];
