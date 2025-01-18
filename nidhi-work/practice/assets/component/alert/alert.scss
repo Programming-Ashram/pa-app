@@ -1,0 +1,49 @@
+$colorGroup : (
+    'danger':#58151C,
+    'primary':#052C65,
+    'secondary':#2B2532,
+    'success':#0A3622,
+    'warning':#664D03,
+    'dark':black,
+    'light':#495057,
+    'info':#055160,
+);
+$background-color:(
+    'primary':#CFE2FF,
+    'danger':#F8D7DA,
+    'secondary':#E2E3E5,
+    'success':#D1E7DD,
+    'warning':#FFF3CD,
+    'dark':#CED4DA,
+    'light':#FCFCFD,
+    'info':#CFF4FC,
+);
+$border-color:(
+    'primary':#9ec5fe,
+    'danger':#f1aeb5,
+    'secondary':#c4c8cb,
+    'success':#a3cfbb,
+    'warning':#ffe69c,
+    'dark':#adb5bd,
+    'light': #e9ecef,
+    'info': #9eeaf9,
+);
+
+
+@each $name, $value in $background-color{
+    .alert-#{$name}{
+        background-color:$value ;
+    }
+    .alert-border-#{$name}{
+        color:$value;
+        border:1px solid $value;
+        background-color: transparent;
+    }
+}
+
+.alert{
+    font-size: 20px;
+    margin-bottom: 30px;
+    padding: 16px;
+    border-radius: 6px;
+}
