@@ -18,6 +18,7 @@ function formValid(){
         fnameMessage.classList.replace('text-secondary', 'text-danger');
         fnameMessage.innerText = 'Please fill the input field';
     }
+   
 }
 
 function formValidEmail(){
