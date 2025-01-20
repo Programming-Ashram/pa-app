@@ -1,5 +1,5 @@
 class Waffers{
-    constructor(waferCategorgy,wafferName){
+    constructor(stClass,stName){
         this.stName = stName;
         this.stClass = stClass;
     };
@@ -8,7 +8,7 @@ class Waffers{
 
     }
 
-}
+};
 let st1 =  new  student("pranjal","12th");
 let st2 =  new  student("rina","12th");
 let st3 =  new  student("prakash","12th");
