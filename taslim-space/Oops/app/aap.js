@@ -37,10 +37,10 @@
 //     }
 // };
 
-// Instanse Of Object
+// // Instanse Of Object
 // let car1 = new Car("Audi", "30,0000", "Black");
 
-// Update Object by using method
+// // Update Object by using method
 // car1.updateColor("Blue", "40,0000");
 
 // let car2 = new Car("BMW", "20,0000", "Black");
@@ -56,30 +56,31 @@
 
 // console.log(typeof(Car));
 
+//    Inheritance
+
 class Car{
-    constructor(productName, color){
+    constructor(productName,color){
         this.productName = productName;
         this.color = color;
     }
 };
+ class Bike extends Car{}
+ class Cycle extends Bike{}
 
+ let car1 = new Car('THAR', "BLACK");
+ let car2 = new Car('KEA', "WHITE");
+ let car3 = new Car('Swift', "White");
+ let car4 = new Car('Ertiga', "red");
+ let bike1 = new Bike('NINJA', " Black");
+ let bike2 = new Bike('Shine', "black");
+ let bike3 = new Bike('Pulsar', "white");
+ let bike4 = new Bike('HAYABUSHA','BLACK')
+ let cycle1 = new Cycle('Ranger', "Brown");
+ let cycle2 = new Cycle('Hero', "Gray");
+ let cycle3 = new Cycle('Hurculas', "Gray");
 
-class Bike extends Car{}
-class Cycle extends Bike{}
-
-let car1 = new Car('BMW', "Red");
-let car2 = new Car('OMNI', "Blue");
-let car3 = new Car('Swift', "White");
-let car4 = new Car('Ertiga', "red");
-let bike1 = new Bike('Hunter 350', "Rabel Black");
-let bike2 = new Bike('Shine', "black");
-let bike3 = new Bike('Pulsar', "white");
-let cycle1 = new Cycle('Ranger', "Brown");
-let cycle2 = new Cycle('Hero', "Gray");
-let cycle3 = new Cycle('Hurculas', "Gray");
-
-let cars = [car1, car2, car3, car4]
-let bikes = [bike1, bike2, bike3]
+ let cars = [car1, car2, car3, car4]
+let bikes = [bike1, bike2, bike3,bike4]
 let cycles = [cycle1, cycle2, cycle3];
 
 let showroom = [cars, bikes,cycles];
@@ -91,13 +92,13 @@ let carData, bikeData, CycleData, items;
 
 carData = document.getElementById('carData');
 bikeData = document.getElementById('bikeData');
-cycleData = document.getElementById('cycleData');
+CycleData = document.getElementById('cycleData');
 items = document.getElementById('items');
 caritems = document.getElementById('caritems');
 bikeitems = document.getElementById('bikeitems');
 cycleitems = document.getElementById('cycleitems');
 
-items.innerHTML =`${(allItems.length < 10) ? '0' + allItems.length : allItems.length}`;
+items.innerHTML =`${allItems.length}`;
 caritems.innerHTML =`0${cars.length}`;
 bikeitems.innerHTML =`0${bikes.length}`;
 cycleitems.innerHTML =`0${cycles.length}`;
@@ -115,7 +116,7 @@ for(let i = 0; i < cars.length; i++){
 }
 
 for(let c = 0; c < cycles.length; c++){
-    cycleData.innerHTML += `
+    CycleData.innerHTML += `
     <div class='col-md-4 my-4'>
         <div class='card p-3'>
             <h1 class='title'>${cycles[c].productName}</h1>
@@ -134,4 +135,8 @@ for(let x = 0; x < bikes.length; x++){
         </div>
     </div>
 `;
-} 
+}
+
+console.log(cars);
+console.log(bikes);
+console.log(cycles);

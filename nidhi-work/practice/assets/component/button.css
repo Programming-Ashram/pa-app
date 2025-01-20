@@ -1,0 +1,159 @@
+.btn {
+  padding: 10px 22px;
+  font-size: 13px;
+}
+
+.bg-primary {
+  background-color: blue;
+  color: white;
+}
+
+.btn-primary {
+  background-color: blue;
+  color: white;
+  border: none;
+}
+
+.btn-text-primary {
+  background-color: transparent;
+  color: blue;
+  border: none;
+}
+.btn-text-primary:hover {
+  background-color: #e6e6ff;
+  transition: 0.3s;
+}
+
+.btn-outline-primary {
+  background-color: transparent;
+  color: blue;
+  border: 1px solid blue;
+}
+.btn-outline-primary:hover {
+  background-color: #e6e6ff;
+  transition: 0.3s;
+}
+
+.bg-success {
+  background-color: green;
+  color: white;
+}
+
+.btn-success {
+  background-color: green;
+  color: white;
+  border: none;
+}
+
+.btn-text-success {
+  background-color: transparent;
+  color: green;
+  border: none;
+}
+.btn-text-success:hover {
+  background-color: #67ff67;
+  transition: 0.3s;
+}
+
+.btn-outline-success {
+  background-color: transparent;
+  color: green;
+  border: 1px solid green;
+}
+.btn-outline-success:hover {
+  background-color: #67ff67;
+  transition: 0.3s;
+}
+
+.bg-danger {
+  background-color: red;
+  color: white;
+}
+
+.btn-danger {
+  background-color: red;
+  color: white;
+  border: none;
+}
+
+.btn-text-danger {
+  background-color: transparent;
+  color: red;
+  border: none;
+}
+.btn-text-danger:hover {
+  background-color: #ffe6e6;
+  transition: 0.3s;
+}
+
+.btn-outline-danger {
+  background-color: transparent;
+  color: red;
+  border: 1px solid red;
+}
+.btn-outline-danger:hover {
+  background-color: #ffe6e6;
+  transition: 0.3s;
+}
+
+.bg-warning {
+  background-color: orange;
+  color: white;
+}
+
+.btn-warning {
+  background-color: orange;
+  color: white;
+  border: none;
+}
+
+.btn-text-warning {
+  background-color: transparent;
+  color: orange;
+  border: none;
+}
+.btn-text-warning:hover {
+  background-color: #fff6e6;
+  transition: 0.3s;
+}
+
+.btn-outline-warning {
+  background-color: transparent;
+  color: orange;
+  border: 1px solid orange;
+}
+.btn-outline-warning:hover {
+  background-color: #fff6e6;
+  transition: 0.3s;
+}
+
+.bg-dark {
+  background-color: black;
+  color: white;
+}
+
+.btn-dark {
+  background-color: black;
+  color: white;
+  border: none;
+}
+
+.btn-text-dark {
+  background-color: transparent;
+  color: black;
+  border: none;
+}
+.btn-text-dark:hover {
+  background-color: #737373;
+  transition: 0.3s;
+}
+
+.btn-outline-dark {
+  background-color: transparent;
+  color: black;
+  border: 1px solid black;
+}
+.btn-outline-dark:hover {
+  background-color: #737373;
+  transition: 0.3s;
+}/*# sourceMappingURL=button.css.map */
