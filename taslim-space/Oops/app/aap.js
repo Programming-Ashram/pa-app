@@ -92,7 +92,7 @@ let carData, bikeData, CycleData, items;
 
 carData = document.getElementById('carData');
 bikeData = document.getElementById('bikeData');
-cycleData = document.getElementById('cycleData');
+CycleData = document.getElementById('cycleData');
 items = document.getElementById('items');
 caritems = document.getElementById('caritems');
 bikeitems = document.getElementById('bikeitems');
@@ -116,7 +116,7 @@ for(let i = 0; i < cars.length; i++){
 }
 
 for(let c = 0; c < cycles.length; c++){
-    cycleData.innerHTML += `
+    CycleData.innerHTML += `
     <div class='col-md-4 my-4'>
         <div class='card p-3'>
             <h1 class='title'>${cycles[c].productName}</h1>
