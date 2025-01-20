@@ -63,6 +63,7 @@ class Car{
     }
 };
 
+
 class Bike extends Car{}
 class Cycle extends Bike{}
 
@@ -96,7 +97,7 @@ caritems = document.getElementById('caritems');
 bikeitems = document.getElementById('bikeitems');
 cycleitems = document.getElementById('cycleitems');
 
-items.innerHTML =`${allItems.length}`;
+items.innerHTML =`${(allItems.length < 10) ? '0' + allItems.length : allItems.length}`;
 caritems.innerHTML =`0${cars.length}`;
 bikeitems.innerHTML =`0${bikes.length}`;
 cycleitems.innerHTML =`0${cycles.length}`;
@@ -133,9 +134,4 @@ for(let x = 0; x < bikes.length; x++){
         </div>
     </div>
 `;
-}
-
-console.log(cars);
-console.log(bikes);
-console.log(cycles);
-
+} 

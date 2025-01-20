@@ -1,0 +1,24 @@
+.btn {
+  padding: 0.625rem 1.375rem;
+  border-radius: 4px;
+}
+
+.btn-primary {
+  background-color: blue;
+  color: white;
+}
+
+.btn-danger {
+  background-color: red;
+  color: white;
+}
+
+.btn-success {
+  background-color: green;
+  color: white;
+}
+
+.btn-warning {
+  background-color: orange;
+  color: white;
+}/*# sourceMappingURL=button.css.map */
