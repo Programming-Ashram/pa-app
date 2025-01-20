@@ -8,3 +8,6 @@ btn.addEventListener('click',()=>{
 btnremove.addEventListener('click',()=>{
     head.classlist.remove('active');
 })
+
+
+
