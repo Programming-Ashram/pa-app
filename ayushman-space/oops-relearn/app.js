@@ -67,7 +67,6 @@ class Student{
     setEmail(email){
         this.email = email;
     }
-
 }
 
 let st1 = new Student();
