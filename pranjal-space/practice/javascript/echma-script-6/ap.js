@@ -47,9 +47,10 @@ console.log(firstname);
 
 // Class Obj
 class Student{
-    constructor(fname, lname){
+    constructor(fname, lname , class_c){
         this.name = fname;
         this.lname = lname;
+        this.class_c = class_c;
     }
     updateLname = (newlname) =>{
         this.lname = newlname;
@@ -57,10 +58,10 @@ class Student{
 }
 
 Student.prototype.fullname = function(){
-    return this.fname + " "+ this.lname;
+    return this.fname + "pranjal "+ this.lname;
 }
 
 let st1 = new Student("pranjal" , "mankar");
 st1.updateLname(Mankar);
-console.log(st1.fullname());
+console.log(st1.fullname())
 
