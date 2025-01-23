@@ -1,0 +1,15 @@
+@import '../variable';
+
+$colorGroup : (
+    primary: $color-blue,
+    danger: $color-red,
+    success: $color-green,
+    warning: $color-orange
+);
+
+@each $props, $val in $colorGroup{
+    .bg-#{$props}{
+        background-color: $val;
+        color: white;
+    }
+}

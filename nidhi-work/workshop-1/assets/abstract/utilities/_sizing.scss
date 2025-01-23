@@ -1,0 +1,14 @@
+@import '../variable';
+
+$sizeGroup : (
+    s: $size-sm,
+    md: $size-md,
+    lg: $size-lg,
+);
+
+
+@each $props, $val in $sizeGroup{
+    .p-#{$props}{
+       padding: $val;
+    }
+}
