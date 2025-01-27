@@ -1,0 +1,23 @@
+@import '../assets/component/button/button.css';
+@import './component/card/card.css';
+@import './utilities/mixin';
+
+
+header,section{
+    background-color:  $light-pink;
+}
+
+.logo{
+    width:150px;
+    height: 37px;
+}
+.link{
+    color:black;
+    text-decoration: none;
+    padding: 8px;
+    
+    &:hover{
+           color: green;
+           transition: 0.2s;
+}
+}
