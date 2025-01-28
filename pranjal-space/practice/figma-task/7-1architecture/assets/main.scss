@@ -1,0 +1,39 @@
+@import '../assets/utilities/variables';
+@import '../assets/component/button.css';
+@import '../assets/component/card.css';
+
+
+.bg-img{
+    background-image: url('../assets/img/bg-1.png');
+    background-size: cover;
+}
+.bg-2{
+    background-image: url('../assets/img/bg-2.png');
+    background-size: fill;
+    background-repeat: no-repeat;
+}
+.bg-clr{
+    background-color: #FFDCD1;
+}
+.abs-img{
+    position: absolute;
+    left: 843px;
+    top: auto;
+}
+.rel-img{
+    position: relative;
+    height: 400px;
+    top: 45px;
+}
+.bg-heart{
+    border-radius: 100%;
+    border-color: #23A6F0 10px solid;
+    background-color: #23A6F0;
+    padding: 15px;
+}
+.bg-right{
+    border-radius: 100%;
+    border-color: #2DC071 10px solid;
+    background-color: #2DC071;
+    padding: 15px;
+}            

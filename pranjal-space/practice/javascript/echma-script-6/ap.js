@@ -33,35 +33,39 @@ userName();
 
 // Distructing
 // const arr = ["Apple", "Banana", "Grapes"];
-const obj = {
-    fname:"pranjal",
-    age:23,
-    class_c: "12th"
-}
+// const obj = {
+//     fname:"pranjal",
+//     age:23,
+//     class_c: "12th"
+// }
 
-const {fname, class_ , age, country = "india"} = obj;
-console.log(fname, class_c, age, country);
+// const {fname, class_ , age, country = "india"} = obj;
+// console.log(fname, class_c, age, country);
 
-let firstname = "pranjal";
-console.log(firstname);
+// let firstname = "pranjal";
+// console.log(firstname);
 
-// Class Obj
-class Student{
-    constructor(fname, lname , class_c){
-        this.name = fname;
-        this.lname = lname;
-        this.class_c = class_c;
-    }
-    updateLname = (newlname) =>{
-        this.lname = newlname;
-    }
-}
+// // Class Obj
+// class Student{
+//     constructor(fname, lname , class_c){
+//         this.name = fname;
+//         this.lname = lname;
+//         this.class_c = class_c;
+//     }
+//     updateLname = (newlname) =>{
+//         this.lname = newlname;
+//     }
+// }
 
-Student.prototype.fullname = function(){
-    return this.fname + "pranjal "+ this.lname;
-}
+// //
+// Student.prototype.fullname = function(){
+//     return this.fname +" "+ this.lname;
+// }
 
-let st1 = new Student("pranjal" , "mankar");
-st1.updateLname(Mankar);
-console.log(st1.fullname())
+// let st1 = new Student("pranjal" , "mankar");
+// st1.updateLname(khan);
+// console.log(st1.fullname())
+
+// let st2 = new Student("rina","mankar");
+// st1.updateLname()
 
