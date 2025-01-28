@@ -1,0 +1,22 @@
+@import '../../abstract/function';
+@import '../../abstract/variable';
+
+.btn{
+    padding: pxtorem(10) pxtorem(22);
+    border-radius: $size-sm - 6;
+}
+
+
+$colorGroup : (
+    primary: $color-blue,
+    danger: $color-red,
+    success: $color-green,
+    warning: $color-orange
+);
+
+@each $props, $val in $colorGroup{
+    .btn-#{$props}{
+        background-color: $val;
+        color: white;
+    }
+}
