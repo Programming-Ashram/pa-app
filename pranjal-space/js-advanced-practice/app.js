@@ -28,23 +28,23 @@ function template(getData){
 //---------------------[ayushman]--[chaurasiya]-----------(template(as a function))
 function work(fname, lname, myCallBack){
     //----Fetch Data
-    let Fetchdata=`${fname} ${lname}`;
+    let fetchData=`${fname} ${lname}`;
     // template()
     myCallBack(fetchData);
 }
 
 //----------------------(Function as arg)
-work("Ayushman", "Chaurasiya",template);
+work("Prakash", "Mankar",template);
 
 function testResult(props){
     console.log(props);
 }
 
 function apiDataStatus(props){
-    console.log(props);
+    console.log("Hello " + props);
 }
 let myGreet = new Promise(function(myResolve, myReject){
-    let fname;
+   
     if(fname === "pranjal"){
         myResolve("found pranjal");
     }
