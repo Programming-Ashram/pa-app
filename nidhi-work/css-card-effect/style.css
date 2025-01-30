@@ -1,0 +1,7 @@
+.layer-overly{
+    display: none;
+}
+
+.custom-card:hover .layer-overly{
+    display: block ;
+}
