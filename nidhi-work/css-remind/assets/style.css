@@ -1,0 +1,48 @@
+body {
+  text-align: center;
+}
+
+.box {
+  width: 300px;
+  height: 160px;
+  background-color: blueviolet;
+  color: white;
+  padding: 10px;
+  margin: 30px auto;
+  position: relative;
+  display: none;
+}
+.box::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: blueviolet;
+  transform: rotate(45deg);
+  right: 50%;
+  left: 50%;
+  top: -6px;
+}
+
+.btn-tool:hover ~ .box {
+  display: block;
+}
+
+.btn-group {
+  display: flex;
+}
+
+.btn {
+  padding: 10px 22px;
+  background-color: blueviolet;
+  color: white;
+  border: none;
+}
+.btn:first-child {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.btn:last-child {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}/*# sourceMappingURL=style.css.map */
