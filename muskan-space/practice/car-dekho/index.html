@@ -5,24 +5,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <title>car dekho</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
-<body>
-    
-    <header>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3">
-                    <img src="http://stimg.cardekho.com/pwa/img/carDekho-newLogo.svg" alt="car-logo"px178 width="">
-                </div>
-                <div classs="col-md-3">
-                    <div>
-                        <span><input  type="searchbar"></span>
-                    </div>
-                </div>
-            </div>
-        </div>
+<body id="body">
+    <script>
+        var body = document.getElementById('body');
+        var header = document.createElement('header');
+        var container1 = document.createElement('div');
+        var row1 = document.createElement ('div');
+        var col1 = document.createElement ('div');
+        var col2 = document.createElement ('div');
+      
+      body.appendChild(header);
+      header.appendChild(container1);
+      container1.setAttribute('class','container');
+      container1.appendChild(row1);
+      row1.appendChild(col1);
+      col1.setAttribute('class','col-md-6');
+      row1.appendChild(col2);
+      col2.setAttribute('class','col-md-6');
+      container1.appendChild(row1);
+      row1.setAttribute('class', 'row align-items-center');
+
+      col1.innerHTML =`
+        <div class=" gap-5 d-flex align-items-center fs-5 ">
+      <img src ="https://stimg.cardekho.com/pwa/img/carDekho-newLogo.svg" width ="175px">
+      
+          <input type ="search" class="searchbar-input border 1px rounded" placeholder="search or ask a question">
             
-        </div>
-    </header>
+          </div>`;
+          col2.innerHTML =`
+          <div class="justify-content-end d-flex gap-5  fs-5">
+               <
+              </div>
+              
+        
+          `;
+          
+       var body = document.getElementById('body');
+       var section = document.createElement('section')
+       var container2 = document.createElement('div')
+       var row2 = document.createElement ('div')
+       var col1 = document.createElement ('div')
+       var col2 = document.createElement ('div')
+
+        
+        body.appendChild(section);
+        section.appendChild(container2);
+        container2.setAttribute('class','container');
+        container2.appendChild(row2);
+        row2.appendChild(col1);
+        col1.setAttribute('class','col-md-6');
+        row2.appendChild(col2);
+        col2.setAttribute('class','col-md-6',)
+        container2.appendChild(row2);
+        row2.setAttribute('class', 'row align-items-center');
+
+        col1.innerHTML=`
+                 <img src="https://stimg.cardekho.com/images/uploadimages/1738232035073/01_Kia-Syros_CD-MasterHead-Desktop_1686x548px.jpg&quot;">`;
+
+      
+        col2.innerHTML=`
+         <div class=" p-3 my-4">
+                  
+                     <img src="" alt="">
+               
+                  
+             
+                    
+         </div>
+        `;
+          </script>
 </body>
 </html>
