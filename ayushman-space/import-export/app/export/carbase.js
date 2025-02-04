@@ -12,3 +12,4 @@ class Searchcars extends Showroom{}
 class UpcomingCars extends Searchcars{}
 
 export default Showroom;
+
