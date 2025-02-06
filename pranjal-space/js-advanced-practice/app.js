@@ -134,7 +134,7 @@ allSearchedCars.forEach(car => {
     `;
 });
 
-allElectricCars.forEach(car => {
+allElectriCars.forEach(car => {
     allElectricArea.innerHTML +=`
         <div class='col-md-3'>
             <div class='card my-3 rounded-2 border shadow-sm'>
