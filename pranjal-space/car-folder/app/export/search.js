@@ -1,4 +1,4 @@
-class SearchedCars{
+class vehicle{
     constructor(carImg, startPrice, endPrice, carName, carDtails){
         this.carImg = carImg;
         this.startPrice =startPrice;
@@ -7,9 +7,11 @@ class SearchedCars{
         this.carDtails = carDtails;
     }
 };
-class ElectriCars extends SearchedCars{}
-class UpcomingCars extends SearchedCars{}
+class search extends vehicle{}
+class electric extends search{}
+class upcoming extends electric{}
 
 
-export default SearchedCars;
+
+export default vehicle;
 
