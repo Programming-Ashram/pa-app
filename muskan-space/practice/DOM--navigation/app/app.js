@@ -1,4 +1,4 @@
-let heading = document.querySelector('#name');
+let heading = document.querySelector('#Name');
 heading.children[1].classList.add('text-primary');
 heading.children[1].id = "subHeading";
 
