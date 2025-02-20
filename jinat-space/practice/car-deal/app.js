@@ -6,3 +6,6 @@ class SearchedCars{
           this.clickButton = clickButton;
      }
 }
+
+let details = document.getElementById('details');
+

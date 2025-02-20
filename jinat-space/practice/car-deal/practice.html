@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+</head>
+<body>
+     <div id="carouselExample" class="carousel slide">
+          <div class="carousel-inner" id="carouselExampleIndicators">
+            
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script>
+
+          class Move{
+               constructor(carImage , carName , carPrice,isActive ){
+                    this.carImage = carImage;
+                    this.carName = carName;
+                    this.carPrice = carPrice;
+                    this.isActive = isActive;
+               }
+          }
+
+          let motion1 = new Move('https://stimg.cardekho.com/images/carexteriorimages/630x420/Skoda/Kylaq/11528/1733225175669/front-left-side-47.jpg?tr=w-300' , 'Skoda Kylaq' , 'Rs7.89 - 14.40 Lakh*');
+
+          let motion2 = new Move('https://stimg.cardekho.com/images/carexteriorimages/630x420/Skoda/Kylaq/11528/1733225175669/front-left-side-47.jpg?tr=w-300' , 'Skoda Kylaq' , 'Rs7.89 - 14.40 Lakh*');
+
+          let motion3 = new Move('https://stimg.cardekho.com/images/carexteriorimages/630x420/Skoda/Kylaq/11528/1733225175669/front-left-side-47.jpg?tr=w-300' , 'Skoda Kylaq' , 'Rs7.89 - 14.40 Lakh*');
+
+          let motion4 = new Move('https://stimg.cardekho.com/images/carexteriorimages/630x420/Skoda/Kylaq/11528/1733225175669/front-left-side-47.jpg?tr=w-300' , 'Skoda Kylaq' , 'Rs7.89 - 14.40 Lakh*');
+
+          let motion5 = new Move('https://stimg.cardekho.com/images/carexteriorimages/630x420/Skoda/Kylaq/11528/1733225175669/front-left-side-47.jpg?tr=w-300' , 'Skoda Kylaq' , 'Rs7.89 - 14.40 Lakh*');
+
+          let motion6 = new Move('https://stimg.cardekho.com/images/carexteriorimages/630x420/Skoda/Kylaq/11528/1733225175669/front-left-side-47.jpg?tr=w-300' , 'Skoda Kylaq' , 'Rs7.89 - 14.40 Lakh*');
+
+          let motion7 = new Move('https://stimg.cardekho.com/images/carexteriorimages/630x420/Skoda/Kylaq/11528/1733225175669/front-left-side-47.jpg?tr=w-300' , 'Skoda Kylaq' , 'Rs7.89 - 14.40 Lakh*');
+
+          let motion8 = new Move('https://stimg.cardekho.com/images/carexteriorimages/630x420/Skoda/Kylaq/11528/1733225175669/front-left-side-47.jpg?tr=w-300' , 'Skoda Kylaq' , 'Rs7.89 - 14.40 Lakh*');
+
+          let motion = [motion1, motion2, motion3,motion4 , motion5, motion6 , motion7, motion8];
+
+          let carouselExampleIndicators = document.getElementById('carouselExampleIndicators');
+
+          for(let i = 0; i < motion.length; i++){
+               carouselExampleIndicators.innerHTML +=`
+                         <div class="carousel-item ${motion.isActive}">
+                                   <div class="container">
+                                        <div class="row">
+                                             <div class="col-md-3">
+                                                  <div class="">
+                                                            <div class="card me-2">
+                                                       <img src="${motion[i].carImage}" class="w-100" alt="...">
+                                                       <div class="card-body">
+                                                       <h5 class="card-title">${motion[i].carName}</h5>
+                                                       <p class="card-text">${motion[i].carPrice}</p>
+                                                       
+                                                       </div>
+                                                       </div>
+                                                       </div>
+                                                                           </div>
+                                                                      </div>
+                                                                 </div>
+                                                       </div>
+
+                            
+               `;
+          }
+
+
+        </script>
+</body>
+</html>
