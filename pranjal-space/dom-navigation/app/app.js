@@ -1,8 +1,8 @@
-let heading = document.querySelector('#Name');
-heading.children[1].classlist.add('text-primary');
+let heading = document.querySelector('#name');
+heading.children[1].classList.add('text-primary');
 heading.children[1].id = "subHeading";
 
-let subHeading = document.querySelector('#subHeading');
+let subheading = document.querySelector('#subHeading');
 
-subheading.parentNode.classlist.add('bg-primary-subtle');
-console.log(heading.lastElementChild.innerText);
+subheading.parentNode.classList.add('bg-primary-subtle');
+console.log(heading.lastElementChild.innertext);

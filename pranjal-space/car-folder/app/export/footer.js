@@ -1,5 +1,5 @@
 class Footer{
-	constructor(mname,mlink){
+	constructor(mname, mlink){
 		this.mname = mname;
 		this.mlink = mlink;
 	}

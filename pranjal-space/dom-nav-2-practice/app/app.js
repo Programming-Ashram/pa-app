@@ -1,0 +1,17 @@
+$(document).ready(function(){
+    $('#show').click(()=>{
+        $('#pic').fadeIn();
+    })
+    $('#hide').click(()=>{
+        $('#pic').hide();
+    })
+    $('#animate').click(()=>{
+        $('#pic').animate({
+            left:'250px',
+            opacity:'0.5',
+            height:'350px',
+            width:'150px',
+            padding:'10px' 
+        });
+    })
+})
