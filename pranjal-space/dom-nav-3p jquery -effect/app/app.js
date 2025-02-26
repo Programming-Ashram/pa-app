@@ -1,0 +1,25 @@
+$(document).ready(function(){
+    $('#before').click(()=>{
+        $('#image-before').show();
+        $('#image-after').hide();
+    })
+    $('#after').click(()=>{
+        $('#image-after').fadeIn();
+        $('#image-before').hide();
+    })
+    $('#toggle').click(()=>{
+        $('#toggle-img').slideToggle().css({
+                bacground:"blue",
+                color:"white"
+        });
+    })
+    $('#animate').click(()=>{
+        $('#toggle-img').animate({
+            height:'300px',
+            width:'300px',
+            opacity:'0.5',
+            left:'300px',
+            padding:'10px'
+        });
+    })
+})
