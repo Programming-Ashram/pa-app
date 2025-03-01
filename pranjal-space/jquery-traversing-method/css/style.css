@@ -1,0 +1,11 @@
+.mega-child-parent h2~h3 {
+    background-color: blue;
+}
+
+h3:is(.head){
+    background-color: red;
+}
+
+.active{
+    background-color: red;
+}
