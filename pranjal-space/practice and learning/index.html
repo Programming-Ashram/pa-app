@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    <style>
+        body{
+            font-family:"Nunito Sans", serif !important;
+        }
+    </style>
+</head>
+<body>
+    
+    <section class="py-3 bg-info">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center text-light">
+                    <h1 class="display-3">Practice for SCSS</h1>
+                    <p class="lead">
+                        powered by programming ashram
+                    </p>
+                    <p class="lead">
+                        Created by <b>Pranjal Mankar</b>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-info-subtle position-sticky top-0 py-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <a href="#intro" class="nav-link">SCSS: Intro</a>
+                </div>
+                <div class="col-md-4">
+                    <a href="#basic" class="nav-link">SCSS: Basic</a>
+                </div>
+                <div class="col-md-4">
+                    <a href="#advanced" class="nav-link">SCSS: Advanced</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div>
+                        <ul>
+                            <li><a href="#intro" class="nav-link mt-3">Intro</a></li>
+                            <li><a href="#variables"class="nav-link">Variables</a></li>
+                            <li><a href="#nesting"class="nav-link">Nesting</a></li>
+                            <li><a href="#Mixins"class="nav-link">Mixins</a></li>
+                            <li><a href="#Operators"class="nav-link">Operators</a></li>
+                            <li><a href="#Loops and conditional"class="nav-link">Loops and conditional</a></li>
+                            <li><a href="#Functions"class="nav-link">Functions</a></li>
+                            <li><a href="#Flexbox with SCSS"class="nav-link">Flexbox with SCSS</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="mt-4" id="intro">
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 my-3">
+                    <h3><strong>1.</strong> What does SCSS stand for?</h3>
+                    <p>
+                      <strong>Ans:</strong>  The term SCSS is an acronym for Sassy Cascading Style Sheets. It is basically a more advanced and evolved variant of the CSS language. Natalie Weizenbaum and Chris Eppstein created it, and Hampton Catlin designed it. It comes with more advanced features- thus often called Sassy CSS.
+                    </p>
+                    <p>
+                        <strong>Ans:</strong>  SCSS is the preprocessor of the provide us to some additional and css features . There are some scss featuresa which is @mixing variables import extend prefixers functions mapping , nesting  reusable CSS component and most popular feature in 7 in 1 architecter . Which is help us to create a scalable CSS structure.
+                    </p>
+                    <p>
+                        <strong>Ans:</strong>  SCSS (Sassy CSS) is a preprocessor for CSS that extends its capabilities by adding powerful features like variables, nesting, mixins, functions, and more. It is a superset of CSS, meaning that all valid CSS code is also valid SCSS. SCSS makes writing and managing stylesheets easier, especially for large-scale projects, by improving code organization, reusability, and maintainability.
+                    </p>
+                    <h4>Example Image: </h4>
+                    <img src="https://www.w3schools.com/html/img_notepad.png" alt="" class="img-fluid">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <h3><strong>2.</strong> What is Key Features of SCSS ?</h3>
+                      <strong>Ans: Key Features of SCSS:</strong> 
+                      <p class="mt-3"><strong>Variables –</strong> Store reusable values such as colors, font sizes, and margins.</p>
+                      <p><strong> Nesting –</strong> Write CSS in a hierarchical structure that matches HTML elements.</p>
+                      <p><strong>Mixins –</strong> Define reusable blocks of styles with optional parameters.</p>
+                      <p><strong>Inheritance – </strong>Share styles between selectors using @extend.</p>
+                      <p><strong>Functions & Operators – </strong>Perform calculations and manipulate colors dynamically.</p>
+                      <p><strong>Modules (@use and @import) –</strong> Break styles into modular and manageable parts.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <h3><strong>3.</strong> How does SCSS Works ?</h3>
+                      <strong>Ans:  SCSS Works:</strong> 
+                      <p class="mt-3"><strong>Preprocessing:</strong> SCSS files (.scss) need to be compiled into standard CSS (.css) before browsers can use them.</p>
+                      <p><strong> Syntax:</strong> SCSS allows more advanced syntax while still being compatible with regular CSS.</p>
+                      <p><strong>Features:</strong></p>
+                      <ul>
+                        <li><a href="#" class="nav-link mt-3 bg-info-subtle p-2"><strong>Variables</strong> ($primary-color: blue;)</a></li>
+                        <li><a href="#" class="nav-link bg-info-subtle p-2"><strong>Nesting</strong> (allows writing styles inside parent selectors))</a></li>
+                        <li><a href="#" class="nav-link bg-info-subtle p-2"><strong>Mixins</strong> (reusable code blocks)</a></li>
+                        <li><a href="#" class="nav-link bg-info-subtle p-2"><strong>Inheritance</strong> (@extend)</a></li>
+                        <li><a href="#" class="nav-link bg-info-subtle p-2"><strong>Functions</strong> (lighten($color, 10%))</a></li>            
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <h3><strong>4.</strong>  What is Mixin ?</h3>
+                      <p><strong>Ans:</strong>  A Mixin is a programming pattern used to add reusable functionality to classes without using traditional inheritance. It allows you to "mix in" additional behavior into a class without modifying its inheritance hierarchy.</p> 
+                      <p><strong> Key Features of Mixins:</strong></p>
+                      <ul>
+                        <li><a href="#" class="nav-link mt-3 bg-info-subtle p-2">They <strong>do not</strong> work as standalone classes.</a></li>
+                        <li><a href="#" class="nav-link bg-info-subtle p-2">They <strong>provide reusable methods </strong> to be used in multiple classes.</a></li>
+                        <li><a href="#" class="nav-link bg-info-subtle p-2">They help achieve <strong>code reusability </strong> without deep inheritance trees.</a></li>
+                        <li><a href="#" class="nav-link bg-info-subtle p-2">They are commonly used in <strong>JavaScript, Python, and other OOP languages.</strong></a></li>
+                                
+                    </ul>
+                </div>
+            </div>
+        </div>
+   </section>
+   
+   <!--START BASICS OF SCSS -->
+   <section class="mt-4" id="basic">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3><strong>2.</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                <p>
+                  <strong>Ans:</strong>   Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis fuga distinctio excepturi maiores doloribus dolores quod labore consequatur architecto. Consequuntur assumenda quos id recusandae beatae ea illo nobis rerum distinctio!
+                </p>
+                <p>
+                    <strong>Ans:</strong>   Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis fuga distinctio excepturi maiores doloribus dolores quod labore consequatur architecto. Consequuntur assumenda quos id recusandae beatae ea illo nobis rerum distinctio!
+                </p>
+                <p>
+                    <strong>Ans:</strong>   Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis fuga distinctio excepturi maiores doloribus dolores quod labore consequatur architecto. Consequuntur assumenda quos id recusandae beatae ea illo nobis rerum distinctio!
+                </p>
+                <h4>Example Image: </h4>
+                <img src="https://www.w3schools.com/html/img_notepad.png" alt="" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
