@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+</head>
+<body>
+     <ul>
+          <li id="content"></li>
+     </ul>
+
+     <script>
+          fetch('http://localhost:3000/users')
+          .then(response => response.json())
+          .then(data =>{
+               let content = document.getElementById('content');
+               for(let i = 0; i < data.length; i++){
+                    content.innerHTML +=`
+                         <li>${data[i].id} - ${data[i].targer} </li>
+                    
+                    `
+               }
+          })
+     </script>
+</body>
+</html>
