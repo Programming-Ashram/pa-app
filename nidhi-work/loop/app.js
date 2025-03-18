@@ -69,4 +69,4 @@ for(let i = 0; i < students.length; i++){
 // do{
 //     console.log(x);
 //     x++;
-// }while (x <= 10);
+// }while (x <= 10);+
