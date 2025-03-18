@@ -7,7 +7,7 @@
 let test = 67;
 // console.log(x / y);
 // console.log(x % y);
-
+let lokesh = "Lokesh";
 // Comparision Operators
 // (==)(==)(!=)
 
