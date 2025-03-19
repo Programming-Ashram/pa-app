@@ -4,7 +4,7 @@
 // console.log(x + y);
 // console.log(x - y);
 // console.log(x * y);
-
+let test = 67;
 // console.log(x / y);
 // console.log(x % y);
 
