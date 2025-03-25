@@ -1,0 +1,11 @@
+// @import '../assets/vendor/jaguar/jaguar';
+
+@import './base/reset';
+@import './component/button/button.css';
+@import './component/card/card.css';
+@import './theme/dark-theme';
+
+
+body{
+    padding: 10px;
+}

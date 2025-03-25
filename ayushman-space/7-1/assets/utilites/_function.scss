@@ -1,0 +1,75 @@
+@import '../utilites/variable';
+
+// Convert px to rem
+@function pxtorem($pixcelSize, $baseSize: 16 ){
+    @return $pixcelSize / $baseSize * 1rem;
+}
+
+
+// Looping classes
+$colors:(
+    'btn-primary':$primary,
+    'btn-primary-mid': $primary-25,
+    'btn-primary-light':$primary-50,
+
+    'btn-warning':$warning,
+    'btn-warning-mid': $warning-25,
+    'btn-warning-light':$warning-50,
+    
+    'btn-error':$error,
+    'btn-error-mid': $error-25,
+    'btn-error-light':$error-50,
+    
+    'btn-success':$success,
+    'btn-success-mid': $success-25,
+    'btn-success-light':$success-50,
+    
+    'btn-natural':$natural,
+    'btn-natural-mid': $natural-25,
+    'btn-natural-light':$natural-50,
+);
+
+@each $color-name, $color-value in $colors{
+    .outline-#{$color-name}{
+        border:pxtorem(1) solid $color-value !important;
+        color: $color-value;
+        background-color: transparent;
+
+        &:hover{
+            background-color: $color-value;
+            color: $light;
+            transition: 0.2s ease-out;
+            
+        }
+
+        &:is(.is-inset){
+            border: pxtorem(2) inset lighten($color-value, 20%);
+
+            &:focus{
+                transition: 0.5s;
+                border-width: 1px;
+            }
+        }
+        
+    }
+    .#{$color-name}{
+        background-color: $color-value;
+        color: $light;
+
+        &:is(.is-inset){
+            border:pxtorem(2) inset lighten($color-value, 20%);
+
+            &:focus{
+                transition: 0.5s;
+                border-width: pxtorem(1);
+            }
+        }
+
+        &:hover{
+            transition: 0.2s ease-out;
+            box-shadow: 0 pxtorem(2) pxtorem(5) 0 #808080b8;
+        }
+        
+    }
+}
+

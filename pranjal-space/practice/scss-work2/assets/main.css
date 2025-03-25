@@ -1,0 +1,41 @@
+.btn {
+  padding: 10px 20px;
+  border-radius: 4px;
+}
+.btn.btn-primary {
+  background-color: #1D19D4;
+  color: #FFFFFF;
+  border: 2px solid #FFFFFF;
+}
+.btn.btn-danger {
+  background-color: #D41919;
+  color: #0B0B10;
+  border: 2px solid #0B0B10;
+}
+
+.card {
+  position: relative;
+  background-color: #19BED4;
+  box-sizing: content-box;
+  border: 1px solid #0B0B10;
+  border-radius: 10px;
+  width: 250px;
+}
+.card .card-body {
+  padding: 1rem 1rem;
+}
+.card .card-img-top {
+  width: 100%;
+  border-radius: 4px solid #0B0B10;
+}
+.card .card-title {
+  margin-bottom: 5px;
+  padding: 5px;
+  font-size: 20px;
+  background-color: #FFFFFF;
+  color: #3C824C;
+}
+.card .card-text {
+  margin-bottom: 5px;
+  font-size: 10px;
+}/*# sourceMappingURL=main.css.map */

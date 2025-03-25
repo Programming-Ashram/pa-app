@@ -1,0 +1,28 @@
+@import '../utilities/mixxin';
+
+.btn-flat{
+    @include btn-default();
+    &.btn-primary{
+        background-color: $primary-dark;
+        color: $light;
+    }
+}
+.btn-outline{
+    @include btn-default();
+    &.btn-primary{
+        background-color: transparent;
+        color: $primary-dark;
+        border: 2px solid $primary-dark;
+    }
+
+}
+.btn-rounded{
+    @include btn-default();
+    &.btn-primary{
+        background-color: transparent;
+        color: $primary-dark;
+        border: 2px solid $primary-dark;
+        border-radius: 100px;
+
+    }
+}

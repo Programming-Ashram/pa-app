@@ -1,0 +1,31 @@
+
+@import '../../varibles/variables.scss';
+
+
+.card {
+    position: relative;
+    background-color:$info;
+    box-sizing: content-box;
+    border: 1px solid $dark;
+    border-radius: 10px;
+    width: 250px;
+    .card-body {
+        padding: 1rem 1rem;
+
+    }
+    .card-img-top{
+        width: 100%;
+        border-radius: 4px solid $dark;
+    }
+    .card-title{
+        margin-bottom: 5px;
+        padding: 5px;
+        font-size: 20px;
+        background-color: $light;
+        color: $success;
+    }
+    .card-text{
+        margin-bottom: 5px;
+        font-size: 10px;
+    }
+}

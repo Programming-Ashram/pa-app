@@ -1,0 +1,32 @@
+.nav-link{
+   color:#140342 !important;
+}
+.nav-link:hover{
+    color:yellow !important;
+    transition: 0.3sec !important;
+}
+.divider-line {
+    display:inline-block;
+    width: 40%;
+    height:2px;
+    vertical-align: middle;
+}
+.key-points{
+   li{
+    font-size:15px;
+    color:#4F547B;
+   }
+}
+.bg-footer{
+    background-color: #102E5E;
+}
+.icon{
+    i{
+        font-size:14px;
+    }
+}
+.admission{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    top:50px; 
+}

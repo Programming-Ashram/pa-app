@@ -1,0 +1,30 @@
+// :root{
+//     --color-red: red;
+//     --color-green: green;
+//     --color-blue: blue;
+//     --color-orange: orange;
+// }
+
+// Color
+
+$danger: darkred;
+$success: green;
+$primary: blue;
+$warning: rgb(255, 77, 0);
+
+$size-sm: 10px; 
+$size-md: 15px; 
+$size-xl: 20px; 
+$size-xxl: 30px; 
+
+$fs-sm: $size-sm + 20;
+
+
+
+.color-red{
+    color: $danger;
+    background-color: $warning;
+    padding: $size-sm;
+    font-size: $fs-sm;
+    margin-top: $size-xxl;
+}

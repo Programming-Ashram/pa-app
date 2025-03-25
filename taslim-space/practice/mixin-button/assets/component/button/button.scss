@@ -1,0 +1,6 @@
+@import '../../mixin/mixin';
+@import '../../variable/variable';
+
+.btn{
+    @include btn-default();
+}

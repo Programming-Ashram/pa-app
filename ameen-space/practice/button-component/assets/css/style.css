@@ -1,0 +1,110 @@
+.btn {
+  padding: 10px 20px;
+  border-radius: 4px;
+  border: none;
+  color: #FFFFFF;
+}
+.btn:hover {
+  box-shadow: 0px 4px 40px 0 rgba(0, 0, 0, 0.25);
+  transition: 0.3s;
+}
+.btn.btn-outline-primary {
+  background-color: transparent;
+  color: #1D19D4;
+  border: 1px solid #1D19D4;
+}
+.btn.btn-outline-primary:hover {
+  background-color: #1D19D4;
+  color: #FFFFFF;
+}
+.btn.btn-primary {
+  background-color: #1D19D4;
+}
+.btn.btn-outline-secondary {
+  background-color: transparent;
+  color: rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+.btn.btn-outline-secondary:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #FFFFFF;
+}
+.btn.btn-secondary {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.btn.btn-outline-success {
+  background-color: transparent;
+  color: #3C824C;
+  border: 1px solid #3C824C;
+}
+.btn.btn-outline-success:hover {
+  background-color: #3C824C;
+  color: #FFFFFF;
+}
+.btn.btn-success {
+  background-color: #3C824C;
+}
+.btn.btn-outline-danger {
+  background-color: transparent;
+  color: #D41919;
+  border: 1px solid #D41919;
+}
+.btn.btn-outline-danger:hover {
+  background-color: #D41919;
+  color: #FFFFFF;
+}
+.btn.btn-danger {
+  background-color: #D41919;
+}
+.btn.btn-outline-warning {
+  background-color: transparent;
+  color: #D7C41B;
+  border: 1px solid #D7C41B;
+}
+.btn.btn-outline-warning:hover {
+  background-color: #D7C41B;
+  color: #FFFFFF;
+}
+.btn.btn-warning {
+  background-color: #D7C41B;
+}
+.btn.btn-outline-info {
+  background-color: transparent;
+  color: #19BED4;
+  border: 1px solid #19BED4;
+}
+.btn.btn-outline-info:hover {
+  background-color: #19BED4;
+  color: #FFFFFF;
+}
+.btn.btn-info {
+  background-color: #19BED4;
+}
+.btn.btn-outline-light {
+  background-color: transparent;
+  color: #0B0B10;
+  border: 1px solid #FFFFFF;
+}
+.btn.btn-outline-light:hover {
+  background-color: #FFFFFF;
+  color: #0B0B10;
+}
+.btn.btn-light {
+  background-color: #FFFFFF;
+  color: #0B0B10;
+}
+.btn.btn-outline-dark {
+  background-color: transparent;
+  color: #0B0B10;
+  border: 1px solid #0B0B10;
+}
+.btn.btn-outline-dark:hover {
+  background-color: #0B0B10;
+  color: #0B0B10;
+}
+.btn.btn-dark {
+  background-color: #0B0B10;
+}
+.btn.btn-light {
+  background-color: #FFFFFF;
+}/*# sourceMappingURL=style.css.map */

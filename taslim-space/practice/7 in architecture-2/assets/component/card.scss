@@ -1,0 +1,30 @@
+@import '../utilities/variable.scss';
+
+
+.card{
+    padding: 0px;
+    border: 0.5px solid $natural-25;
+    border-radius: 6px;
+    background-color: $light;
+    width: 300px;
+   
+
+    .card-body{
+        padding: 16px;
+        
+    }
+    .title{
+        font-size: 40px;
+        line-height: 10px;
+        margin-bottom: 8px;
+        color: $success;
+    }
+    .subtitle{
+        font-size: 18px;
+        color: $warning;
+        
+    }
+    .card-content{
+        color:$warning;
+    }
+}

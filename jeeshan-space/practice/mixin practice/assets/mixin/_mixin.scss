@@ -1,0 +1,8 @@
+@import '../variable/variable';
+
+@mixin btn-default{
+    padding: 10px 20px;
+    border: none;
+    color: $color-light;
+    border-radius: 4px;
+}

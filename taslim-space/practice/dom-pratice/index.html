@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body id="card">
+    <script>
+       var body = document.getElementById('card');
+       var header = document.createElement('header')
+         var container1 = document.createElement('div')
+       var row1 = document.createElement ('div')
+       var col1 = document.createElement ('div')
+       var col2 = document.createElement ('div')
+
+        
+        body.appendChild(section);
+        header.appendChild(container1);
+        container1.setAttribute('class','container');
+        container1.appendChild(row);
+        row.appendChild(col1);
+        col1.setAttribute('class','col-md-6');
+        row.appendChild(col2);
+        col2.setAttribute('class','col-md-6')
+        container.appendChild(row);
+        row.setAttribute('class', 'row');
+
+        col1.innerHTML =`
+        <div class="card shadow-sm " style="width: 18rem;">
+  <img src="https://tse4.mm.bing.net/th?id=OIP.u4-rOpeyU7m1W2mPwFi5HAHaE8&pid=Api&P=0&h=220" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">BIRDS</h5>
+    <p class="card-text">Aves and a sister group, the order Crocodilia, contain the only living representatives of the reptile clade Archosauria</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+        `;
+    col2.innerHTML = `
+            <div class="card" style="width: 18rem;">
+            <img src="https://tse1.mm.bing.net/th?id=OIP.06-K4i53YVS4jB24NsG1-gAAAA&pid=Api&P=0&h=220">
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">bullet</li>
+    <li class="list-group-item">pulser</li>
+    <li class="list-group-item">hayabusha</li>
+  </ul>
+  <div class="more bike">
+    Card footer
+  </div>
+</div>
+    `;
+
+   
+
+
+
+
+
+
+    </script>
+   
+       
+
+    
+</body>

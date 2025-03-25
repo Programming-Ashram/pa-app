@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+table thead th {
+  background-color: white;
+  color: blue;
+  font-size: larger;
+  outline: 2px solid #68b768;
+}
+table tr, table td, table th {
+  border: 3px dashed blue;
+  padding: 10px;
+}
+table tr:nth-child(even) {
+  background-color: skyblue;
+  color: white;
+}
+table tr:nth-child(odd) {
+  background-color: hwb(197 69% 4%);
+  color: white;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,12 @@
+@import '../../assets/utilities/mixin';
+
+.btn{
+     @include btn-default($light);
+     border:1px  $dark inset;
+     &.btn-danger{
+          background-color: $danger;
+     }
+     &.btn-success{
+          background-color: $success;
+     }
+}

@@ -1,0 +1,37 @@
+@import '../../utilites/variable';
+@import '../../utilites/function';
+
+.btn-flat{
+
+    border-radius: pxtorem(8);
+    border: none;
+    cursor: pointer;
+    display: block;
+    gap:pxtorem(2);
+    align-items: center;
+    margin:pxtorem(10) 0;
+    letter-spacing: pxtorem(1);
+
+    
+    &:is(.is-disabled){
+        cursor: none;
+        pointer-events: none;
+        background-color: $disabled;
+        color: $disabled-darker;
+        opacity: 0.7;
+    }
+
+    &:is(.is-rounded){
+        border-radius: pxtorem(60);
+    }
+
+    &:not(.btn-sm){
+        padding: pxtorem(8) pxtorem(12);
+        font-size: pxtorem(14);
+    }
+
+    &:is(.btn-sm){
+        padding: pxtorem(6) pxtorem(10);
+        font-size: pxtorem(12);
+    }
+}

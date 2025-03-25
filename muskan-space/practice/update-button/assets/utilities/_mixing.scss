@@ -1,0 +1,18 @@
+@import '../utilities/function';
+
+@mixin btn-default(){
+     margin: pxtoremconvertor(5) 0;
+     border-radius:  pxtoremconvertor(100);
+     color: $light;
+     border: none;
+     font-size: pxtoremconvertor(16);
+     cursor: pointer;
+}
+
+@mixin btn-outline-default(){
+     border: none;
+     font-size: pxtoremconvertor(16);
+     cursor: pointer;
+     margin: pxtoremconvertor(5) 0;
+     border-radius:  pxtoremconvertor(100);
+}

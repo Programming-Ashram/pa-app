@@ -1,0 +1,19 @@
+@import '../../variables/variable.scss';
+
+table{
+     width:100%;
+     border-collapse: collapse;
+     text-align: center;
+     thead th{
+          background-color: $primary;
+          color:$light;
+          padding: $size-md;
+     }
+     td{
+          padding: $size-sm;
+     }
+     tr:nth-child(even){
+          background-color: $secondary;
+     }
+    
+}

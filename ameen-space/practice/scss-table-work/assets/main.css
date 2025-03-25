@@ -1,0 +1,28 @@
+.font {
+  font-family: "Baloo Paaji 2", sans-serif;
+}
+
+.text {
+  text-align: center;
+}
+
+.table-borderd {
+  border-collapse: collapse;
+}
+.table-borderd tr, .table-borderd th, .table-borderd td {
+  border: 1px solid #0B0B10;
+}
+
+.clb {
+  background-color: #D7C41B;
+  color: #FFFFFF;
+}
+
+.sec {
+  background-color: #19BED4;
+}
+
+.foot {
+  background-color: #D41919;
+  color: #FFFFFF;
+}/*# sourceMappingURL=main.css.map */

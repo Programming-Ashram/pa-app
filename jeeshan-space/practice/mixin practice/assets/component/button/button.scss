@@ -1,0 +1,14 @@
+@import '../../variable/variable';
+@import '../../mixin/mixin';
+.btn{
+    @include btn-default();
+    
+    &.btn-primary{
+        background-color: $color-primary;
+    }
+    &.btn-outline-primary{
+        background-color: transparent;
+        color: $color-primary;
+        border: 1px solid $color-primary;
+    }
+}

@@ -1,0 +1,9 @@
+.btn {
+  padding: 10px 20px;
+  border: 2px solid #19BED4;
+  border-radius: 4px;
+}
+.btn.btn-primary {
+  background-color: #1D19D4;
+  color: #FFFFFF;
+}/*# sourceMappingURL=main.css.map */

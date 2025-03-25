@@ -1,0 +1,37 @@
+@import '../utillities/variables';
+@import '../utillities/function';
+
+
+@mixin badge-default() {
+     color: $light;
+     box-shadow: 2px 2px 4px rgba(0,0,0,.3);
+     align-items: center;
+     font-size: pxtorem(14);
+     border: none;
+     border-radius:60px;
+     padding:pxtorem(3) pxtorem(6) ;
+     margin:pxtorem(5) 0 ;
+     cursor: pointer;
+    
+}
+@mixin badge-md(){
+     color: $light;
+     border: none;
+     align-items: center;
+     font-size: pxtorem(14);
+     border-radius:60px;
+     padding:pxtorem(3) pxtorem(6) ;
+     margin:pxtorem(5) 0 ;
+    
+
+}
+@mixin badge-sm(){
+     color: $light;
+     align-items: center;
+     font-size: pxtorem(14);
+     border: none;
+     border-radius:60px;
+     padding:pxtorem(3) pxtorem(6) ;
+     margin:pxtorem(5) 0 ;
+    
+}

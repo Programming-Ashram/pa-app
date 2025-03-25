@@ -1,0 +1,41 @@
+@import '../../utlities/variable';
+
+
+$colors: ($primary, $warning, $error, $success);
+
+@for $i from 1 through length($colors){
+    .btn-#{$i}{
+        background-color:nth($colors, $i);
+    }
+}
+
+$btnColor:(
+    'btn-primary': $primary,
+    'btn-warning': $warning,
+    'btn-error': $error,
+    'btn-success': $success,
+    'btn-natural': $natural,
+);
+
+@each $color-name, $color-value in $btnColor{
+    .#{$color-name}{
+        background-color: $color-value;
+        color: $light;
+
+        &:is(.outline){
+            border: 1px solid $color-value;
+            background-color: transparent;
+            color: $color-value;
+        }
+    }
+}
+
+.btn{
+    padding: 10px 20px;
+    border-radius: 6px;
+
+    &:not(.outline){
+        border: none;
+    }
+
+}

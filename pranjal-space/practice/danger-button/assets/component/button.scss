@@ -1,0 +1,24 @@
+@import '../utilities/variable';
+@import '../utilities/function';
+
+.btn-flat{
+
+    border: none;
+    border-radius: pxtorem(10);
+    cursor: pointer;
+    color: $light;
+
+    &:not(.btn-md){
+        padding: pxtorem(10) pxtorem(20);
+        border-radius: pxtorem(8);
+    }
+
+    &:is(.btn-sm){
+        padding: pxtorem(6) pxtorem(10);
+    }
+
+    &:is(.is-rounded){
+        padding: pxtorem(6) pxtorem(10);
+        border-radius: pxtorem(80);
+    }
+}

@@ -1,0 +1,15 @@
+@import '../assets/component/button/button.css';
+@import '../assets/vendor/font-awesom';
+@import '../assets/base/reset';
+@import '../assets/vendor/font-familiy';
+
+
+body{
+    font-family: "Poppins", sans-serif;
+    padding: 10px;
+}
+
+.row{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}

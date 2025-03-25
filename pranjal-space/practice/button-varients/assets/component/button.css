@@ -1,0 +1,194 @@
+.btn-flat {
+  color: white;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-size: pxtoremconverter(16);
+  border: none;
+  border-radius: 100px;
+  padding: pxtoremconverter(12) pxtoremconverter(20);
+  margin: pxtoremconverter(5) 0;
+  cursor: pointer;
+}
+.btn-flat:is(.icon-btn) {
+  border-radius: 100%;
+  padding: 10px 15px;
+}
+.btn-flat.btn-warning {
+  background-color: rgb(173, 102, 7);
+}
+
+.btn-flat-md {
+  color: white;
+  border: none;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-size: pxtoremconverter(14);
+  border-radius: 100px;
+  padding: pxtoremconverter(8) pxtoremconverter(16);
+  margin: pxtoremconverter(5) 0;
+  cursor: pointer;
+}
+.btn-flat-md:is(.icon-btn) {
+  border-radius: 100%;
+  padding: 10px 12px;
+}
+.btn-flat-md.btn-warning {
+  background-color: rgb(173, 102, 7);
+}
+
+.btn-flat-sm {
+  color: white;
+  border: none;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  border-radius: 100px;
+  padding: pxtoremconverter(4) pxtoremconverter(12);
+  margin: pxtoremconverter(5) 0;
+  cursor: pointer;
+}
+.btn-flat-sm:is(.icon-btn) {
+  border-radius: 100%;
+  padding: 10px 12px;
+}
+.btn-flat-sm.btn-warning {
+  background-color: rgb(173, 102, 7);
+}
+
+.btn-outline {
+  color: white;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-size: pxtoremconverter(16);
+  border: none;
+  border-radius: 100px;
+  padding: pxtoremconverter(12) pxtoremconverter(20);
+  margin: pxtoremconverter(5) 0;
+  cursor: pointer;
+}
+.btn-outline:is(.icon-btn) {
+  border-radius: 100%;
+  padding: 10px 15px;
+}
+.btn-outline.btn-warning {
+  background-color: rgb(235, 153, 63);
+  border: pxtoremconverter(2) solid white;
+}
+.btn-outline.btn-default {
+  background-color: gray;
+}
+
+.btn-outline-md {
+  color: white;
+  border: none;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-size: pxtoremconverter(14);
+  border-radius: 100px;
+  padding: pxtoremconverter(8) pxtoremconverter(16);
+  margin: pxtoremconverter(5) 0;
+  cursor: pointer;
+}
+.btn-outline-md:is(.icon-btn) {
+  border-radius: 100%;
+  padding: 10px 12px;
+}
+.btn-outline-md.btn-warning {
+  background-color: rgb(235, 153, 63);
+  border: pxtoremconverter(2) solid white;
+}
+.btn-outline-md.btn-default {
+  background-color: gray;
+}
+
+.btn-outline-sm {
+  color: white;
+  border: none;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  border-radius: 100px;
+  padding: pxtoremconverter(4) pxtoremconverter(12);
+  margin: pxtoremconverter(5) 0;
+  cursor: pointer;
+}
+.btn-outline-sm:is(.icon-btn) {
+  border-radius: 100%;
+  padding: 10px 12px;
+}
+.btn-outline-sm.btn-warning {
+  background-color: rgb(235, 153, 63);
+  border: pxtoremconverter(2) solid white;
+}
+.btn-outline-sm.btn-default {
+  background-color: gray;
+}
+
+.btn-inset-outline {
+  color: white;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-size: pxtoremconverter(16);
+  border: none;
+  border-radius: 100px;
+  padding: pxtoremconverter(12) pxtoremconverter(20);
+  margin: pxtoremconverter(5) 0;
+  cursor: pointer;
+}
+.btn-inset-outline:is(.icon-btn) {
+  border-radius: 100%;
+  padding: 10px 15px;
+}
+.btn-inset-outline.btn-warning {
+  background-color: rgb(255, 220, 190);
+  border: pxtoremconverter(2) inset white;
+}
+
+.btn-inset-outline-md {
+  color: white;
+  border: none;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-size: pxtoremconverter(14);
+  border-radius: 100px;
+  padding: pxtoremconverter(8) pxtoremconverter(16);
+  margin: pxtoremconverter(5) 0;
+  cursor: pointer;
+}
+.btn-inset-outline-md:is(.icon-btn) {
+  border-radius: 100%;
+  padding: 10px 12px;
+}
+.btn-inset-outline-md.btn-warning {
+  background-color: rgb(255, 220, 190);
+  border: pxtoremconverter(2) inset white;
+}
+
+.btn-inset-outline-sm {
+  color: white;
+  border: none;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  border-radius: 100px;
+  padding: pxtoremconverter(4) pxtoremconverter(12);
+  margin: pxtoremconverter(5) 0;
+  cursor: pointer;
+}
+.btn-inset-outline-sm:is(.icon-btn) {
+  border-radius: 100%;
+  padding: 10px 12px;
+}
+.btn-inset-outline-sm.btn-warning {
+  background-color: rgb(255, 220, 190);
+  border: pxtoremconverter(2) inset white;
+}/*# sourceMappingURL=button.css.map */

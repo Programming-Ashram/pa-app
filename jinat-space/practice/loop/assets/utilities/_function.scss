@@ -1,0 +1,46 @@
+@import '../utilities/variable';
+@function pxtoremconvertor($getSize, $baseSize:16){
+     @return $getSize / $baseSize *1rem;
+}
+
+$bg-color:(
+     'success':$success,
+     'success-mid':$success-25,
+     'success-light':$success-50,
+);
+@each $color-name, $color-value in $bg-color{
+     .btn-#{$color-name}{
+          background-color: $color-value;
+          &:is(.is-outline){
+               background-color: transparent;
+               border: 2px solid $color-value;
+               color: $color-value;
+          }
+     }
+     .btn-outline-#{$color-name}{
+          background-color:$color-value;
+          border: 2px solid $color-value;
+          &:is(.is-outline){
+               background-color: transparent;
+               border: 2px solid $color-value;
+               color: $color-value;
+          }
+     }
+     .btn-inset-outline-#{$color-name}{
+          border:2px inset $color-value;
+          background-color: $color-value;
+          &:is(.is-outline){
+               background-color: transparent;
+               border: 2px solid $color-value;
+               color: $color-value;
+          }
+     }
+     .btn-#{$color-name}{
+          pointer-events: none;
+          &:is(.is-outline){
+               background-color: transparent;
+               border: 2px solid $color-value;
+               color: $color-value;
+          }
+     }
+}

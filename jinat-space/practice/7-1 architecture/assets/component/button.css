@@ -1,0 +1,13 @@
+.btn {
+  padding: 0.625rem 1.25rem;
+  border: none;
+  color: white;
+  border-radius: 0.5rem;
+  border: 1px black inset;
+}
+.btn.btn-danger {
+  background-color: red;
+}
+.btn.btn-success {
+  background-color: green;
+}/*# sourceMappingURL=button.css.map */

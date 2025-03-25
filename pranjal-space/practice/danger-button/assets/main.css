@@ -1,0 +1,56 @@
+.btn-danger {
+  background-color: #ba1a1a;
+}
+.btn-danger:is(.is-outline) {
+  background-color: transparent;
+  border: pxtorem(2) solid #ba1a1a;
+  color: #ba1a1a;
+}
+.btn-danger:is(.is-outline):hover {
+  background-color: #ba1a1a;
+  color: #ffffff;
+}
+
+.btn-danger-md {
+  background-color: #ff5449;
+}
+.btn-danger-md:is(.is-outline) {
+  background-color: transparent;
+  border: pxtorem(2) solid #ff5449;
+  color: #ff5449;
+}
+.btn-danger-md:is(.is-outline):hover {
+  background-color: #ff5449;
+  color: #ffffff;
+}
+
+.btn-danger-light {
+  background-color: #ffb4ab;
+}
+.btn-danger-light:is(.is-outline) {
+  background-color: transparent;
+  border: pxtorem(2) solid #ffb4ab;
+  color: #ffb4ab;
+}
+.btn-danger-light:is(.is-outline):hover {
+  background-color: #ffb4ab;
+  color: #ffffff;
+}
+
+.btn-flat {
+  border: none;
+  border-radius: pxtorem(10);
+  cursor: pointer;
+  color: #ffffff;
+}
+.btn-flat:not(.btn-md) {
+  padding: pxtorem(10) pxtorem(20);
+  border-radius: pxtorem(8);
+}
+.btn-flat:is(.btn-sm) {
+  padding: pxtorem(6) pxtorem(10);
+}
+.btn-flat:is(.is-rounded) {
+  padding: pxtorem(6) pxtorem(10);
+  border-radius: pxtorem(80);
+}/*# sourceMappingURL=main.css.map */

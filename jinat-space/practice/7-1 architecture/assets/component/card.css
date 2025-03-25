@@ -1,0 +1,10 @@
+.card {
+  padding: 1.25rem;
+  margin: 2.5rem auto;
+  width: 18.75rem;
+}
+.card.card-primary {
+  background-color: blue;
+  color: white;
+  border-radius: 0.5rem;
+}/*# sourceMappingURL=card.css.map */

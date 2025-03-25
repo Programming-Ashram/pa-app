@@ -1,0 +1,17 @@
+.btn {
+  border-radius: 6px;
+  padding: 10px 16px;
+  color: #FFFFFF;
+}
+.btn.btn-primary {
+  background-color: #1D19D4;
+  border: 0.0625rem solid #FFFFFF;
+}
+.btn.btn-info {
+  background-color: #19BED4;
+  border: 0.0625rem solid #FFFFFF;
+}
+.btn.btn-soft {
+  background-color: pink;
+  border: 0.0625rem solid #FFFFFF;
+}/*# sourceMappingURL=button.css.map */
