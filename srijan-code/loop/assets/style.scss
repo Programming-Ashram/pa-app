@@ -1,0 +1,104 @@
+
+.row{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    @media(max-width: 767px){
+        grid-template-columns: repeat(1, 1fr);
+    }
+    @media(min-width: 640px) and (max-width: 840px){
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.card{
+    width: 300px;
+    background-color: blueviolet;
+    color: white;
+    @extend .p-5;
+    
+    &:not(.rounded){
+        border-radius: 0;
+    }
+
+    &:is(.rounded){
+        border-radius: 8px;
+    }
+}
+
+// for margin, padding, fontsize
+$allSizes : (
+    0: 0,
+    1: 1rem,
+    2: 2rem,
+    3: 3rem,
+    4: 4rem,
+    5: 5rem
+);
+
+@each $sizeNumber, $sizeValue in $allSizes{
+    // Interpolation
+    .fs-#{$sizeNumber}{
+        font-size: $sizeValue;
+    }
+    // Padding / Margin (Arround)
+    .p-#{$sizeNumber}{
+        padding: $sizeValue;
+    }
+    .m-#{$sizeNumber}{
+        margin: $sizeValue;
+    }
+
+    // Left
+    .ps-#{$sizeNumber}{
+        padding-left: $sizeValue;
+    }
+    .ms-#{$sizeNumber}{
+        margin-left: $sizeValue;
+    }
+    // Right
+
+    .pe-#{$sizeNumber}{
+        padding-left: $sizeValue;
+    }
+    .me-#{$sizeNumber}{
+        margin-left: $sizeValue;
+    }
+
+    // Top
+    
+    .pt-#{$sizeNumber}{
+        padding-top: $sizeValue;
+    }
+    .mt-#{$sizeNumber}{
+        margin-top: $sizeValue;
+    }
+
+     // Bottom
+    
+    .pb-#{$sizeNumber}{
+        padding-left: $sizeValue;
+    }
+    .mb-#{$sizeNumber}{
+        margin-left: $sizeValue;
+    }
+
+    // Top/Bottom ANd Left/Right
+    
+    .px-#{$sizeNumber}{
+        padding-left:  $sizeValue;
+        padding-right:  $sizeValue;
+    }
+    .py-#{$sizeNumber}{
+        padding-top:  $sizeValue;
+        padding-bottom:  $sizeValue;
+    }
+    .mx-#{$sizeNumber}{
+        margin-left:  $sizeValue;
+        margin-right:  $sizeValue;
+    }
+    .my-#{$sizeNumber}{
+        margin-top:  $sizeValue;
+        margin-bottom:  $sizeValue;
+    }
+}

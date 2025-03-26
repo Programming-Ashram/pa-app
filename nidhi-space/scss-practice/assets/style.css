@@ -1,0 +1,18 @@
+.btn {
+  border-radius: 4px;
+  cursor: pointer;
+}
+.btn:is(.outline) {
+  border: 1px solid black;
+}
+.btn:not(.outline) {
+  border: none;
+}
+.btn.btn-primary:is(.outline) {
+  border: 1px solid blue;
+  color: blue;
+}
+.btn.btn-primary:not(.outline) {
+  background-color: blue;
+  color: white;
+}/*# sourceMappingURL=style.css.map */

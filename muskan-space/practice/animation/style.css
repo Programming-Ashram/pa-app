@@ -1,0 +1,62 @@
+.cloud1, .cloud2, .sun {
+    position: absolute;
+  }
+  
+  .cloud1 {
+    left: -80px;
+    width: 100%;
+    animation-name: cloude1Move;
+    animation-duration: 5s;
+    animation-delay: 3s;
+  }
+  
+  .cloud2 {
+    right: -80px;
+    width: 100%;
+    animation-name: cloude2Move;
+    animation-duration: 5s;
+    animation-delay: 3s;
+    animation-iteration-count: 1;
+  }
+  
+  .sun {
+    width: 200px;
+    right: -80px;
+    width: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    top: 20px;
+    animation-name: sunMove;
+    animation-duration: 5s;
+    animation-delay: 3s;
+    animation-iteration-count: 1;
+    transform: scale(0.4);
+  }
+  
+  @keyframes cloude1Move {
+    from {
+      transform: translateX(0px);
+    }
+    to {
+      transform: translateX(-100px);
+      opacity: 0;
+    }
+  }
+  @keyframes cloude2Move {
+    from {
+      transform: translateX(0px);
+    }
+    to {
+      transform: translateX(100px);
+      opacity: 0;
+    }
+  }
+  @keyframes sunMove {
+    from {
+      transform: scale(0.4);
+    }
+    to {
+      transform: scale(1) rotate(360deg);
+    }
+  }/*# sourceMappingURL=style.css.map */

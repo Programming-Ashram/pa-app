@@ -1,0 +1,125 @@
+*{
+    // 8 px margin is default in body
+    margin: 0;
+    padding: 0;
+}
+
+
+$color-gray:#f3f2f7;
+$color-white:#ffffff;
+
+
+@function pxtorem($userValue, $defaultvalue: 16){
+    @return $userValue / $defaultvalue * 1rem;
+}
+
+@mixin card(){
+    padding: pxtorem(12);
+    border-radius: pxtorem(14);
+    background-color: $color-white;
+}
+
+.dashboard-wrapper{
+    display: flex;
+    width: 100%;
+    background-color: $color-gray;
+    height: 100vh;
+    .sidebar{
+        width:  pxtorem(280);
+        padding:pxtorem(15);
+        background-color: $color-white;
+        
+        .sidebar-header{
+            padding: pxtorem(25) 0;
+            h2{
+                font-size: pxtorem(34);
+                margin-bottom: pxtorem(5);
+                color: aquamarine;
+            }
+            p{
+                font-size:pxtorem(16) ;
+                color:brown;
+            }
+        }
+
+        .sidebar-menu{
+            ul{
+                list-style: none;
+
+                li{
+                    margin: pxtorem(16) 0;
+                    a{
+                        text-decoration: none;
+                        color: burlywood;
+                        font-size: pxtorem(14);
+                    }
+                }
+               
+            }
+        }
+    }
+
+    .sidebar-content{
+        width: 100%;
+    }
+    .sidebar-wrapper{
+        width: 90%;
+        margin: 0 auto;
+        padding:pxtorem(15);
+
+        .header-layout{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: pxtorem(20);
+            align-items: center;
+            
+            .searchbar-input{
+                padding: pxtorem(10);
+                border-radius: pxtorem(4);
+                border-color: gray;
+                background-color: $color-white;
+                width: 100%;
+            }
+            .widgets{
+                display: flex;
+                gap: pxtorem(16);
+                justify-content: end;
+                align-items: center;
+                padding-right: 30px;
+                a{
+                    text-decoration: none;
+                    color: black;
+                }
+            }
+            .profile{
+                display: flex;
+                gap: pxtorem(16);
+                align-items: center;
+                padding-left: 30px;
+                border-left: 2px solid gray;
+                .profile-img{
+                    width: pxtorem(50);
+                    height: pxtorem(50);
+                    aspect-ratio: 3/4;
+                    object-fit: cover;
+                    border-radius: 100%;
+                }
+            }
+        }
+    }
+    .section-layout{
+        h3, p{
+            margin: pxtorem(20) 0;
+        }
+    }
+    .grid-4{
+        margin: pxtorem(14) 0;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        column-gap: pxtorem(20);
+    }
+
+    .card{
+        @include card();
+    }
+}

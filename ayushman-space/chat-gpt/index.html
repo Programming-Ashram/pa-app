@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bem Method</title>
+        <style>
+            .large{
+                padding: 20px 40px;
+            }
+            .small{
+                padding: 6px 10px;
+            }
+            .md{
+                padding: 10px 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <input type="text">
+        <!-- -------------[Block (__)]--[Ele (--)]--[Modifier]----------------------- -->
+        <button class="btn btn__outline--primary" id="btn">Button </button>
+        <div>=</div>
+        <script>
+            let name = "small";
+            let btn = document.getElementById('btn');
+            switch (name) {
+                case 'large':
+                        btn.setAttribute('class', 'large');
+                    break;
+                case 'small':
+                    btn.setAttribute('class', 'small');
+                    break;
+            
+                default:
+                    btn.setAttribute('class', 'md');
+                    break;
+            }
+        </script>
+    </body>
+</html>
