@@ -3,34 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grouped Selectors in CSS</title>
+    <title>z-index Example</title>
     <style>
-        /* Grouping multiple selectors */
-        h1, h2, p {
-            color: blue;
-            font-family: Arial, sans-serif;
-            text-align: center;
-        }
-         /* Grouping classes and ID */
-        .container, .box, #main {
+        .container {
+            position: relative;
+            width: 300px;
+            height: 200px;
             background-color: lightgray;
-            padding: 20px;
-            border-radius: 10px;
-            margin: 10px;
+            margin: 50px auto;
+        }
+        .box {
+            width: 150px;
+            height: 100px;
+            position: absolute;
             text-align: center;
+            line-height: 100px;
+            font-size: 18px;
+            color: white;
+        }
+        .box1 {
+            background-color: red;
+            top: 20px;
+            left: 20px;
+            z-index: 1; /* Behind box2 */
+        }
+        .box2 {
+            background-color: blue;
+            top: 40px;
+            left: 40px;
+            z-index: 2; /* In front of box1 */
         }
     </style>
 </head>
 <body>
-    <h1>Welcome to My Website</h1>
-    <h2>CSS Grouped Selectors Example</h2>
-    <p>This is a paragraph demonstrating grouped CSS selectors.</p>
+    <div class="container">
+        <div class="box box1">Box 1</div>
+        <div class="box box2">Box 2</div>
+    </div>
 
-    <div class="container">This is a container</div>
-    <div class="box">This is a box</div>
-    <div id="main">This is the main section</div>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
 
 
 
