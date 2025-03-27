@@ -17,8 +17,8 @@ let book1 = new Book("Do Epic Shit","700","Ankur Warikooo");
 
 console.log(book1);
 try{
-    let bookName = "newPort";
-    if(carName === "Deep Work"){
+    let bookName = 'newPort';
+    if(bookName === "Deep Work"){
         console.log('this book is Do Epic Shit')
     }
     else{
