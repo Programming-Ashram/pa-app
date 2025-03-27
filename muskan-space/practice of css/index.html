@@ -277,7 +277,7 @@
                     <p><strong>Ans.</strong> Padding is the space between the content of an element and its border, providing inner spacing, while margin is the space outside the border, creating separation between elements.</p>
                     <h3 class="text-center"><strong>or</strong></h3>
                     <p><strong>Ans.</strong> Padding is the space between the content of an element and its border, creating inner spacing within the element. Margin, on the other hand, is the space outside the border, providing separation between elements. Padding contributes to the element's size, while margin defines the spacing around it.</p>
-                    <img src="" alt="" class="img-fluid">
+                    <img src="./image/mp.png" alt="" class="img-fluid">
                 </div>
                 <div class="mt-4">
                     <h3><strong>3.</strong>What is the difference between border-box and content-box?</h3>
@@ -298,29 +298,23 @@
                         </li>
                     </ul>
                     <p>To use <code>border-box</code>, you can set it using CSS:</p>
-                    <pre><code>
-                        /* Example */
-                        * {
-                            box-sizing: border-box;
-                        }
-                    </code></pre>
-                    <h3 class="text-center"><strong>or</strong></h3>
+                   <h3 class="text-center"><strong>or</strong></h3>
                     <p><strong>Ans.</strong> The key distinction between <code>border-box</code> and <code>content-box</code> is how the total width and height of an element are calculated:</p>
                     <ul>
                         <li><strong>Content-box:</strong> The default box model where the specified width and height apply only to the content. Padding and border are added outside the content dimensions, increasing the total size of the element.</li>
                         <li><strong>Border-box:</strong> Includes the content, padding, and border within the specified width and height. This ensures the total size of the element remains consistent regardless of padding or border values.</li>
                     </ul>
-                    <img src="" alt="" class="img-fluid">
+                    <img src="./image/bc.png" alt="" class="img-fluid">
                 </div>
                 <div class="mt-4">
                     <h3><strong>4.</strong>How can you make an element take up the full width of the screen?</h3>
                     <p><strong>Ans.</strong> To make an element take up the full width of the screen, you can use the CSS property <code>width: 100vw;</code>. This sets the width of the element to 100% of the viewport width. Example:</p>
-                    <pre><code>
+                    <pre><code><b>
                         /* Example */
                         .full-width {
                             width: 100vw;
                         }
-                    </code></pre>
+                    </b></code></pre>
                     <p>Alternatively, you can use <code>width: 100%;</code> if the element's parent container spans the full width of the screen.</p>
                     <img src="" alt="" class="img-fluid">
                 </div>
@@ -351,12 +345,20 @@
                                 <li>Examples: <code>&lt;div&gt;</code>, <code>&lt;p&gt;</code>, <code>&lt;h1&gt;</code>.</li>
                             </ul>
                         </li>
+                    </ul>
+                    <img src="./image/block.png" alt="" class="img-fluid">
+                </div>
+                    <ul>
                         <li><strong>Inline:</strong> 
                             <ul>
                                 <li>Does not start on a new line and only takes up as much width as necessary.</li>
                                 <li>Examples: <code>&lt;span&gt;</code>, <code>&lt;a&gt;</code>, <code>&lt;strong&gt;</code>.</li>
                             </ul>
                         </li>
+                    </ul>
+                    <img src="./image/inlineele.png" alt="" class="img-fluid">
+                </div>
+                    <ul>
                         <li><strong>Inline-block:</strong> 
                             <ul>
                                 <li>Behaves like an inline element but allows setting width and height.</li>
@@ -364,14 +366,7 @@
                             </ul>
                         </li>
                     </ul>
-                    <h3 class="text-center"><strong>or</strong></h3>
-                    <p><strong>Ans.</strong> The difference between block, inline, and inline-block elements is:</p>
-                    <ul>
-                        <li><strong>Block:</strong> Takes up the full width, starts on a new line. Example: <code>&lt;div&gt;</code>.</li>
-                        <li><strong>Inline:</strong> Takes up only as much width as needed, does not start on a new line. Example: <code>&lt;span&gt;</code>.</li>
-                        <li><strong>Inline-block:</strong> Behaves like inline but allows width and height to be set. Example: <code>&lt;button&gt;</code>.</li>
-                    </ul>
-                    <img src="" alt="" class="img-fluid">
+                    <img src="./image/inline.png" alt="" class="img-fluid">
                 </div>
                 <div class="mt-4">
                     <h3><strong>2.</strong>What is Flexbox, and why is it useful?</h3>
@@ -392,17 +387,8 @@
                             </ul>
                         </li>
                     </ul>
-                    <pre><code>
-                        /* Example */
-                        .container {
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                            height: 100vh;
-                        }
-                    </code></pre>
                     <p>In this example, Flexbox centers the content both horizontally and vertically within the container.</p>
-                    <img src="" alt="" class="img-fluid">
+                    <img src="./image/flex box.png" alt="" class="img-fluid">
                 </div>
                 <div class="mt-4">
                     <h3><strong>3.</strong>What is the difference between Flexbox and Grid?</h3>
@@ -415,6 +401,9 @@
                                 <li>Example: <code>display: flex;</code>.</li>
                             </ul>
                         </li>
+                    </ul>
+                    <img src="./image/flex.png" alt="" class="img-fluid">
+                    <ul>
                         <li><strong>Grid:</strong> 
                             <ul>
                                 <li>Two-dimensional layout system (rows and columns).</li>
@@ -423,8 +412,7 @@
                             </ul>
                         </li>
                     </ul>
-                    <p>In summary, use Flexbox for simpler, single-axis layouts and Grid for more complex, two-dimensional designs.</p>
-                    <img src="" alt="" class="img-fluid">
+                    <img src="./image/grid.png" alt="" class="img-fluid">
                 </div>
                 <div class="mt-4">
                     <h3><strong>4.</strong>How do you center a div using CSS?</h3>
@@ -459,16 +447,8 @@
                 <div class="mt-4">
                     <h3><strong>1.</strong>What is a media query?</h3>
                     <p><strong>Ans.</strong> A media query is a CSS technique used to apply styles based on the characteristics of the user's device, such as screen size, resolution, or orientation. It enables responsive design by allowing developers to create styles that adapt to different devices.</p>
-                    <pre><code>
-                        /* Example */
-                        @media (max-width: 768px) {
-                            body {
-                                background-color: lightblue;
-                            }
-                        }
-                    </code></pre>
                     <p>This example changes the background color to light blue for devices with a screen width of 768px or smaller.</p>
-                    <img src="" alt="" class="img-fluid">
+                    <img src="./image/MMM.png" alt="" class="img-fluid">
                 </div>
                 <div class="mt-4">
                     <h3><strong>2.</strong>What are relative units in CSS (%, em, rem, vh, vw)?</h3>
@@ -489,22 +469,7 @@
                         <li><strong>max-width:</strong> Applies styles when the screen width is less than or equal to the specified value. It is typically used for targeting smaller devices.</li>
                         <li><strong>min-width:</strong> Applies styles when the screen width is greater than or equal to the specified value. It is typically used for targeting larger devices.</li>
                     </ul>
-                    <pre><code>
-                        /* Example of max-width */
-                        @media (max-width: 768px) {
-                            body {
-                                background-color: lightblue;
-                            }
-                        }
-
-                        /* Example of min-width */
-                        @media (min-width: 1024px) {
-                            body {
-                                background-color: lightgreen;
-                            }
-                        }
-                    </code></pre>
-                    <img src="" alt="" class="img-fluid">
+                    <img src="./image/hhhhhhh.png" alt="" class="img-fluid">
                 </div>
                 <div class="mt-4">
                     <h3><strong>4.</strong>How do you make a website mobile-friendly using CSS?</h3>
@@ -512,13 +477,13 @@
                     <ul>
                         <li><strong>1. Use a Responsive Layout:</strong> Use relative units like percentages, em, rem, vh, and vw instead of fixed units like px to create flexible layouts.</li>
                         <li><strong>2. Implement Media Queries:</strong> Use media queries to apply styles based on the screen size or device type. Example:
-                            <pre><code>
+                            <pre><code><b>
                                 @media (max-width: 768px) {
                                     body {
                                         font-size: 14px;
                                     }
                                 }
-                            </code></pre>
+                            </b></code></pre>
                         </li>
                         <li><strong>3. Use a Mobile-First Approach:</strong> Design for smaller screens first and then add styles for larger screens using media queries.</li>
                         <li><strong>4. Optimize Images:</strong> Use responsive images with the <code>max-width: 100%;</code> property to ensure they scale properly on smaller screens.</li>
@@ -547,17 +512,13 @@
             <div class="col-md-12">
                 <div class="mt-4">
                     <h3><strong>1.</strong>How do you change the background color of an element?</h3>
-                    <p><strong>Ans.</strong> Use the <code>background-color</code> property in CSS to set an element's background color. Example:</p>
-                    <pre><code>
-                        .example {
-                            background-color: yellow;
-                        }
-                    </code></pre>
+                    <p><strong>Ans.</strong> Use the <code>background-color</code> property in CSS to set an element's background color.</p>
+                    <img src="./image/css.png" alt="" class="img-fluid">
                 </div>
                 <div class="mt-4">
                     <h3><strong>2.</strong>How do you add a shadow to a box?</h3>
                     <p><strong>Ans.</strong> To add a shadow to a box, use the <code>box-shadow</code> property in CSS. For example:</p>
-                    <pre><code>
+                    <pre><code><b>
                         /* Example */
                         .box {
                             width: 200px;
@@ -565,9 +526,9 @@
                             background-color: lightblue;
                             box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
                         }
-                    </code></pre>
+                    </b></code></pre>
                     <p>This creates a shadow with a horizontal offset of 5px, a vertical offset of 5px, a blur radius of 15px, and a light black color with 30% opacity.</p>
-                    <img src="" alt="" class="img-fluid">
+                    <img src="./image/shadow.png" alt="" class="img-fluid">
                 </div>
                 <div class="mt-4">
                     <h3><strong>3.</strong>What is the difference between opacity and visibility?</h3>
@@ -576,7 +537,7 @@
                         <li><strong>Opacity:</strong> Controls the transparency level of an element. An element with <code>opacity: 0</code> is fully transparent but still occupies space in the layout.</li>
                         <li><strong>Visibility:</strong> Controls whether an element is visible or hidden. An element with <code>visibility: hidden</code> is invisible but still occupies space in the layout.</li>
                     </ul>
-                    <pre><code>
+                    <pre><code><b>
                         /* Example */
                         .transparent {
                             opacity: 0.5; /* 50% transparent */
@@ -584,21 +545,21 @@
                         .hidden {
                             visibility: hidden; /* Element is hidden but still takes up space */
                         }
-                    </code></pre>
-                    <img src="" alt="" class="img-fluid">
+                    </b></code></pre>
+                    <img src="./image/opacity.png" alt="" class="img-fluid">
                 </div>
                 <div class="mt-4">
                     <h3><strong>4.</strong>How do you create a hover effect in CSS?</h3>
                     <p><strong>Ans.</strong> To create a hover effect in CSS, use the <code>:hover</code> pseudo-class. For example:</p>
-                    <pre><code>
+                    <pre><code><b>
                         /* Example */
                         button:hover {
                             background-color: blue;
                             color: white;
                         }
-                    </code></pre>
+                    </b></code></pre>
                     <p>This changes the button's background color and text color when the user hovers over it.</p>
-                    <img src="" alt="" class="img-fluid">
+                    <img src="./image/csss22.png" alt="" class="img-fluid">
                 </div>
             </div>
         </div>
@@ -620,7 +581,10 @@
                 <div class="mt-4">
                     <h3><strong>1.</strong>What are CSS transitions and animations?</h3>
                     <p><strong>Ans.</strong> CSS transitions and animations are techniques used to create smooth visual effects on web elements. Transitions allow changes in CSS properties to occur over a specified duration, while animations enable more complex, keyframe-based effects.</p>
-                    <img src="" alt="" class="img-fluid">
+                    <h4>css transitions</h4>
+                    <img src="./image/csstransitions.png" alt="" class="img-fluid">
+                    <h4>css animations</h4>
+                    <img src="./image/animation.png" alt="" class="img-fluid">
                 </div>
                 <div class="mt-4">
                     <h3><strong>2.</strong>What is a CSS variable?</h3>
@@ -630,13 +594,32 @@
                 <div class="mt-4">
                     <h3><strong>3.</strong>What is the difference between absolute and fixed positioning?
                     </h3>
-                    <p><strong>Ans.</strong> Absolute positioning places an element relative to its nearest positioned ancestor, while fixed positioning places an element relative to the viewport and does not move when scrolling.</p>
-                    <img src="" alt="" class="img-fluid">
+                    <p><strong>Ans.</strong> The difference between absolute and fixed positioning lies in their reference points:</p>
+                    <ul>
+                        <li><strong>Absolute Positioning:</strong> 
+                            <ul>
+                                <li>The element is positioned relative to its nearest positioned ancestor (an ancestor with a position other than <code>static</code>).</li>
+                                <li>If no such ancestor exists, it is positioned relative to the initial containing block (usually the <code>html</code> element).</li>
+                                <li>Example: <code>position: absolute;</code></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <img src="./image/Screenshot 2025-03-26 185345.png" alt="" class="img-fluid">
+                    <ul>
+                        <li><strong>Fixed Positioning:</strong> 
+                            <ul>
+                                <li>The element is positioned relative to the viewport.</li>
+                                <li>It does not move when the page is scrolled.</li>
+                                <li>Example: <code>position: fixed;</code></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <img src="./image/Screenshot 2025-03-26 185444.png" alt="" class="img-fluid">
                 </div>
                 <div class="mt-4">
                     <h3><strong>4.</strong>What is the purpose of z-index in CSS?</h3>
                     <p><strong>Ans.</strong> The <code>z-index</code> property in CSS is used to control the stack order of elements. Elements with a higher <code>z-index</code> value are displayed in front of elements with a lower <code>z-index</code> value. It is particularly useful when elements overlap, allowing you to specify which element should appear on top.</p>
-                    <pre><code>
+                    <pre><code><b>
                         /* Example */
                         .box1 {
                             position: absolute;
@@ -646,9 +629,9 @@
                             position: absolute;
                             z-index: 2;
                         }
-                    </code></pre>
+                    </b></code></pre>
                     <p>In this example, <code>.box2</code> will appear in front of <code>.box1</code> because it has a higher <code>z-index</code> value.</p>
-                    <img src="" alt="" class="img-fluid">
+                    <img src="./image/z-index.png" alt="" class="img-fluid">
                 </div>
             </div>
         </div>
