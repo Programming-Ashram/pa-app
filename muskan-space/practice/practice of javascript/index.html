@@ -1,0 +1,1014 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap 5 Template</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+
+    <style>
+     
+       section  img{
+            width: 500px !important;
+                object-fit: contain;
+                border-radius: 8px;
+                filter: invert(1);
+                z-index: -1;
+
+        }
+        .bg-custom{
+            background: linear-gradient(135deg, rebeccapurple, #0056b3);;
+        }
+        .bg-sec-2{
+            background:linear-gradient(179deg, rgba(0, 87, 181, 0.13), transparent);
+        }
+        section h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: transparent !important;
+    background-image: linear-gradient(135deg, rebeccapurple, #0056b3) !important;
+    -webkit-background-clip: text;
+    margin-bottom: 14px;
+}
+    </style>
+</head>
+<body class="bg-sec-2">
+    <section class="py-3" style="background: linear-gradient(135deg, rebeccapurple, #0056b3);">
+        <div class="container">
+            <div class="row">
+                <div class="row">
+                    <div class="col-md-12 text-center text-light">
+                        <h1 class="display-3">Practice of JavaScript</h1>
+                        <p class="lead">
+                            powered by programming ashram
+                        </p>
+                        <p class="lead">
+                            Created by Muskan Sharnagat
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </section>
+   <section class="bg-custom position-sticky top-0 p-2 text-light text-center mt-4" id=" JavaScript Basics">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1> JavaScript Basics</h1>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="py-4 bg-custom-subtle" id=" JavaScript Basics">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="mt-4">
+                    <div class="mt-4">
+                        <h3><strong>1.</strong>what is javascript?</h3>
+                        <p><strong>Ans.</strong> JavaScript is a versatile, high-level programming language primarily used for creating interactive and dynamic content on websites. It is a core technology of the web, alongside HTML and CSS, and enables developers to implement complex features such as real-time updates, animations, and form validations.</p>
+                    </div>
+                    <h3><strong>2.</strong>What are the different data types in JavaScript?</h3>
+                    <p><strong>Ans.</strong> JavaScript has the following data types:</p>
+                    <ul>
+                        <li><strong>Primitive Types:</strong>
+                            <ul>
+                                <li><strong>String:</strong> Represents textual data, e.g., "Hello".</li>
+                                <li><strong>Number:</strong> Represents numeric values, e.g., 42 or 3.14.</li>
+                                <li><strong>Boolean:</strong> Represents true or false values.</li>
+                                <li><strong>Undefined:</strong> A variable that has been declared but not assigned a value.</li>
+                                <li><strong>Null:</strong> Represents an intentional absence of value.</li>
+                                <li><strong>Symbol:</strong> Represents a unique and immutable value (introduced in ES6).</li>
+                                <li><strong>BigInt:</strong> Represents integers with arbitrary precision (introduced in ES11).</li>
+                            </ul>
+                        </li>
+                        <li><strong>Non-Primitive Types:</strong>
+                            <ul>
+                                <li><strong>Object:</strong> Represents collections of key-value pairs or more complex entities, e.g., arrays, functions, and objects.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mt-4">
+                    <h3><strong>3.</strong>What is the difference between var, let, and const?</h3>
+                    <p><strong>Ans.</strong> The difference between <code>var</code>, <code>let</code>, and <code>const</code> lies in their scope, hoisting, and mutability:</p>
+                    <ul>
+                        <li><strong>var:</strong>
+                            <ul>
+                                <li>Function-scoped: Accessible within the function where it is declared.</li>
+                                <li>Hoisted: Can be used before declaration, but its value will be <code>undefined</code>.</li>
+                                <li>Can be re-declared and updated.</li>
+                            </ul>
+                        </li>
+                        <li><strong>let:</strong>
+                            <ul>
+                                <li>Block-scoped: Accessible only within the block where it is declared.</li>
+                                <li>Not hoisted in the same way as <code>var</code>: Cannot be used before declaration.</li>
+                                <li>Can be updated but not re-declared in the same scope.</li>
+                            </ul>
+                        </li>
+                        <li><strong>const:</strong>
+                            <ul>
+                                <li>Block-scoped: Similar to <code>let</code>, accessible only within the block where it is declared.</li>
+                                <li>Not hoisted in the same way as <code>var</code>: Cannot be used before declaration.</li>
+                                <li>Cannot be updated or re-declared. The value is immutable, but for objects, the properties can still be modified.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mt-4">
+                    <h3><strong>4.</strong>How does JavaScript handle type coercion?</h3>
+                    <p><strong>Ans.</strong> JavaScript handles type coercion by automatically converting values from one type to another when performing operations. This can happen in two ways:</p>
+                    <ul>
+                        <li><strong>Implicit Coercion:</strong> JavaScript automatically converts types when it expects a specific type. For example:
+                            <ul>
+                                <li><code>'5' + 2</code> results in <code>'52'</code> (string concatenation).</li>
+                                <li><code>'5' - 2</code> results in <code>3</code> (string converted to number).</li>
+                            </ul>
+                        </li>
+                        <li><strong>Explicit Coercion:</strong> Developers manually convert types using functions like <code>Number()</code>, <code>String()</code>, or <code>Boolean()</code>. For example:
+                            <ul>
+                                <li><code>Number('42')</code> converts the string <code>'42'</code> to the number <code>42</code>.</li>
+                                <li><code>Boolean(0)</code> converts <code>0</code> to <code>false</code>.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mt-4">
+                    <h3><strong>5.</strong>What is the difference between == and ===?</h3>
+                    <p><strong>Ans.</strong> The key difference between <code>==</code> and <code>===</code> lies in type coercion:</p>
+                    <ul>
+                        <li><code>==</code>: Performs type conversion if the types of the operands are different before comparing their values. For example:
+                            <ul>
+                                <li><code>'10' == 10</code> evaluates to <code>true</code> because the string '10' is converted to a number.</li>
+                            </ul>
+                        </li>
+                        <li><code>===</code>: Does not perform type conversion and checks both value and type. For example:
+                            <ul>
+                                <li><code>'10' === 10</code> evaluates to <code>false</code> because one is a string and the other is a number.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                            </ul>
+                        </li>
+                    </ul>
+                    <h3 class="text-center"><strong>or</strong></h3>
+                    <p><strong>Ans.</strong> The difference between <code>==</code> and <code>===</code> lies in type coercion:</p>
+                    <ul>
+                        <li><code>==</code> (Equality Operator): Compares two values for equality after converting them to a common type (type coercion). For example:
+                            <ul>
+                                <li><code>'5' == 5</code> returns <code>true</code> because the string '5' is converted to a number.</li>
+                            </ul>
+                        </li>
+                        <li><code>===</code> (Strict Equality Operator): Compares two values for equality without performing type coercion. For example:
+                            <ul>
+                                <li><code>'5' === 5</code> returns <code>false</code> because the types (string and number) are different.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                   
+                </div>
+                <div class="mt-4">
+                    <h3><strong>6.</strong>What are truthy and falsy values in JavaScript?</h3>
+                    <p><strong>Ans.</strong> In JavaScript, truthy and falsy values determine how expressions are evaluated in conditional statements:</p>
+                    <ul>
+                        <li><strong>Falsy Values:</strong> These are values that are considered false when evaluated in a Boolean context. Examples include:
+                            <ul>
+                                <li><code>false</code></li>
+                                <li><code>0</code> (zero)</li>
+                                <li><code>""</code> (empty string)</li>
+                                <li><code>null</code></li>
+                                <li><code>undefined</code></li>
+                                <li><code>NaN</code> (Not-a-Number)</li>
+                            </ul>
+                        </li>
+                        <li><strong>Truthy Values:</strong> All values that are not falsy are considered truthy. Examples include:
+                            <ul>
+                                <li><code>true</code></li>
+                                <li>Non-zero numbers (e.g., <code>1</code>, <code>-1</code>)</li>
+                                <li>Non-empty strings (e.g., <code>"hello"</code>)</li>
+                                <li>Objects (e.g., <code>{}</code>, <code>[]</code>)</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="bg-custom position-sticky top-0 p-2 text-light text-center mt-4" id="Functions & Scope">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Functions & Scope</h1>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="py-4 bg-custom-subtle" id="Functions & Scope">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="mt-4">
+                    <h3><strong>1.</strong>What is the difference between function declaration and function expression?</h3>
+                    <p><strong>Ans.</strong></p>
+                </div>
+                <div class="mt-4">
+                    <h3><strong>2.</strong>What is a callback function?</h3>
+                    <p><strong>Ans.</strong></p>
+                </div>
+                <div class="mt-4">
+                    <h3><strong>3.</strong>What is closure in JavaScript?</h3>
+                    <p><strong>Ans.</strong></p>
+                </div>
+                <div class="mt-4">
+                    <h3><strong>4.</strong>What is the difference between synchronous and asynchronous functions?</h3>
+                    <p><strong>Ans.</strong></p>
+                </div>
+                <div class="mt-4">
+                    <h3><strong>5.</strong>What is the difference between call(), apply(), and bind()?</h3>
+                    <p><strong>Ans.</strong></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="bg-custom position-sticky top-0 p-2 text-light text-center mt-4" id="Objects & Arrays">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Objects & Arrays</h1>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="py-4 bg-custom-subtle" id="Objects & Arrays">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="mt-4">
+                    <h3><strong>1.</strong>What are the different ways to create an object in JavaScript?</h3>
+                    <p><strong>Ans.</strong> There are several ways to create an object in JavaScript:</p>
+                    <ul>
+                        <li><strong>Object Literals:</strong> The simplest way to create an object.
+                            <pre><code>const obj = { key: 'value' };</code></pre>
+                        </li>
+                        <li><strong>Constructor Functions:</strong> Using a function to define and instantiate objects.
+                            <pre><code>
+                    function Person(name, age) {
+                        this.name = name;
+                        this.age = age;
+                    }
+                    const person = new Person('John', 30);
+                            </code></pre>
+                        </li>
+                        <li><strong>Object.create():</strong> Creates a new object with the specified prototype.
+                            <pre><code>
+                    const prototypeObj = { greet: function() { console.log('Hello!'); } };
+                    const obj = Object.create(prototypeObj);
+                            </code></pre>
+                        </li>
+                        <li><strong>ES6 Classes:</strong> A syntactic sugar over constructor functions.
+                            <pre><code>
+                    class Person {
+                        constructor(name, age) {
+                            this.name = name;
+                            this.age = age;
+                        }
+                    }
+                    const person = new Person('Jane', 25);
+                            </code></pre>
+                        </li>
+                        <li><strong>Factory Functions:</strong> Functions that return an object.
+                            <pre><code>
+                    function createPerson(name, age) {
+                        return { name, age };
+                    }
+                    const person = createPerson('Alice', 28);
+                            </code></pre>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mt-4">
+                    <h3><strong>2.</strong>What is the difference between deep copy and shallow copy?</h3>
+                    <p><strong>Ans.</strong> The difference between deep copy and shallow copy lies in how they duplicate objects:</p>
+                    <ul>
+                        <li><strong>Shallow Copy:</strong>
+                            <ul>
+                                <li>Copies only the first level of the object. Nested objects or arrays are not duplicated but referenced.</li>
+                                <li>Changes to nested objects in the copied object will affect the original object.</li>
+                                <li>Examples: <code>Object.assign()</code>, spread operator (<code>{...obj}</code>).</li>
+                            </ul>
+                        </li>
+                        <li><strong>Deep Copy:</strong>
+                            <ul>
+                                <li>Creates a complete copy of the object, including all nested objects or arrays.</li>
+                                <li>Changes to the copied object do not affect the original object.</li>
+                                <li>Examples: Using libraries like <code>lodash</code> (<code>_.cloneDeep()</code>) or structured cloning (<code>structuredClone()</code> in modern browsers).</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mt-4">
+                    <h3><strong>3.</strong>How can you iterate over an array in JavaScript?</h3>
+                    <p><strong>Ans.</strong> There are several ways to iterate over an array in JavaScript:</p>
+                    <ul>
+                        <li><strong>for Loop:</strong> A traditional way to iterate over an array.
+                            <pre><code>
+for (let i = 0; i < array.length; i++) {
+    console.log(array[i]);
+}
+                            </code></pre>
+                        </li>
+                        <li><strong>for...of Loop:</strong> A modern way to iterate over iterable objects like arrays.
+                            <pre><code>
+for (const element of array) {
+    console.log(element);
+}
+                            </code></pre>
+                        </li>
+                        <li><strong>forEach Method:</strong> Executes a provided function once for each array element.
+                            <pre><code>
+array.forEach(element => {
+    console.log(element);
+});
+                            </code></pre>
+                        </li>
+                        <li><strong>map Method:</strong> Creates a new array by applying a function to each element.
+                            <pre><code>
+const newArray = array.map(element => element * 2);
+console.log(newArray);
+                            </code></pre>
+                        </li>
+                        <li><strong>while Loop:</strong> Iterates as long as a specified condition is true.
+                            <pre><code>
+let i = 0;
+while (i < array.length) {
+    console.log(array[i]);
+    i++;
+}
+                            </code></pre>
+                        </li>
+                        <li><strong>do...while Loop:</strong> Executes the loop body at least once before checking the condition.
+                            <pre><code>
+let i = 0;
+do {
+    console.log(array[i]);
+    i++;
+} while (i < array.length);
+                            </code></pre>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mt-4">
+                    <h3><strong>4.</strong>How do you manipulate arrays using methods like map(), filter(), and reduce()?</h3>
+                    <p><strong>Ans.</strong></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="bg-custom position-sticky top-0 p-2 text-light text-center mt-4" id="Prototypes & OOP">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Prototypes & OOP</h1>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="py-4 bg-custom-subtle" id="Prototypes & OOP">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="mt-4">
+                    <h3><strong>1.</strong>What is prototypal inheritance in JavaScript?</h3>
+                    <p><strong>Ans.</strong> Prototypal inheritance in JavaScript is a feature that allows objects to inherit properties and methods from other objects. It is implemented using the prototype chain, where an object can access the properties and methods of its prototype. This enables code reuse and dynamic property sharing between objects.</p>
+                </div>
+                <div class="mt-4">
+                    <h3><strong>2.</strong>What is the difference between class-based and prototype-based inheritance?</h3>
+                    <p><strong>Ans.</strong></p>
+                </div>
+                <div class="mt-4">
+                    <h3><strong>3.</strong>How does the this keyword work in JavaScript?</h3>
+                    <p><strong>Ans.</strong></p>
+                </div>
+                <div class="mt-4">
+                    <h3><strong>4.</strong>What is the difference between Object.create() and class instantiation?</h3>
+                    <p><strong>Ans.</strong></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="bg-custom position-sticky top-0 p-2 text-light text-center mt-4" id=" Asynchronous JavaScript">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1> Asynchronous JavaScript</h1>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="py-4 bg-custom-subtle" id=" Asynchronous JavaScript">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="mt-4">
+                    <h3><strong>1.</strong>What is the event loop in JavaScript?</h3>
+                    <p><strong>Ans.</strong></p>
+                </div>
+                <div class="mt-4">
+                    <h3><strong>2.</strong>What is the difference between setTimeout() and setInterval()?</h3>
+                    <p><strong>Ans.</strong></p>
+                </div>
+                <div class="mt-4">
+                    <h3><strong>3.</strong>What is a Promise, and how does it work?</h3>
+                    <p><strong>Ans.</strong></p>
+                </div>
+                <div class="mt-4">
+                    <h3><strong>4.</strong>What is async and await in JavaScript?</h3>
+                    <p><strong>Ans.</strong></p>
+                </div>
+                <div class="mt-4">
+                    <h3><strong>5.</strong>How does JavaScript handle errors in asynchronous code?</h3>
+                    <p><strong>Ans.</strong></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="bg-custom position-sticky top-0 p-2 text-light text-center mt-4" id=" ES6+ Features">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1> ES6+ Features</h1>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="py-4 bg-custom-subtle" id=" ES6+ Features">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="mt-4">
+                    <h3><strong>1.</strong>What are template literals?</h3>
+                    <p><strong>Ans.</strong> Template literals, introduced in ES6, are a way to create strings in JavaScript that allow embedded expressions and multi-line strings. They are enclosed by backticks (<code>`</code>) instead of single or double quotes. Template literals support:</p>
+                    <ul>
+                        <li><strong>String Interpolation:</strong> Embed expressions using the <code>${expression}</code> syntax.
+                            <pre><code>
+                    const name = 'Alice';
+                    const greeting = `Hello, ${name}!`;
+                    console.log(greeting); // Output: Hello, Alice!
+                            </code></pre>
+                        </li>
+                        <li><strong>Multi-line Strings:</strong> Create strings that span multiple lines without using escape characters.
+                            <pre><code>
+                    const multiLine = `This is a
+                    multi-line string.`;
+                    console.log(multiLine);
+                    // Output:
+                    // This is a
+                    // multi-line string.
+                            </code></pre>
+                        </li>
+                        <li><strong>Expression Evaluation:</strong> Include any valid JavaScript expression inside the template.
+                            <pre><code>
+                    const a = 10;
+                    const b = 20;
+                    console.log(`The sum of a and b is ${a + b}.`); // Output: The sum of a and b is 30.
+                            </code></pre>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mt-4">
+                    <h3><strong>2.</strong>What is destructuring in JavaScript?</h3>
+                    <p><strong>Ans.</strong> Destructuring in JavaScript is a syntax introduced in ES6 that allows you to unpack values from arrays or properties from objects into distinct variables. It simplifies the process of extracting data from complex structures.</p>
+                    <p>Examples:</p>
+                    <ul>
+                        <li><strong>Array Destructuring:</strong>
+                            <pre><code>
+const [a, b] = [1, 2];
+console.log(a); // Output: 1
+console.log(b); // Output: 2
+                            </code></pre>
+                        </li>
+                        <li><strong>Object Destructuring:</strong>
+                            <pre><code>
+const { name, age } = { name: 'Alice', age: 25 };
+console.log(name); // Output: Alice
+console.log(age); // Output: 25
+                            </code></pre>
+                        </li>
+                        <li><strong>Default Values:</strong>
+                            <pre><code>
+const [x, y = 10] = [5];
+console.log(x); // Output: 5
+console.log(y); // Output: 10
+                            </code></pre>
+                        </li>
+                        <li><strong>Nested Destructuring:</strong>
+                            <pre><code>
+const { info: { city } } = { info: { city: 'New York' } };
+console.log(city); // Output: New York
+                            </code></pre>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mt-4">
+                    <h3><strong>3.</strong>How do default parameters work in functions?</h3>
+                    <p><strong>Ans.</strong> Default parameters in JavaScript functions allow you to set default values for function parameters. If no value or <code>undefined</code> is passed for a parameter, the default value is used. This feature was introduced in ES6.</p>
+                    <p>Example:</p>
+                    <pre><code>
+function greet(name = 'Guest') {
+    console.log(`Hello, ${name}!`);
+}
+
+greet(); // Output: Hello, Guest!
+greet('Alice'); // Output: Hello, Alice!
+                    </code></pre>
+                </div>
+                <div class="mt-4">
+                    <h3><strong>4.</strong>What are arrow functions, and how do they differ from regular functions?</h3>
+                    <p><strong>Ans.</strong> Arrow functions, introduced in ES6, are a concise syntax for writing functions in JavaScript. They differ from regular functions in several ways:</p>
+                    <ul>
+                        <li><strong>Simplified Syntax:</strong> Arrow functions have a shorter syntax compared to regular functions.
+                            <pre><code>
+// Regular function
+function add(a, b) {
+    return a + b;
+}
+
+// Arrow function
+const add = (a, b) => a + b;
+                            </code></pre>
+                        </li>
+                        <li><strong>No Binding of <code>this</code>:</strong> Arrow functions do not have their own <code>this</code>. Instead, they inherit <code>this</code> from the surrounding lexical scope.
+                            <pre><code>
+class Example {
+    constructor() {
+        this.value = 42;
+    }
+
+    regularFunction() {
+        setTimeout(function() {
+            console.log(this.value); // undefined (this refers to the global object)
+        }, 1000);
+    }
+
+    arrowFunction() {
+        setTimeout(() => {
+            console.log(this.value); // 42 (this refers to the instance of Example)
+        }, 1000);
+    }
+}
+
+const example = new Example();
+example.regularFunction();
+example.arrowFunction();
+                            </code></pre>
+                        </li>
+                        <li><strong>Cannot Be Used as Constructors:</strong> Arrow functions cannot be used with the <code>new</code> keyword and do not have a <code>prototype</code> property.</li>
+                        <li><strong>No Arguments Object:</strong> Arrow functions do not have their own <code>arguments</code> object. Use rest parameters instead.
+                            <pre><code>
+const arrowFunc = (...args) => console.log(args);
+arrowFunc(1, 2, 3); // Output: [1, 2, 3]
+                            </code></pre>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mt-4">
+                    <h3><strong>5</strong>What are rest and spread operators?</h3>
+                    <p><strong>Ans.</strong> The rest and spread operators are features introduced in ES6 that simplify working with arrays, objects, and function arguments:</p>
+                    <ul>
+                        <li><strong>Rest Operator:</strong>
+                            <ul>
+                                <li>Used to collect all remaining elements into an array or object.</li>
+                                <li>Syntax: <code>...</code> (three dots).</li>
+                                <li>Commonly used in function parameters to handle variable numbers of arguments.</li>
+                                <li>Example:
+                                    <pre><code>
+function sum(...numbers) {
+    return numbers.reduce((total, num) => total + num, 0);
+}
+console.log(sum(1, 2, 3, 4)); // Output: 10
+                                    </code></pre>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><strong>Spread Operator:</strong>
+                            <ul>
+                                <li>Used to expand an array or object into individual elements.</li>
+                                <li>Syntax: <code>...</code> (three dots).</li>
+                                <li>Commonly used for copying or merging arrays and objects.</li>
+                                <li>Example:
+                                    <pre><code>
+// Expanding an array
+const numbers = [1, 2, 3];
+console.log(...numbers); // Output: 1 2 3
+
+// Merging arrays
+const moreNumbers = [4, 5, 6];
+const combined = [...numbers, ...moreNumbers];
+console.log(combined); // Output: [1, 2, 3, 4, 5, 6]
+
+// Copying an object
+const obj = { a: 1, b: 2 };
+const copiedObj = { ...obj, c: 3 };
+console.log(copiedObj); // Output: { a: 1, b: 2, c: 3 }
+                                    </code></pre>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mt-4">
+                    <h3><strong>6</strong>What are modules in JavaScript, and how do you export/import them?</h3>
+                    <p><strong>Ans.</strong> Modules in JavaScript are reusable pieces of code that can be exported from one file and imported into another. They help in organizing code, improving maintainability, and avoiding global namespace pollution. JavaScript modules are supported natively in modern browsers and Node.js.
+
+                    <ul>
+                        <li><strong>Exporting:</strong> You can export variables, functions, or classes from a module using the <code>export</code> keyword.
+                            <pre><code>
+// Named export
+export const greet = () => console.log('Hello!');
+
+// Default export
+export default function sayGoodbye() {
+    console.log('Goodbye!');
+}
+                            </code></pre>
+                        </li>
+                        <li><strong>Importing:</strong> You can import the exported members into another file using the <code>import</code> keyword.
+                            <pre><code>
+// Importing named exports
+import { greet } from './module.js';
+
+// Importing default export
+import sayGoodbye from './module.js';
+
+// Importing both named and default exports
+import sayGoodbye, { greet } from './module.js';
+                            </code></pre>
+                        </li>
+                    </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="bg-custom position-sticky top-0 p-2 text-light text-center mt-4" id="DOM Manipulation & Events">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>DOM Manipulation & Events</h1>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="py-4 bg-custom-subtle" id="DOM Manipulation & Events">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="mt-4">
+                    <h3><strong>1.</strong>What is the DOM?</h3>
+                    <p><strong>Ans.</strong> The DOM (Document Object Model) is a programming interface for web documents. It represents the structure of a document as a tree of objects, allowing developers to manipulate the content, structure, and styles of a web page dynamically using JavaScript. The DOM provides methods and properties to access and modify elements, attributes, and events in the document.</p>
+                </div>
+                <div class="mt-4">
+                    <h3><strong>2.</strong>How can you select an element using JavaScript?</h3>
+                    <p><strong>Ans.</strong> You can select an element using JavaScript by using methods like:</p>
+                    <ul>
+                        <li><code>document.getElementById('id')</code>: Selects an element by its ID.</li>
+                        <li><code>document.querySelector('selector')</code>: Selects the first element that matches the CSS selector.</li>
+                        <li><code>document.querySelectorAll('selector')</code>: Selects all elements that match the CSS selector and returns a NodeList.</li>
+                        <li><code>document.getElementsByClassName('className')</code>: Selects all elements with the specified class name.</li>
+                        <li><code>document.getElementsByTagName('tagName')</code>: Selects all elements with the specified tag name.</li>
+                    </ul>
+                    <p>Example:</p>
+                    <pre><code>
+// Select an element by ID
+const elementById = document.getElementById('myId');
+
+// Select the first element with a class
+const firstElementByClass = document.querySelector('.myClass');
+
+// Select all elements with a tag
+const allDivs = document.getElementsByTagName('div');
+                    </code></pre>
+                </div>
+                <div class="mt-4">
+                    <h3><strong>3.</strong>What is event bubbling and event delegation?</h3>
+                    <p><strong>Ans.</strong> Event bubbling and event delegation are concepts in JavaScript related to how events propagate through the DOM:</p>
+                    <ul>
+                        <li><strong>Event Bubbling:</strong>
+                            <ul>
+                                <li>When an event occurs on an element, it first triggers the event handlers on that element, and then it propagates (or "bubbles") up to its ancestors in the DOM tree.</li>
+                                <li>For example, if you click on a button inside a div, the click event will first trigger the button's event handler and then the div's event handler.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Event Delegation:</strong>
+                            <ul>
+                                <li>A technique that leverages event bubbling to handle events at a higher level in the DOM, rather than attaching event listeners to individual elements.</li>
+                                <li>Useful for dynamically added elements, as the parent element can handle events for its children.</li>
+                                <li>Example:
+                                    <pre><code>
+document.querySelector('ul').addEventListener('click', function(event) {
+    if (event.target.tagName === 'LI') {
+        console.log('List item clicked:', event.target.textContent);
+    }
+});
+                                    </code></pre>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mt-4">
+                    <h3><strong>4.</strong>How do you prevent default behavior of an event?</h3>
+                    <p><strong>Ans.</strong> To prevent the default behavior of an event in JavaScript, you can use the <code>preventDefault()</code> method. This method stops the browser's default action associated with the event. For example:</p>
+                    <pre><code>
+document.querySelector('a').addEventListener('click', function(event) {
+    event.preventDefault(); // Prevents the default action of navigating to the link's href
+    console.log('Default behavior prevented!');
+});
+                    </code></pre>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="bg-custom position-sticky top-0 p-2 text-light text-center mt-4" id="Performance & Optimization">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Performance & Optimization</h1>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="py-4 bg-custom-subtle" id="Performance & Optimization">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="mt-4">
+                    <h3><strong>1.</strong>What is debouncing and throttling in JavaScript?</h3>
+                    <p><strong>Ans.</strong> Debouncing and throttling are techniques used to control the rate at which a function is executed, especially in response to events like scrolling, resizing, or typing:</p>
+                    <ul>
+                        <li><strong>Debouncing:</strong>
+                            <ul>
+                                <li>Ensures that a function is executed only after a specified delay has passed since the last time it was invoked.</li>
+                                <li>Useful for scenarios like search input, where the function should only execute after the user has stopped typing.</li>
+                                <li>Example:
+                                    <pre><code>
+function debounce(func, delay) {
+    let timer;
+    return function(...args) {
+        clearTimeout(timer);
+        timer = setTimeout(() => func.apply(this, args), delay);
+    };
+}
+
+const debouncedFunction = debounce(() => console.log('Debounced!'), 300);
+window.addEventListener('resize', debouncedFunction);
+                                    </code></pre>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><strong>Throttling:</strong>
+                            <ul>
+                                <li>Ensures that a function is executed at most once in a specified interval, regardless of how many times the event is triggered.</li>
+                                <li>Useful for scenarios like scroll events, where the function should execute at regular intervals.</li>
+                                <li>Example:
+                                    <pre><code>
+function throttle(func, interval) {
+    let lastCall = 0;
+    return function(...args) {
+        const now = Date.now();
+        if (now - lastCall >= interval) {
+            lastCall = now;
+            func.apply(this, args);
+        }
+    };
+}
+
+const throttledFunction = throttle(() => console.log('Throttled!'), 300);
+window.addEventListener('scroll', throttledFunction);
+                                    </code></pre>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mt-4">
+                    <h3><strong>2.</strong>How can you improve the performance of JavaScript code?</h3>
+                    <p><strong>Ans.</strong> Improving the performance of JavaScript code involves several strategies:</p>
+                    <ul>
+                        <li><strong>Minimize DOM Manipulations:</strong> Reduce the number of DOM manipulations by batching updates or using Document Fragments.</li>
+                        <li><strong>Debounce and Throttle Events:</strong> Use debouncing or throttling for events like scroll, resize, or keypress to limit the frequency of function execution.</li>
+                        <li><strong>Use Efficient Loops:</strong> Prefer <code>for</code> loops over <code>forEach</code> or other higher-order functions for performance-critical code.</li>
+                        <li><strong>Lazy Loading:</strong> Load resources like images, scripts, or components only when they are needed.</li>
+                        <li><strong>Code Splitting:</strong> Split your JavaScript code into smaller chunks to load only the necessary parts initially.</li>
+                        <li><strong>Optimize JavaScript Execution:</strong> Avoid blocking the main thread by using Web Workers for heavy computations.</li>
+                        <li><strong>Reduce Unnecessary Repaints and Reflows:</strong> Minimize layout thrashing by batching style changes and avoiding inline styles.</li>
+                        <li><strong>Use Modern JavaScript Features:</strong> Leverage ES6+ features like <code>let</code>, <code>const</code>, and arrow functions for cleaner and more efficient code.</li>
+                        <li><strong>Cache Results:</strong> Cache the results of expensive operations or API calls to avoid redundant computations.</li>
+                        <li><strong>Use a Content Delivery Network (CDN):</strong> Serve static assets like JavaScript files from a CDN to reduce latency.</li>
+                        <li><strong>Minify and Bundle JavaScript:</strong> Use tools like Webpack or Rollup to minify and bundle your JavaScript files for faster loading.</li>
+                        <li><strong>Remove Unused Code:</strong> Use tools like Tree Shaking to eliminate dead code from your JavaScript bundles.</li>
+                    </ul>
+                </div>
+                <div class="mt-4">
+                    <h3><strong>3.</strong>What is lazy loading in JavaScript?</h3>
+                    <p><strong>Ans.</strong> Lazy loading in JavaScript is a design pattern that delays the loading of resources or objects until they are actually needed. This helps improve the performance of web applications by reducing the initial load time and conserving bandwidth. For example, images or scripts can be loaded only when they come into the viewport or are required for a specific interaction. Lazy loading can be implemented using techniques like the <code>Intersection Observer API</code> or by dynamically importing modules using <code>import()</code> in modern JavaScript.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="bg-custom position-sticky top-0 p-2 text-light text-center mt-4" id="Error Handling & Debugging">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Error Handling & Debugging</h1>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="py-4 bg-custom-subtle" id="Error Handling & Debugging">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="mt-4">
+                    <h3><strong>1.</strong>What is the difference between try...catch and throw?</h3>
+                    <p><strong>Ans.</strong> The difference between <code>try...catch</code> and <code>throw</code> lies in their purpose and usage:</p>
+                    <ul>
+                        <li><strong>try...catch:</strong>
+                            <ul>
+                                <li>Used to handle exceptions in a block of code.</li>
+                                <li>The <code>try</code> block contains the code that may throw an error.</li>
+                                <li>The <code>catch</code> block is executed if an error is thrown in the <code>try</code> block, allowing you to handle the error gracefully.</li>
+                                <li>Example:
+                                    <pre><code>
+try {
+    let result = riskyOperation();
+    console.log(result);
+} catch (error) {
+    console.error('An error occurred:', error.message);
+}
+                                    </code></pre>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><strong>throw:</strong>
+                            <ul>
+                                <li>Used to manually throw an error or exception.</li>
+                                <li>When an error is thrown, the normal execution of the code stops, and control is passed to the nearest <code>catch</code> block.</li>
+                                <li>Example:
+                                    <pre><code>
+function riskyOperation() {
+    if (Math.random() > 0.5) {
+        throw new Error('Something went wrong!');
+    }
+    return 'Success!';
+}
+                                    </code></pre>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mt-4">
+                    <h3><strong>2.</strong>How can you debug JavaScript code effectively?</h3>
+                    <p><strong>Ans.</strong> Debugging JavaScript code effectively involves the following techniques:</p>
+                    <ul>
+                        <li><strong>Using console.log():</strong> Insert <code>console.log()</code> statements to print variable values and track the flow of execution.</li>
+                        <li><strong>Browser Developer Tools:</strong> Use the built-in developer tools in browsers like Chrome or Firefox to inspect elements, debug scripts, and monitor network activity.</li>
+                        <li><strong>Breakpoints:</strong> Set breakpoints in the browser's debugger to pause execution at specific lines and inspect the state of variables.</li>
+                        <li><strong>Step Through Code:</strong> Use the step-over, step-into, and step-out features in the debugger to execute code line by line.</li>
+                        <li><strong>Error Messages:</strong> Pay attention to error messages in the console, as they often provide clues about the issue.</li>
+                        <li><strong>Debugging Tools:</strong> Use tools like <code>debugger</code> statements in the code to invoke the debugger programmatically.</li>
+                        <li><strong>Linting Tools:</strong> Use linters like ESLint to catch syntax errors and enforce coding standards.</li>
+                        <li><strong>Unit Testing:</strong> Write unit tests to ensure individual components of your code work as expected.</li>
+                        <li><strong>Code Reviews:</strong> Have peers review your code to identify potential issues.</li>
+                    </ul>
+                </div>
+                <div class="mt-4">
+                    <h3><strong>3.</strong>What are common JavaScript errors and how do you fix them?</h3>
+                    <p><strong>Ans.</strong> Common JavaScript errors and their fixes include:</p>
+                    <ul>
+                        <li><strong>ReferenceError:</strong> Occurs when trying to access a variable that is not defined.
+                            <ul>
+                                <li><strong>Fix:</strong> Ensure the variable is declared before use.</li>
+                            </ul>
+                        </li>
+                        <li><strong>TypeError:</strong> Happens when an operation is performed on a value of the wrong type.
+                            <ul>
+                                <li><strong>Fix:</strong> Check the type of the variable before performing operations.</li>
+                            </ul>
+                        </li>
+                        <li><strong>SyntaxError:</strong> Caused by incorrect syntax in the code.
+                            <ul>
+                                <li><strong>Fix:</strong> Review the code for syntax issues, such as missing brackets or semicolons.</li>
+                            </ul>
+                        </li>
+                        <li><strong>RangeError:</strong> Occurs when a number is outside the allowable range.
+                            <ul>
+                                <li><strong>Fix:</strong> Ensure numbers are within the valid range for the operation.</li>
+                            </ul>
+                        </li>
+                        <li><strong>URIError:</strong> Happens when there is an issue with encoding or decoding a URI.
+                            <ul>
+                                <li><strong>Fix:</strong> Verify the URI and ensure proper encoding/decoding methods are used.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Logic Errors:</strong> These are mistakes in the program logic that cause unexpected behavior.
+                            <ul>
+                                <li><strong>Fix:</strong> Debug the code using tools like <code>console.log()</code> or browser developer tools to identify and correct the logic.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="bg-custom position-sticky top-0 p-2 text-light text-center mt-4" id="JavaScript in the Browser">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>JavaScript in the Browser</h1>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="py-4 bg-custom-subtle" id="JavaScript in the Browser">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="mt-4">
+                    <h3><strong>1.</strong>What are cookies, localStorage, and sessionStorage?</h3>
+                    <p><strong>Ans.</strong> Cookies, <code>localStorage</code>, and <code>sessionStorage</code> are mechanisms for storing data in the browser:</p>
+                    <ul>
+                        <li><strong>Cookies:</strong>
+                            <ul>
+                                <li>Small pieces of data stored on the client-side, sent with every HTTP request to the server.</li>
+                                <li>Used for session management, user preferences, and tracking.</li>
+                                <li>Can have an expiration date and are limited in size (typically 4KB).</li>
+                            </ul>
+                        </li>
+                        <li><strong>localStorage:</strong>
+                            <ul>
+                                <li>Stores data with no expiration time, meaning the data persists even after the browser is closed and reopened.</li>
+                                <li>Accessible only within the same origin (domain and protocol).</li>
+                                <li>Typically used for storing larger amounts of data (up to 5MB).</li>
+                            </ul>
+                        </li>
+                        <li><strong>sessionStorage:</strong>
+                            <ul>
+                                <li>Stores data for the duration of the page session (until the browser tab is closed).</li>
+                                <li>Accessible only within the same origin and browser tab.</li>
+                                <li>Useful for temporary data storage during a single session.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mt-4">
+                    <h3><strong>2.</strong>How does JavaScript handle CORS?</h3>
+                    <p><strong>Ans.</strong> Cross-Origin Resource Sharing (CORS) is a mechanism that allows restricted resources on a web page to be requested from another domain outside the domain from which the first resource was served. JavaScript handles CORS through the browser's implementation of the Same-Origin Policy (SOP). When making requests to a different origin, the server must include specific CORS headers (e.g., <code>Access-Control-Allow-Origin</code>) in its response to indicate that the request is allowed. If these headers are not present or incorrect, the browser blocks the request for security reasons.</p>
+                </div>
+                <div class="mt-4">
+                    <h3><strong>3.</strong></h3>
+                    <p><strong>Ans.</strong> To make an HTTP request in JavaScript, you can use either the <code>fetch()</code> API or the <code>Axios</code> library:</p>
+                    <ul>
+                        <li><strong>Using fetch():</strong>
+                            <pre><code>
+fetch('https://api.example.com/data')
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+        return response.json();
+    })
+    .then(data => console.log(data))
+    .catch(error => console.error('There was a problem with the fetch operation:', error));
+                            </code></pre>
+                        </li>
+                        <li><strong>Using Axios:</strong>
+                            <pre><code>
+axios.get('https://api.example.com/data')
+    .then(response => console.log(response.data))
+    .catch(error => console.error('There was a problem with the Axios request:', error));
+                            </code></pre>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>
