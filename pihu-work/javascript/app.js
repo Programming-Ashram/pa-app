@@ -19,9 +19,39 @@
 // console.log(num);
 
 
-let result1 = 50;
-let result2 = 50;
+// let result1 = 50;
+// let result2 = 50;
 
-let finalResult = result1 + result2;
+// let finalResult = result1 + result2;
 
-console.log(finalResult);
+// console.log(finalResult);
+
+// let agree = document.getElementById("agree");
+
+// function checkCondtion(){
+//   if(agree.checked == true){
+//     console.log("Your are Agree");
+//   }else{
+//     console.log("Your are not agree")
+//   }
+// }
+
+let x = "Monday";
+
+function checkEvent(){
+  switch (x) {
+    case "Monday":
+      console.log("Navratri");
+      break;
+    case "Sunday":
+      console.log("Holiday");
+      break;
+    case 70:
+      console.log("X is 70");
+      break;
+
+    default:
+      console.log("X is not 20 or 30");
+      break;
+  }
+}
