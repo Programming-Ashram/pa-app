@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>array methods</title>
+ <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+  <div class="-container" id="cardContainer"></div>
+  <button onclick="addCard()">Add Card</button>
+  <button onclick="removeCard()">Remove Last Card</button>
+  <button onclick="shiftCard()">Remove First Card</button>
+  <button onclick="unshiftCard()">Add Card at Start</button>
+  <button onclick="sortCards()">Sort Cards</button>
+  <script>
+    let cards = ['mussu 1', 'mussu 2', 'mussu 3', 'mussu 4'];
+    let cardContainer = document.getElementById('cardContainer');
+
+    function muskan() {
+      cardContainer.innerHTML = cards
+        .map(card => `<div class="card">${card}</div>`)
+        .join('');
+    }
+
+    function addCard() {
+      cards.push(`Card ${cards.length + 1}`);
+      muskan();
+    }
+
+    function removeCard() {
+      cards.pop();
+      muskan();
+    }
+
+    function shiftCard() {
+      cards.shift();
+      muskan();
+    }
+
+    function unshiftCard() {
+      cards.unshift(`Card ${cards.length + 1}`);
+      muskan();
+    }
+
+    function shortCards() {
+      cards.short();
+      muskan();
+    }
+
+    function spliceCard() {
+       cards.splice(1, 1, `Spliced Card`);
+      muskan();
+    }
+
+    function sliceCard() {
+     const slicedCards = cards.slice(1, 2);
+      console.log('Sliced Cards:', slicedCards);
+    }
+    sliceCard()
+
+    muskan();
+  </script>
+</body>
+</html>

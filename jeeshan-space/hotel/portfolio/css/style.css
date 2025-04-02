@@ -1,0 +1,328 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: gray;
+}
+
+.hero {
+    background: linear-gradient(135deg, #338324, #a777e3);
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+.btn-primary:hover{
+
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    background-color: transparent;
+
+}
+.fffff{
+    color: white;
+}
+.fs-40{
+    font-size: 80px;
+}
+.circle{
+    border-radius: 250px;
+    border: 2px solid gray;
+}
+.mt-7{
+    margin-top: 250px;
+}
+.bg-dark-1{
+    background-color: rgb(25 62 20) ;
+}
+#contact {
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    color: white;
+    padding: 60px 0;
+}
+#contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+#contact .fs-3 {
+    font-size: 1.25rem;
+}
+#contact .contact-info {
+    margin-bottom: 30px;
+}
+.form-control {
+    border-radius: 0.5rem;
+    border: 2px solid #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    font-size: 1rem;
+}
+.form-control:focus {
+    border-color: #00c6ff;
+    box-shadow: 0 0 10px rgba(0, 198, 255, 0.6);
+}
+button[type="submit"] {
+    background: #00c6ff;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+button[type="submit"]:hover {
+    background: #0072ff;
+}
+.contact-info span {
+    display: block;
+    margin-bottom: 10px;
+}
+.project-card, .skill-card {
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.project-card:hover, .skill-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+.project-card img, .skill-card img {
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover img, .skill-card:hover img {
+    transform: scale(1.05);
+}
+
+.project-card .btn, .skill-card .btn {
+    background: linear-gradient(45deg, #00c6ff, #0072ff);
+    border: none;
+    color: white;
+    border-radius: 30px;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.project-card .btn:hover, .skill-card .btn:hover {
+    background-color: #005cbf;
+    transform: scale(1.1);
+}
+
+
+@media (max-width: 768px) {
+    .project-card, .skill-card {
+        margin-bottom: 20px;
+    }
+}
+.card-body h5 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.card-body p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.card-body:hover {
+    background: #f8f9fa;
+}
+.project-card, .skill-card {
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(145deg, #6e7dff, #9f72e4);
+}
+
+.project-card:hover, .skill-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+.project-card img, .skill-card img {
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover img, .skill-card:hover img {
+    transform: scale(1.05);
+}
+
+.btn-project, .btn-skill, .btn-contact {
+    background: linear-gradient(45deg, #00c6ff, #0072ff);
+    border: none;
+    color: white;
+    border-radius: 30px;
+    font-weight: bold;
+    padding: 8px 15px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-project:hover, .btn-skill:hover, .btn-contact:hover {
+    background-color: #005cbf;
+    transform: scale(1.1);
+}
+
+.form-control-sm {
+    height: 35px;
+    font-size: 14px;
+}
+
+
+.btn-contact {
+    background-color: #28a745;
+    font-size: 16px;
+}
+
+.btn-contact:hover {
+    background-color: #218838;
+}
+.card-body h5 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.card-body p {
+    font-size: 1rem;
+    color: #ddd;
+}
+
+
+@media (max-width: 768px) {
+    .project-card, .skill-card {
+        margin-bottom: 20px;
+    }
+}
+.navbar {
+    background-color: rgba(0, 0, 0, 0.5); 
+    transition: background-color 0.3s ease;
+    backdrop-filter: blur(5px); 
+    z-index: 1000;
+}
+
+.navbar-brand {
+    font-size: 1.6rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.navbar-toggler {
+    border-color: white;
+}
+
+.navbar-toggler-icon {
+    background-color: white;
+}
+
+
+.navbar-nav .nav-item .nav-link {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: white;
+    text-transform: uppercase;
+    padding: 8px 15px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #00c6ff; 
+    transform: scale(1.1); 
+}
+
+
+.navbar.scrolled {
+    background-color: rgba(0, 0, 0, 0.8); 
+}
+
+.card {
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+
+.project-card img {
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover img {
+    transform: scale(1.05); 
+}
+
+.btn-project {
+    background-color: #00c6ff; 
+    color: white;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border-radius: 50px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-project:hover {
+    background-color: #ff6600; 
+    transform: scale(1.1);
+}
+
+
+.skill-card img {
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.skill-card:hover img {
+    transform: scale(1.05); 
+}
+
+.btn-skill {
+    background-color: #ff6600; 
+    color: white;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border-radius: 50px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-skill:hover {
+    background-color: #00c6ff; 
+    transform: scale(1.1);
+}
+
+
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+
+@media (max-width: 768px) {
+    .card-body {
+        text-align: center;
+    }
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Javascript - Events</title>
+  <style>
+      #box{
+        width: 200px;
+        height: 200px;
+        background-color: blueviolet;
+        margin: 60px auto;
+      }
+      .red{
+        color: red;
+        display: none;
+      }
+  </style>
+</head>
+<body>
+
+  <form action="">
+      <input type="text" id="name" oninput="checkInput1()">
+      <input type="text" id="name" onchange="checkInput2()">
+      <input type="text" id="name" onblur="checkInput2()">
+      <input type="text" id="name" value="Nidhi" onfocus="checkInput2()">
+      <p class="red" id="message">Please Enter Your Name...</p>
+  </form>
+  <button  onclick="checkValidation()">Submit</button>
+  <br>
+  <button id="btn" onclick="CheckBtn1()">Click me </button>
+  <button id="btn" onclick="CheckBtn2()">Click me </button>
+  <button id="btn" ondblclick="CheckBtn3()">Click me </button>
+  <div id="box"
+        onmouseenter="checkBox1()"
+        onmouseleave="checkBox2()"
+        onmousemove="checkBox3()"
+        onmousedown="checkBox4()"
+        onmouseup="checkBox5()"
+        onmouseover="checkBox6()"
+        >
+    </div>
+
+    <!-- <input type="text" onkeypress="checkKey1()"> -->
+    <!-- <input type="text" onkeydown="checkKey1()"> -->
+    <input type="text" onkeyup="checkKey1()">
+
+  <script src="./app.js"></script>
+</body>
+</html>

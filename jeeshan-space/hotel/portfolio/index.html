@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">My Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+<div class="hero d-flex">
+    <div class="col-md-6">
+            <img class="circle" src="./assets/jeeshan-1.jpg" alt="jeeshan-1" style="width: 80%;">
+    </div>
+    <div class="col-md-6">
+        <div class="container mt-7" >
+            <h1>Welcome to My Portfolio</h1>
+            <p class="text-center mb-4 fs-40">Hello,I AM JEESHAN SHAIKH</p>
+            <p class="fs-3">I'm a UI Developer & front-end-developer passionate about creating amazing user experiences.</p>
+            <a href="#projects" class="btn px-5 btn-outline-secondary"><span class="fffff"><i class="fa-solid fa-user"></i> HIRE ME</span></a>
+            <a href="https://wwww.facebook.com" class="btn px-5 btn-outline-secondary"><span class="fffff"><i class="fa-solid fa-file"></i> Resume</span></a></a>
+        </div>
+    </div>
+</div>
+<section id="about" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">About Me</h2>
+        <p class="text-center">I'm a dedicated developer with experience in creating responsive and dynamic websites. I love combining creativity and functionality to solve problems and bring ideas to life.</p>
+    </div>
+</section>
+<!-- Projects Section -->
+
+<style>
+    body {
+    font-family: 'Arial', sans-serif;
+    background: #f8f9fa;
+}
+
+
+.navbar {
+    background-color: rgba(8, 39, 10, 0.8);
+    transition: background-color 0.3s ease;
+}
+
+.navbar a.nav-link {
+    color: #ffffff;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+.navbar a.nav-link:hover {
+    color: #ff6f61;
+}
+
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0;
+    background: linear-gradient(135deg, #103c08 0%, #764ba2 100%);
+    color: #ffffff;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.hero .btn {
+    margin: 5px;
+    border-radius: 25px;
+}
+
+h2 {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #333333;
+    margin-bottom: 20px;
+}
+.card {
+    background: linear-gradient(135deg, #042e21 0%, #185a9d 100%);
+    color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.card .card-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.card:hover .card-title {
+    color: #ffdf85;
+}
+
+.card .card-text {
+    font-size: 0.9rem;
+    color: #f3f3f3;
+    
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.card:hover .card-img-top {
+    transform: scale(1.1);
+}
+.btn-project,
+.btn-skill {
+    background-color: #ff6f61;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 25px;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+}
+
+.btn-project:hover,
+.btn-skill:hover {
+    background-color: #e85c50;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero img {
+        margin-bottom: 20px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .card-img-top {
+        height: 150px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        
+    }
+}
+</style>
+
+<section id="projects" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Projects</h2>
+        <div class="row g-4">
+            <div class="col-lg-4 col-md-6">
+                <div class="card project-card">
+                    <img src="./assets/dnk.PNG" class="card-img-top" alt="DNK Fashion">
+                    <div class="card-body">
+                        <h5 class="card-title">DNK Fashion</h5>
+                        <p class="card-text text-dark">A stylish e-commerce platform for fashion enthusiasts.</p>
+                        <a href="#" class="btn btn-project">View Project</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card project-card">
+                    <img src="./assets/royal.PNG" class="card-img-top" alt="Royal Digital Media">
+                    <div class="card-body">
+                        <h5 class="card-title">Royal Digital Media</h5>
+                        <p class="card-text text-dark">A digital portfolio showcasing creativity and innovation.</p>
+                        <a href="#" class="btn btn-project">View Project</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card project-card">
+                    <img src="./assets/organic.PNG" class="card-img-top" alt="Organic Form">
+                    <div class="card-body">
+                        <h5 class="card-title">Organic Form</h5>
+                        <p class="card-text text-dark">Promoting sustainable farming through technology.</p>
+                        <a href="#" class="btn btn-project">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="skills" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">My Skills</h2>
+        <div class="row g-4">
+            <div class="col-lg-4 col-md-6">
+                <div class="card skill-card">
+                    <img src="./assets/html.png" class="card-img-top" alt="HTML5">
+                    <div class="card-body">
+                        <h5 class="card-title">HTML5</h5>
+                        <p class="card-text text-dark">Creating structured and semantic web content.</p>
+                        <a href="#" class="btn btn-skill">View Skill</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card skill-card">
+                    <img src="./assets/css3.png" class="card-img-top" alt="CSS3">
+                    <div class="card-body">
+                        <h5 class="card-title">CSS3</h5>
+                        <p class="card-text text-dark">Styling websites for a visually appealing experience.</p>
+                        <a href="#" class="btn btn-skill">View Skill</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card skill-card">
+                    <img src="./assets/javascript3.png" class="card-img-top" alt="JavaScript">
+                    <div class="card-body">
+                        <h5 class="card-title">JavaScript</h5>
+                        <p class="card-text text-dark">Adding interactivity and logic to web applications.</p>
+                        <a href="#" class="btn btn-skill">View Skill</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="contact" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Contact Me</h2>
+        <div class="contact-info text-center mb-5">
+            <span class="fs-3"><b>Name - Jeeshan Shaikh<br></b></span>
+            <span class="fs-3"><b>Email - jeeshanshaikh9098@gmail.com<br></b></span>
+            <span class="fs-3"><b>Contact - 9098489016</b></span>
+        </div>
+
+        <form>
+            <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control form-control-sm" id="name" placeholder="Enter your name">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control form-control-sm" id="email" placeholder="Enter your email">
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control form-control-sm" id="message" rows="3" placeholder="Your message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-contact">Send Message</button>
+        </form>
+    </div>
+</section>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

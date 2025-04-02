@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap 5 Template</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+
+    <style>
+     
+       section  img{
+            width: 500px !important;
+                object-fit: contain;
+                border-radius: 8px;
+                filter: invert(1);
+                z-index: -1;
+
+        }
+        .bg-custom{
+            background: linear-gradient(135deg, rebeccapurple, #0056b3);;
+        }
+        .bg-sec-2{
+            background:linear-gradient(179deg, rgba(0, 87, 181, 0.13), transparent);
+        }
+        section h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: transparent !important;
+    background-image: linear-gradient(135deg, rebeccapurple, #0056b3) !important;
+    -webkit-background-clip: text;
+    margin-bottom: 14px;
+}
+    </style>
+</head>
+<body class="bg-sec-2">
+    <section class="py-3" style="background: linear-gradient(135deg, rebeccapurple, #0056b3);">
+        <div class="container">
+            <div class="row">
+                <div class="row">
+                    <div class="col-md-12 text-center text-light">
+                        <h1 class="display-3">Practice for CSS</h1>
+                        <p class="lead">
+                            powered by programming ashram
+                        </p>
+                        <p class="lead">
+                            Created by Muskan Sharnagat
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </section>
+    <section class="bg-custom position-sticky top-0 p-2 text-light text-center mt-4" id="Introduction of CSS">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Introduction of CSS</h1>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="py-4 bg-custom-subtle" id="Introduction of CSS">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="mt-4">
+                    <h3><strong>1.</strong> What is CSS?</h3>
+                    <p><strong>Ans.</strong> CSS (Cascading Style Sheets) is a language used to style and layout web pages. It controls the design, colors, fonts, and spacing of HTML elements.</p>
+                    <h3 class="text-center"><strong>or</strong></h3>
+                    <p><strong>Ans.</strong> CSS is a stylesheet language that allows you to apply styles to web pages, making them visually appealing and user-friendly.</p>
+                    <h3 class="text-center"><strong>or</strong></h3>
+                    <p><strong>Ans.</strong> CSS is used to separate content (HTML) from presentation, enabling developers to design consistent and responsive web pages efficiently.</p>
+                    <img src="" alt="" class="img-fluid">
+                </div>
+                <div class="mt-4">
+                    <h3><strong>2.</strong>What are the different types of CSS? (Inline, Internal, External)</h3>
+                    <p><strong>Ans.</strong> There are three types of CSS:</p>
+                    <ul>
+                        <li><strong>Inline CSS:</strong> Applied directly to an HTML element using the <code>style</code> attribute.
+                            <h6>Example Image: </h6>
+                            <img src="./image/inline.png" alt="" class="img-fluid">
+                        </li>
+                        <li><strong>Internal CSS:</strong> Defined within a <code>&lt;style&gt;</code> tag in the <code>&lt;head&gt;</code> section of the HTML document.
+                            <h6>Example Image: </h6>
+                            <img src="./image/Screenshot 2025-03-22 181629.png" alt="" class="img-fluid">
+                        </li>
+                        <li><strong>External CSS:</strong> Written in a separate file with a <code>.css</code> extension and linked to the HTML document using a <code>&lt;link&gt;</code> tag.
+                            <h6>Example Image: </h6>
+                            <img src="./image/Screenshot 2025-03-22 182122.png" alt="" class="img-fluid">
+                        </li>
+                    </ul>
+                </div>
+                <div class="mt-4">
+                    <h3><strong>3.</strong>What is the syntax of CSS?</h3>
+                    <p><strong>Ans.</strong> The syntax of CSS consists of a selector and a declaration block. The selector targets the HTML element(s) to style, and the declaration block contains one or more declarations separated by semicolons. Each declaration includes a property and a value, separated by a colon.</p>
+                    <pre><code>
+                            /* Example */
+                                    selector {
+                                         property: value;
+                                         property: value;
+                                        }
+                    </code></pre>
+                </div>
+                <img src="" alt="" class="img-fluid">
+                <div class="mt-4">
+                    <h3><strong>4.</strong>What is the difference between classes and IDs in CSS?</h3>
+                    <p><strong>Ans.</strong> Classes and IDs are both used to target HTML elements for styling, but they have key differences:</p>
+                    <ul>
+                        <li><strong>Classes:</strong> 
+                            <ul>
+                                <li>Defined using a period (<code>.</code>) followed by the class name.</li>
+                                <li>Can be applied to multiple elements on a page.</li>
+                                <li>Used for reusable styles.</li>
+                                <li>Example: <code>.example-class { color: red; }</code></li>
+                            </ul>
+                        </li>
+                        <img src="./image/class.png" alt="" class="img-fluid">
+                        <li><strong>IDs:</strong> 
+                            <ul>
+                                <li>Defined using a hash (<code>#</code>) followed by the ID name.</li>
+                                <li>Must be unique and applied to only one element on a page.</li>
+                                <li>Used for specific, unique styles.</li>
+                                <li>Example: <code>#example-id { font-size: 20px; }</code></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <img src="./image/Screenshot 2025-03-22 184615.png" alt="" class="img-fluid">
+                </div>
+                <div class="mt-4">
+                    <h3><strong>5.</strong>What is the difference between relative, absolute, fixed, and sticky positioning?</h3>
+                    <p><strong>Ans.</strong> The differences between relative, absolute, fixed, and sticky positioning are as follows:</p>
+                    <ul>
+                        <li><strong>Relative:</strong> The element is positioned relative to its normal position. You can use <code>top</code>, <code>right</code>, <code>bottom</code>, and <code>left</code> properties to adjust its position.</li>
+                        <li><strong>Absolute:</strong> The element is positioned relative to its nearest positioned ancestor (an ancestor with a position other than <code>static</code>). If no such ancestor exists, it is positioned relative to the initial containing block (usually the <code>html</code> element).</li>
+                        <li><strong>Fixed:</strong> The element is positioned relative to the viewport and does not move when the page is scrolled. It remains fixed in place.</li>
+                        <li><strong>Sticky:</strong> The element toggles between relative and fixed positioning depending on the scroll position. It is treated as relative until a specified scroll threshold is reached, after which it becomes fixed.</li>
+                    </ul>
+                    <img src="" alt="" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="bg-custom position-sticky top-0 p-2 text-light text-center" id="CSS Selectors">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>CSS Selectors</h1>
+            </div>
+        </div>
+    </div>
+</section>
+<section class=" bg-custom-subtle" id="CSS Selectors">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="mt-4">
+                    <h3><strong>1.</strong>What are CSS selectors?</h3>
+                    <p><strong>Ans.</strong> CSS selectors are patterns used to select and style specific elements in an HTML document. They allow you to target elements based on their tag name, class, ID, attributes, or other characteristics.</p>
+                    <h3 class="text-center"><strong>or</strong></h3>
+                    <p><strong>Ans.</strong> CSS selectors are used to "select" the HTML elements you want to style. They can target elements based on their type, class, ID, attributes, or even their relationship to other elements.</p>
+                    <img src="" alt="" class="img-fluid">
+                </div>
+                <div class="mt-4">
+                    <h3><strong>2.</strong>What is the difference between . (class) and # (ID) selectors?</h3>
+                    <p><strong>Ans.</strong> The <code>.</code> (class) selector is used to target elements with a specific class attribute, and it can be applied to multiple elements. The <code>#</code> (ID) selector is used to target a single, unique element with a specific ID attribute.</p>
+                    <ul>
+                        <li><strong>Class Selector:</strong> 
+                            <ul>
+                                <li>Defined using a period (<code>.</code>) followed by the class name.</li>
+                                <li>Can be applied to multiple elements.</li>
+                                <li>Example: <code>.example-class { color: blue; }</code></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <img src="./image/Screenshot 2025-03-24 182216.png" alt="" class="img-fluid">
+                    <ul>  
+                        <li><strong>ID Selector:</strong> 
+                            <ul>
+                                <li>Defined using a hash (<code>#</code>) followed by the ID name.</li>
+                                <li>Must be unique and applied to only one element.</li>
+                                <li>Example: <code>#example-id { font-size: 18px; }</code></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <img src="./image/Screenshot 2025-03-24 182006.png" alt="" class="img-fluid">
+                </div>
+                    <h3 class="text-center"><strong>or</strong></h3>
+                    <p><strong>Ans.</strong> The <code>.</code> (class) selector is used to apply styles to multiple elements with the same class, making it reusable. The <code>#</code> (ID) selector is used to apply styles to a single, unique element, ensuring specificity.</p>
+    
+                </div>
+                <div class="mt-4">
+                    <h3><strong>3.</strong>What is a universal selector (*) in CSS?</h3>
+                    <p><strong>Ans.</strong> The universal selector (<code>*</code>) in CSS is used to select all elements on a web page. It applies styles to every element unless overridden by more specific selectors.</p>
+                    <h3 class="text-center"><strong>or</strong></h3>
+                    <p><strong>Ans.</strong> The universal selector (<code>*</code>) in CSS is a wildcard selector that matches every element on the page. It is often used to apply a global reset or base styles.</p>
+                   <h3 class="text-center"><strong>or</strong></h3>
+                    <p><strong>Ans.</strong> The universal selector (<code>*</code>) targets all elements in the document, regardless of their type, class, or ID. It is useful for applying consistent styles across all elements.</p>
+                    <img src="./image/uni.png" alt="" class="img-fluid">
+                </div>
+                <div class="mt-4">
+                    <h3><strong>4.</strong>What are pseudo-classes and pseudo-elements in CSS? (e.g., :hover, ::before)</h3>
+                    <p><strong>Ans.</strong> Pseudo-classes and pseudo-elements are used in CSS to style specific parts or states of elements:</p>
+                    <ul>
+                        <li><strong>Pseudo-classes:</strong> Used to define the special state of an element. For example:
+                            <ul>
+                                <li><code>:hover</code> - Applies styles when the user hovers over an element.</li>
+                                <li><code>:focus</code> - Applies styles when an element is focused.</li>
+                                <li><code>:nth-child()</code> - Targets elements based on their position in a parent.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Pseudo-elements:</strong> Used to style specific parts of an element. For example:
+                            <ul>
+                                <li><code>::before</code> - Inserts content before an element's content.</li>
+                                <li><code>::after</code> - Inserts content after an element's content.</li>
+                                <li><code>::first-line</code> - Styles the first line of text in an element.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <h3 class="text-center"><strong>or</strong></h3>
+                    <p><strong>Ans.</strong> Pseudo-classes and pseudo-elements are advanced CSS features that allow you to style elements based on their state or specific parts of their content.</p>
+                    <h3 class="text-center"><strong>or</strong></h3>
+                    <p><strong>Ans.</strong> Pseudo-classes like <code>:hover</code> and <code>:focus</code> target elements based on user interaction, while pseudo-elements like <code>::before</code> and <code>::after</code> let you style specific parts of an element.</p>
+                    <h3 class="text-center"><strong>or</strong></h3>
+                    <p><strong>Ans.</strong> Pseudo-classes define the state of an element (e.g., <code>:nth-child()</code>), and pseudo-elements style specific parts of an element (e.g., <code>::first-line</code>).</p>
+                    <img src="" alt="" class="img-fluid">
+                </div>
+                <div class="mt-4">
+                    <h3><strong>5.</strong>How do you group multiple selectors in CSS?</h3>
+                    <p><strong>Ans.</strong> You can group multiple selectors in CSS by separating them with a comma. This allows you to apply the same styles to multiple elements at once.</p>
+                    <h3 class="text-center"><strong>or</strong></h3>
+                    <p><strong>Ans.</strong> Grouping multiple selectors in CSS allows you to apply the same styles to different elements by separating their selectors with a comma. This reduces redundancy and makes the code cleaner.</p>
+                   <img src="./image/sss.png" alt="" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="bg-custom position-sticky top-0 p-2 text-light text-center" id="CSS Box Model">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>CSS Box Model</h1>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="bg-custom-subtle" id="CSS Box Model">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="mt-4">
+                    <h3><strong>1.</strong>What is the CSS Box Model?</h3>
+                    <p><strong>Ans.</strong> The CSS Box Model is a fundamental concept in web design that describes how elements are structured and spaced on a web page. It consists of four parts:</p>
+                    <ul>
+                        <li><strong>Content:</strong> The actual content of the element, such as text or images.</li>
+                        <li><strong>Padding:</strong> The space between the content and the border. It creates inner spacing.</li>
+                        <li><strong>Border:</strong> The edge surrounding the padding (or content if no padding is specified).</li>
+                        <li><strong>Margin:</strong> The space outside the border, separating the element from other elements.</li>
+                    </ul>
+                    <p>These components work together to determine the total size and spacing of an element on the page.</p>
+                    <h3 class="text-center"><strong>or</strong></h3>
+                    <p><strong>Ans.</strong> The CSS Box Model is a framework that defines how elements are displayed and spaced on a web page. It includes the following components:</p>
+                    <ul>
+                        <li><strong>Content:</strong> The area where text, images, or other content is displayed.</li>
+                        <li><strong>Padding:</strong> The space between the content and the border, providing inner spacing.</li>
+                        <li><strong>Border:</strong> The line surrounding the padding and content, defining the element's boundary.</li>
+                        <li><strong>Margin:</strong> The outer space between the element's border and adjacent elements.</li>
+                    </ul>
+                    <p>The Box Model is crucial for understanding how to control the size, spacing, and alignment of elements in web design.</p>
+                    <img src="" alt="" class="img-fluid">
+                </div>
+                <div class="mt-4">
+                    <h3><strong>2.</strong>What is the difference between padding and margin?</h3>
+                    <p><strong>Ans.</strong> Padding is the space between the content of an element and its border, while margin is the space outside the border that separates the element from other elements.</p>
+                    <ul>
+                        <li><strong>Padding:</strong> 
+                            <ul>
+                                <li>Creates inner spacing within the element.</li>
+                                <li>Affects the size of the element's box.</li>
+                                <li>Example: <code>padding: 10px;</code></li>
+                            </ul>
+                        </li>
+                        <li><strong>Margin:</strong> 
+                            <ul>
+                                <li>Creates outer spacing between elements.</li>
+                                <li>Does not affect the size of the element's box.</li>
+                                <li>Example: <code>margin: 10px;</code></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <h3 class="text-center"><strong>or</strong></h3>
+                    <p><strong>Ans.</strong> Padding is the space between the content of an element and its border, providing inner spacing, while margin is the space outside the border, creating separation between elements.</p>
+                    <h3 class="text-center"><strong>or</strong></h3>
+                    <p><strong>Ans.</strong> Padding is the space between the content of an element and its border, creating inner spacing within the element. Margin, on the other hand, is the space outside the border, providing separation between elements. Padding contributes to the element's size, while margin defines the spacing around it.</p>
+                    <img src="./image/mp.png" alt="" class="img-fluid">
+                </div>
+                <div class="mt-4">
+                    <h3><strong>3.</strong>What is the difference between border-box and content-box?</h3>
+                    <p><strong>Ans.</strong> The difference between <code>border-box</code> and <code>content-box</code> lies in how the width and height of an element are calculated:</p>
+                    <ul>
+                        <li><strong>Content-box:</strong> 
+                            <ul>
+                                <li>Default box model.</li>
+                                <li>The width and height only include the content. Padding and border are not included in the specified width and height.</li>
+                                <li>Example: If an element has <code>width: 100px</code>, <code>padding: 10px</code>, and <code>border: 5px</code>, the total width will be <code>100px + 10px + 10px + 5px + 5px = 130px</code>.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Border-box:</strong> 
+                            <ul>
+                                <li>The width and height include the content, padding, and border.</li>
+                                <li>Example: If an element has <code>width: 100px</code>, <code>padding: 10px</code>, and <code>border: 5px</code>, the total width will remain <code>100px</code>, and the content width will adjust accordingly.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p>To use <code>border-box</code>, you can set it using CSS:</p>
+                   <h3 class="text-center"><strong>or</strong></h3>
+                    <p><strong>Ans.</strong> The key distinction between <code>border-box</code> and <code>content-box</code> is how the total width and height of an element are calculated:</p>
+                    <ul>
+                        <li><strong>Content-box:</strong> The default box model where the specified width and height apply only to the content. Padding and border are added outside the content dimensions, increasing the total size of the element.</li>
+                        <li><strong>Border-box:</strong> Includes the content, padding, and border within the specified width and height. This ensures the total size of the element remains consistent regardless of padding or border values.</li>
+                    </ul>
+                    <img src="./image/bc.png" alt="" class="img-fluid">
+                </div>
+                <div class="mt-4">
+                    <h3><strong>4.</strong>How can you make an element take up the full width of the screen?</h3>
+                    <p><strong>Ans.</strong> To make an element take up the full width of the screen, you can use the CSS property <code>width: 100vw;</code>. This sets the width of the element to 100% of the viewport width. Example:</p>
+                    <pre><code><b>
+                        /* Example */
+                        .full-width {
+                            width: 100vw;
+                        }
+                    </b></code></pre>
+                    <p>Alternatively, you can use <code>width: 100%;</code> if the element's parent container spans the full width of the screen.</p>
+                    <img src="" alt="" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="bg-custom position-sticky top-0 p-2 text-light text-center" id="CSS Layout & Display">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>CSS Layout & Display</h1>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="bg-custom-subtle" id="CSS Layout & Display">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="mt-4">
+                    <h3><strong>1.</strong>What is the difference between block, inline, and inline-block elements?</h3>
+                    <p><strong>Ans.</strong> The difference between block, inline, and inline-block elements is as follows:</p>
+                    <ul>
+                        <li><strong>Block:</strong> 
+                            <ul>
+                                <li>Starts on a new line and takes up the full width available.</li>
+                                <li>Examples: <code>&lt;div&gt;</code>, <code>&lt;p&gt;</code>, <code>&lt;h1&gt;</code>.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <img src="./image/block.png" alt="" class="img-fluid">
+                </div>
+                    <ul>
+                        <li><strong>Inline:</strong> 
+                            <ul>
+                                <li>Does not start on a new line and only takes up as much width as necessary.</li>
+                                <li>Examples: <code>&lt;span&gt;</code>, <code>&lt;a&gt;</code>, <code>&lt;strong&gt;</code>.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <img src="./image/inlineele.png" alt="" class="img-fluid">
+                </div>
+                    <ul>
+                        <li><strong>Inline-block:</strong> 
+                            <ul>
+                                <li>Behaves like an inline element but allows setting width and height.</li>
+                                <li>Examples: <code>&lt;button&gt;</code>, <code>&lt;input&gt;</code> (in some cases).</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <img src="./image/inline.png" alt="" class="img-fluid">
+                </div>
+                <div class="mt-4">
+                    <h3><strong>2.</strong>What is Flexbox, and why is it useful?</h3>
+                    <p><strong>Ans.</strong> Flexbox, or the Flexible Box Layout, is a CSS layout model designed to provide a more efficient way to align, distribute, and space elements within a container, even when their sizes are dynamic or unknown. It is particularly useful for creating responsive layouts.</p>
+                    <ul>
+                        <li><strong>Key Features:</strong>
+                            <ul>
+                                <li>Allows elements to grow, shrink, or remain static based on available space.</li>
+                                <li>Supports vertical and horizontal alignment without using floats or positioning.</li>
+                                <li>Provides control over spacing between elements and their alignment within a container.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Why it is Useful:</strong>
+                            <ul>
+                                <li>Simplifies the creation of complex layouts.</li>
+                                <li>Enables responsive design by adjusting elements dynamically.</li>
+                                <li>Reduces the need for additional CSS rules and workarounds.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p>In this example, Flexbox centers the content both horizontally and vertically within the container.</p>
+                    <img src="./image/flex box.png" alt="" class="img-fluid">
+                </div>
+                <div class="mt-4">
+                    <h3><strong>3.</strong>What is the difference between Flexbox and Grid?</h3>
+                    <p><strong>Ans.</strong> The difference between Flexbox and Grid lies in their layout capabilities and use cases:</p>
+                    <ul>
+                        <li><strong>Flexbox:</strong> 
+                            <ul>
+                                <li>One-dimensional layout system (either row or column).</li>
+                                <li>Best for aligning and distributing items along a single axis.</li>
+                                <li>Example: <code>display: flex;</code>.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <img src="./image/flex.png" alt="" class="img-fluid">
+                    <ul>
+                        <li><strong>Grid:</strong> 
+                            <ul>
+                                <li>Two-dimensional layout system (rows and columns).</li>
+                                <li>Best for creating complex layouts with precise control over both axes.</li>
+                                <li>Example: <code>display: grid;</code>.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <img src="./image/grid.png" alt="" class="img-fluid">
+                </div>
+                <div class="mt-4">
+                    <h3><strong>4.</strong>How do you center a div using CSS?</h3>
+                    <p><strong>Ans.</strong> To center a div using CSS, you can use Flexbox with the following properties: <code>display: flex;</code>, <code>justify-content: center;</code>, and <code>align-items: center;</code>. Example:</p>
+                    <pre><code>
+                        .center-div {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            height: 100vh;
+                        }
+                    </code></pre>
+                    <img src="" alt="" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="bg-custom position-sticky top-0 p-2 text-light text-center" id="Responsive Design">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Responsive Design</h1>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="bg-custom-subtle" id="Responsive Design">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="mt-4">
+                    <h3><strong>1.</strong>What is a media query?</h3>
+                    <p><strong>Ans.</strong> A media query is a CSS technique used to apply styles based on the characteristics of the user's device, such as screen size, resolution, or orientation. It enables responsive design by allowing developers to create styles that adapt to different devices.</p>
+                    <p>This example changes the background color to light blue for devices with a screen width of 768px or smaller.</p>
+                    <img src="./image/MMM.png" alt="" class="img-fluid">
+                </div>
+                <div class="mt-4">
+                    <h3><strong>2.</strong>What are relative units in CSS (%, em, rem, vh, vw)?</h3>
+                    <p><strong>Ans.</strong> Relative units in CSS are units of measurement that are relative to other elements or the viewport. They allow for flexible and responsive designs. Common relative units include:</p>
+                    <ul>
+                        <li><strong>% (Percentage):</strong> Relative to the parent element's size. For example, <code>width: 50%;</code> sets the width to 50% of the parent's width.</li>
+                        <li><strong>em:</strong> Relative to the font size of the parent element. For example, <code>padding: 2em;</code> sets the padding to twice the font size of the parent.</li>
+                        <li><strong>rem:</strong> Relative to the font size of the root element (<code>html</code>). For example, <code>margin: 1.5rem;</code> sets the margin to 1.5 times the root font size.</li>
+                        <li><strong>vh (Viewport Height):</strong> Relative to 1% of the viewport's height. For example, <code>height: 50vh;</code> sets the height to 50% of the viewport height.</li>
+                        <li><strong>vw (Viewport Width):</strong> Relative to 1% of the viewport's width. For example, <code>width: 100vw;</code> sets the width to the full width of the viewport.</li>
+                    </ul>
+                    <img src="" alt="" class="img-fluid">
+                </div>
+                <div class="mt-4">
+                    <h3><strong>3.</strong>What is the difference between max-width and min-width in media queries?</h3>
+                    <p><strong>Ans.</strong> The difference between <code>max-width</code> and <code>min-width</code> in media queries is as follows:</p>
+                    <ul>
+                        <li><strong>max-width:</strong> Applies styles when the screen width is less than or equal to the specified value. It is typically used for targeting smaller devices.</li>
+                        <li><strong>min-width:</strong> Applies styles when the screen width is greater than or equal to the specified value. It is typically used for targeting larger devices.</li>
+                    </ul>
+                    <img src="./image/hhhhhhh.png" alt="" class="img-fluid">
+                </div>
+                <div class="mt-4">
+                    <h3><strong>4.</strong>How do you make a website mobile-friendly using CSS?</h3>
+                    <p><strong>Ans.</strong> To make a website mobile-friendly using CSS, you can follow these steps:</p>
+                    <ul>
+                        <li><strong>1. Use a Responsive Layout:</strong> Use relative units like percentages, em, rem, vh, and vw instead of fixed units like px to create flexible layouts.</li>
+                        <li><strong>2. Implement Media Queries:</strong> Use media queries to apply styles based on the screen size or device type. Example:
+                            <pre><code><b>
+                                @media (max-width: 768px) {
+                                    body {
+                                        font-size: 14px;
+                                    }
+                                }
+                            </b></code></pre>
+                        </li>
+                        <li><strong>3. Use a Mobile-First Approach:</strong> Design for smaller screens first and then add styles for larger screens using media queries.</li>
+                        <li><strong>4. Optimize Images:</strong> Use responsive images with the <code>max-width: 100%;</code> property to ensure they scale properly on smaller screens.</li>
+                        <li><strong>5. Avoid Fixed Widths:</strong> Avoid using fixed widths for elements. Instead, use percentages or max-width to allow elements to resize.</li>
+                        <li><strong>6. Use Flexbox or Grid:</strong> Use modern CSS layout techniques like Flexbox or Grid to create responsive and adaptable layouts.</li>
+                        <li><strong>7. Test on Multiple Devices:</strong> Test your website on various devices and screen sizes to ensure it looks and functions well.</li>
+                    </ul>
+                    <img src="" alt="" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="bg-custom position-sticky top-0 p-2 text-light text-center" id="CSS Effects & Styling">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>CSS Effects & Styling</h1>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="bg-custom-subtle" id="CSS Effects & Styling">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="mt-4">
+                    <h3><strong>1.</strong>How do you change the background color of an element?</h3>
+                    <p><strong>Ans.</strong> Use the <code>background-color</code> property in CSS to set an element's background color.</p>
+                    <img src="./image/css.png" alt="" class="img-fluid">
+                </div>
+                <div class="mt-4">
+                    <h3><strong>2.</strong>How do you add a shadow to a box?</h3>
+                    <p><strong>Ans.</strong> To add a shadow to a box, use the <code>box-shadow</code> property in CSS. For example:</p>
+                    <pre><code><b>
+                        /* Example */
+                        .box {
+                            width: 200px;
+                            height: 100px;
+                            background-color: lightblue;
+                            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+                        }
+                    </b></code></pre>
+                    <p>This creates a shadow with a horizontal offset of 5px, a vertical offset of 5px, a blur radius of 15px, and a light black color with 30% opacity.</p>
+                    <img src="./image/shadow.png" alt="" class="img-fluid">
+                </div>
+                <div class="mt-4">
+                    <h3><strong>3.</strong>What is the difference between opacity and visibility?</h3>
+                    <p><strong>Ans.</strong> The difference between opacity and visibility is as follows:</p>
+                    <ul>
+                        <li><strong>Opacity:</strong> Controls the transparency level of an element. An element with <code>opacity: 0</code> is fully transparent but still occupies space in the layout.</li>
+                        <li><strong>Visibility:</strong> Controls whether an element is visible or hidden. An element with <code>visibility: hidden</code> is invisible but still occupies space in the layout.</li>
+                    </ul>
+                    <pre><code><b>
+                        /* Example */
+                        .transparent {
+                            opacity: 0.5; /* 50% transparent */
+                        }
+                        .hidden {
+                            visibility: hidden; /* Element is hidden but still takes up space */
+                        }
+                    </b></code></pre>
+                    <img src="./image/opacity.png" alt="" class="img-fluid">
+                </div>
+                <div class="mt-4">
+                    <h3><strong>4.</strong>How do you create a hover effect in CSS?</h3>
+                    <p><strong>Ans.</strong> To create a hover effect in CSS, use the <code>:hover</code> pseudo-class. For example:</p>
+                    <pre><code><b>
+                        /* Example */
+                        button:hover {
+                            background-color: blue;
+                            color: white;
+                        }
+                    </b></code></pre>
+                    <p>This changes the button's background color and text color when the user hovers over it.</p>
+                    <img src="./image/csss22.png" alt="" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="bg-custom position-sticky top-0 p-2 text-light text-center" id="Advanced CSS">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Advanced CSS</h1>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="bg-custom-subtle" id="Advanced CSS">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="mt-4">
+                    <h3><strong>1.</strong>What are CSS transitions and animations?</h3>
+                    <p><strong>Ans.</strong> CSS transitions and animations are techniques used to create smooth visual effects on web elements. Transitions allow changes in CSS properties to occur over a specified duration, while animations enable more complex, keyframe-based effects.</p>
+                    <h4>css transitions</h4>
+                    <img src="./image/csstransitions.png" alt="" class="img-fluid">
+                    <h4>css animations</h4>
+                    <img src="./image/animation.png" alt="" class="img-fluid">
+                </div>
+                <div class="mt-4">
+                    <h3><strong>2.</strong>What is a CSS variable?</h3>
+                    <p><strong>Ans.</strong> A CSS variable is a custom property defined by the user, starting with <code>--</code>, that stores reusable values for CSS properties. Example: <code>--main-color: blue;</code>.</p>
+                    <img src="" alt="" class="img-fluid">
+                </div>
+                <div class="mt-4">
+                    <h3><strong>3.</strong>What is the difference between absolute and fixed positioning?
+                    </h3>
+                    <p><strong>Ans.</strong> The difference between absolute and fixed positioning lies in their reference points:</p>
+                    <ul>
+                        <li><strong>Absolute Positioning:</strong> 
+                            <ul>
+                                <li>The element is positioned relative to its nearest positioned ancestor (an ancestor with a position other than <code>static</code>).</li>
+                                <li>If no such ancestor exists, it is positioned relative to the initial containing block (usually the <code>html</code> element).</li>
+                                <li>Example: <code>position: absolute;</code></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <img src="./image/Screenshot 2025-03-26 185345.png" alt="" class="img-fluid">
+                    <ul>
+                        <li><strong>Fixed Positioning:</strong> 
+                            <ul>
+                                <li>The element is positioned relative to the viewport.</li>
+                                <li>It does not move when the page is scrolled.</li>
+                                <li>Example: <code>position: fixed;</code></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <img src="./image/Screenshot 2025-03-26 185444.png" alt="" class="img-fluid">
+                </div>
+                <div class="mt-4">
+                    <h3><strong>4.</strong>What is the purpose of z-index in CSS?</h3>
+                    <p><strong>Ans.</strong> The <code>z-index</code> property in CSS is used to control the stack order of elements. Elements with a higher <code>z-index</code> value are displayed in front of elements with a lower <code>z-index</code> value. It is particularly useful when elements overlap, allowing you to specify which element should appear on top.</p>
+                    <pre><code><b>
+                        /* Example */
+                        .box1 {
+                            position: absolute;
+                            z-index: 1;
+                        }
+                        .box2 {
+                            position: absolute;
+                            z-index: 2;
+                        }
+                    </b></code></pre>
+                    <p>In this example, <code>.box2</code> will appear in front of <code>.box1</code> because it has a higher <code>z-index</code> value.</p>
+                    <img src="./image/z-index.png" alt="" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Bootstrap 5 JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+section {
+    padding: 60px  0;
+    background-color: #f9f9f9;
+    background-color: #911439;
+}
+header{
+    background-color: #911439;
+    
+}
+.card img{
+    height: 350px;
+    object-fit: cover;
+}
+article {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #e6e6e6;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color:  #911439;
+}
+footer {
+    padding: 40px 0;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
