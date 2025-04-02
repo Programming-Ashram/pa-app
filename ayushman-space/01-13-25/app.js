@@ -9,15 +9,15 @@
 // var x;
 
 // class add,
-let head = document.getElementById('heading');
-let btn = document.getElementById('btn');
-let btnRemove = document.getElementById('btnRemove');
-btn.addEventListener('click', ()=>{
-    head.classList.add('active');  
-})
-btnRemove.addEventListener('click', ()=>{
-    head.classList.remove('active');
-})
+// let head = document.getElementById('heading');
+// let btn = document.getElementById('btn');
+// let btnRemove = document.getElementById('btnRemove');
+// btn.addEventListener('click', ()=>{
+//     head.classList.add('active');  
+// })
+// btnRemove.addEventListener('click', ()=>{
+//     head.classList.remove('active');
+// })
 // head.classList.add('active');
 // head.classList.remove('test');
 // head.classList.replace('heading', "newClass");
@@ -29,3 +29,6 @@ btnRemove.addEventListener('click', ()=>{
 
 // let  y = 50;
 // console.log(y)
+let str = "10.7";
+let newconvertor = parseFloat(str)
+console.log(typeof(newconvertor))

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #on{
+            display: none;
+        }
+        #on.active{
+            display: block;
+        }
+        #on, #off{
+            position: absolute;
+            width: 400px;
+            height: 400px;
+        }
+        #switchBtn, #switchOffBtn{
+            display: block;
+            padding: 12px 22px;
+            background-color: blue;
+            color: white;
+            border: none;
+            cursor: pointer;
+            position: absolute;
+            bottom: 400px;
+        }
+        #switchOffBtn{
+            bottom: 300px;
+        }
+    </style>
+</head>
+<body>
+    <img src="https://5.imimg.com/data5/WL/SG/MY-8835990/10w-gls-light-bulb.jpg" alt="" id="on">
+    <img src="https://freepngimg.com/thumb/categories/2306.png" alt="" id="off">
+
+    <div>
+        <button type="button" id="switchBtn">Switch On</button>
+    </div>
+
+    <script>
+        let offbulb = document.getElementById('off');
+        let onblub = document.getElementById('on');
+
+        let switchBtn = document.getElementById('switchBtn');
+        let switchOffBtn = document.getElementById('switchOffBtn');
+
+        switchBtn.addEventListener('click', function(){
+            onblub.classList.toggle('active');
+        })
+       
+    </script>
+</body>
+</html>

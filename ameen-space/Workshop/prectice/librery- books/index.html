@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./app.js">
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Library</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Book Library</h1>
+
+    <!-- Search Bar -->
+    <div class="search-container">
+      <input type="text" id="searchBar" placeholder="Search by title or author" onkeyup="filterBooks()">
+    </div>
+
+    <!-- Form to add books -->
+    <div class="form-container">
+      <input type="text" id="bookTitle" placeholder="Enter book title">
+      <input type="text" id="bookAuthor" placeholder="Enter book author">
+      <button onclick="addBook()">Add Book</button>
+    </div>
+
+    <!-- Library Section -->
+    <div id="library">
+      <h2>Library</h2>
+      <div id="bookGrid" class="book-grid">
+        <!-- Books will be added here dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
+
+</body>
+</html>

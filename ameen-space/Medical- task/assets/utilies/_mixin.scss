@@ -1,0 +1,22 @@
+
+@import '../utilies/function';
+@import '../utilies/variable';
+@import '../base/typography';
+
+
+.font{
+    font-family: "Montserrat", serif;
+}
+
+.fs-10{
+    font-size:pixtorem(58);
+    font-weight:pixtorem(900);
+}
+
+section{
+    background-image: url("../background.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+     width: 100%;
+}
