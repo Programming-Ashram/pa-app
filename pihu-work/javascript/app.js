@@ -36,22 +36,53 @@
 //   }
 // }
 
-let x = "Monday";
+// let x = "Monday";
 
-function checkEvent(){
-  switch (x) {
-    case "Monday":
-      console.log("Navratri");
+// function checkEvent(){
+//   switch (x) {
+//     case "Monday":
+//       console.log("Navratri");
+//       break;
+//     case "Sunday":
+//       console.log("Holiday");
+//       break;
+//     case 70:
+//       console.log("X is 70");
+//       break;
+
+//     default:
+//       console.log("X is not 20 or 30");
+//       break;
+//   }
+// }
+
+// class  Car{
+//   constructor(parameters) {
+//       this.parameters = parameters;
+//   }
+// }
+
+// export default Car;
+
+
+let day = document.getElementById('day');
+
+
+function checkday() {
+  let currentday = day.value;
+  switch (currentday) {
+    case 'Monday':
+      console.log("Event for Coding")
       break;
-    case "Sunday":
-      console.log("Holiday");
+    case 'Tuesday':
+      console.log("PIP event");
       break;
-    case 70:
-      console.log("X is 70");
+    case 'Wednesday':
+      console.log("Event for Play")
       break;
 
     default:
-      console.log("X is not 20 or 30");
+      console.log("No Event for this day")
       break;
   }
 }
