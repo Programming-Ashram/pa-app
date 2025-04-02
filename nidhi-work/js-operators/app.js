@@ -4,10 +4,10 @@
 // console.log(x + y);
 // console.log(x - y);
 // console.log(x * y);
-let test = 67;
+
 // console.log(x / y);
 // console.log(x % y);
-let lokesh = "Lokesh";
+
 // Comparision Operators
 // (==)(==)(!=)
 
@@ -62,3 +62,13 @@ let lokesh = "Lokesh";
 
 // (val == 70) ? console.log("Monday") : console.log("Sunday")
 
+let x = 40;
+let y = 40;
+
+if(x === 40 || y === 50){
+    
+    console.log("Everything is Fine");
+}
+else{
+    console.log("Something went wrong...")
+}
