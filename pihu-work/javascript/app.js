@@ -82,4 +82,4 @@ let newName = document.getElementById('newName');
 
 newName.innerText += " Himanshi";
 newName.style.color = "black";
-newName.style.backgroundColor = "Yellow";
+newName.style.backgroundColor = " Yellow";
