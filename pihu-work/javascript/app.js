@@ -37,35 +37,34 @@
 // }
 
 // Data Types
-// // 1. Premitive
-//       // a. String,
-//       let name = "Muskan";
-//       console.log(typeof(name));
-//       // b. Number,
-//       let num = 40;
-//       console.log(typeof(num));
-//       // c. Undefined,
-//       let name1;
-//       console.log(typeof(name1))
-//       // d. Boolean,
-//       let bulb = false;
-//       console.log(typeof(bulb))
-//       // e. Null
-//       let salary = null;
-//       console.log(typeof(salary));
+// 1. Premitive
+      // a. String,
+      let name = "Muskan";
+      console.log(typeof(name));
+      // b. Number,
+      let num = 40;
+      console.log(typeof(num));
+      // c. Undefined,
+      let name1;
+      console.log(typeof(name1))
+      // d. Boolean,
+      let bulb = false;
+      console.log(typeof(bulb))
+      // e. Null
+      let salary = null;
+      console.log(typeof(salary));
 
-// // 2. Non Premotive
-//       // a. Array,
-//       let fruits = ["Apple", "Banana", "Mango", "Orange"];
-//       console.log(typeof(fruits));
-//       // b. Object,
-//       let person = {
-//         name: "Muskan",
-//         age: 23,
-//         city: "Delhi"
-//       }
-//       console.log(typeof(person));
-
+// 2. Non Premotive
+      // a. Array,
+      let fruits = ["Apple", "Banana", "Mango", "Orange"];
+      console.log(typeof(fruits));
+      // b. Object,
+      let person = {
+        name: "Muskan",
+        age: 23,
+        city: "Delhi"
+      }
+      console.log(typeof(person));
 // DOM
 
 let nameid = document.getElementById('name');
