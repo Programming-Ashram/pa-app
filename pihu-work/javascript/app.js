@@ -68,18 +68,51 @@
 
 // DOM
 
-let nameid = document.getElementById('name');
-console.log(nameid.innerHTML);
-let nameclass = document.getElementsByClassName('name')[2];
-console.log(nameclass.innerText)
-let nameTag = document.getElementsByTagName('h2')[1];
-console.log(nameTag.innerText)
-let nameQuery = document.querySelector('.name');
-let namequeryAll = document.querySelectorAll('.name')[0];
-console.log(namequeryAll);
+// let nameid = document.getElementById('name');
+// console.log(nameid.innerHTML);
+// let nameclass = document.getElementsByClassName('name')[2];
+// console.log(nameclass.innerText)
+// let nameTag = document.getElementsByTagName('h2')[1];
+// console.log(nameTag.innerText)
+// let nameQuery = document.querySelector('.name');
+// let namequeryAll = document.querySelectorAll('.name')[0];
+// console.log(namequeryAll);
 
-let newName = document.getElementById('newName');
+// let newName = document.getElementById('newName');
 
-newName.innerText += " Himanshi";
-newName.style.color = "black";
-newName.style.backgroundColor = " Yellow";
+// newName.innerText += " Himanshi";
+// newName.style.color = "black";
+// newName.style.backgroundColor = " Yellow";
+
+
+
+// let heading = document.createElement('h1');
+
+// body.appendChild(heading);
+
+// heading.innerText = "Hello Pihu!!"
+
+let body = document.querySelector('body');
+
+let header = document.createElement('header');
+let headerContainer = document.createElement('div');
+let headerRow = document.createElement('div');
+
+
+body.appendChild(header);
+header.appendChild(headerContainer);
+headerContainer.appendChild(headerRow);
+
+headerContainer.setAttribute('class', 'container');
+headerRow.setAttribute('class','row');
+
+header.setAttribute('class', 'bg-primary p-2')
+
+headerRow.innerHTML =`
+  <div class='col-md-6'>
+    <h1 class='text-light'>Header</h1>
+  </div>
+  <div class='col-md-6'>
+    <h1>Waraseoni</h1>
+  </div>
+`;
