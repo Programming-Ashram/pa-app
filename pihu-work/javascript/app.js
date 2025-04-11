@@ -91,27 +91,93 @@
 
 // heading.innerText = "Hello Pihu!!"
 
-let body = document.querySelector('body');
+// let body = document.querySelector('body');
 
-let header = document.createElement('header');
-let headerContainer = document.createElement('div');
-let headerRow = document.createElement('div');
+// let header = document.createElement('header');
+// let headerContainer = document.createElement('div');
+// let headerRow = document.createElement('div');
 
 
-body.appendChild(header);
-header.appendChild(headerContainer);
-headerContainer.appendChild(headerRow);
+// body.appendChild(header);
+// header.appendChild(headerContainer);
+// headerContainer.appendChild(headerRow);
 
-headerContainer.setAttribute('class', 'container');
-headerRow.setAttribute('class','row');
+// headerContainer.setAttribute('class', 'container');
+// headerRow.setAttribute('class','row');
 
-header.setAttribute('class', 'bg-primary p-2')
+// header.setAttribute('class', 'bg-primary p-2')
 
-headerRow.innerHTML =`
-  <div class='col-md-6'>
-    <h1 class='text-light'>Header</h1>
-  </div>
-  <div class='col-md-6'>
-    <h1>Waraseoni</h1>
-  </div>
-`;
+// headerRow.innerHTML =`
+//   <div class='col-md-6'>
+//     <h1 class='text-light'>Header</h1>
+//   </div>
+//   <div class='col-md-6'>
+//     <h1>Waraseoni</h1>
+//   </div>
+// `;
+
+
+let Products = [
+  {
+    id: 1,
+    name: "Laptop",
+    allProducts : [
+      {
+        id: 1,
+        name: "Dell",
+        ItemGalary: [
+          "Imag 1",
+          "Imag 2",
+          "Imag 3",
+        ]
+
+      },
+      {
+        id: 2,
+        name: "HP" ,
+        ItemGalary: [
+          "Imag 1",
+          "Imag 2",
+          "Imag 3",
+        ]
+      },
+      {
+        id: 3,
+        name: "Lenovo" ,
+        ItemGalary: [
+          "Imag 1",
+          "Imag 2",
+          "Imag 3",
+        ]
+      },
+    ]
+  },
+  {
+    id: 2,
+    name: "Mobile",
+    allProducts : [
+      { id: 1, name: "Samsung" },
+      { id: 2, name: "Apple" },
+      { id: 3, name: "OnePlus" },
+    ]
+  },
+  {
+    id: 3,
+    name: "Tablet",
+    allProducts : [
+      { id: 1, name: "iPad" },
+      { id: 2, name: "Samsung" },
+      { id: 3, name: "Lenovo" },
+    ]
+  }
+];
+
+for(let item of Products){
+  console.log(item.name + " : " + "Categories");
+  for(let subItem of item.allProducts){
+    console.log(subItem.name);
+    for(let subItemsPhoto of subItem.ItemGalary){
+      console.log(subItemsPhoto)
+    }
+  }
+}
